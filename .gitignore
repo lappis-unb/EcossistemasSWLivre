@@ -7,7 +7,6 @@
 *.ind
 *.log
 *.out
-*.pdf
 *.backup
 *.fls
 *.fdb_latexmk
