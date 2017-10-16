@@ -1,0 +1,16 @@
+*~
+*.swp
+*.aux
+*.bbl
+*.blg
+*.ilg
+*.ind
+*.log
+*.out
+*.pdf
+*.backup
+*.fls
+*.fdb_latexmk
+*.gz
+documentacao_tecnica_doxygen_simec/
+.texpadtmp/

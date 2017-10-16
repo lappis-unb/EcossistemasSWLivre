@@ -1,0 +1,109 @@
+\section{Metas}
+\label{metas}
+As metas representam parcelas quantificáveis do objeto e são definidas a partir de uma visão modularizada deste.
+As metas fornecem uma visão abstrata do escopo a ser desenvolvido durante a execução do projeto. 
+Com vistas a atender tantos os objetivos do Ministério a Cultura,
+quanto aos interesses de pesquisa do LAPPIS, representando a Universidade de Brasília, foram estabelecidas as seguintes metas:
+
+\begin{enumerate}
+\item Propor soluções de Aprendizado de Máquina para apoiar o sistema de gestão da lei Rouanet;
+\item Propor metodologia para transformação de software legado em aberto, no contexto do MinC;
+\item Modernizar o framework de desenvolvimento e operação (devops) e capacitar a equipe de servidores e técnicos do MinC em práticas de gestão e desenvolvimento de 
+software aberto, colaborativo e contínuo, aprimorando os mecanismos de governança digital; %incluir na metadevops ferramentas
+\item Desenvolver solução computacional que disponibilize os softwares de apoio às atividades culturais;
+\item Analisar de dados da produção de software para apoiar a avaliação da qualidade do produto no contexto do MinC;
+\item Desenvolver paineis dinâmicos para análise e visualização de informações para sistemas do MinC; 
+\end{enumerate}
+
+% TODO: Textos errados
+% \subsection{Descrição das Metas}
+% \subsubsection{Meta 1 - Propor soluções de Aprendizado de Máquina para apoiar o sistema de recomendação e fiscalização da lei Rouanet}
+% Um grande problema enfrentado é manter e evoluir software legado, especialmente softwares grandes e altamente acoplados. 
+% É uma experiência desgastante para desenvolvedores, e desestimulantes para fomento de comunidades. Por outro lado, a reescrita
+% desses softwares é impraticável, mas ainda é necessário dar manutenção e adicionar novas funcionalidades de forma que ele se torna
+% uma dependência permanente. 
+% 
+% Grande parte dos sistemas legados mantidos por equipes de TI em ministérios são Sistemas Web. Uma particularidade desses sistema é que são
+% são comumente desenvolvidos com alto grau de acoplamento entre o backend, o frontend e o banco de dados. 
+% Essa estratégia é insustentável e impacta negativamente na capacidade do software evoluir.
+% 
+% Sistemas legados são caracterizados principalmente por falta de testes automatizados, código altamente acoplado,
+% documentação incompleta, ausência ou poucos scripts de execução (build), implantação e execução não triviais. Essas caracteristicas
+% limitam e até mesmo impedem a existência de comunidades de software livre/aberto colaborando com tais sistemas.  
+% 
+% As práticas modernas de manutenção e evolução de software (altamente difundida em comunidades de software livre),
+% tornaram as linhas entre o desenvolvimento e a operação do sistema difusas.
+% Neste contexto, foi cunhado o termo DevOps para os profissionais que trabalham nesta zona de interface utilizando técnicas de desenvolvimento
+% de software para automatizar os processos de implantação e execução do sistema \cite{deFranca:2016:CDH:2973839.2973845}. O objetivo dessa etapa é utilizar os
+% conceitos e práticas Devops no contexto de software legado.
+% 
+% % \textcolor{red}{Essa parte acima sobre software legado não deveria estar na meta 2 abaixo?}
+% 
+% \subsubsection{Meta 2 - Propor metodologia para transformação de software legado em aberto, no contexto do MinC}
+% O objetivo do Catálogo de Software  é centralizar as informações das diversas soluções informatizadas utilizadas por uma instituição.
+% Com essas informações é possível monitorar os recursos despendidos na compra ou desenvolvimento destas soluções. Tem como objetivo a prestação de
+% informações sucintas sobre os softwares públicos e softwares livres utilizados para o atendimento das demandas institucionais
+% relacionadas a serviços e sistemas, além de visibilidade dos projetos desenvolvidos.
+% 
+% \subsubsection{Meta 3 - Transferir conhecimento e capacitar a equipe de servidores e técnicos do MinC em práticas de gestão e desenvolvimento de software aberto, colaborativo e contínuo, em diferentes arranjos produtivos, aprimorando mecanismos de governança digital.}
+% 
+% As comunidades de software livre são um tipo de arranjo produtivo formado por pessoas e organizações em torno de um bem comum de código 
+% que utilizam, mantém e aprimoram os softwares, normalmente com base nas suas próprias necessidades de uso. Muitas vezes essas necessidades 
+% e visões de futuro em relação aos softwares coincidem, gerando eficiência e abundância no esforço de desenvolvimento.
+% 
+% Em consonância a isso, o conceito de governo eletrônico tem sido atualizado em todo o mundo, buscando formas de incluir a sociedade civil na co-produção das tecnologias e políticas desenvolvidas no setor público. A estratégia de governança digital instituida pelo Ministério do Planejamento, estabelece que a utilização, pelo setor público, de tecnologias da informação e comunicação tem "o objetivo de melhorar a informação e a prestação de serviços visando incentivar a participação dos cidadãos, tornando o governo mais responsável, transparente e eficaz"\footnote{\url{https://www.governoeletronico.gov.br/egd}}.
+% 
+% Nesse contexto, é fundamental pesquisar e aprender com as comunidades de software livre que, tanto no Brasil quanto no mundo, o Estado participa por adesão e, a partir dos aprendizados com seus arranjos, orientar e capacitar os servidores e técnicos do MinC nas práticas de planejamento, gestão de softwares abertos, aprimorando os mecanismos de governança digital dos softwares presentes no portifólio do MinC.
+% 
+% \subsubsection{Meta 4 - Desenvolver solução computacional que disponibilize os softwares de apoio às atividades culturais}
+% De  1992-2017, 16 bilhões de reais foram captados via a Lei Federal 8.313/91 de Incentivo à Cultura, mais conhecida como lei Rouanet. 
+% Para ser beneficiado com captação de recurso via lei Rouanet, o proponente passa por duas etapas: a  etapa de habilitação e a etapa 
+% de prestação de contas. Em ambas etapas, o proponente preenche e envia documentos, de acordo com regras impostas.
+% Ambas etapas são realizadas com o uso da plataforma SALIC\footnote{\url{http://salic.cultura.gov.br/autenticacao/index/index}}(Sistema de Apoio às Leis de Incentivo à Cultura).
+% O SALIC é o principal produto de software mantido pela equipe de TI do Ministério da Cultura. Após a submissão pelo proponente,
+% a conformidade das submissões com a lei é realizada manualmente por avaliadores/auditores. A grande quantidade de propostas torna muito difícil 
+% a análise minuciosa para detecção de fraudes no processo, tanto na etapa de habilitação quanto na etapa de prestação de contas. 
+% O uso de técnicas de aprendizado de máquina pode auxiliar tanto o proponente nas dúvidas encontradas no processo de submissão de proposta, quanto
+% o auditor, na detecção de possíveis anomalias dos projetos submetidos na plataforma.
+% 
+% O principal objetivo é o estudo de técnicas de Aprendizado de Máquina que possam apoiar o sistema de recomendação e fiscalização da lei Rouanet.
+% Nessa etapa será realizada uma pesquisa exploratória em técnicas de aprendizado de máquina e processamento de linguagem natural. Tais técnicas e algoritmos serão aplicados
+% para melhorar a experiência de usuário (UX) por meio da proposta de chatbots como interface entre os proponentes na lei Rouanet e o Ministério da Cultura.
+% Árvore de decisão, processamento de linguagem natual, e técnicas de aprendizado supervisionado serão pesquisados para esse fim. 
+% 
+% Além disso, técnicas de aprendizado de máquinas serão estudadas para automatizar as trilhas de auditorias, tanto na etapa de habilitação
+% e aprovação, quanto na etapa de prestação de contas. O objetivo é auxiliar auditores a encontrar erros, inconsistências e detecção de anomalias nas submissões.
+% Técnicas de aprendizado supervisionado, deep learning, e outros possíveis algoritmos, serão avaliados para comparar as sumbissões realizadas com 
+% as regras estabelecidas pela lei.
+% Por fim, a massa de dados correspondente ao histórico de proposições, pode ser analizados, minerados, extraído padrões, a fim de inferir informações
+% a partir dos dados, de forma a auxiliar na tomada de decisão estratégica.
+% 
+% \subsubsection{Meta 5 - Análise de dados da produção de software para apoiar a avaliação da qualidade do produto no contexto do MinC}
+% A falta de entendimento acerca dos dados gerados ao longo do ciclo de vida do software é muitas vezes a causa de más decisões, técnicas ou gerenciais.
+% Aliado a isso, a falta de qualificação dos dados previamente às análises contribuem para análises e interpretações errôneas. Um desafio comum
+% para os profissionais da área de software é a identificação e correção de más decisões antes que estas possam produzir efeitos indesejáveis.
+% 
+% As atividades de coleta, tratamento, interpretação e visualização de dados oriundos da produção do software, que apoiem as
+% decisões técnicas/gerenciais e do negócio, não são triviais. Além disso, também é problemática a tarefa de lidar com a quantidade massiva de dados gerados 
+% pelos produtos e serviços de software (código-fonte, requisitos, testes, emails dos desenvolvedores, lista de defeitos, relatos de uso, log de erros,
+% tráfego de rede, entre outros).
+% 
+% No contexto da gestão de contratos públicos de desenvolvimento ou manutenção de software há desafios relacionados à aferição da qualidade dos produtos 
+% e serviços de software entregues pelos fornecedores contratados. Essa é uma atividade prevista nos normativos de contratação de software da
+% Administração Pública Federal, e portanto, requer a adoção de práticas, modelos e métodos da engenharia de software que favoreçam a aferição
+% desses artefatos de forma a apoiar a decisão por parte do time e dos gestores responsáveis, nesse contexto. Isso poderia trazer mais clarividência 
+% aos gestores públicos e contribuir para que a decisão de homologar as entregas sejam tomadas de forma mais sistemática.
+% 
+% Portanto, a falta de compreensão ou clareza sobre as informações que dizem respeito ao comportamento dos sistemas de software acarreta em 
+% desperdício de recursos e contribui para tomada de decisões não assertivas, o que compromete: i) a qualidade do produto de software em produção 
+% ou em operação; ii) o comportamento do software em uso e; iii) a estratégia de negócios das organizações. Esse problema acaba gerando efeitos não
+% desejados às operações das organizações.
+% 
+% Considerando a dinâmica observada no uso de práticas de engenharia de software continua, a liberação de releases passou de uma granularidade de
+% meses/anos para dias ou até mesmo horas.  Impulsionada pelo advento do desenvolvimento de software como serviço, essa cadência do desenvolvimento 
+% em ciclos contínuos de produção e implantação; aliado ao amadurecimento das tecnologias de automação, tem provocado nos últimos anos um movimento 
+% de adoção de práticas de engenharia de software contínua por parte da indústria. Algumas organizações mundiais que adotam o desenvolvimento contínuo
+% tem associado ao seus ciclos de produção o uso de um arcabouço de experimentação que os auxilia a avaliar continuamente o impacto das mudanças nas 
+% versões de seus produtos, observando na qualidade em uso. Essa prática tem sido referenciada como experimentação contínua e tem como premissa a 
+% observação de ambientes de desenvolvimento contínuo.
+% 

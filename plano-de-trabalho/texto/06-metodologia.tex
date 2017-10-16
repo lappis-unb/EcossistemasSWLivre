@@ -1,0 +1,188 @@
+\section{Revisão da literatura e teoria}
+% TODO: Resumir
+
+\subsection{Metodologia de Desenvolvimento}
+\label{desenvolvimento}
+
+Uma questão central em Engenharia de Software consistem balancear as restrições conflitantes do projeto que incluem, mas não se limitam ao escopo, qualidade, tempo e custo .
+Desenvolveu, ao longo do tempo, diferentes práticas e metodologias em busca de padrões que regem o desenvolvimento de software de qualidade observando dentro destas restrições. Em 2001, líderes técnicos criaram Aliança de Desenvolvimento Ágil e escreveram o Manisfesto Ágil, que pode ser resumido nas seguintes idéias:
+
+\begin{itemize}
+\item Indivíduos e interações acima de processos e ferramentas;
+\item Software operante acima de documentações grandes e completas;
+\item Colaboração do cliente acima de negociações contratuais;
+\item Responder à mudanças acima de seguir a um planejamento.
+\end{itemize}
+
+Os métodos ágeis exaltam a simplicidade, feedback contínuo e adaptação à mudanças que podem ser obtidos 
+a partir de comunicação face à face, qualidade de código e entrega contínua de software. Existem várias metodologias criadas a
+partir deste conjunto de princípios, com destaque para o Scrum ~\cite{schwaber2001} e Extreme Programming (XP). Estes métodos 
+não são excludentes e princípios e práticas de ambos podem ser utilizados de forma complementar ~\cite{fitzgerald2006}. 
+Os métodos ágeis, especialmente quando aplicados a organizações maiores, importam inclusive elementos abordagens mais tradicionais 
+com vistas a impor um maior rigor e previsibilidade no processo de criação de software.
+
+\subsubsection{eXtreme Programming - XP}
+
+O Extreme Programming - XP é uma metodologia de desenvolvimento de software com
+foco em agilidade de equipes e qualidade de projetos, apoiado em cinco valores:
+comunicação; feedback; simplicidade; coragem e respeito. O XP propõe, portanto,
+a utilização de um conjunto de práticas conhecidas para serem aplicadas
+disciplinadamente em busca do desenvolvimento de software de qualidade dentro
+dos prazos e custos determinados.  
+
+Assim como no Scrum, o XP define ciclos de desenvolvimento para que o produto de software seja incrementado a partir das prioridades do cliente. O XP introduziu uma série de técnicas e processos consagrados na indústria: testes automatizados com grande cobertura da base de código; programação em pares; o uso de histórias de usuários para definição de requisitos; o planning poker para estimar o esforço de implementação de cada funcionalidade ~\cite{cohn2005}; 
+
+As práticas de XP, especialmente a ênfase no uso extensivo de testes automatizados, permitem que módulos construídos do software sejam integrados freqüentemente e com garantias razoáveis de que o software funciona de acordo com o esperado e que o ciclo de desenvolvimento não introduz novos defeitos. Isto facilita a entrega constante de software e interações rápidas com o cliente.
+
+Do ponto de vista arquitetural, o XP encoraja o design simples que surge a partir da construção de cada funcionalidade e não a partir de atividades específicas de design que visam a implementação de uma arquitetura baseada em extensões futuras. O design surge naturalmente do processo de desenvolvimento aliado à prática de refatoração sistemática, com uma série de passos e técnicas que buscam construir, evolutivamente, a extensibilidade e manutenibilidade da arquitetura. 
+
+\subsubsection{Iniciativas de Adoção de Métodos Ágeis na Administração Pública Federal}
+
+As metodologias ágeis começaram a ganhar espaço no início da década de 2000,
+regidas pelo Manifesto Ágil, e desde então vêm ganhando crescente popularidade.
+No cenário mundial, elas já são metodologias bastante difundidas entre diversos
+setores. Atualmente, diversas organizações públicas brasileiras estão iniciando
+investimentos em adoção de contratações de fornecedores de software utilizando
+métodos ágeis e, portanto, estão começando a difundir tais métodos também no
+setor público~\cite{melo2012}.
+
+Recentemente, o Tribunal de Contas da União publicou o Acórdão no 2314/2013 que contém 
+um relatório de levantamento elaborado pela Secretaria de
+Fiscalização de Tecnologia da Informação (SEFTI), cujo objetivo foi conhecer as
+bases teóricas do processo de desenvolvimento de software com metodologia ágil,
+além de conhecer experiências práticas de contratação realizadas por
+instituições públicas federais. Nesse acórdão são relatadas as experiências de
+adoção e contratação de serviços utilizando métodos ágeis no contexto do (i)
+Tribunal Superior do Trabalho (TST); (ii) Banco Central do Brasil (Bacen);
+(iii) Instituto do Patrimônio Histórico e Artístico Nacional (IPHAN); (iv)
+Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (INEP),
+e Supremo Tribunal Federal (STF) (TCU, 2013).
+
+No referido acórdão, baseado nas experiências citadas, é concluído que, apesar
+dos riscos inerentes em qualquer processo de adoção a adaptação de novas
+metodologias na Administração Pública Federal (APF), a adoção de métodos ágeis
+no âmbito da APF em contratos para desenvolvimento de software é
+demonstradamente viável.
+
+\subsection{Devops}
+DevOps é contração entre development e operations. Trata-se da metodologia de desenvolvimento e entrega que mantêm os
+times de desenvolvimento e infraestrutura em constante colaboração, muitas vezes borrando a fronteira entre estas duas etapas
+~\cite{Httermann:2012:DD:2380958}. Isto é alcançado a partir de uma metodologia que enfatiza o uso de testes, integração contínua e automação 
+para que, idealmente, os processos de implantação sejam tratados como código e que o código seja incorporado de forma contínua e 
+confiável à aplicação em produção. 
+
+A metodologia é normalmente associada a métodos ágeis de desenvolvimento, onde DevOps permite com que as mudanças realizadas 
+pelo time desenvolvimento sejam incorporadas mais rapidamente em produção. Isto permite ciclos mais rápidos de atualização e uma 
+maior facilidade em responder a novos requisitos e experimentar com novas funcionalidades. Várias companhias referência em desenvolvimento 
+de software adotam práticas de DevOps, normalmente com resultados bastante positivos [Riungu-Kalliosaari et. al, 2016].
+
+A cultura DevOps faz parte do conjunto de boas práticas de desenvolvimento preconizadas pelo LAPPIS. O uso desta metodologia no projeto 
+permite não só uma maior agilidade no processo de desenvolvimento, mas possui um papel importante em capacitar os alunos com as tecnologias 
+e processos utilizados no laboratório.
+
+\subsection{Ecossistemas de Software Livre}
+
+O desenvolvimento de software é semelhante a criação de uma receita, um
+processo de aprendizado envolvendo tentativas e erros, o que difere
+acentuadamente do passo-à-passo característico de se seguir uma
+receita~\cite{poppendieck2011}. 
+
+Entendendo software livre como um método que promove a participação desde o seu
+processo de concepção e desenvolvimento, essa forma colaborativa de desenvolver
+software é a mais adequada em um projeto que visa promover a participação
+social, de forma aberta e transparente ao cidadã. 
+Entre os aspectos em comum do universo open source, pode-se citar o fato de todas se valerem de
+um modelo aberto e colaborativo, dinâmico e flexível, calcado na espontaneidade e voluntariedade.
+Nesse meio, fazem-se presentes a cultura meritocrática e a
+produção entre pares, elementos-chave da cultura hacker.
+
+Aliados à cultura Devops, o ecossistema de software livre fomenta um arranho produtivo  formado por pessoas e organizações em torno de um bem comum de código,
+que utilizam, mantém e aprimoram os softwares, normalmente com base nas suas próprias necessidades de uso. Muitas vezes essas necessidades 
+e visões de futuro em relação aos softwares coincidem, gerando eficiência e abundância no esforço de desenvolvimento.
+
+% Precisamente, os elementos
+% do método que serão investigados neste projeto serão os seguintes:  Engenharia
+% de Software Empírica~\cite{wohlin2000}, em Ambientes Governamentais.  A inovação neste projeto poderá ser
+% observadda em 3 vetores:
+
+% Arquitetura de uma plataforma livre, voltada ao desenvolvimento de
+% softwares para o Ministério da Cultura e sociedade, que disporá de tecnologia de integração de
+% serviços provendo suporte à: Sistemas de Versionamento; Sistema de
+% Gerenciamento; Plataforma de Colaboração por meio de Redes Sociais Expressivas;
+% Monitoramento de qualidade de código-fonte e Sistema de Indexação e Busca.
+
+%  As comunidades de software livre são um tipo de arranjo produtivo formado por pessoas e organizações em torno de um bem comum de código 
+% que utilizam, mantém e aprimoram os softwares, normalmente com base nas suas próprias necessidades de uso. Muitas vezes essas necessidades 
+% e visões de futuro em relação aos softwares coincidem, gerando eficiência e abundância no esforço de desenvolvimento.
+% 
+% Em consonância a isso, o conceito de governo eletrônico tem sido atualizado em todo o mundo, buscando formas de incluir a sociedade civil na co-produção das tecnologias e políticas desenvolvidas no setor público. A estratégia de governança digital instituida pelo Ministério do Planejamento, estabelece que a utilização, pelo setor público, de tecnologias da informação e comunicação tem "o objetivo de melhorar a informação e a prestação de serviços visando incentivar a participação dos cidadãos, tornando o governo mais responsável, transparente e eficaz"\footnote{\url{https://www.governoeletronico.gov.br/egd}}.
+% 
+% Nesse contexto, é fundamental pesquisar e aprender com as comunidades de software livre que, tanto no Brasil quanto no mundo, o Estado participa por adesão e, a partir dos aprendizados com seus arranjos, orientar e capacitar os servidores e técnicos do MinC nas práticas de planejamento, gestão de softwares abertos, aprimorando os mecanismos de governança digital dos softwares presentes no portifólio do MinC.
+
+
+
+
+\subsection{Aprendizado de Máquina}
+
+Do ponto de vista de processamento de dados e ciência da informação, o projeto aborda duas questões importantes: 
+processar o fluxo de dados de forma eficiente e incremental,
+e a questão principal do projeto é o processamento de linguagem natural, tanto para guiar o proponente da lei Rouanet na plataforma SALIC
+quanto o uso de chatbots para interagir com proponentes da Lei Rouanet.
+
+Nessa pesquisa exploratória, usaremos bibliotecas de aprendizado de máquina e processamento de linguagem natural open source,
+tais como scikit-learn \footnote{\url{https://github.com/scikit-learn/scikit-learn}} e 
+tensor flow \footnote{\url{https://github.com/tensorflow/tensorflow}}, que atualmente são utilizadas tanto pela comunidade acadêmica quanto
+pela indústria de software.  
+
+
+\subsection{Dimensionalidade e Visualização de dados Culturais}
+Uma etapa importante consiste em minerar os dados e indicadores culturais (big data) e disponibilizar essas informações 
+ de forma simples para os usuários, gestores possam  compreender facilmente tais informações, facilitando a tomada de decisão e garantindo 
+ acesso e transparência das informações. Do ponto de vista técnico, isto consiste projetar 
+os pontos no espaço de features, que geralmente consiste em um número elevado de dimensões,  para o espaço 
+bidimensional da tela de um computador. Trata-se de um problema muito bem estudado em machine learning  e que pode ser
+abordado por uma grande quantidade de diferentes técnicas e algoritmos [Van Der Maaten, Postma, Van den Herik, 2009].
+
+O desafio de pesquisa consiste em encontrar algoritmos que 1) possuam performance computacional aceitável em grandes volumes de dados, 2)
+implementações que realizam atualização incremental e 3) produzam resultados de visualização consistentes com as expectativas de um usuário
+leigo. A terceira área é a que merece o maior esforço de estudo já que as duas primeiras são muito bem estabelecidas. 
+
+
+% \subsection{Do ateste das etapas e organização do fluxo de trabalho}
+% TODO: melhorar o texto
+% 
+% A partir da fase de planejamento deste projeto, o planejamento geral aqui apresentado será continuamente refinado. Como 
+% resultado deste refinamento serão definidos os ciclos de produção dos produtos/protótipos (releases), scripts de automaçã
+% o resultantes das atividades de DevOps, algoritmos de mineração e de aprendizado de máquina, ou mesmo processos e documentação
+% extritamente necessários e assosiados a essas ou outras atividades. Além dessas entregas, ocorrerá de forma transversal e colaborativa a capacitação e transferência de conhecimento às equipes do MinC, no sentido do aprimoramento da governança digital dos softwares.
+% 
+% 
+% \textbf{Operação (produção)}
+% 
+% De acordo com o contínuo refinamento do planejamento, no que se refere à: produtos; protótipos; scripts de automação; algoritmos de mineração e tratamento de dados; algortimos de aprendizado de máquina a equipe CDT/FUB  liberará um resultado R[1,...,N] para uso externo, no ambiente de operação disponibilizado pela CGTEC/MinC.
+% O credenciamento para liberação desses resultados (releases/algortimos/scripts) em ambiente de produção se dará: i) após o fim do período de homologação; ii) a marcação de aceitação das issues nos repositórios por parte das equipes do MinC e iii) ter recebido resposta aos ofícios de encaminhamento de encaminhamento das entregas produzidas pelas equipes UnB/CDT e recebidas pelas equipes do MinC/CGTEC.
+% 
+% \textbf{Homologação}
+% 
+% O período de ateste e homologação, por parte do MinC/CGTEC, se dará imediatamente após a disponibilização de uma release candidata RC-[1,...,N] no ambiente disponibilizado pela CGTEC-MinC. Decorrerá um período de 15-30 dias, a partir da disponibilização da release candidata, para que os últimos ajustes, correções de defeitos identificados, testes finais de migração dos dados, e correções de pequenos defeitos que por ventura, venham se materializar.
+% 
+% A linha de desenvolvimento da release candidata, em homologação, não terá atividades de desenvolvimento de novos requisitos. O objetivo é estabilizar a versão do resultado, com vistas à liberação para o ambiente de produção.
+% 
+% O credenciamento para liberação de um resultado canditado em ambiente de homologação se dará: i) após o fim do período de desenvolvimento de um ciclo, a consequente liberação dos resultados intermediários identificados por meio das issues no repositório; e iii) ter recebido o ateste provisório por parte do da equipe da SLTI/MP.
+% 
+% \textbf{Resultados Intermediários}
+% 
+% Mensalmente a equipe CDT/FUB disponibilizará uma realease intermediária, havendo acordo negocial e técnico, no ambiente de desenvolvimento e testes disponibilizado pela MinC/CGTEC. Trata-se de oportunidade da equipe da equipe do MinC/CGTEC poder realizar  de forma não controlada diferentes testes, retroalimentando o desenvolvimento da equipe CDT/FUB com feedbacks de possíveis alterações. Todas as alterações solicitadas por parte da equipe MinC/CGTEC serão tratadas como itens de backlog no repositório do projeto, e portanto, serão priozizados juntamente com as demais histórias de usuários.
+% 
+% O credenciamento para liberação de um resultado intermediário em ambiente de desenvolvimento e testes se dará: i) após o fim de dois ciclos de desenvolvimento (sprints) ou mesmo de features; ii) da integração do incremento de software; iii) da execução da suíte de testes integrado; iv) da formalização da entrega, por meio da execução da suíte do testes automatizados.
+% 
+% 
+% \textbf{Ciclos de desenvolvimento}
+% 
+% A execução das etapas acontecerão preferencialmente nas dependências da UnB, não se limitando a este espaço, caso seja necessário. As sprints terão duração de 15 dias, representando a cadência do tempo em cada ciclo de desenvolvimento. Será medida a capacidade de produção da equipe CDT/FUB, de forma a se identificar o limitador do trabalho. A partir de então, a quantidade de trabalho possível de ser realizada dentro de cada ciclo da etapa será utilizada como parâmetro para que as equipes CDT/FUB e MinC/CGTEC possam utilizar nas reuniões de planejamento, que ocorrerão no primeiro dia de cada ciclo de desenvolvimento.
+% 
+% Ao final de cada ciclo, será realizada a reunião de revisão da sprint, onde a equipe CDT/FUB apresenta para a equipe MinC/CGTEC o incremento do protótipo construído no ciclo, caracterizando assim, o desenvolvimento guiado pelas prioridades elencadas pelo ministério. Ainda, ao final de duas sprints será gerado um protótipo intermediário e disponibilizada no ambiente de desenvolvimento e testes provido pela MinC/CGTEC.
+% 
+% A medida em que as atividades de pesquisa avançem e também as equipes CDT/FUB e MinC/CGTEC ganhem maturidade com as tecnologias de deenvolvimento e práticas de gestão, esse cadenciamento será evoluído para entregas contínuas, dentro dos ciclos de desenvolvimento dos incrementos dos produtos de software.
+  
+

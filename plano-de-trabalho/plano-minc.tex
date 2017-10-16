@@ -1,0 +1,104 @@
+
+\documentclass[preprint,11pt,oneside]{imsart}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese,brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{enumerate}
+\usepackage[section]{placeins}
+\usepackage{longtable}
+\usepackage{scalefnt}
+\usepackage{lscape}
+\usepackage{color,graphicx}
+
+
+
+\setattribute{keyword}{tipo}{Tipo:}
+
+% ---------------------------------------------------------------------------- %
+\topmargin -1.5cm        % read Lamport p.163
+\oddsidemargin -0.04cm   % read Lamport p.163
+\evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
+\textwidth 16.59cm
+\textheight 21.94cm
+%\pagestyle{empty}       % Uncomment if don't want page numbers
+\parskip 7.2pt           % sets spacing between paragraphs
+\renewcommand{\baselinestretch}{1.5} % Uncomment for 1.5 spacing between lines
+%\parindent 0pt		 % sets leading space for paragraphs
+% ---------------------------------------------------------------------------- %
+
+\begin{document}
+
+\begin{frontmatter}
+
+\begin{aug}
+
+\address{Fundação Universidade de Brasília -- FUB\\
+Centro de Apoio ao Desenvolvimento Tecnológico -- CDT\\
+Faculdade UnB Gama -- FGA\\
+Laboratório Avançado de Produção, Pesquisa e Inovação em Software -- LAPPIS}
+
+\end{aug}
+
+\vspace{2cm}
+
+\title{Plano de Trabalho}
+\normalsize{Ministério da Cultura}
+
+\vspace{2cm}
+
+\begin{aug}
+\normalsize{Projeto de Pesquisa:\\
+\textbf{
+Ecossistemas de Software Livre}}
+
+
+\vspace{2cm}
+\normalsize{Professores: Carla Silva Rocha Aguiar, Fábio Macêdo Mendes e Hilmer Rodrigues Neri}
+
+\vspace{2cm}
+\normalsize{\textit{Brasília-DF, Julho de 2017}}
+
+\end{aug}
+
+\end{frontmatter}
+
+% \newpage
+% \input texto/00-resumo
+\newpage
+\input texto/04-objeto
+% \newpage
+\input texto/01-introducao
+\newpage
+\input texto/05-metas
+\newpage
+\input texto/03-justificativa
+
+\newpage
+\input texto/06-metodologia
+\newpage
+\input texto/02-convenente
+
+\newpage
+\input texto/07-gestao
+
+% \newpage
+% \input texto/09-pesquisa
+\newpage
+\input texto/08-orcamento
+
+\newpage
+\input texto/10-declaracao-aprovacao
+
+\newpage
+\bibliographystyle{apalike}
+\bibliography{referencias}
+
+\end{document}

@@ -1,0 +1,198 @@
+\section{Introdução}
+\label{introducao}
+
+A parceria entre a Universidade de Brasília e o Ministério da Cultura visa aliar 
+competências em desenvolvimento e software, domínio de tecnologias livres e 
+métodos ágeis do Laboratório Avançado de Produção, Pesquisa e Inovação em Software (LAPPIS)
+com a expertise do Ministério da Cultura em fornecer aos municipios e estados 
+as funcionalidades de software que apoiem a execução da lei Lei 8.313/91,
+conhecida como Rouanet e das demais políticas de fomento e incentivo à cultura. 
+
+Trata-se de um arranjo interdisciplinar que envolve pesquisa e inovação em 
+processos de desenvolvimento de soluções que serão incorporadas à esfera 
+pública na forma de Softwares Livres e de modo mais concreto nos mecanismos de 
+governança digital do próprio Ministério da Cultura. 
+
+A Tecnologia da Informação e Comunicação (TIC) está adquirindo papel cada vez 
+mais central no cotidiano das organizações sociais. De governos, grandes empresas, 
+autarquias, passando por organizações de sociedade civil até mesmo por movimentos 
+informais, as TICs tem sido o principal meio de comunicação e organização da 
+ação coletiva nesses contextos. 
+
+Por isso, o software é algo de interesse geral, uma vez que vários aspectos
+relacionados a ele ultrapassam as questões técnicas, como por exemplo: o
+processo de desenvolvimento do software; os mecanismos econômicos que regem
+esse desenvolvimento e seu uso; o relacionamento entre desenvolvedores,
+fornecedores e usuários do software; os aspectos éticos e legais relacionados
+ao software~\cite{kon2011jai}.
+
+Software livre é aquele que permite aos usuários 
+usá-lo, estudá-lo, modificá-lo e redistribui-lo, sem restrições. Normalmente, 
+esse software existe por meio de projetos de desenvolvimento que estão centradas 
+em torno de algum código-fonte acessível ao público, geralmente em um repositório na Internet,
+onde desenvolvedores e usuários podem interagir~\cite{meirelles2013}. O código
+é necessariamente licenciado sob termos legais formais que estão de acordo com
+as definições da Free Software Foundation
+\footnote{\url{gnu.org/philosophy/free-sw.html}} ou da Open Source Initiative
+\footnote{\url{opensource.org/docs/definition.html}}.
+
+
+O que define e diferencia o software livre do que podemos denominar de software
+restrito passa pelo entendimento desses quatro pontos dentro do que é conhecido
+como o ecossistema do software livre~\cite{meirelles2013}. O princípio básico 
+desse ecossistema é promover a liberdade do usuário, sem
+discriminar quem tem permissão para usar um software e seus limites de uso,
+baseado na colaboração e num processo de desenvolvimento
+aberto~\cite{kon2011jai}. O desenvolvimento de software livre é uma alternativa estratégica
+para o Estado para
+\begin{itemize}
+ \item Soberania;
+ \item reuso e colaboração;
+ \item Autonomia;
+ \item Inteligência institucional.
+\end{itemize}
+
+O desenvolvimento de software livre é baseado num método que promove a transparência (pelas licenças) e a participação
+(pelo método baseado no acesso aberto ao processo de desenvolvimento) desde o momento de concepção. Por conta disso entendemos 
+que essa é a forma mais adequada em um projeto que visa promover a colaboração de outras organizações e da cidadania, 
+de forma aberta e transparente, no desenvolvimento de tecnologia do ministério.
+
+O desenvolvimento de software livre é uma alternativa estratégica para o Estado por contribuir para o reuso de tecnologias que já
+tenham sido desenvolvidas e possam ser apropriadas e aprimoradas pelas instituições públicas, promovendo economia de recursos e acesso a
+tecnologias de ponta com desenvolvimento ativo. As características do licenciamento de software livre e seu processo de documentação pública com formação de comunidade também melhora o nível de autonomia do Estado, já que pode se apropriar da tecnologia desenvolvida a partir do seu próprio corpo técnico ou mobilizando a riqueza da comunidade. Esse processo vai aprimorando e capacitando os recursos humanos dos orgãos públicos aumentando a inteligência institucional e contribuindo em questões de soberania nacional, no sentido de que as tecnologias adotadas para a gestão pública são baseadas em inteligências presentes no Estado e sociedade Brasileira.
+
+É importante, portanto, implementar uma arquitetura que facilita a participação, seja pelos métodos, seja promovendo ações que motivem o engajamento de atores, visando alimentar um processo que vai construindo, gradualmente, um ambiente de colaboração na construção das tecnologias que suportam a gestão cultural no Brasil.
+
+Nesse contexto, o Ministério da Cultura possui histórico no desenvolvimento e manutenção de sistemas
+software livre para políticas públicas\footnote{\url{https://github.com/culturagovbr}}.
+Dentre os 27 sistemas desenvolvidos e/ou mantidos, todos disponibilizados como software livre,
+se destacam:
+
+\begin{itemize}
+\item \textbf{Salic (Sistema de Apoio às Leis de Incentivo à Cultura)} - 
+ principal mecanismo de fomento à Cultura do Brasil, a Lei 8.313/91 (Lei Rouanet) 
+ estabelece as normativas de como o Governo Federal deve disponibilizar recursos 
+ para a realização de projetos artístico-culturais. A implementação da Lei 
+ Rouanet, tanto a fase de habilitação quanto prestação de conta, é feita por 
+ meio do sistema Salic.
+ \item \textbf{Mapas Culturais}\footnote{\url{https://github.com/culturagovbr/mapasculturais}} - 
+ um software livre que permite o mapeamento cultural e aprimoramento da gestão 
+ cultural dos municípios e estados.
+ \item \textbf{SIMEC (Sistema Integrado de Monitoramento Execução e Controle)}
+ \footnote{\url{https://github.com/culturagovbr/docker-simec}} - é um portal 
+ operacional e de gestão do inicialmente desenvolvida pelo MEC, que trata do 
+ orçamento e monitoramento das propostas on-line do governo federal usada pelo 
+ Ministério da Cultura.
+ \item \textbf{SisTel (Sistema de gestão de serviços de telefonia)}
+ \footnote{\url{https://github.com/culturagovbr/SisTel}} - sistema interno de 
+ gestão de serviços de telefonia.
+ \item \textbf{GOC (Gestão de Ouvidoria Governamental)}
+ \footnote{\url{https://github.com/culturagovbr/GOG}} - sistema de ouvidoria do 
+ Ministério da Cultura.
+ \item \textbf{Tainacan - Sistema de Gestão de Acervos Digitais}\footnote{\url{http://tainacan.org/}} - trata-se de uma plataforma que permeia o Projeto de Política Nacional de Acervos Digitais,
+ e é composto
+ por módulos que podem auxiliar no gerenciamento de repositórios, ontologias, documentos e museus.
+\end{itemize}
+
+Os softwares livres desenvolvidos e/ou mantidos pelo Ministério da Cultura, em conjunto com comunidades de
+usuários e cidadãos interessados, são disponibilizados na organização na plataforma github\footnote{\url{https://github.com/culturagovbr}}.
+Os repositórios presentes na organização MinC não possuem uma padronização: muitos deles tem pouca ou nenhuma documentação, alguns nem possuem licenças
+de software, testes automatizados, integração contínua, metricas de qualidade de código. A pouca conformidade com os modelos seguidos por
+comunidades de software livre, dificulta ou limita a contribuição de interessados em coloborar com os sistemas MinC.
+
+O aumento exponencial na capacidade de processamento e armazenamento nos
+últimos anos permitiu com que um enorme volume de dados sobre a presença e interação
+dos usuários na internet sejam armazenadas e catalogadas. Trata-se de um constante
+fluxo de informação, usualmente pouco estruturada e distribuída por um grande número
+de usuários e serviços. Elementos que individualmente fornecem pouca informação
+podem ser tratados coletivamente para traçar perfis bastante precisos de grupos e usuários [Kosinski, et al, 2015].
+Algoritmos e técnicas de aprendizado de máquina são aplicados para identificar padrões,
+classificar, agrupar e reduzir a dimensionalidade de dados, além desenvolver sistemas de recomendações.
+O amadurecimento desses algoritmos, e a disponibilização de bibliotecas, APIs e ferramentas de aprendizado de máquina 
+com software livre tem possibilitado o uso tanto em projetos de pesquisa quanto no desenvolvimento de produtos de software.
+
+Neste contexto, a colaboração com o LAPPIS configura um arranjo de pesquisa, de ação e inovação sobre a realidade da engenharia
+de software e comunidades de software livre em organizações da Administração Pública Federal. Este projeto visa pesquisar
+e aplicar técnicas, metodologias de desenvolvimento de software, além de aferição qualidade produto de software, em ambiente experimental 
+para o desenvolvimento de software livre. 
+
+\subsection{Objetivo Gerais}
+
+A presente colaboração objetiva realizar pesquisas aplicadas ao ambiente e contexto de software do Ministério da Cultura de forma a investigar uma estrutura computacional que proveja suporte a análise de dados de sistemas de softwares culturais com vistas à apoiar a análise e tomada de decisões técnico, gerenciais e de negócio do Ministério.
+Para tanto, espera-se estruturar na Universidade de Brasília um núcleo de pesquisa em tecnologias inovadoras voltadas à atividades culturais que pesquise e desenvolva tais tecnologias, metodologias de forma a prover suporte teórico e técnico e/ou gerencial para aplicação em estudos de observação de projetos do MinC. 
+
+Além disso, serão aplicadas metodologias de desenvolvimento de software, além de aferição qualidade produto de software, a partir da observação participativa do pesquisador, em ambiente real da indústria, além do ambiente experimental e de desenvolvimento do Laboratório Avançado de Pesquisa, Produção e Inovação em Software (LAPPIS).
+
+Tais pesquisas e práticas fornecerão subsídios para pertinente aproximação entre a Universidade de Brasília e o Ministério da Cultura, de forma que, os resultados das pesquisas sejam usadas para subsidiar este Ministério de ferramentas de gestão e desenvolvimento
+de software colaborativo, aberto e contínuo, baseado em evidências, em diferentes arranjos produtivos, aprimorando os mecanismos de governança digital das tecnologias do portifólio;
+além de fornecer software que apoiem a execução da lei Lei 8.313/91,
+conhecida como Rouanet e das demais políticas de fomento e incentivo à cultura. 
+
+\subsection{Objetivos Específicos}
+
+Para alcançar esses objetivos gerais, que tornam esse projeto desafiador, alguns objetivos específicos são elencados como forma de decompor a complexidade do projeto. Pesquisas e desenvolvimento nas seguintes áreas serão realizados: 
+
+\begin{itemize}
+\item Realizar estudos de algoritmos de aprendizado de máquina para analisar dados da execução da Lei Rouanet;
+\item Realizar estudos de métodos/práticas ágeis e de desenvolvimento lean de software, além das práticas de engenharia de software e de governança utilizadas nas comunidades de software livre, de forma a prover uma infraestrutura computacional para desenvolvimento e experimentação contínua de software;
+\item Fornecer suporte tecnológico para apropriação das informações por parte da sociedade civil de maneira a contribuir para transparência pública e participação social;
+\item Fornecer suporte tecnológico para estimular a participação da sociedade civil na governança digital em torno das tecnologias livres do portfólio do ministério;
+\item Mineração em repositórios de software para extração e análise de dados;
+\item Processamento de linguagem natural dos dados extraídos dos diferentes sistemas de software culturais;
+\item Transferência de conhecimento da academia para o Estado;
+\item Formação de alunos de graduação em pós-graduação em projetos com problemas reais do contexto cultural;
+\item Contribuir para o fomento da cultura de software livre na Administração Pública Federal;
+\item Contribuir para o desenvolvimento da cultura de tomada de decisões orientadas a dados e evidência;
+\item Contribuir para o estabelecimento da cultura de desenvolvimento e experimentação contínua.
+\end{itemize}
+
+\subsection{Lei da inovação}
+
+O presente termo de colaboração se baseia nos termos da LEI No 10.973, DE 2 DE DEZEMBRO DE 2004 (Lei da Inovação) que regula a interação 
+entre nas Instituições Científica, Tecnológica e de Inovação (ICTs) e empresas ou instituições públicas ou de direito privado. A lei se
+baliza no princípio de estimular o papel dos ICTs em fomentar a capacitação tecnológicas, autonomia e o desenvolvimento de produtos e processos 
+inovadores no ambiente produtivo nacional. 
+
+O presente projeto pressupõe a criação de um conjunto de softwares que serão utilizados pelo Ministério da Cultura como estratégia 
+de participação social e interação democrática com a sociedade. Ainda que a lei faça previsões sobre a tutela de patentes e
+propriedade intelectual, o presente acordo prevê a utilização de tecnologias e licenças de software livre que modificam um pouco a lógica usual
+da atribuição da propriedade intelectual. O MinC vê como principal produto deste termo de descentralização, não o software em si, mas sim o processo
+de desenvolvimento de software possibilitado pelas ferramentas desenvolvidas.
+Desta forma, não existe interesse por parte do MinC em deter a propriedade intelectual das 
+ferramentas com vias de comercializá-la para terceiros. Seguindo esta lógica, todo o software desenvolvido será disponibilizado sob licenças livres
+com a propriedade intelectual atribuída de forma difusa entre os desenvolvedores e a Universidade de Brasília. Este arranjo permite a utilização 
+da plataforma e seus sub-produtos tecnológicos por qualquer ente público ou privado interessado, inclusive com a possibilidade de comercialização
+de produtos baseados nestas tecnologias. Tais tecnologias também oferecem vantagens econômicas no sentido de não dependerem de tecnologias
+proprietárias que requerem o pagamento contínuo de licenças de uso.
+
+Do ponto de vista da Lei da Inovação, as principais contrapartidas esperadas pelo ministério são:
+\begin{itemize}
+ \item Inovação no processo de análise dos dados dos projetos fomentados via Lei Rouanet por meio da plataforma SALIC com auxilio 
+ de ferramentas de aprendizado de máquina;
+ \item Estratégia/modelo de transformação de softwares legados do portifólio MinC em comunidades de software aberto;
+ \item \textit{Catálogo de Software} - plataforma para disponibilizar as diversas soluções informatizadas utilizadas pelo Ministério da
+ Cultura. O catálogo será desenvolvido segundo as práticas mais modernas de engenharia de software e é uma ferramenta que promove visibilidade
+ do portfólio de produtos de softwares desenvolvidos por uma instituição. Será desenvolvido como software livre, 
+ e pode ser utilizado para outras instituições, inclusive pela Universidade de Brasília.
+ \item criação de vários produtos de software que formarão a plataforma de acompanhamento automático no SALIC; 
+ \item capacitação e transferência de capital intelectual e tecnológico para o ministério com vias a permitir autonomia tecnológica 
+ do MinC no uso e manutenção da plataforma e tecnologias de software associadas; 
+ \end{itemize}
+
+Aqui entende-se inovação, criação, capital intelectual e extensão tecnológica respectivamente nos termos dos art. 2o , 
+incisos IV, II, XIV, XIII da referida lei.
+
+Os produtos desenvolvidos neste termo de descentralização atendem tanto ao interesse estratégico do ministério, quanto a uma série de interesses 
+em pesquisa, ensino e extensão do LAPPIS. A Universidade de Brasília, através do LAPPIS, se beneficia não só pelo aporte de capital
+na forma de bolsas e serviços essenciais para a execução do projeto, mas principalmente por fortalecer a linha de atuação do laboratório 
+em tecnologias de desenvolvimento de software livre, e aprendizado de máquina como explicitado no resto 
+deste documento.
+
+É importante ressaltar que o LAPPIS adota uma abordagem de Pesquisa-Ação em engenharia de software onde é necessário partir de
+soluções concretas de produtos software para que seja possível estudar os processos de desenvolvimento e os produtos de software obtidos. 
+Configura-se uma abordagem necessariamente mista entre pesquisa e inovação. Desta forma, busca-se atender tanto às diretrizes para projetos 
+de pesquisa na Universidade de Brasília quanto às diretrizes para projetos de inovação estabelecidas pelo Centro de Apoio ao Desenvolvimento 
+Tecnológico (CDT) que atua como o Núcleo de Inovação Tecnológica (NIT) da universidade.
+
+Visto que a propriedade intelectual dos produtos de software desenvolvidos ficará em posse da universidade, ainda que sob licença livre, 
+entendeu-se que é importante também observar as diretrizes do NIT da universidade na figura do CDT.
