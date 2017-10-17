@@ -41,6 +41,7 @@
 - [ ] Possui Dockerfile?
 - [ ] Possui Docker compose?
 - [ ] Presente no Docker hub?
+  - Endereço:
 - [ ] Dockerfile presente no repositório?
 - [ ] Dockerfile em repositório separado?
   - Endereço:
