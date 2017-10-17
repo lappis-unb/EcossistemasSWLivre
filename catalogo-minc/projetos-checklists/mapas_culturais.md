@@ -48,13 +48,19 @@
 - [ ] Dockerfile em repositório separado?
   - Endereço:
 
+OBS: Falta referencia a documentação do docker no doc de deploy e/ou no readme
+
 ## Automação
 - Gerenciador de tarefas (make, rake, inv, gulp, etc):
 - Comando de instalação/dependências?
-    * https://github.com/culturagovbr/mapasculturais/blob/master/documentation/docs/mc_deploy.md#1-softwares-requeridos
+      * https://github.com/culturagovbr/mapasculturais/blob/master/documentation/docs/mc_deploy.md#1-softwares-requeridos
 
 - Comando:
   - Comando para inicializar serviço/aplicativo?
   - Comando para executar testes?
   - Comando para construir a documentação?
+    *   https://github.com/culturagovbr/mapasculturais/blob/master/documentation/readme.md#how-to-get-this-documentation
+
+            mkdocs serve
+            mkdocs build
   - Comando para empacotar?
