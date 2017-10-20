@@ -23,34 +23,39 @@
   - Sistema(s) de empacotamento (deb, npm, pip, etc):
 
 ## Documentação
-- [ ] Possui documentação de usuário?
-- [ ] Possui documentação de código?
+- [x] Possui documentação de usuário?
+[Manual](https://github.com/culturagovbr/GOG/blob/master/documentacao/artefatos/OS02-OUVIDORIA-Desenvolvimento_Manual-do-Usu%C3%A1rio_Contrato_43.2011_v1.0.doc?raw=true)
+- [x] Possui documentação de código?
   - Formato da documentação (wiki, markdown, rest, doxygen, etc):
+**markdown em uma pasta 'documentação' no repositório.**
+[Documentação](https://github.com/culturagovbr/GOG/blob/master/documentacao/arquitetura.md)
 - [ ] Possui documentação na internet?
-  - Endereço:
+  - Endereço: **Apenas no próprio repositório**
 
 ## Comunidade
-- [ ] Possui issues abertas no github?
-- [ ] Possui issues fechadas?
-- [ ] Já aceitou algum pull request?
-  - Número de estrelas:
-  - Número de forks:
-  - Utiliza a wiki?
+- [x] Possui issues abertas no github?
+- [x] Possui issues fechadas?
+- [x] Já aceitou algum pull request?
+  - Número de estrelas: **5**
+  - Número de forks: **12**
+  - Utiliza a wiki? **Não**
 
 ## Docker
-- [ ] Possui Dockerfile?
-- [ ] Possui Docker compose?
+- [x] Possui Dockerfile?
+- [x] Possui Docker compose?
 - [ ] Presente no Docker hub?
-  - Endereço:
+  - Endereço: **Não**
 - [ ] Dockerfile presente no repositório?
-- [ ] Dockerfile em repositório separado?
-  - Endereço:
+- [x] Dockerfile em repositório separado?
+  - Endereço: [Repositório Docker](https://github.com/culturagovbr/docker-GOG)
 
 ## Automação
-- Gerenciador de tarefas (make, rake, inv, gulp, etc):
+- Gerenciador de tarefas (make, rake, inv, gulp, etc): 
 - Comando de instalação/dependências?
+[Instruções](https://github.com/culturagovbr/GOG/blob/master/documentacao/MontarAmbienteDesenvolvimento.md)
 - Comando:
   - Comando para inicializar serviço/aplicativo?
+  [Instruções](https://github.com/culturagovbr/GOG/blob/master/documentacao/MontarAmbienteDesenvolvimento.md)
   - Comando para executar testes?
   - Comando para construir a documentação?
   - Comando para empacotar?
