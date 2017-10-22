@@ -2,9 +2,9 @@
 
 ## Básico
 - Projeto: Salic
-- Repositório:
-- Linguagem principal:
-- Plataforma (web, mobile, desktop, etc): Conteiner
+- Repositório: https://github.com/culturagovbr/salic-minc
+- Linguagem principal: PHP
+- Plataforma (web, mobile, desktop, etc): Web
 
 ## Readme
 - [x] Possui readme?
@@ -48,11 +48,21 @@
 
 ## Automação
 - Gerenciador de tarefas (make, rake, inv, gulp, etc):
-- Comando de instalação/dependências?
+- Comando de instalação/dependências? 
 - Comando:
   - Comando para inicializar serviço/aplicativo?
 
     Clone o repositório, renomeie "docker-compose.yml_sample" para "docker-compose.yml". Configure os volumes de acordo com sua preferência e rode "docker compose up -d".
   - Comando para executar testes?
+
+    Execute o script `test.sh`, localizado dentro do diretorio tests/bin.
   - Comando para construir a documentação?
   - Comando para empacotar?
+
+## Melhorias
+  - Modularizar containers: O banco de dados está sendo instalado dentro do mesmo container da aplicação;
+  - Melhorar docker-compose.yml: Remover linhas não utilizadas e remover redundancias das linhas build e image;
+  - Melhorar script de execução dos testes: Testes não estão rodando;
+  - É necessaŕio atualizar o docker para utilizar uma versão mais atualizada do PHP e do PHPUnit;
+  - Docker-compose não está rodando o service 'composer'(Gerenciador de pacotes PHP), e não instala as dependências do compose.json no container da aplicação;
+  - Utilizar ferramenta para analizar cobertura de testes do Salic;
