@@ -60,9 +60,10 @@
   - Comando para empacotar?
 
 ## Melhorias
-  - Modularizar containers: O banco de dados está sendo instalado dentro do mesmo container da aplicação;
+  - Separar solução docker em dois contextos, uma abordagem para desenvolvimento e outra para contexto de produção. Para solução de produção é necessário modularizar os containers: O banco de dados está sendo instalado dentro do mesmo container da aplicação;
   - Melhorar docker-compose.yml: Remover linhas não utilizadas e remover redundancias das linhas build e image;
   - Melhorar script de execução dos testes: Testes não estão rodando;
   - É necessaŕio atualizar o docker para utilizar uma versão mais atualizada do PHP e do PHPUnit;
   - Docker-compose não está rodando o service 'composer'(Gerenciador de pacotes PHP), e não instala as dependências do compose.json no container da aplicação;
   - Utilizar ferramenta para analizar cobertura de testes do Salic;
+  - Docker utiliza imagem do Salic Minc, e deve utiliar uma imagem criada a partir do Salic Br;
