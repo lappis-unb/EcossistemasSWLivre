@@ -6,10 +6,23 @@
 - Linguagem principal:
 - Plataforma (web, mobile, desktop, etc):
 
+- [ ] Possui arquivo de licença ?
+  - [ ] É open source ?
+  
+- [ ] Possui arquivo CONTRIBUTING (Guidelines para a contribuição no projeto) ?
+- [ ] Possui CODE_OF_CONDUCT (Como se comportar no projeto) ?
+- [ ] O nome do projeto é claro e consegue mostrar o que ele faz ?
+
 ## Readme
 - [ ] Possui readme?
   - Formato do readme (md, txt, rst, etc):
 - [ ] Badges presentes no readme?
+- A descrição do projeto responde as seguintes perguntas? :
+  - [ ] O que é esse repositório/projeto ?
+  - [ ] Como o projeto funciona ?
+  - [ ] Quem usa/usará esse repositório?
+  - [ ] Qual o objetivo do projeto ?
+- [ ] Existe informação sobre como contatar o time de desnvolvimento ?
 
 ## Integração contínua
 - [ ] Possui integração contínua?
@@ -36,6 +49,8 @@
   - Número de estrelas:
   - Número de forks:
   - Utiliza a wiki?
+- [ ] A "fila" de issues está atualizada ?
+  - [ ] Existem labels nas issues ?
 
 ## Docker
 - [ ] Possui Dockerfile?
