@@ -6,10 +6,26 @@
 - Linguagem principal:  PHP
 - Plataforma (web, mobile, desktop, etc): Web
 
+- [x] Possui licença? GPLv3
+  - [x] É open source?
+
+- [x] Possui arquivo CONTRIBUTING (Guidelines para a contribuição no projeto)?
+- [x] Possui CODE_OF_CONDUCT (Como se comportar no projeto)?
+- [x] O nome do projeto é claro e consegue mostrar o que ele faz?
+
+
 ## Readme
 - [x] Possui readme?
   - Formato do readme (md, txt, rst, etc): md
 - [x] Badges presentes no readme?
+- A descrição do projeto responde as seguintes perguntas? :
+  - [x] O que é esse repositório/projeto?
+  - [x] Como o projeto funciona?
+  - [x] Quem usa/usará esse repositório?
+  - [x] Qual o objetivo do projeto?
+- [ ] Existe informação sobre como contatar o time de desnvolvimento?
+
+
 
 ## Integração contínua
 - [x] Possui integração contínua?
@@ -38,6 +54,8 @@
   - Número de estrelas: 5
   - Número de forks: 76
   - Utiliza a wiki?: Não
+- [ ] A "fila" de issues está atualizada ?
+  - [x] Existem labels nas issues ?
 
 ## Docker
 - [x] Possui Dockerfile?
@@ -45,7 +63,8 @@
 - [x] Presente no Docker hub?
   * https://hub.docker.com/r/culturagovbr/mapasculturais/
 - [x] Dockerfile presente no repositório?
-- [ ] Dockerfile em repositório separado?
+  - O Dockerfile presente no repositório está desatualizado
+- [x] Dockerfile em repositório separado?
   - Endereço:
 
 OBS: Falta referencia a documentação do docker no doc de deploy e/ou no readme
