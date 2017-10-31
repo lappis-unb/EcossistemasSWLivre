@@ -27,7 +27,7 @@
 ## Integração contínua
 - [ ] Possui integração contínua?
     - Servidor de integração contínua (travis, circleci, etc):
-- [x] Possui testes? sim, [aqui](https://github.com/culturagovbr/SisTel/blob/master/src/main/resources/test-server.ldif).
+- [ ] Possui testes?
 - [ ] Cobertura de testes:
 - [ ] Métricas de código (ex: codeclimate):
 
@@ -46,10 +46,10 @@
 - [ ] Possui issues abertas no github?
 - [x] Possui issues fechadas?
 - [x] Já aceitou algum pull request?
-  - Número de estrelas:
-  - Número de forks:
-  - Utiliza a wiki?
-- [ ] A "fila" de issues está atualizada ?
+  - Número de estrelas: **0**
+  - Número de forks: **1**
+  - Utiliza a wiki? **Não**
+- [x] A "fila" de issues está atualizada ? **Sim, não possui nenhuma.**
   - [ ] Existem labels nas issues ?
 
 ## Docker
@@ -65,7 +65,7 @@
 - Gerenciador de tarefas (make, rake, inv, gulp, etc):
 - Comando de instalação/dependências? Instruções no repositório do docker.
 - Comando:
-  - Comando para inicializar serviço/aplicativo?
-  - Comando para executar testes?
-  - Comando para construir a documentação?
-  - Comando para empacotar?
+  - Comando para inicializar serviço/aplicativo? **Possui apenas o docker, mas ele está com a fonfiguração desatualizada.**
+  - Comando para executar testes? **Não.**
+  - Comando para construir a documentação? **Não.**
+  - Comando para empacotar? **Não.**
