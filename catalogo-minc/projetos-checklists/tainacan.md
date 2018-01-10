@@ -6,12 +6,12 @@
 - Linguagem principal: PHP
 - Plataforma (web, mobile, desktop, etc): Web
 
-- [ ] Possui arquivo de licença ?
-  - [ ] É open source ?
+- [x] Possui arquivo de licença ?
+  - [x] É open source ? GLP-2
   
 - [ ] Possui arquivo CONTRIBUTING (Guidelines para a contribuição no projeto) ?
 - [ ] Possui CODE_OF_CONDUCT (Como se comportar no projeto) ?
-- [ ] O nome do projeto é claro e consegue mostrar o que ele faz ?
+- [ ] O nome do projeto é claro e consegue mostrar o que ele faz ? NÃO, mas explica no readme.
 
 ## Readme
 - [x] Possui readme?
@@ -20,7 +20,7 @@
 - A descrição do projeto responde as seguintes perguntas? :
   - [x] O que é esse repositório/projeto ?
   - [ ] Como o projeto funciona ?
-  - [ ] Quem usa/usará esse repositório?
+  - [x] Quem usa/usará esse repositório?
   - [x] Qual o objetivo do projeto ?
 - [ ] Existe informação sobre como contatar o time de desnvolvimento ?
 
@@ -29,7 +29,7 @@
     - Servidor de integração contínua (travis, circleci, etc):
 - [ ] Possui testes?
 - [ ] Cobertura de testes:
-- [ ] Métricas de código (ex: codeclimate): https://codeclimate.com/github/lappis-unb/tainacan
+- [ ] Métricas de código (ex: codeclimate): NÃO oficialmente, [lappis/tainacan codeclimate](https://codeclimate.com/github/lappis-unb/tainacan).
 
 ## Empacotamento
 - [ ] É empacotado?
