@@ -22,7 +22,7 @@
   - [ ] Como o projeto funciona ?
   - [ ] Quem usa/usará esse repositório?
   - [ ] Qual o objetivo do projeto ?
-- [ ] Existe informação sobre como contatar o time de desnvolvimento ?
+- [ ] Existe informação sobre como contatar o time de desenvolvimento ?
 
 ## Integração contínua
 - [ ] Possui integração contínua?
