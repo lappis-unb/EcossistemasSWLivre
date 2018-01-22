@@ -69,3 +69,8 @@
   - Comando para executar testes?
   - Comando para construir a documentação?
   - Comando para empacotar?
+  
+  ## Melhorias
+  - Enumerar os possiveis pontos de melhorias encontrados
+  
+  
