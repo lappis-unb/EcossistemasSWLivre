@@ -5,6 +5,7 @@
 - Repositório:
 - Linguagem principal:
 - Plataforma (web, mobile, desktop, etc):
+- Breve descrição do projeto:
 
 - [ ] Possui arquivo de licença ?
   - [ ] É open source ?
