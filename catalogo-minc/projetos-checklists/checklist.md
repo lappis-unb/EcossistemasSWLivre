@@ -5,6 +5,7 @@
 - Repositório:
 - Linguagem principal:
 - Plataforma (web, mobile, desktop, etc):
+- Breve descrição do projeto:
 
 - [ ] Possui arquivo de licença ?
   - [ ] É open source ?
@@ -22,7 +23,7 @@
   - [ ] Como o projeto funciona ?
   - [ ] Quem usa/usará esse repositório?
   - [ ] Qual o objetivo do projeto ?
-- [ ] Existe informação sobre como contatar o time de desnvolvimento ?
+- [ ] Existe informação sobre como contatar o time de desenvolvimento ?
 
 ## Integração contínua
 - [ ] Possui integração contínua?
@@ -69,3 +70,8 @@
   - Comando para executar testes?
   - Comando para construir a documentação?
   - Comando para empacotar?
+  
+  ## Melhorias
+  - Enumerar os possiveis pontos de melhorias encontrados
+  
+  
