@@ -10,14 +10,5 @@ UnB/Lappis e o Ministério da Cultura "Ecossistemas de Software Livre"
 * Entre na pasta plano-de-trabalho
 * execute "make"
 
-## Canais de comunicação do projeto
-
-* Email: https://groups.google.com/d/forum/lappis-minc
-* Chat: https://chat.lappis.rocks/
-
-## Documentos
-
-Link para o repositório MinC:
-
-* https://github.com/culturagovbr
-* https://git.cultura.gov.br/sistemas
+[Acesse a Wiki](https://github.com/lappis-unb/EcossistemasSWLivre/wiki) deste
+repositório para mais detalhes sobre o projeto.
