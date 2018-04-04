@@ -32,8 +32,8 @@ A ação abaixo foi programada para esta etapa, mas foi realocada para em decis�
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
-- [x] Realizar Estudos de comunidades prioritárias
 - [x] Realizar Estudos sobre processo de planejamento conjunto
+- [x] Identificar grupos de opinião
 
 Todas as atividades relacionadas as ações listadas acima foram 100% finalizadas.
 
@@ -48,6 +48,7 @@ As seguintes etapas foram planejadas para a Etapa 2, mas foram repriorizadas par
 - [x] Realizar Estudo de aprendizado de máquina
 - [x] Realizar Estudo processamento linguagem natural
 - [x] Realizar Estudos de chatbots
+- [x] Realizar Estudo Lei Rouanet/SALIC
 
 
 ### Aferição e aceitação de produtos de software
@@ -56,6 +57,7 @@ Ações programadas para esta etapa de acordo com o plano de trabalho:
 
 - [x] Revisão da area
 - [x] Diagnóstico sobre as práticas atualmente adotadas pelo MinC de garantia da qualidade de produto
+- [x] Elaborar Plano de Pesquisa-Ação
 
 # Acompanhamento Financeiro
 ![Detalhamento da execução do repasse na Etapa I.](figs/valores_executados_E1.png)
