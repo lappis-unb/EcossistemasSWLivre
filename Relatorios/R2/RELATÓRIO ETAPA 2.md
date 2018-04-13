@@ -16,9 +16,20 @@ Ações programadas para esta etapa de acordo com o plano de trabalho:
 
 dockerização da API -
 Legado API - Salic
-transformou o sftware l
+transformou o software l
 
 mostra as métricas, checklist antes/depois
+
+- Adicionada instalação automazada do ambiente de desenvolvimento através do Virtualenv e do Docker, a documentação está no README.
+- A qualidade do código foi melhorada através das seguintes atividades:
+  - Os SQL's em forma de textos foram refatorados, e agora é utilizado o SQLAlchemy.
+  - O Python utilizado no projeto foi atualizado para a versão 3.
+  - Utilização do Flake8 para melhorar a estrutura do código.
+  - Adicionado banco de dados local para o ambiente de desenvolvimento.
+  - Classificação no Code Climate foi de "F" para "A", resultado da redução do débito técnico.
+  - Criados testes para os endpoints da api, onde é testado se os dados das requisições são recebidos corretamente.
+  - Adicionada integração, build e deploy contínuo.
+  - Documentação do projeto atualizada.
 
 API até homologação
 Commits pro minc PR (300 commits)
