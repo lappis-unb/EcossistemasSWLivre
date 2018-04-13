@@ -22,7 +22,7 @@ mostra as métricas, checklist antes/depois
 
 - Adicionada instalação automazada do ambiente de desenvolvimento através do Virtualenv e do Docker, a documentação está no README.
 - A qualidade do código foi melhorada através das seguintes atividades:
-  - Os SQL's em forma de textos foram refatorados, e agora é utilizado o SQLAlchemy.
+  - Os SQL's em forma de textos foram refatorados, e agora é utilizado o SQLAlchemy. Essa refatoração melhora a manutenibilidade do código e também permite que o salic-api funcione com qualquer banco de dados que o SQLAlchemy oferece suporte.
   - O Python utilizado no projeto foi atualizado para a versão 3.
   - Utilização do Flake8 para melhorar a estrutura do código.
   - Adicionado banco de dados local para o ambiente de desenvolvimento.
