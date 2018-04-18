@@ -5,18 +5,16 @@
  O presente relatório apresenta o acompanhamento do trabalho realizado no projeto "Ecossistemas de Software Livre", Termo de Cooperação para Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços realizados na Etapa II (Janeiro 2018 à Março 2018), de acordo com o cronograma do Plano de Trabalho.
 
 ## FASE DE PLANEJAMENTO/EXECUÇÃO
+O período de Janeiro 2018 à Março de 2018 foi contemplado às fases de planejamento e execução. Abaixo serão apresentados, brevemente, os
+principais avanços alcançados no período. Toda a documentação e acompanhamento do projeto está disponibilizado e pode ser acessado na organização do laboratório (https://github.com/lappis-unb)[https://github.com/lappis-unb], e no repositório específico do projeto (https://github.com/lappis-unb/EcossistemasSWLivre)[https://github.com/lappis-unb/EcossistemasSWLivre]. Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas issues quanto na pagina da wiki.
+
+Abaixo serão apresentados os principais avanços alcançados no período, por pacote de trabalho (de acordo com o Plano de Trabalho).
+Os avanços apresentados de acordo com o pacote de trabalho e com cronograma, no período citado.
 
 ### Legado em Software Livre
-
-Ações programadas para esta etapa de acordo com o plano de trabalho:
-
-- [x] Realizar Estudos de conteinerização
-- [x] Realizar Estudo de refatoração em software legado
-- [x] Realizar Estudos sobre práticas de DevOps aplicada a software legado
-
 Os repositórios presentes na organização MinC não possuem uma padronização: muitos
-deles tem pouca ou nenhuma documentação, alguns nem possuem licenças de software, testes au-
-tomatizados, integração contínua, metricas de qualidade de código. A pouca conformidade com os
+deles tem pouca ou nenhuma documentação, alguns nem possuem licenças de software, testes automatizados,
+ integração contínua, metricas de qualidade de código. A pouca conformidade com os
 modelos seguidos por comunidades de software livre, dificulta ou limita a contribuição de interessados
 em coloborar com os sistemas MinC.
 
@@ -25,18 +23,25 @@ críticos na curva de aprendizado de novos desenvolvedores e criam uma barreira 
 de comunidades de software livre/aberto colaborando com tais sistemas. Vários projetos mantidos pelo
 Ministério da Cultura possuem as características acima citados.
 
-Enquanto na primeira etapa do projeto foi priorizado a visão "legacy in the box" (legado em uma caixa, tradução literal), no qual o foco foi isolar alguns projetos mantidos do Ministério da Cultura por meio de docker. Essa solução gera o benefício de criar ambientes de desenvolvimento e produção estáveis, fazendo com que diminua o tempo de configuração de ambiente. Essa abordagem traz um grande benefício pois possibilita o uso de práticas Devops mesmo em sistemas legados. Esse modelo de dockerizar softwares legados possibilita um pipeline de entrega contínua, deploy continuo, e diminui a fronteira entre a equipe de infraestrutura e equipe de desenvolvimento.
+A primeira etapa do projeto foi priorizado a visão "legacy in the box" (legado em uma caixa, tradução literal), no qual o foco foi isolar alguns projetos mantidos do Ministério da Cultura por meio de docker. Essa solução gera o benefício de criar ambientes de desenvolvimento e produção estáveis, fazendo com que diminua o tempo de configuração de ambiente. Essa abordagem traz um grande benefício pois possibilita o uso de práticas Devops mesmo em sistemas legados. Esse modelo de dockerizar softwares legados possibilita um pipeline de entrega contínua, deploy continuo, e diminui a fronteira entre a equipe de infraestrutura e equipe de desenvolvimento.
+Já foram observados benefícios dessa abordagem, principalmente em feedback de desenvolvedores e mantenedores da infraestrutura, feito de forma espontânea.  Pretende-se ainda fazer tanto uma avaliação qualitativa quanto quantitativa dessa abordagem.
 
-Nessa segunda etapa do projeto, o foco foi transformar um software legado em software livre. Por isso, o foco foi em um todos objetivos do pacote que consiste na pesquisa em metodologias de refatoração de sistemas legados. Para tal, os padrões de comunidades de software livre devem ser estar presente nos projetos: desde documentação técnica, quanto código de qualidade (respeitando métricas de qualidade de software), cobertura de testes, suite de testes automatizado, ferramenta de integração contínua, e pipeline de deploy contínuo. Para que pudessemos alcançar esses objetivos, foi escolhido a API do Salic como estudo de caso, uma vez que esse é um sistema relativamente pequeno, de grande relevância, e que auxiliria o time a compreender os dados provenientes do Salic para serem usados em outras frentes (como nos algoritmos de aprendizagem de máquina).
+Nessa segunda etapa do projeto, usamos uma segunda forma de lidar com software legado, sempre com o intuito de aplicar técnicas modernas de engenharia de software e padrões de comunidade de software livre, a fim de viabilizar o uso desses projetos legados em comunidades de software livre e em pipelines automatizados. O foco então foi transformar um software legado em software livre, a partir de técnicas de refatoração de código, e suite de testes automatizados. Com isso, abordamos um dos objetivos desse pacote é "Pesquisa em metodologias de refatoração de sistemas legados". Para tal, os padrões de comunidades de software livre devem estar presente nos projetos: desde documentação técnica, quanto código de qualidade (respeitando métricas de qualidade de software), cobertura de testes, suite de testes automatizado, ferramenta de integração contínua, e pipeline de deploy contínuo. Para que pudessemos alcançar esses objetivos, foi escolhido a API do Salic como estudo de caso, uma vez que esse é um sistema relativamente pequeno, de grande relevância e impacto no ecossistema Salic. A compreensão da API do Salic também auxilia no pacote de trabalho "Aprendizado de Máquina Lei Rouanet", uma vez que grande parte do trabalho consiste em acessar e processar dados providos da API (e demanda de dados geram demandas para a evolução da mesma).
+
+As ações programadas para esta etapa de acordo com o plano de trabalho:
+
+- [x] Realizar Estudos de conteinerização
+- [x] Realizar Estudo de refatoração em software legado
+- [x] Realizar Estudos sobre práticas de DevOps aplicada a software legado
 
 
-Grande parte do time foi alocado por dois meses nessa tarefa, e as principais avanços alcançados nessa etapa foram:
+Grande parte do time foi alocado por dois meses nessa grande tarefa de refatorar a API do Salic, e as principais avanços alcançados nessa etapa foram:
 
 
 1. Adicionada instalação automazada do ambiente de desenvolvimento através do Virtualenv e do Docker, a documentação está no README.
 1. A qualidade do código foi melhorada através das seguintes atividades:
     1. Os SQL's em forma de textos foram refatorados, e agora é utilizado o SQLAlchemy. Essa refatoração melhora a manutenibilidade do código e também permite que o salic-api funcione com qualquer banco de dados que o SQLAlchemy oferece suporte.
-    1. O Python utilizado no projeto foi atualizado para a versão 3.
+    1. O Python utilizado no projeto foi atualizado para a versão 3 (originalmente era utilizado a versão 2 do python).
     1. Utilização do Flake8 para melhorar a estrutura do código.
     1. Adicionado banco de dados local para o ambiente de desenvolvimento.
     1. Classificação no Code Climate foi de "F" para "A", resultado da redução do débito técnico.
@@ -44,23 +49,25 @@ Grande parte do time foi alocado por dois meses nessa tarefa, e as principais av
     1. Adicionada integração, build e deploy contínuo.
     1. Documentação do projeto atualizada.
 
-Todas as melhorias implementadas acima, fez com que o projeto da API do Salic atendesse todos os padrões de software livre, além de atender os requisitos de DEvops para entrega e deploy contínuo. Para tal, foram realizados 300 commits (no qual foi aberto um pull request para o projeto no repositório do MinC), foi colocado em um ambiente de homologação no ambiente do laboratório, e após todos testes passarem, o projeto será entregue para o Minitério.
+Todas as melhorias implementadas acima, fez com que o projeto da API do Salic atendesse todos os padrões de comunidades de software livre, além de atender os requisitos de Devops para entrega e deploy contínuo (build de testes). Para tal, foram realizados ao total 300 commits (no qual foi aberto um pull request para o projeto no repositório do MinC). A API foi  então colocado em um ambiente de homologação no laboratório, e após todos testes passarem nesse periodo de homologação, o projeto será entregue para o Minitério.
 
 O acompanhamento do projeto realizado pode ser encontrado em [https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api).
 
 ### Catálogo de Softwares Culturais
 
-Ações programadas para esta etapa de acordo com o plano de trabalho:
+O principal objetivo nessa etapa é exercitar em todo ciclo de projeto a experimentação e inovação contínua, de forma a subsidiar a pesquisa realizada na Etapa 5. Nesse período foram abordados dois objetivos desse pacote: "Aplicação de práticas de experimentação e inovação contínua no desenvolvimento do projeto de Catálogo de Software Culturais", e "Transferência de conhecimento e capacitar a equipe de servidores e técnicos do MinC em práticas de gestão e desenvolvimento de software aberto, colaborativo e contínuo". Enquanto no primeiro objetivo foi focado da execução de 2 **Design Sprints** para o levantamento de ideias e requisitos para protótipos do produto a ser construido.
 
-- [x] Realizar Estudos de tecnologias e práticas devops
-- [x] Realizar Estudos repositórios MINC
-- [x] Elaborar Relatório de Resultado dos Estudos
+Ações programadas para esta etapa de acordo com o plano de trabalho estão listados abaixo:
 
-Todas as atividades relacionadas as ações listadas acima foram 100% finalizadas.
+- [x] Realizar Estudos de tecnologias e práticas devops;
+- [x] Realizar Estudos repositórios MINC;
+- [x] Elaborar Relatório de Resultado dos Estudos;
+- [x] Realizar estudos sobre funcionalidades de catálogo de software
 
-A ação abaixo foi programada para esta etapa, mas foi realocada para em decisão conjunta com o gestor do MinC para a Etapa 3.
+Todas as atividades relacionadas as ações listadas acima foram 100% finalizadas. No último item, o foco do produto foi alterado de "catálogo de software" para "Promova Cultura". Tal mudança foi acordado com os gestores do Ministério. Apesar da mudança de foco do produto, a nova visão não altera o objetivo principal do pacote, que é a "Aplicação de práticas de experimentação e inovação contínua no desenvolvimento do projeto de Catálogo de Software Culturais", além da execução de um ciclo completo de projeto de software.
 
-- [ ] Realizar estudos sobre funcionalidades de catálogo de software
+Grande parte do objetivo de transferência de conhecimento e capacitação da equipe de servidores técnicos do Minc foi concentrado nesse periodo em práticas devops. Para tal,
+
 
 
 Prática devops - documentação do pipeline e elaboração dos seguintes tutoriais (disponiveis em anexo)
