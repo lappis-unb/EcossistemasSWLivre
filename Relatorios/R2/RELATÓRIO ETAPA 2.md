@@ -48,6 +48,18 @@ Grande parte do time foi alocado por dois meses nessa grande tarefa de refatorar
     1. Criados testes para os endpoints da API, onde é testado se os dados das requisições são recebidos corretamente.
     1. Adicionada integração, build e deploy contínuo.
     1. Documentação do projeto atualizada.
+    
+A mudança da utilização de strings SQL para o código python usando SQLAlchemy ocorreu para que além de melhorar a manutenção do código, o SQLAlchemy possui otmizações e suporte para se conectar com outros sistemas de banco de dados, por exemplo, caso o Salic passe a utilizar o PostgreSQL todo o sistema do salic-api continuará funcionando corretamente.
+
+O Flake8 é uma ferramenta de análise estática de código que confere algumas normas que deixam o código mais legivel, padronizado e manutenível, a refatoração do código utilizando o Flake8 visou melhorar a manutenção do salic-api adequando o código as normas do Flake8.
+
+Antes da refatoração não era possível levantar um ambiente de desenvolvimento, pois era necessário estar conectado ao banco de dados do salic, porém agora, com o banco de dados local quem quiser contribuir com o salic-api pode levantar o ambiente em seu próprio computador e usar um banco SQLite local, além disso, para se conectar a um banco de dados basta setar algumas variaveis de ambiente e o desenvolvedor pode conectar o salic-api a um banco de dados remoto, como por exemplo um banco de dados de homologação.
+
+Foi utilizado o Code Climate, um sistema que analisa a qualidade do código-fonte e atribui uma classificação ao projeto, essa ferramenta verifica coisas como duplicação de código e informa aonde no código aonde estão.
+
+Os testes da API foram criados para que ao se realizar uma manutenção no código seja possivel ter uma garantia de que não foi introduzido algum bug no sistema, anteriormente a refatoração não existiam testes, logo era difícil saber se o sistema está funcionando corretamente após o termino de uma manutenção. Também foram criados testes que comparam os resultados das requisições ao salic-api refatorado com o salic-api que está atualmente em produção, para se ter uma garantia de que ao atualizar o salic-api em produção os sistemas que usam a API irão continuar funcionando.
+
+Afim de facilitar que a adição de novas features no salic-api possam chegar ao sistema em produção de forma mais rápida e prática, foi criado uma pipeline de deploy contínuo, aonde é executado os testes do projeto, é checado se a build está sendo gerada corretamente e depois é feito o deploy para o servidor.
 
 Todas as melhorias implementadas acima, fez com que o projeto da API do Salic atendesse todos os padrões de comunidades de software livre, além de atender os requisitos de Devops para entrega e deploy contínuo (build de testes). Para tal, foram realizados ao total 300 commits (no qual foi aberto um pull request para o projeto no repositório do MinC). A API foi  então colocado em um ambiente de homologação no laboratório, e após todos testes passarem nesse periodo de homologação, o projeto será entregue para o Minitério.
 
