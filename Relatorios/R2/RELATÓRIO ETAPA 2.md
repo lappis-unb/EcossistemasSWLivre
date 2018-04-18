@@ -81,11 +81,25 @@ Toda a documentação foi realizada em português e disponibilizada para acesso.
 
 Referente à segunda meta "Realizar Estudos repositórios MINC" nesse período foi.
 
-Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de software" foram realizadas diversas reuniões com a equipe técnica da SEFIC para compreender o processo da lei Rouanet e como é executado no Salic. 
+Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de software" foram realizadas diversas reuniões com a equipe técnica da SEFIC para compreender o processo da lei Rouanet e como é executado no Salic. Foram realizadas duas e
+
 
 
 
 ### Práticas de gestão colaborativa
+
+Nessa etapa será realizada uma pesquisa exploratória tendo como objeto de estudo os movimentos,
+organizações, desenvolvedores e demais stakeholders que atuam na gestão colaborativa de software
+aberto. O principal objetivo do trabalho de gestão colaborativa dessas comunidades de software
+aberto é manter um conjunto de ações de governança digital e comunicação que aproveite ao máximo
+esse potencial em favor das necessidades do órgão e das metas comuns às organizações parte das
+comunidades.
+
+Esse esforço envolve um trabalho de mapeamento de atores de cada comunidade (atuais
+e potenciais futuros), assessoria para planejamento conjunto, facilitação de fluxos de comunicação
+e mobilização, realização de atividades conjuntas para integração, identificação de oportunidades
+externas, assessoria para comunicação e divulgação ao público externo à comunidade e apoio para
+solução de conflitos.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
@@ -100,11 +114,22 @@ Proposta de agenda de eventos entre labs e minc e com a comunidade de software l
 
 ### Aprendizado de Máquina Lei Rouanet
 
+O principal objetivo é o estudo de técnicas de Aprendizado de Máquina que possam apoiar o
+sistema de recomendação e fiscalização da lei Rouanet. Nessa etapa será realizada uma pesquisa
+exploratória em técnicas de aprendizado de máquina e processamento de linguagem natural. Tais
+técnicas e algoritmos serão aplicados para melhorar a experiência de usuário (UX) por meio da
+proposta de chatbots como interface entre os proponentes na lei Rouanet e o Ministério da Cultura.
+
+Além disso, técnicas de aprendizado de máquinas serão estudadas para automatizar processos nas
+trilhas de auditorias, tanto na etapa de habilitação e aprovação, quanto na etapa de prestação de
+contas. O objetivo é auxiliar auditores a encontrar erros, inconsistências e detecção de anomalias
+nas submissões.
+
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
 - [x] Realizar Estudo Lei Rouanet/SALIC
 
-As seguintes etapas foram planejadas para a Etapa 2, mas foram repriorizadas para serem trabalhadas na Etapa 1
+As seguintes etapas foram planejadas para a Etapa 2, mas foram repriorizadas para serem trabalhadas na Etapa 1 e continuamos na Etapa 2:
 
 - [x] Realizar Estudo de aprendizado de máquina
 - [x] Realizar Estudo processamento linguagem natural
@@ -114,12 +139,17 @@ As seguintes etapas foram planejadas para a Etapa 2, mas foram repriorizadas par
 
 Ambiente de homologação do chatbot - contribuição para o rocket.chat e escolha de mudança de arquitetura tecnologias a serem usadas para a próxima versão do chat.
 
-Compreensão do processo de projetos incentivados via Lei Rouanet --
+Compreensão do processo de projetos incentivados via Lei Rouanet -
 
 Testes de algoritmos de detecção de anomalias das planilhas orçamentárias.
 
+Microserviço SALIC Data - Microserviço que realiza a mineração dos dados dos projetos submetidos por meio da plataforma SALIC e aplica técnicas de machine learning para extração de padrão, detecção de anomalias.
 
 ### Aferição e aceitação de produtos de software
+
+O objetivo geral desta frente de pesquisa é auxiliar os times de desenvolvimento e gestores de TI
+do MinC a aprimorarem sua capacidade em tomar decisões acerca da qualidade das versões dos
+produtos de software entregues por seus fornecedores.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
