@@ -81,25 +81,11 @@ Toda a documentação foi realizada em português e disponibilizada para acesso.
 
 Referente à segunda meta "Realizar Estudos repositórios MINC" nesse período foi.
 
-Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de software" foram realizadas diversas reuniões com a equipe técnica da SEFIC para compreender o processo da lei Rouanet e como é executado no Salic. Foram realizadas duas e
-
+Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de software" foram realizadas diversas reuniões com a equipe técnica da SEFIC para compreender o processo da lei Rouanet e como é executado no Salic.
 
 
 
 ### Práticas de gestão colaborativa
-
-Nessa etapa será realizada uma pesquisa exploratória tendo como objeto de estudo os movimentos,
-organizações, desenvolvedores e demais stakeholders que atuam na gestão colaborativa de software
-aberto. O principal objetivo do trabalho de gestão colaborativa dessas comunidades de software
-aberto é manter um conjunto de ações de governança digital e comunicação que aproveite ao máximo
-esse potencial em favor das necessidades do órgão e das metas comuns às organizações parte das
-comunidades.
-
-Esse esforço envolve um trabalho de mapeamento de atores de cada comunidade (atuais
-e potenciais futuros), assessoria para planejamento conjunto, facilitação de fluxos de comunicação
-e mobilização, realização de atividades conjuntas para integração, identificação de oportunidades
-externas, assessoria para comunicação e divulgação ao público externo à comunidade e apoio para
-solução de conflitos.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
@@ -129,7 +115,7 @@ Ações programadas para esta etapa de acordo com o plano de trabalho:
 
 - [x] Realizar Estudo Lei Rouanet/SALIC
 
-As seguintes etapas foram planejadas para a Etapa 2, mas foram repriorizadas para serem trabalhadas na Etapa 1 e continuamos na Etapa 2:
+As seguintes etapas foram planejadas para a Etapa 2, mas foram repriorizadas para serem trabalhadas na Etapa 1 e continuada na etapa 2
 
 - [x] Realizar Estudo de aprendizado de máquina
 - [x] Realizar Estudo processamento linguagem natural
@@ -139,11 +125,14 @@ As seguintes etapas foram planejadas para a Etapa 2, mas foram repriorizadas par
 
 Ambiente de homologação do chatbot - contribuição para o rocket.chat e escolha de mudança de arquitetura tecnologias a serem usadas para a próxima versão do chat.
 
-Compreensão do processo de projetos incentivados via Lei Rouanet -
+Compreensão do processo de projetos incentivados via Lei Rouanet --
 
 Testes de algoritmos de detecção de anomalias das planilhas orçamentárias.
 
-Microserviço SALIC Data - Microserviço que realiza a mineração dos dados dos projetos submetidos por meio da plataforma SALIC e aplica técnicas de machine learning para extração de padrão, detecção de anomalias.
+Microserviço SALIC Data - Microserviço que realiza a mineração dos dados dos projetos
+submetidos por meio da plataforma SALIC e aplica técnicas de machine learning para
+extração de padrão, detecção de anomalias.
+
 
 ### Aferição e aceitação de produtos de software
 
@@ -183,17 +172,564 @@ Assinatura:
 Data: 06/04/2018
 
 
-# Anexo I - Metodologia
+# Anexo I - GitLab CI/CD
+
+Este _doc_ tem por objetivo capacitar um _dev_ em utilizar o **GitLab CI/CD** em projetos que exigem estruturas básicas de configuração. Para um melhor aproveitamento deste _doc_ é recomendável ter realizado com completude o [guia básico](guides/DevOps/GitLab-CI-CD/Overview-and-Basic-Example-(pt_br)).
+
+## Introdução
+
+[Docker Compose](https://docs.docker.com/compose/) é uma ferramenta para definição e execução de aplicações de múltiplos _containers_ **Docker**. Através de um arquivo de configuração [YAML](http://yaml.org/) é possível definir os serviços da aplicação e suas interações. Esse arquivo é utilizado como entrada em um CLI capaz de iniciar os serviços configurados em um simples comando.
+
+Enquanto o **Docker** permite a definição e o gerenciamento de um único _container_, **Docker Compose** define e gerencia múltiplos _containers_ e suas interações.
+
+Dentre os principais benefícios, incluem:
+
+* Facilidade de definição dos serviços;
+* Uma vez definido o arquivo de configuração, o uso de simples comandos inicia a aplicação e todos os seus serviços (_containers_), incluindo suas interações;
+* Ideal para desenvolvedores configurarem o ambiente local;
+* É uma das camadas de configuração em orquestradores de _containers_ como [Kubernetes](https://kubernetes.io/) e [Cattle](https://github.com/rancher/cattle) (Orquestrador do [Rancher](https://rancher.com/))
+
+Se o projeto da aplicação que estiver desenvolvendo utiliza **Docker Compose** para definição do ambiente em nível de teste, desenvolvimento e/ou produção, utilizar **Docker Compose** na integração contínua é uma opção.
+
+# Utilizando Docker Compose no GitLab CI/CD
+
+Para exemplificar o uso do **Docker Compose** no **GitLab CI/CD**, foi criado um simples respositório chamado [_characters_](https://gitlab.com/lappis-unb/internal/guides/examples/characters) consolidando o uso das duas ferramentas no estágio de teste. Ao fim da leitura deste exemplo você será capaz de reproduzir o uso do **Docker Compose** no **CI/CD** do seu projeto.
+
+## Projeto Modelo
+
+O sistema _characters_ é um pequeno projeto [Phoenix](http://phoenixframework.org/) com banco de dados em [PostgreSQL](https://www.postgresql.org/) que define uma [API](https://en.wikipedia.org/wiki/Application_programming_interface) [RESTful](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) de uma única entidade chamada `Character`, conforme descrito no [README](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/README.md) do projeto:
+
+```javascript
+// curl -X GET -H "Accept: application/json" {HOST}:{PORT}/api/v1/characters/1
+"data": {
+  "id": 1,
+  "first_name": "Jon",
+  "last_name": "Snow",
+  "age": 14,
+  "origin": "A Song of Ice and Fire"
+}
+```
+
+### Rotas da API
+
+As rotas, conforme especificado no comando `mix phx.routes`, são:
+
+```javascript
+// Apresenta todos os Characters
+Rota: "GET /api/v1/characters",
+Modelo de cURL: `curl -X GET -H "Accept: application/json" {host}:{port}/api/v1/characters`
+Exemplo de resultado: {
+  "data": [
+    {
+      "id": 1,
+      "first_name": "Jon",
+      "last_name": "Snow",
+      "age": 14,
+      "origin": "A Song of Ice and Fire"
+    }, {
+      "id": 2,
+      "first_name": "Walter",
+      "last_name": "White",
+      "age": 50,
+      "origin": "Breaking Bad"
+    }, {
+      "id": 3,
+      "first_name": "Locke",
+      "last_name": "Cole",
+      "age": 25,
+      "origin": "Final Fantasy VI"
+    }, {
+      "id": 4,
+      "first_name": "Arthas",
+      "last_name": "Menethil",
+      "age": 24,
+      "origin": "Warcraft III"
+    }, {
+      "id": 5,
+      "first_name": "Dominick",
+      "last_name": "Cobb",
+      "age": 37,
+      "origin": "Inception"
+    }, {
+      "id": 6,
+      "first_name": "Vincent",
+      "last_name": "Vega",
+      "age": 27,
+      "origin": "Pulp Fiction"
+    }
+  ]
+}
+
+// Apresenta o Character de id com o valor {:id}
+Rota: "GET /api/v1/characters/:id"
+Modelo de cURL: `curl -X GET -H "Accept: application/json" {host}:{port}/api/v1/characters/{:id}`
+Exemplo de resultado: {
+  "data": {
+    "id": 1,
+    "first_name": "Jon",
+    "last_name": "Snow",
+    "age": 14,
+    "origin": "A Song of Ice and Fire"
+  }
+}
+
+// Cria um novo Character
+Rota: "POST /api/v1/characters"
+Modelo de cURL: `curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{"character":{"first_name":"{first_name}","last_name":"{last_name}","age":{age},"origin":"{origin}"}}' {host}:{port}/api/v1/characters`
+Exemplo de dado: {
+  "character": {
+    "first_name": "Jon",
+    "last_name": "Snow",
+    "age": 14,
+    "origin": "A Song of Ice and Fire"
+  }
+}
+Exemplo de resultado: {
+  "data": {
+    "id": 1,
+    "first_name": "Jon",
+    "last_name": "Snow",
+    "age": 14,
+    "origin": "A Song of Ice and Fire"
+  }
+}
+
+// Atualiza parcialmente o Character de id com o valor {:id}
+Rota: "PATCH /api/v1/characters/:id"
+Modelo de cURL: `curl -X PATCH -H "Accept: application/json" -H "Content-Type: application/json" -d '{"character":{"first_name":"{first_name}"}}' {host}:{port}/api/v1/characters/{:id}`
+Exemplo de dado: {
+  "character": {
+    "last_name": "Stark"
+  }
+}
+Exemplo de resultado: {
+  "data": {
+    "id": 1,
+    "first_name": "Jon",
+    "last_name": "Stark",
+    "age": 14,
+    "origin": "A Song of Ice and Fire"
+  }
+}
+
+// Substitui o Character de id com o valor {:id}
+Rota: "PUT /api/v1/characters/:id"
+Modelo de cURL: `curl -X PUT -H "Accept: application/json" -H "Content-Type: application/json" -d '{"character":{"first_name":"{first_name}","last_name":"{last_name}","age":{age},"origin":"{origin}"}}' {host}:{port}/api/v1/characters/{:id}`
+Exemplo de dado: {
+  "character": {
+    "first_name": "João",
+    "last_name": "das Neves",
+    "age": 15,
+    "origin": "As Crônicas de Gelo e Fogo"
+  }
+}
+Exemplo de resultado: {
+  "data": {
+    "id": 1,
+    "first_name": "João",
+    "last_name": "das Neves",
+    "age": 15,
+    "origin": "As Crônicas de Gelo e Fogo"
+  }
+}
+
+// Remove o Character de id com o valor {:id}
+Rota: "DELETE /api/v1/characters/:id"
+Modelo de cURL: `curl -X DELETE -H "Accept: application/json" {host}:{port}/api/v1/characters/{:id}`
+```
+
+## Configuração do Docker Compose
+
+Convencionalmente, projetos que utilizam **Docker Compose** mantêm 3 arquivos de configuração:
+
+1. `docker-compose.test.yml` (ou `test.yml`): Configura a aplicação para seu ambiente de teste. Utilizada pelos _devs_ para testes isolados localmente ou em ferramentas de integração contínua que suportam **Docker Compose**;
+1. `docker-compose.dev.yml` (ou `local.yml`): Configura a aplicação para seu ambiente de desenvolvimento. Utilizada apenas pelos _devs_ para uso do sistema localmente;
+1. `docker-compose.prod.yml` (ou `production.yml`): Configura a aplicação para seu ambiente de produção.
+
+Cada tipo de configuração pode exigir _containers_, variáveis de ambiente e comandos diferentes. Portanto, é comum existir uma pasta `compose` na raíz do projeto com as configurações de cada ambiente.
+
+### Executando o Projeto Localmente
+
+O arquivo de configuração [`docker-compose.dev.yml`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/docker-compose.dev.yml) define os serviços **api** e **db**, como pode ser visto a seguir:
+
+```yaml
+version: '3.3'
+
+services:
+  api:
+    container_name: characters-api-dev
+    build:
+      context: .
+      dockerfile: ./compose/dev/api/Dockerfile
+    depends_on:
+      - db
+    env_file:
+      - ./compose/dev/db.env
+      - ./compose/dev/api.env
+    ports:
+      - 4000:4000
+    volumes:
+      - ./api:/code
+
+  db:
+    container_name: characters-db-dev
+    env_file:
+      - ./compose/dev/db.env
+    image: postgres
+    volumes:
+      - ./postgres/dev/data:/var/lib/postgresql/data
+```
+
+O arquivo [`./compose/dev/api/Dockerfile`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/dev/api/Dockerfile) define o _container_ do serviço **api**, como pode ser visto a seguir:
+
+```docker
+FROM elixir
+
+RUN mix local.hex --force && \
+    mix local.rebar --force && \
+    mix archive.install --force \
+    https://github.com/phoenixframework/archives/raw/master/phx_new.ez
+
+COPY ./compose/dev/api/entrypoint.sh /entrypoint.sh
+COPY ./compose/dev/api/start.sh /start.sh
+COPY ./api /code
+
+WORKDIR /code
+
+EXPOSE 4000
+
+ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["/start.sh"]
+```
+
+E os respectivos _scripts_ [`entrypoint.sh`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/dev/api/entrypoint.sh) e [`start.sh`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/dev/api/start.sh):
+
+```bash
+#!/usr/bin/env bash
+
+cmd="$@"
+
+printf "\n## Mix Version\n\n"
+mix -v
+mix phx.new -v
+
+printf "\n## Updating Dependencies\n\n"
+mix deps.get
+mix deps.compile
+
+printf "\n## Creating Database\n\n"
+mix ecto.create
+mix ecto.migrate
+
+exec $cmd
+```
+
+```bash
+printf "\n## Initializing API\n\n"
+mix phx.server
+```
+
+Por fim, os arquivos [`api.env`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/dev/api.env) e [`db.env`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/dev/db.env) contendo as variáveis de ambiente dos serviços:
+
+```bash
+MIX_ENV=dev
+POSTGRES_HOST=db
+```
+
+```bash
+POSTGRES_USER=characters_dev
+POSTGRES_PASSWORD=characters_dev
+```
+
+A API ficará disponível na porta `4000` de seu `localhost` e os dados do **PostgreSQL** ficarão armazenados em `./postgres/dev/data`.
+
+Para iniciar os serviços da API em modo de desenvolvimento, execute:
+
+```bash
+docker-compose -f docker-compose.dev.yml up
+```
+
+Para acessar a **API**, utilize o _browser_ para as rotas `GET` ou qualquer outro programa que possa definir e executar **REST**. Por exemplo:
+
+```bash
+curl -X GET -H "Accept: application/json" localhost:4000/api/v1/characters
+```
+
+Irá listar todos os _characters_ definidos. Como o banco de dados está vazio, a **API** irá retornar o seguinte **json**:
+
+```json
+{
+  "data": []
+}
+```
+
+Para semear o banco com dados de exemplo, execute:
+
+```bash
+docker-compose -f docker-compose.dev.yml exec api mix run priv/repo/seeds.exs
+```
+
+Ao executar novamente o comando para listar os _characters_, a **API** irá retornar o seguinte **json**:
+
+```json
+{
+  "data": [{
+    "origin": "A Song of Ice and Fire",
+    "last_name": "Snow",
+    "id": 1,
+    "first_name": "Jon",
+    "age": 14
+  }, {
+    "origin": "Breaking Bad",
+    "last_name": "White",
+    "id": 2,
+    "first_name": "Walter",
+    "age": 50
+  }, {
+    "origin": "Final Fantasy VI",
+    "last_name": "Cole",
+    "id": 3,
+    "first_name": "Locke",
+    "age": 25
+  }, {
+    "origin": "Warcraft III",
+    "last_name": "Menethil",
+    "id": 4,
+    "first_name": "Arthas",
+    "age": 24
+  }, {
+    "origin": "Inception",
+    "last_name": "Cobb",
+    "id": 5,
+    "first_name": "Dominick",
+    "age": 37
+  }, {
+    "origin": "Pulp Fiction",
+    "last_name": "Vega",
+    "id": 6,
+    "first_name": "Vincent",
+    "age": 27
+  }]
+}
+```
+
+Para desativar a aplicação e seus serviços, execute:
+
+```bash
+docker-compose -f docker-compose.dev.yml down
+```
+
+Para remover os volumes e as imagens locais geradas, execute o comando com as seguintes flags adicionais:
+
+```bash
+docker-compose -f docker-compose.dev.yml down --rmi local -v
+```
+
+### Executando a Aplicação em Ambiente de Teste
+
+O arquivo de configuração [`docker-compose.test.yml`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/docker-compose.test.yml) define os serviços **api** e **db** em ambiente de teste, como pode ser visto a seguir:
+
+```yaml
+version: '3.3'
+
+services:
+  api:
+    container_name: characters-api-test
+    build:
+      context: .
+      dockerfile: ./compose/test/api/Dockerfile
+    depends_on:
+      - db
+    env_file:
+      - ./compose/test/db.env
+      - ./compose/test/api.env
+    volumes:
+      - ./api:/code
+
+  db:
+    container_name: characters-db-test
+    env_file:
+      - ./compose/test/db.env
+    image: postgres
+    volumes:
+      - ./postgres/test/data:/var/lib/postgresql/data
+```
+
+As diferenças entre o arquivo de teste e o de desenvolvimento são:
+
+* Os nomes dos _containers_ estão sinalizadas como _test_;
+* A referência do **Dockerfile** é o de teste;
+* As variáveis de ambiente são as de teste;
+* O diretório do **PostgreSQL** é o de teste.
+
+O arquivo [`./compose/test/api/Dockerfile`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/test/api/Dockerfile) define o _container_ do serviço **api**, como pode ser visto a seguir:
+
+```docker
+FROM elixir
+
+RUN mix local.hex --force && \
+    mix local.rebar --force && \
+    mix archive.install --force \
+    https://github.com/phoenixframework/archives/raw/master/phx_new.ez
+
+COPY ./compose/test/api/entrypoint.sh /entrypoint.sh
+COPY ./compose/test/api/test.sh /test.sh
+COPY ./api /code
+
+WORKDIR /code
+
+EXPOSE 4000
+
+ENTRYPOINT ["/entrypoint.sh"]
+
+CMD ["/test.sh"]
+```
+
+As diferenças entre o **Dockerfile** de teste e o de desenvolvimento são:
+
+* O caminho do _entrypoint_ é o de teste;
+* O _script_ de execução é o de teste.
+
+E os respectivos _scripts_ [`entrypoint.sh`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/test/api/entrypoint.sh) e [`test.sh`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/test/api/test.sh):
+
+```bash
+#!/usr/bin/env bash
+
+cmd="$@"
+
+printf "\n## Mix Version\n\n"
+mix -v
+mix phx.new -v
+
+printf "\n## Updating Dependencies\n\n"
+mix deps.get
+
+exec $cmd
+```
+
+```bash
+#!/usr/bin/env bash
+
+printf "\n## Performing Tests\n\n"
+mix test
+```
+
+As diferenças entre os _scripts_ de teste e o de desenvolvimento são:
+
+* O _entrypoint_ não compila as dependências;
+* O _entrypoint_ não cria o banco de dados e nem migra;
+* O comando roda a suíte de testes ao invés de iniciar o servidor da **API**.
+
+Por fim, os arquivos [`api.env`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/test/api.env) e [`db.env`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/compose/test/db.env) contendo as variáveis de ambiente dos serviços:
+
+```bash
+MIX_ENV=test
+POSTGRES_HOST=db
+```
+
+```bash
+POSTGRES_USER=characters_test
+POSTGRES_PASSWORD=characters_test
+```
+
+A API não ficará disponível na porta `4000` de seu `localhost`, pois o arquivo de configuração não faz a configuração de portas. Para executar a aplicação em ambiente de teste, utilize o seguinte comando:
+
+```bash
+docker-compose -f docker-compose.test.yml run --rm api
+```
+
+**Docker Compose** irá inicializar o serviço **api** e todos os serviços associados à ele (no caso: **db**) e executará o comando padrão da imagem (`mix test`). Os resultados dos testes devem ser:
+
+```markdown
+## Performing Tests
+
+.................
+
+Finished in 0.1 seconds
+17 tests, 0 failures
+```
+
+Para remover os volumes e as imagens locais geradas, execute o comando:
+
+```bash
+docker-compose -f docker-compose.dev.yml down --rmi -v
+```
+
+## Configuração do GitLab CI/CD
+
+O arquivo de configuração **GitLab CI/CD** ([`.gitlab-ci.yml`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/.gitlab-ci.yml)) do projeto é definido:
+
+```yaml
+image: docker
+services:
+  - docker:dind
+
+stages:
+  - test
+  - update-registry
+
+variables:
+  STAGING_IMAGE: $CI_REGISTRY_IMAGE:staging
+  LATEST_IMAGE: $CI_REGISTRY_IMAGE:latest
+
+test:
+  stage: test
+  before_script:
+    - apk add --no-cache py-pip
+    - pip install docker-compose
+  script:
+    - docker-compose -f docker-compose.test.yml run --rm api
+
+push staging image:
+  stage: update-registry
+  script:
+    - docker login -u "gitlab-ci-token" -p "$CI_JOB_TOKEN" $CI_REGISTRY
+    - docker build -f compose/dev/api/Dockerfile -t $STAGING_IMAGE .
+    - docker push $STAGING_IMAGE
+  only:
+    - /develop/
+  tags:
+    - docker
+
+push latest image:
+  stage: update-registry
+  script:
+    - docker login -u "gitlab-ci-token" -p "$CI_JOB_TOKEN" $CI_REGISTRY
+    - docker build -f compose/prod/api/Dockerfile -t $LATEST_IMAGE .
+    - docker push $LATEST_IMAGE
+  only:
+    - /master/
+  tags:
+    - docker
+```
+
+O _job_ em destaque para este guia é o `test`.
+
+Sua imagem `docker` é herdada da configuração raíz e o serviço `docker:dind` (**dind** significa _docker in docker_) permite a utilização do CLI do **Docker**.
+
+A configuração definida em `before_script` adiciona [pip](https://pypi.python.org/pypi/pip) e instala o **Docker Compose**.
+
+A configuração definida em `script`, por fim, executa as configurações do serviço `api` definida no arquivo `docker-compose.test.yml`.
+
+As pipelines executadas no projeto podem ser vistas nos seguintes _links_:
+
+* [Primeiro pipeline da _branch_ test](https://gitlab.com/lappis-unb/internal/guides/examples/characters/pipelines/18027322);
+* [Segundo pipeline da _branch_ test](https://gitlab.com/lappis-unb/internal/guides/examples/characters/pipelines/18027402);
+* [Pipeline da _branch_ develop](https://gitlab.com/lappis-unb/internal/guides/examples/characters/pipelines/18027406);
+* [Pipeline da _branch_ master](https://gitlab.com/lappis-unb/internal/guides/examples/characters/pipelines/18027409).
+
+
 
 # Anexo II - Alinhamento Estratégico
 
 
 
-# Anexo IV - Pesquisa Devops Pesquisa  Survey de Acompanhamento
+# Anexo III - Resultados Pesquisa Devops Pesquisa  Survey de Acompanhamento
 ## Resultados parciais da revisão sistemática referente à Devops
 
 
-## Estudo sobre a experiência dos alunos participantes do projeto MinC
+
 
 
 [https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill](https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill)
