@@ -66,27 +66,22 @@ Ações programadas para esta etapa de acordo com o plano de trabalho estão lis
 
 Todas as atividades relacionadas as ações listadas acima foram 100% finalizadas. No último item, o foco do produto foi alterado de "catálogo de software" para "Promova Cultura". Tal mudança foi acordado com os gestores do Ministério. Apesar da mudança de foco do produto, a nova visão não altera o objetivo principal do pacote, que é a "Aplicação de práticas de experimentação e inovação contínua no desenvolvimento do projeto de Catálogo de Software Culturais", além da execução de um ciclo completo de projeto de software.
 
-Grande parte do objetivo de transferência de conhecimento e capacitação da equipe de servidores técnicos do Minc foi concentrado nesse periodo em práticas devops. Para tal,
+Grande parte do objetivo de transferência de conhecimento e capacitação da equipe de servidores técnicos do Minc foi concentrado nesse periodo em práticas devops. Para tal, além de encontros técnicos para apresentação das práticas experimentadas no laboratório, alguns documentos técnicos foram elaborados para tal fim. Toda a documentação foi disponibilizado no repositório do laboratório (https://gitlab.com/lappis-unb/docs)[https://gitlab.com/lappis-unb/docs] e também disponibilizado em anexo, o que cobre tanto a primeira quanto a terceira meta do período. Foi então elaborado toda a documentação do pipeline usado para deploy contínuo no laboratório e elaboração dos seguintes tutoriais:
+
+1. GitLab CI/CD: guiar relacionados para o uso da Integração Contínua e Deploy contínup no Gitlab;
+
+1. Overview e exemplo básico(pt-br): Um guia que ensina como usar o gitlab CI/CD para gerar integração contínua e deploy contínup em um projeto básico;
+
+1. Usando Docker Compose (pt-br): Um guia que ensica como usar o GitLab CI/CD para gerar integração contínua com o Docker Compose em um projeto ágil.
+
+1. Integrando GitLab CI/CD com projeto GitHub(pt-br): Um procedimento que possibilita o uso do GitLab CI/CD no projeto GitHub.
 
 
+Toda a documentação foi realizada em português e disponibilizada para acesso.
 
-Prática devops - documentação do pipeline e elaboração dos seguintes tutoriais (disponiveis em anexo)
+Referente à segunda meta "Realizar Estudos repositórios MINC" nesse período foi.
 
-- GitLab CI/CD: Guides related to the usage of the GitLab's Continuous Integration and Continuous Deployment suite;
-
-- Overview and Basic Example (pt-br): A guide which teaches how to use GitLab CI/CD to generate continuous integration and continuous deployment in a basic project;
-
-- Using Docker Compose (pt-br): A guide which teaches how to use GitLab CI/CD to generate continuous integration with Docker Compose in a basic project.
-
-- Integrating GitLab CI/CD on GitHub Project (pt-br): A procedure which allows to use GitLab CI/CD in a GitHub project.
-
-
-- Using the cookbooks (en-us): a guide for installing and using Chake gem, a handle for Chef to help configure all LAPPIS's services.
-
-
-Estudos dos repositórios minc --
-
-
+Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de software" foram realizadas diversas reuniões com a equipe técnica da SEFIC para compreender o processo da lei Rouanet e como é executado no Salic. 
 
 
 
