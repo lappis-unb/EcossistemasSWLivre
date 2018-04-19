@@ -86,24 +86,83 @@ Proposta de agenda de eventos entre labs e minc e com a comunidade de software l
 
 ### Aprendizado de Máquina Lei Rouanet
 
-Ações programadas para esta etapa de acordo com o plano de trabalho:
-
-- [x] Realizar Estudo Lei Rouanet/SALIC
-
-As seguintes etapas foram planejadas para a Etapa 2, mas foram repriorizadas para serem trabalhadas na Etapa 1
+Ações programadas para esta etapa:
 
 - [x] Realizar Estudo de aprendizado de máquina
 - [x] Realizar Estudo processamento linguagem natural
 - [x] Realizar Estudos de chatbots
 - [x] Realizar Estudo Lei Rouanet/SALIC
 
+Todas as atividades relacionadas as ações listadas acima foram 100%
+finalizadas. Segue resumo da execução das atividades:
 
-Ambiente de homologação do chatbot - contribuição para o rocket.chat e escolha de mudança de arquitetura tecnologias a serem usadas para a próxima versão do chat.
+Foi desenvolvido uma versão inicial do bot -- versão 0.1 (beta) -- com o
+framework Hubot Natural, o desenvolvimento aconteceu após estudos sobre
+ferramentas para criação de chatbots. Decidiu-se utilizar o Rocket.Chat como
+interface para o chatbot, compondo a solução em conjunto com o Hubot Natural.
 
-Compreensão do processo de projetos incentivados via Lei Rouanet --
+Realizou-se evolução do projeto Hubot Natural, com contribuições da equipe ao
+repositório oficial do projeto. Além de colaboração com os desenvolvedores core
+do projeto Rocket.Chat para avaliação do melhor caminho para futuras evoluções.
 
-Testes de algoritmos de detecção de anomalias das planilhas orçamentárias.
+Esta primeira versão foi treinada com uma base de conhecimento criada a partir
+de documentos disponibilizados pela ouvidoria da SEFIC, importante destacar que
+neste primeiro treinamento foi incluido especialmente conhecimentos avançados
+sobre a lei de incentivo, deixando de fora da base conhecimento básicos
+necessários para responder adequadamente questões mais básicas.
 
+Levantou-se um ambiente de homologação, incluindo uma landing page da Rouana
+com instruções de como validar e homologar o assistente virtual, onde através
+da base de conhecimento criada a partir dos documentos disponibilizados pela
+ouvidoria da SEFIC, avaliou-se a eficácia do chatbot através de testes de
+usuários incluindo servidores do MinC e pesquisadores e alunos do Lappis.
+
+Os testes realizados com chatbot versão 0.1 (beta) em ambiente de homologação
+revelou que o assistente virtual com as tecnologias selecionadas atende
+perfeitamente as necessidades do projeto, indicando que o caminho trilhado até
+o momento estão em sintonia com a missão final de proporcionar um novo canal
+aos cidadãos para compreender e tirar dúvidas sobre a lei Rouanet.
+
+Os dados coletados e feedback dos usuários durante a fase de homologação serão
+utilizados para direcionar a evolução e melhorias, identificou-se inicialmente
+que a base de conhecimento necessita de evolução, especialmente com questões
+mais simples.
+
+Contribuimos com a documentação do repositório do Hubot Natural, incluindo
+documentar o processo de configuração do LiveTransfer, tradução da documentação
+do Hubot Natural para o inglês e adoção de solução de documentação para o
+hubot-natural.
+
+Foi feito levantamento de práticas e ferramentas para instrumentalização do
+Hubot Natural com ferramentas para análise estática como Coffeelint e
+Codeclimate, além de integração contínua ao Hubot Natural.
+
+Realizou-se também pesquisa e implementação de melhores práticas de UX para
+interfaces conversacionais, necessária para melhoria na experiência do usuário
+ao utilizar o assistente virtual da lei Rouanet.
+
+Em paralelo a todo este trabalho, estudou-se tecnologias para criação de uma
+nova versão do bot, incluindo frameworks para criação de chatbots mais
+inteligentes, exemplos: Rasa, AIVA, Botpress, IBM blue mix, Seq2seq,
+Hubot-playbook e Neo4j.  Estes frameworks foram avaliados na prática e algumas
+tecnologias foram analisadas em detalhes, como: Rasa-NLU + BotPress +
+RocketChat e Rasa-core + Rasa-nlu.
+
+A implementação da nova versão do bot foi iniciada em paralelo ao
+desenvolvimento da versão 0.1 (beta) citada anteriormente, já utilizando uma
+abordagem mais poderosa de desenvolvimento de bots; escolha de mudança de
+arquitetura tecnologias a serem usadas para a próxima versão do chat.
+
+Em complemento ao desenvolvimento do chatbot realizamos estudos para
+compreensão do processo de projetos incentivados via Lei Rouanet, incluindo
+estudo de tecnologias para aprendizado de máquina a fim de auxiliar
+na evolução do assistente virtual.
+
+Neste sentido iniciou-se estudos e testes de algoritmos para detecção de
+anomalias das planilhas orçamentárias dos projetos submetidos utilizando
+tecnologias autônomas de aprendizado de máquina ...
+
+(continuar aqui descrevendo detalhes sobre a frente ML)
 
 ### Aferição e aceitação de produtos de software
 
