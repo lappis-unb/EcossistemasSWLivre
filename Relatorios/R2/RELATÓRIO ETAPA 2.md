@@ -48,7 +48,7 @@ Grande parte do time foi alocado por dois meses nessa grande tarefa de refatorar
     1. Criados testes para os endpoints da API, onde é testado se os dados das requisições são recebidos corretamente.
     1. Adicionada integração, build e deploy contínuo.
     1. Documentação do projeto atualizada.
-    
+
 A mudança da utilização de strings SQL para o código python usando SQLAlchemy ocorreu para que além de melhorar a manutenção do código, o SQLAlchemy possui otmizações e suporte para se conectar com outros sistemas de banco de dados, por exemplo, caso o Salic passe a utilizar o PostgreSQL todo o sistema do salic-api continuará funcionando corretamente.
 
 O Flake8 é uma ferramenta de análise estática de código que confere algumas normas que deixam o código mais legivel, padronizado e manutenível, a refatoração do código utilizando o Flake8 visou melhorar a manutenção do salic-api adequando o código as normas do Flake8.
@@ -76,7 +76,7 @@ Ações programadas para esta etapa de acordo com o plano de trabalho estão lis
 - [x] Elaborar Relatório de Resultado dos Estudos;
 - [x] Realizar estudos sobre funcionalidades de catálogo de software
 
-Todas as atividades relacionadas as ações listadas acima foram 100% finalizadas. No último item, o foco do produto foi alterado de "catálogo de software" para "Promova Cultura". Tal mudança foi acordado com os gestores do Ministério. Apesar da mudança de foco do produto, a nova visão não altera o objetivo principal do pacote, que é a "Aplicação de práticas de experimentação e inovação contínua no desenvolvimento do projeto de Catálogo de Software Culturais", além da execução de um ciclo completo de projeto de software.
+Todas as atividades relacionadas às ações listadas acima foram 100% finalizadas. No último item, o foco do produto foi alterado de "catálogo de software" para "Promova Cultura". Tal mudança foi acordado com os gestores do Ministério. Apesar da mudança de foco do produto, a nova visão não altera o objetivo principal do pacote, que é a "Aplicação de práticas de experimentação e inovação contínua no desenvolvimento do projeto de Catálogo de Software Culturais", além da execução de um ciclo completo de projeto de software.
 
 Grande parte do objetivo de transferência de conhecimento e capacitação da equipe de servidores técnicos do Minc foi concentrado nesse periodo em práticas devops. Para tal, além de encontros técnicos para apresentação das práticas experimentadas no laboratório, alguns documentos técnicos foram elaborados para tal fim. Toda a documentação foi disponibilizado no repositório do laboratório (https://gitlab.com/lappis-unb/docs)[https://gitlab.com/lappis-unb/docs] e também disponibilizado em anexo, o que cobre tanto a primeira quanto a terceira meta do período. Foi então elaborado toda a documentação do pipeline usado para deploy contínuo no laboratório e elaboração dos seguintes tutoriais:
 
@@ -155,9 +155,9 @@ ouvidoria da SEFIC, avaliou-se a eficácia do chatbot através de testes de
 usuários incluindo servidores do MinC e pesquisadores e alunos do Lappis.
 
 Os testes realizados com chatbot versão 0.1 (beta) em ambiente de homologação
-revelou que o assistente virtual com as tecnologias selecionadas atende
+revelaram que o assistente virtual com as tecnologias selecionadas atende
 perfeitamente as necessidades do projeto, indicando que o caminho trilhado até
-o momento estão em sintonia com a missão final de proporcionar um novo canal
+o momento está em sintonia com a missão final de proporcionar um novo canal
 aos cidadãos para compreender e tirar dúvidas sobre a lei Rouanet.
 
 Os dados coletados e feedback dos usuários durante a fase de homologação serão
@@ -192,18 +192,34 @@ arquitetura tecnologias a serem usadas para a próxima versão do chat.
 
 Em complemento ao desenvolvimento do chatbot realizamos estudos para
 compreensão do processo de projetos incentivados via Lei Rouanet, incluindo
-estudo de tecnologias para aprendizado de máquina a fim de auxiliar
-na evolução do assistente virtual.
+estudo de tecnologias de aprendizado de máquina a fim de auxiliar o processo de
+admissão e prestação de contas do Salic.
 
-Neste sentido iniciou-se estudos e testes de algoritmos para detecção de
-anomalias das planilhas orçamentárias dos projetos submetidos utilizando
-tecnologias autônomas de aprendizado de máquina ...
+Neste sentido, iniciou-se estudos e testes de algoritmos para detecção de
+anomalias em itens das planilhas orçamentárias de projetos submetidos ao Salic,
+utilizando técnicas de aprendizado de máquina, tanto na extração de
+características relevantes para o problema (_Exploratory Data Analysis_ e _Data
+Wrangling_), quanto na classificação de novos dados (usando modelos básicos de
+regressão do módulo _Scikit-learn_).
 
-(continuar aqui descrevendo detalhes sobre a frente ML)
+São dois os objetivos dessa frente de trabalho: 1. Auxiliar o processo de
+admissão e prestação de contas do Salic: automatizar tarefas simples e
+repetitivas de tais processos para otimizar da criação à conclusão de projetos
+culturais; 2. Fornecer insumos para um sistema de transparência do Salic:
+fornecer métricas utilizadas para mapear as categorias e regiões de maior
+incentivo e para incentivar novos produtores culturais.
 
-Microserviço SALIC Data - Microserviço que realiza a mineração dos dados dos projetos
-submetidos por meio da plataforma SALIC e aplica técnicas de machine learning para
-extração de padrão, detecção de anomalias.
+A frente está trabalhando na criação de uma API que deve se comunicar, a princípio, com o Salic. Contudo, futuramente novos sistemas também podem realizar requisições à API para extrair métricas sobre projetos culturais.
+
+O desenvolvimento desta frente está sendo feito com o levantamento de hipóteses e evolução da API. A metodologia utilizada é a _Hypothesis-Driven Development_, focada em criação e validação contínua de hipóteses de aprendizado de máquina, seguida de implementação na API das hipóteses confirmadas na etapa de validação.
+
+A API está em desenvolvimento em Python, utilizando-se o framework Django. Três hopóteses já foram levantadas e estão sendo validadas: 1. relação entre o tempo e a mudança dos preços de itens da planilha orçamentária de um projeto; 2. identificação de itens superfaturados a partir do histórico de projetos aprovados e recusados e; 3. categorização e identificação de similaridade de um projeto a partir de sua planilha orçamentária vigente.
+
+Caso as hipóteses de confirmem, elas serão implementadas e será possível verificar, para cada projeto, se sua planilha orçamentária contém itens possivelmente superfaturados e quais os projetos mais similares com o projeto em questão.
+
+Microserviço SALIC Data - Microserviço que realiza a mineração dos dados dos
+projetos submetidos por meio da plataforma SALIC e aplica técnicas de machine
+learning para extração de padrão, detecção de anomalias.
 
 ### Aferição e aceitação de produtos de software
 
@@ -213,7 +229,7 @@ produtos de software entregues por seus fornecedores.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
-- [x] Revisão da area
+- [x] Revisão da área
 - [x] Diagnóstico sobre as práticas atualmente adotadas pelo MinC de garantia da qualidade de produto
 - [ ] Elaborar Plano de Pesquisa-Ação
 
