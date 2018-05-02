@@ -172,10 +172,7 @@ na Etapa 5. Nesse período foram abordados dois objetivos desse pacote:
 "Aplicação de práticas de experimentação e inovação contínua no desenvolvimento
 do projeto de Catálogo de Software Culturais", e "Transferência de conhecimento
 e capacitar a equipe de servidores e técnicos do MinC em práticas de gestão e
-desenvolvimento de software aberto, colaborativo e contínuo". Enquanto no
-primeiro objetivo foi focado da execução de 2 **Design Sprints** para o
-levantamento de ideias e requisitos para protótipos do produto a ser
-construido.
+desenvolvimento de software aberto, colaborativo e contínuo".
 
 Ações programadas para esta etapa de acordo com o plano de trabalho estão
 listados abaixo:
@@ -186,12 +183,50 @@ listados abaixo:
 - [x] Realizar estudos sobre funcionalidades de catálogo de software
 
 Todas as atividades relacionadas às ações listadas acima foram 100%
-finalizadas. No último item, o foco do produto foi alterado de "catálogo de
+finalizadas.
+
+No último item, o foco do produto foi alterado de "catálogo de
 software" para "Promova Cultura". Tal mudança foi acordado com os gestores do
 Ministério. Apesar da mudança de foco do produto, a nova visão não altera o
 objetivo principal do pacote, que é a "Aplicação de práticas de experimentação
 e inovação contínua no desenvolvimento do projeto de Catálogo de Software
 Culturais", além da execução de um ciclo completo de projeto de software.
+
+O planejanento e construção do produto "Promova Cultura" está sendo guiado pela
+metodologia de **Design Sprint**[^designsprint], um processo voltado a responder perguntas
+críticas de negócios por meio de Design, Prototipagem e Teste de ideias com
+Clientes.
+
+[^designsprint]: [http://www.gv.com/sprint/](http://www.gv.com/sprint/)
+
+![Foto do quadro utilizado no encontro da equipe em 21 de Março para planejamento do fluxo principal entre os usuários finais e o objetivo final do produto.](figs/foto_quadro_design_sprint.jpg)
+
+Durante a Design Sprint chegou-se a pesquisar soluções semelhantes que atendam
+ao objetivo definido para o produdo, são soluções que se aproximam, mesmo que
+parcialmente, ao objetivo final, incluindo plataformas para visualização de
+projetos culturais existentes, bem como soluções para visualização de projetos
+detalhados, personalização da visualização, facilitar a compreensão, e que
+explicite o impacto social.
+
+O principal desafio trabalhado nesta frente foi o seguinte:
+
+> **Como apresentar projetos de incentivo à cultura de forma que as pessoas
+> queiram contar para alguém?**
+
+Como resultado do trabalho a partir deste desafio foi planejado inicialmente
+três soluções:
+
+1. [Visualização dos Projetos](https://github.com/lappis-unb/PromovaCultura/issues/6)
+1. [Indicadores culturais](https://github.com/lappis-unb/PromovaCultura/issues/5)
+1. [Timeline cultural](https://github.com/lappis-unb/PromovaCultura/issues/4)
+
+Todos os detalhes de execução, planejamento, resultados e próximos passos estão
+publicamente documentados e disponíveis em [https://github.com/lappis-unb/PromovaCultura](https://github.com/lappis-unb/PromovaCultura).
+
+Além do foco no processo de **Design Sprints** para os produtos acima descritos
+o laboratório Lappis deu início a ações para transferência de tecnologia para
+o Ministério com objetivo de fomentar as boas práticas de desenvolvimento, evolução,
+manutenção, testes, entrega e deploy contínuos.
 
 Grande parte do objetivo de transferência de conhecimento e capacitação da
 equipe de servidores técnicos do MinC foi concentrado nesse período em práticas
