@@ -1,31 +1,79 @@
 # RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA II - Ecossistemas de Software Livre - Abril 2018
 
 # Introdução
- O presente relatório apresenta o acompanhamento do trabalho realizado no projeto "Ecossistemas de Software Livre", Termo de Cooperação para Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços realizados na Etapa II (Janeiro 2018 à Março 2018), de acordo com o cronograma do Plano de Trabalho.
+
+O presente relatório apresenta o acompanhamento do trabalho realizado no
+projeto "Ecossistemas de Software Livre", Termo de Cooperação para
+Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência
+Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços
+realizados na Etapa II (Janeiro 2018 à Março 2018), de acordo com o cronograma
+do Plano de Trabalho.
 
 ## FASE DE PLANEJAMENTO/EXECUÇÃO
-O período de Janeiro 2018 à Março de 2018 foi contemplado às fases de planejamento e execução. Abaixo serão apresentados, brevemente, os
-principais avanços alcançados no período. Toda a documentação e acompanhamento do projeto está disponibilizado e pode ser acessado na organização do laboratório (https://github.com/lappis-unb)[https://github.com/lappis-unb], e no repositório específico do projeto (https://github.com/lappis-unb/EcossistemasSWLivre)[https://github.com/lappis-unb/EcossistemasSWLivre]. Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas issues quanto na pagina da wiki.
 
-Abaixo serão apresentados os principais avanços alcançados no período, por pacote de trabalho (de acordo com o Plano de Trabalho).
-Os avanços apresentados de acordo com o pacote de trabalho e com cronograma, no período citado.
+O período de Janeiro 2018 à Março de 2018 foi contemplado às fases de
+planejamento e execução. Abaixo serão apresentados, brevemente, os principais
+avanços alcançados no período. Toda a documentação e acompanhamento do projeto
+está disponibilizado e pode ser acessado na organização do laboratório
+(https://github.com/lappis-unb)[https://github.com/lappis-unb], e no
+repositório específico do projeto
+(https://github.com/lappis-unb/EcossistemasSWLivre)[https://github.com/lappis-unb/EcossistemasSWLivre].
+Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas
+issues quanto na pagina da wiki.
+
+Abaixo serão apresentados os principais avanços alcançados no período, por
+pacote de trabalho (de acordo com o Plano de Trabalho). Os avanços
+apresentados de acordo com o pacote de trabalho e com cronograma, no período
+citado.
 
 ### Legado em Software Livre
-Os repositórios presentes na organização MinC não possuem uma padronização: muitos
-deles tem pouca ou nenhuma documentação, alguns nem possuem licenças de software, testes automatizados,
- integração contínua, metricas de qualidade de código. A pouca conformidade com os
-modelos seguidos por comunidades de software livre, dificulta ou limita a contribuição de interessados
-em coloborar com os sistemas MinC.
 
-Muito sistemas legados carecem testes automatizados, boa documentação e práticas de desenvolvimento contínuo, o que dificulta enormemente qualquer forma de evolução. Estes também são fatores
-críticos na curva de aprendizado de novos desenvolvedores e criam uma barreira para a existência
-de comunidades de software livre/aberto colaborando com tais sistemas. Vários projetos mantidos pelo
-Ministério da Cultura possuem as características acima citados.
+Os repositórios presentes na organização MinC não possuem uma padronização:
+muitos deles tem pouca ou nenhuma documentação, alguns nem possuem licenças de
+software, testes automatizados, integração contínua, metricas de qualidade de
+código. A pouca conformidade com os modelos seguidos por comunidades de
+software livre, dificulta ou limita a contribuição de interessados em coloborar
+com os sistemas MinC.
 
-A primeira etapa do projeto foi priorizado a visão "legacy in the box" (legado em uma caixa, tradução literal), no qual o foco foi isolar alguns projetos mantidos do Ministério da Cultura por meio de docker. Essa solução gera o benefício de criar ambientes de desenvolvimento e produção estáveis, fazendo com que diminua o tempo de configuração de ambiente. Essa abordagem traz um grande benefício pois possibilita o uso de práticas Devops mesmo em sistemas legados. Esse modelo de dockerizar softwares legados possibilita um pipeline de entrega contínua, deploy continuo, e diminui a fronteira entre a equipe de infraestrutura e equipe de desenvolvimento.
-Já foram observados benefícios dessa abordagem, principalmente em feedback de desenvolvedores e mantenedores da infraestrutura, feito de forma espontânea.  Pretende-se ainda fazer tanto uma avaliação qualitativa quanto quantitativa dessa abordagem.
+Muito sistemas legados carecem testes automatizados, boa documentação e
+práticas de desenvolvimento contínuo, o que dificulta enormemente qualquer
+forma de evolução. Estes também são fatores críticos na curva de aprendizado de
+novos desenvolvedores e criam uma barreira para a existência de comunidades de
+software livre/aberto colaborando com tais sistemas. Vários projetos mantidos
+pelo Ministério da Cultura possuem as características acima citados.
 
-Nessa segunda etapa do projeto, usamos uma segunda forma de lidar com software legado, sempre com o intuito de aplicar técnicas modernas de engenharia de software e padrões de comunidade de software livre, a fim de viabilizar o uso desses projetos legados em comunidades de software livre e em pipelines automatizados. O foco então foi transformar um software legado em software livre, a partir de técnicas de refatoração de código, e suite de testes automatizados. Com isso, abordamos um dos objetivos desse pacote é "Pesquisa em metodologias de refatoração de sistemas legados". Para tal, os padrões de comunidades de software livre devem estar presente nos projetos: desde documentação técnica, quanto código de qualidade (respeitando métricas de qualidade de software), cobertura de testes, suite de testes automatizado, ferramenta de integração contínua, e pipeline de deploy contínuo. Para que pudessemos alcançar esses objetivos, foi escolhido a API do Salic como estudo de caso, uma vez que esse é um sistema relativamente pequeno, de grande relevância e impacto no ecossistema Salic. A compreensão da API do Salic também auxilia no pacote de trabalho "Aprendizado de Máquina Lei Rouanet", uma vez que grande parte do trabalho consiste em acessar e processar dados providos da API (e demanda de dados geram demandas para a evolução da mesma).
+A primeira etapa do projeto foi priorizado a visão "legacy in the box" (legado
+em uma caixa, tradução literal), no qual o foco foi isolar alguns projetos
+mantidos do Ministério da Cultura por meio de docker. Essa solução gera o
+benefício de criar ambientes de desenvolvimento e produção estáveis, fazendo
+com que diminua o tempo de configuração de ambiente. Essa abordagem traz um
+grande benefício pois possibilita o uso de práticas Devops mesmo em sistemas
+legados. Esse modelo de dockerizar softwares legados possibilita um pipeline de
+entrega contínua, deploy continuo, e diminui a fronteira entre a equipe de
+infraestrutura e equipe de desenvolvimento.
+Já foram observados benefícios dessa abordagem, principalmente em feedback de
+desenvolvedores e mantenedores da infraestrutura, feito de forma espontânea.
+Pretende-se ainda fazer tanto uma avaliação qualitativa quanto quantitativa
+dessa abordagem.
+
+Nessa segunda etapa do projeto, usamos uma segunda forma de lidar com software
+legado, sempre com o intuito de aplicar técnicas modernas de engenharia de
+software e padrões de comunidade de software livre, a fim de viabilizar o uso
+desses projetos legados em comunidades de software livre e em pipelines
+automatizados. O foco então foi transformar um software legado em software
+livre, a partir de técnicas de refatoração de código, e suite de testes
+automatizados. Com isso, abordamos um dos objetivos desse pacote é "Pesquisa em
+metodologias de refatoração de sistemas legados". Para tal, os padrões de
+comunidades de software livre devem estar presente nos projetos: desde
+documentação técnica, quanto código de qualidade (respeitando métricas de
+qualidade de software), cobertura de testes, suite de testes automatizado,
+ferramenta de integração contínua, e pipeline de deploy contínuo. Para que
+pudessemos alcançar esses objetivos, foi escolhido a API do Salic como estudo
+de caso, uma vez que esse é um sistema relativamente pequeno, de grande
+relevância e impacto no ecossistema Salic. A compreensão da API do Salic também
+auxilia no pacote de trabalho "Aprendizado de Máquina Lei Rouanet", uma vez que
+grande parte do trabalho consiste em acessar e processar dados providos da API
+(e demanda de dados geram demandas para a evolução da mesma).
 
 As ações programadas para esta etapa de acordo com o plano de trabalho:
 
@@ -33,9 +81,8 @@ As ações programadas para esta etapa de acordo com o plano de trabalho:
 - [x] Realizar Estudo de refatoração em software legado
 - [x] Realizar Estudos sobre práticas de DevOps aplicada a software legado
 
-
-Grande parte do time foi alocado por dois meses nessa grande tarefa de refatorar a API do Salic, e as principais avanços alcançados nessa etapa foram:
-
+Grande parte do time foi alocado por dois meses nessa grande tarefa de
+refatorar a API do Salic, e as principais avanços alcançados nessa etapa foram:
 
 1. Adicionada instalação automazada do ambiente de desenvolvimento através do Virtualenv e do Docker, a documentação está no README.
 1. A qualidade do código foi melhorada através das seguintes atividades:
@@ -48,36 +95,92 @@ Grande parte do time foi alocado por dois meses nessa grande tarefa de refatorar
     1. Adicionada integração, build e deploy contínuo.
     1. Documentação do projeto atualizada.
 
-A mudança da utilização de strings SQL para o código python usando SQLAlchemy ocorreu para que além de melhorar a manutenção do código, o SQLAlchemy possui otmizações e suporte para se conectar com outros sistemas de banco de dados, por exemplo, caso o Salic passe a utilizar o PostgreSQL todo o sistema do salic-api continuará funcionando corretamente.
+A mudança da utilização de strings SQL para o código python usando SQLAlchemy
+ocorreu para que além de melhorar a manutenção do código, o SQLAlchemy possui
+otmizações e suporte para se conectar com outros sistemas de banco de dados,
+por exemplo, caso o Salic passe a utilizar o PostgreSQL todo o sistema do
+salic-api continuará funcionando corretamente.
 
-O Flake8 é uma ferramenta de análise estática de código que confere algumas normas que deixam o código mais legivel, padronizado e manutenível, a refatoração do código utilizando o Flake8 visou melhorar a manutenção do salic-api adequando o código as normas do Flake8.
+O Flake8 é uma ferramenta de análise estática de código que confere algumas
+normas que deixam o código mais legivel, padronizado e manutenível, a
+refatoração do código utilizando o Flake8 visou melhorar a manutenção do
+salic-api adequando o código as normas do Flake8.
 
-Antes da refatoração não era possível levantar um ambiente de desenvolvimento, pois era necessário estar conectado ao banco de dados do salic, porém agora, com o banco de dados local quem quiser contribuir com o salic-api pode levantar o ambiente em seu próprio computador e usar um banco SQLite local, além disso, para se conectar a um banco de dados basta setar algumas variaveis de ambiente e o desenvolvedor pode conectar o salic-api a um banco de dados remoto, como por exemplo um banco de dados de homologação.
+Antes da refatoração não era possível levantar um ambiente de desenvolvimento,
+pois era necessário estar conectado ao banco de dados do salic, porém agora,
+com o banco de dados local quem quiser contribuir com o salic-api pode levantar
+o ambiente em seu próprio computador e usar um banco SQLite local, além disso,
+para se conectar a um banco de dados basta setar algumas variaveis de ambiente
+e o desenvolvedor pode conectar o salic-api a um banco de dados remoto, como
+por exemplo um banco de dados de homologação.
 
-Foi utilizado o Code Climate, um sistema que analisa a qualidade do código-fonte e atribui uma classificação ao projeto, essa ferramenta verifica coisas como duplicação de código e informa aonde no código aonde estão.
+Foi utilizado o Code Climate, um sistema que analisa a qualidade do
+código-fonte e atribui uma classificação ao projeto, essa ferramenta verifica
+coisas como duplicação de código e informa aonde no código aonde estão.
 
-Os testes da API foram criados para que ao se realizar uma manutenção no código seja possivel ter uma garantia de que não foi introduzido algum bug no sistema, anteriormente a refatoração não existiam testes, logo era difícil saber se o sistema está funcionando corretamente após o termino de uma manutenção. Também foram criados testes que comparam os resultados das requisições ao salic-api refatorado com o salic-api que está atualmente em produção, para se ter uma garantia de que ao atualizar o salic-api em produção os sistemas que usam a API irão continuar funcionando.
+Os testes da API foram criados para que ao se realizar uma manutenção no código
+seja possivel ter uma garantia de que não foi introduzido algum bug no sistema,
+anteriormente a refatoração não existiam testes, logo era difícil saber se o
+sistema está funcionando corretamente após o termino de uma manutenção. Também
+foram criados testes que comparam os resultados das requisições ao salic-api
+refatorado com o salic-api que está atualmente em produção, para se ter uma
+garantia de que ao atualizar o salic-api em produção os sistemas que usam a API
+irão continuar funcionando.
 
-Afim de facilitar que a adição de novas features no salic-api possam chegar ao sistema em produção de forma mais rápida e prática, foi criado uma pipeline de deploy contínuo, aonde é executado os testes do projeto, é checado se a build está sendo gerada corretamente e depois é feito o deploy para o servidor.
+Afim de facilitar que a adição de novas features no salic-api possam chegar ao
+sistema em produção de forma mais rápida e prática, foi criado uma pipeline de
+deploy contínuo, aonde é executado os testes do projeto, é checado se a build
+está sendo gerada corretamente e depois é feito o deploy para o servidor.
 
-Todas as melhorias implementadas acima, fez com que o projeto da API do Salic atendesse todos os padrões de comunidades de software livre, além de atender os requisitos de Devops para entrega e deploy contínuo (build de testes). Para tal, foram realizados ao total 300 commits (no qual foi aberto um pull request para o projeto no repositório do MinC). A API foi  então colocado em um ambiente de homologação no laboratório, e após todos testes passarem nesse periodo de homologação, o projeto será entregue para o Minitério.
+Todas as melhorias implementadas acima, fez com que o projeto da API do Salic
+atendesse todos os padrões de comunidades de software livre, além de atender os
+requisitos de Devops para entrega e deploy contínuo (build de testes). Para
+tal, foram realizados ao total 300 commits (no qual foi aberto um pull request
+para o projeto no repositório do MinC). A API foi  então colocado em um
+ambiente de homologação no laboratório, e após todos testes passarem nesse
+periodo de homologação, o projeto será entregue para o Minitério.
 
-O acompanhamento do projeto realizado pode ser encontrado em [https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api).
+O acompanhamento do projeto realizado pode ser encontrado em
+[https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api).
 
 ### Catálogo de Softwares Culturais
 
-O principal objetivo nessa etapa é exercitar em todo ciclo de projeto a experimentação e inovação contínua, de forma a subsidiar a pesquisa realizada na Etapa 5. Nesse período foram abordados dois objetivos desse pacote: "Aplicação de práticas de experimentação e inovação contínua no desenvolvimento do projeto de Catálogo de Software Culturais", e "Transferência de conhecimento e capacitar a equipe de servidores e técnicos do MinC em práticas de gestão e desenvolvimento de software aberto, colaborativo e contínuo". Enquanto no primeiro objetivo foi focado da execução de 2 **Design Sprints** para o levantamento de ideias e requisitos para protótipos do produto a ser construido.
+O principal objetivo nessa etapa é exercitar em todo ciclo de projeto a
+experimentação e inovação contínua, de forma a subsidiar a pesquisa realizada
+na Etapa 5. Nesse período foram abordados dois objetivos desse pacote:
+"Aplicação de práticas de experimentação e inovação contínua no desenvolvimento
+do projeto de Catálogo de Software Culturais", e "Transferência de conhecimento
+e capacitar a equipe de servidores e técnicos do MinC em práticas de gestão e
+desenvolvimento de software aberto, colaborativo e contínuo". Enquanto no
+primeiro objetivo foi focado da execução de 2 **Design Sprints** para o
+levantamento de ideias e requisitos para protótipos do produto a ser
+construido.
 
-Ações programadas para esta etapa de acordo com o plano de trabalho estão listados abaixo:
+Ações programadas para esta etapa de acordo com o plano de trabalho estão
+listados abaixo:
 
 - [x] Realizar Estudos de tecnologias e práticas devops;
 - [x] Realizar Estudos repositórios MINC;
 - [x] Elaborar Relatório de Resultado dos Estudos;
 - [x] Realizar estudos sobre funcionalidades de catálogo de software
 
-Todas as atividades relacionadas às ações listadas acima foram 100% finalizadas. No último item, o foco do produto foi alterado de "catálogo de software" para "Promova Cultura". Tal mudança foi acordado com os gestores do Ministério. Apesar da mudança de foco do produto, a nova visão não altera o objetivo principal do pacote, que é a "Aplicação de práticas de experimentação e inovação contínua no desenvolvimento do projeto de Catálogo de Software Culturais", além da execução de um ciclo completo de projeto de software.
+Todas as atividades relacionadas às ações listadas acima foram 100%
+finalizadas. No último item, o foco do produto foi alterado de "catálogo de
+software" para "Promova Cultura". Tal mudança foi acordado com os gestores do
+Ministério. Apesar da mudança de foco do produto, a nova visão não altera o
+objetivo principal do pacote, que é a "Aplicação de práticas de experimentação
+e inovação contínua no desenvolvimento do projeto de Catálogo de Software
+Culturais", além da execução de um ciclo completo de projeto de software.
 
-Grande parte do objetivo de transferência de conhecimento e capacitação da equipe de servidores técnicos do Minc foi concentrado nesse periodo em práticas devops. Para tal, além de encontros técnicos para apresentação das práticas experimentadas no laboratório, alguns documentos técnicos foram elaborados para tal fim. Toda a documentação foi disponibilizado no repositório do laboratório (https://gitlab.com/lappis-unb/docs)[https://gitlab.com/lappis-unb/docs] e também disponibilizado em anexo, o que cobre tanto a primeira quanto a terceira meta do período. Foi então elaborado toda a documentação do pipeline usado para deploy contínuo no laboratório e elaboração dos seguintes tutoriais:
+Grande parte do objetivo de transferência de conhecimento e capacitação da
+equipe de servidores técnicos do Minc foi concentrado nesse periodo em práticas
+devops. Para tal, além de encontros técnicos para apresentação das práticas
+experimentadas no laboratório, alguns documentos técnicos foram elaborados para
+tal fim. Toda a documentação foi disponibilizado no repositório do laboratório
+(https://gitlab.com/lappis-unb/docs)[https://gitlab.com/lappis-unb/docs] e
+também disponibilizado em anexo, o que cobre tanto a primeira quanto a terceira
+meta do período. Foi então elaborado toda a documentação do pipeline usado para
+deploy contínuo no laboratório e elaboração dos seguintes tutoriais:
 
 1. GitLab CI/CD: guiar relacionados para o uso da Integração Contínua e Deploy contínup no Gitlab;
 
@@ -87,14 +190,13 @@ Grande parte do objetivo de transferência de conhecimento e capacitação da eq
 
 1. Integrando GitLab CI/CD com projeto GitHub(pt-br): Um procedimento que possibilita o uso do GitLab CI/CD no projeto GitHub.
 
-
 Toda a documentação foi realizada em português e disponibilizada para acesso.
 
 Referente à segunda meta "Realizar Estudos repositórios MINC" nesse período foi.
 
-Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de software" foram realizadas diversas reuniões com a equipe técnica da SEFIC para compreender o processo da lei Rouanet e como é executado no Salic.
-
-
+Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de
+software" foram realizadas diversas reuniões com a equipe técnica da SEFIC para
+compreender o processo da lei Rouanet e como é executado no Salic.
 
 ### Práticas de gestão colaborativa
 
@@ -107,20 +209,24 @@ Todas as atividades relacionadas as ações listadas acima foram 100% finalizada
 
 Proposta de colaboração entre os labs (anexo)
 
-Proposta de agenda de eventos entre labs e minc e com a comunidade de software livre?
+Proposta de agenda de eventos entre labs e minc e com a comunidade de software
+livre?
 
 ### Aprendizado de Máquina Lei Rouanet
 
-O principal objetivo é o estudo de técnicas de Aprendizado de Máquina que possam apoiar o
-sistema de recomendação e fiscalização da lei Rouanet. Nessa etapa será realizada uma pesquisa
-exploratória em técnicas de aprendizado de máquina e processamento de linguagem natural. Tais
-técnicas e algoritmos serão aplicados para melhorar a experiência de usuário (UX) por meio da
-proposta de chatbots como interface entre os proponentes na lei Rouanet e o Ministério da Cultura.
+O principal objetivo é o estudo de técnicas de Aprendizado de Máquina que
+possam apoiar o sistema de recomendação e fiscalização da lei Rouanet. Nessa
+etapa será realizada uma pesquisa exploratória em técnicas de aprendizado de
+máquina e processamento de linguagem natural. Tais técnicas e algoritmos serão
+aplicados para melhorar a experiência de usuário (UX) por meio da proposta de
+chatbots como interface entre os proponentes na lei Rouanet e o Ministério da
+Cultura.
 
-Além disso, técnicas de aprendizado de máquinas serão estudadas para automatizar processos nas
-trilhas de auditorias, tanto na etapa de habilitação e aprovação, quanto na etapa de prestação de
-contas. O objetivo é auxiliar auditores a encontrar erros, inconsistências e detecção de anomalias
-nas submissões.
+Além disso, técnicas de aprendizado de máquinas serão estudadas para
+automatizar processos nas trilhas de auditorias, tanto na etapa de habilitação
+e aprovação, quanto na etapa de prestação de contas. O objetivo é auxiliar
+auditores a encontrar erros, inconsistências e detecção de anomalias nas
+submissões.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
@@ -208,13 +314,26 @@ culturais; 2. Fornecer insumos para um sistema de transparência do Salic:
 fornecer métricas utilizadas para mapear as categorias e regiões de maior
 incentivo e para incentivar novos produtores culturais.
 
-A frente está trabalhando na criação de uma API que deve se comunicar, a princípio, com o Salic. Contudo, futuramente novos sistemas também podem realizar requisições à API para extrair métricas sobre projetos culturais.
+A frente está trabalhando na criação de uma API que deve se comunicar, a
+princípio, com o Salic. Contudo, futuramente novos sistemas também podem
+realizar requisições à API para extrair métricas sobre projetos culturais.
 
-O desenvolvimento desta frente está sendo feito com o levantamento de hipóteses e evolução da API. A metodologia utilizada é a _Hypothesis-Driven Development_, focada em criação e validação contínua de hipóteses de aprendizado de máquina, seguida de implementação na API das hipóteses confirmadas na etapa de validação.
+O desenvolvimento desta frente está sendo feito com o levantamento de hipóteses
+e evolução da API. A metodologia utilizada é a _Hypothesis-Driven Development_,
+focada em criação e validação contínua de hipóteses de aprendizado de máquina,
+seguida de implementação na API das hipóteses confirmadas na etapa de
+validação.
 
-A API está em desenvolvimento em Python, utilizando-se o framework Django. Três hopóteses já foram levantadas e estão sendo validadas: 1. relação entre o tempo e a mudança dos preços de itens da planilha orçamentária de um projeto; 2. identificação de itens superfaturados a partir do histórico de projetos aprovados e recusados e; 3. categorização e identificação de similaridade de um projeto a partir de sua planilha orçamentária vigente.
+A API está em desenvolvimento em Python, utilizando-se o framework Django. Três
+hopóteses já foram levantadas e estão sendo validadas: 1. relação entre o tempo
+e a mudança dos preços de itens da planilha orçamentária de um projeto; 2.
+identificação de itens superfaturados a partir do histórico de projetos
+aprovados e recusados e; 3. categorização e identificação de similaridade de um
+projeto a partir de sua planilha orçamentária vigente.
 
-Caso as hipóteses se confirmem, serão implementadas e será possível verificar, para cada projeto, se sua planilha orçamentária contém itens possivelmente superfaturados e quais os projetos mais similares com o projeto em questão.
+Caso as hipóteses se confirmem, serão implementadas e será possível verificar,
+para cada projeto, se sua planilha orçamentária contém itens possivelmente
+superfaturados e quais os projetos mais similares com o projeto em questão.
 
 Microserviço SALIC Data - Microserviço que realiza a mineração dos dados dos
 projetos submetidos por meio da plataforma SALIC e aplica técnicas de machine
@@ -222,9 +341,10 @@ learning para extração de padrão, detecção de anomalias.
 
 ### Aferição e aceitação de produtos de software
 
-O objetivo geral desta frente de pesquisa é auxiliar os times de desenvolvimento e gestores de TI
-do MinC a aprimorarem sua capacidade em tomar decisões acerca da qualidade das versões dos
-produtos de software entregues por seus fornecedores.
+O objetivo geral desta frente de pesquisa é auxiliar os times de
+desenvolvimento e gestores de TI do MinC a aprimorarem sua capacidade em tomar
+decisões acerca da qualidade das versões dos produtos de software entregues por
+seus fornecedores.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
@@ -232,14 +352,20 @@ Ações programadas para esta etapa de acordo com o plano de trabalho:
 - [x] Diagnóstico sobre as práticas atualmente adotadas pelo MinC de garantia da qualidade de produto
 - [ ] Elaborar Plano de Pesquisa-Ação
 
-Aplicação de surveys com os gestores do MinC e desenvolvedores seniores do LAPPIS e MinC.
+Aplicação de surveys com os gestores do MinC e desenvolvedores seniores do
+LAPPIS e MinC.
 
 Resultados do survey com os alunos
 
 # Acompanhamento Financeiro
 ![Detalhamento da execução do repasse na Etapa II.](figs/valores_executados_2.png)
 
-O valor do repasse referente à Etapa I foi de R$598.000,00. Todo esse repasse foi na rubrica 30.90.20, referente à auxílio Financeiro a Pesquisa (Bolsas). Desse repasse, um total de R$161.100,00 foi executado na Etapa I, representando na prática que o orçamento foi consumido apenas na categoria mão-de-obra. Todo esse valor foi executado no pagamento das bolsas do time, e o valor gasto por frente do projeto pode ser visto na figura abaixo.
+O valor do repasse referente à Etapa I foi de R$598.000,00. Todo esse repasse
+foi na rubrica 30.90.20, referente à auxílio Financeiro a Pesquisa (Bolsas).
+Desse repasse, um total de R$161.100,00 foi executado na Etapa I, representando
+na prática que o orçamento foi consumido apenas na categoria mão-de-obra. Todo
+esse valor foi executado no pagamento das bolsas do time, e o valor gasto por
+frente do projeto pode ser visto na figura abaixo.
 
 ![Neste gráfico é possível observar a representação do percentual do custo da mão-de-obra incidido em cada equipe do projeto. A maior alocação de recursos encontram-se nas equipes do Catálogo de Softwares Culturais(representado pela cor azul), uma vez que grande parte das  funcionalidades desenvolvidas são providas através desta
 frente, e a equipe do Aprendizado de máquina(representado pela cor verde), que desenvolveu o chatbot.](figs/bolsas.png)
@@ -257,13 +383,23 @@ Data: 06/04/2018
 
 # Anexo I - GitLab CI/CD
 
-Este _doc_ tem por objetivo capacitar um _dev_ em utilizar o **GitLab CI/CD** em projetos que exigem estruturas básicas de configuração. Para um melhor aproveitamento deste _doc_ é recomendável ter realizado com completude o [guia básico](guides/DevOps/GitLab-CI-CD/Overview-and-Basic-Example-(pt_br)).
+Este _doc_ tem por objetivo capacitar um _dev_ em utilizar o **GitLab CI/CD**
+em projetos que exigem estruturas básicas de configuração. Para um melhor
+aproveitamento deste _doc_ é recomendável ter realizado com completude o [guia
+básico](guides/DevOps/GitLab-CI-CD/Overview-and-Basic-Example-(pt_br)).
 
 ## Introdução
 
-[Docker Compose](https://docs.docker.com/compose/) é uma ferramenta para definição e execução de aplicações de múltiplos _containers_ **Docker**. Através de um arquivo de configuração [YAML](http://yaml.org/) é possível definir os serviços da aplicação e suas interações. Esse arquivo é utilizado como entrada em um CLI capaz de iniciar os serviços configurados em um simples comando.
+[Docker Compose](https://docs.docker.com/compose/) é uma ferramenta para
+definição e execução de aplicações de múltiplos _containers_ **Docker**.
+Através de um arquivo de configuração [YAML](http://yaml.org/) é possível
+definir os serviços da aplicação e suas interações. Esse arquivo é utilizado
+como entrada em um CLI capaz de iniciar os serviços configurados em um simples
+comando.
 
-Enquanto o **Docker** permite a definição e o gerenciamento de um único _container_, **Docker Compose** define e gerencia múltiplos _containers_ e suas interações.
+Enquanto o **Docker** permite a definição e o gerenciamento de um único
+_container_, **Docker Compose** define e gerencia múltiplos _containers_ e suas
+interações.
 
 Dentre os principais benefícios, incluem:
 
@@ -272,15 +408,29 @@ Dentre os principais benefícios, incluem:
 * Ideal para desenvolvedores configurarem o ambiente local;
 * É uma das camadas de configuração em orquestradores de _containers_ como [Kubernetes](https://kubernetes.io/) e [Cattle](https://github.com/rancher/cattle) (Orquestrador do [Rancher](https://rancher.com/))
 
-Se o projeto da aplicação que estiver desenvolvendo utiliza **Docker Compose** para definição do ambiente em nível de teste, desenvolvimento e/ou produção, utilizar **Docker Compose** na integração contínua é uma opção.
+Se o projeto da aplicação que estiver desenvolvendo utiliza **Docker Compose**
+para definição do ambiente em nível de teste, desenvolvimento e/ou produção,
+utilizar **Docker Compose** na integração contínua é uma opção.
 
 # Utilizando Docker Compose no GitLab CI/CD
 
-Para exemplificar o uso do **Docker Compose** no **GitLab CI/CD**, foi criado um simples respositório chamado [_characters_](https://gitlab.com/lappis-unb/internal/guides/examples/characters) consolidando o uso das duas ferramentas no estágio de teste. Ao fim da leitura deste exemplo você será capaz de reproduzir o uso do **Docker Compose** no **CI/CD** do seu projeto.
+Para exemplificar o uso do **Docker Compose** no **GitLab CI/CD**, foi criado
+um simples respositório chamado
+[_characters_](https://gitlab.com/lappis-unb/internal/guides/examples/characters)
+consolidando o uso das duas ferramentas no estágio de teste. Ao fim da leitura
+deste exemplo você será capaz de reproduzir o uso do **Docker Compose** no
+**CI/CD** do seu projeto.
 
 ## Projeto Modelo
 
-O sistema _characters_ é um pequeno projeto [Phoenix](http://phoenixframework.org/) com banco de dados em [PostgreSQL](https://www.postgresql.org/) que define uma [API](https://en.wikipedia.org/wiki/Application_programming_interface) [RESTful](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) de uma única entidade chamada `Character`, conforme descrito no [README](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/README.md) do projeto:
+O sistema _characters_ é um pequeno projeto
+[Phoenix](http://phoenixframework.org/) com banco de dados em
+[PostgreSQL](https://www.postgresql.org/) que define uma
+[API](https://en.wikipedia.org/wiki/Application_programming_interface)
+[RESTful](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
+de uma única entidade chamada `Character`, conforme descrito no
+[README](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/README.md)
+do projeto:
 
 ```javascript
 // curl -X GET -H "Accept: application/json" {HOST}:{PORT}/api/v1/characters/1
@@ -423,17 +573,22 @@ Modelo de cURL: `curl -X DELETE -H "Accept: application/json" {host}:{port}/api/
 
 ## Configuração do Docker Compose
 
-Convencionalmente, projetos que utilizam **Docker Compose** mantêm 3 arquivos de configuração:
+Convencionalmente, projetos que utilizam **Docker Compose** mantêm 3 arquivos
+de configuração:
 
 1. `docker-compose.test.yml` (ou `test.yml`): Configura a aplicação para seu ambiente de teste. Utilizada pelos _devs_ para testes isolados localmente ou em ferramentas de integração contínua que suportam **Docker Compose**;
 1. `docker-compose.dev.yml` (ou `local.yml`): Configura a aplicação para seu ambiente de desenvolvimento. Utilizada apenas pelos _devs_ para uso do sistema localmente;
 1. `docker-compose.prod.yml` (ou `production.yml`): Configura a aplicação para seu ambiente de produção.
 
-Cada tipo de configuração pode exigir _containers_, variáveis de ambiente e comandos diferentes. Portanto, é comum existir uma pasta `compose` na raíz do projeto com as configurações de cada ambiente.
+Cada tipo de configuração pode exigir _containers_, variáveis de ambiente e
+comandos diferentes. Portanto, é comum existir uma pasta `compose` na raíz do
+projeto com as configurações de cada ambiente.
 
 ### Executando o Projeto Localmente
 
-O arquivo de configuração [`docker-compose.dev.yml`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/docker-compose.dev.yml) define os serviços **api** e **db**, como pode ser visto a seguir:
+O arquivo de configuração
+[`docker-compose.dev.yml`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/docker-compose.dev.yml)
+define os serviços **api** e **db**, como pode ser visto a seguir:
 
 ```yaml
 version: '3.3'
@@ -525,7 +680,8 @@ POSTGRES_USER=characters_dev
 POSTGRES_PASSWORD=characters_dev
 ```
 
-A API ficará disponível na porta `4000` de seu `localhost` e os dados do **PostgreSQL** ficarão armazenados em `./postgres/dev/data`.
+A API ficará disponível na porta `4000` de seu `localhost` e os dados do
+**PostgreSQL** ficarão armazenados em `./postgres/dev/data`.
 
 Para iniciar os serviços da API em modo de desenvolvimento, execute:
 
@@ -533,13 +689,15 @@ Para iniciar os serviços da API em modo de desenvolvimento, execute:
 docker-compose -f docker-compose.dev.yml up
 ```
 
-Para acessar a **API**, utilize o _browser_ para as rotas `GET` ou qualquer outro programa que possa definir e executar **REST**. Por exemplo:
+Para acessar a **API**, utilize o _browser_ para as rotas `GET` ou qualquer
+outro programa que possa definir e executar **REST**. Por exemplo:
 
 ```bash
 curl -X GET -H "Accept: application/json" localhost:4000/api/v1/characters
 ```
 
-Irá listar todos os _characters_ definidos. Como o banco de dados está vazio, a **API** irá retornar o seguinte **json**:
+Irá listar todos os _characters_ definidos. Como o banco de dados está vazio, a
+**API** irá retornar o seguinte **json**:
 
 ```json
 {
@@ -553,7 +711,8 @@ Para semear o banco com dados de exemplo, execute:
 docker-compose -f docker-compose.dev.yml exec api mix run priv/repo/seeds.exs
 ```
 
-Ao executar novamente o comando para listar os _characters_, a **API** irá retornar o seguinte **json**:
+Ao executar novamente o comando para listar os _characters_, a **API** irá
+retornar o seguinte **json**:
 
 ```json
 {
@@ -603,7 +762,8 @@ Para desativar a aplicação e seus serviços, execute:
 docker-compose -f docker-compose.dev.yml down
 ```
 
-Para remover os volumes e as imagens locais geradas, execute o comando com as seguintes flags adicionais:
+Para remover os volumes e as imagens locais geradas, execute o comando com as
+seguintes flags adicionais:
 
 ```bash
 docker-compose -f docker-compose.dev.yml down --rmi local -v
@@ -611,7 +771,10 @@ docker-compose -f docker-compose.dev.yml down --rmi local -v
 
 ### Executando a Aplicação em Ambiente de Teste
 
-O arquivo de configuração [`docker-compose.test.yml`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/docker-compose.test.yml) define os serviços **api** e **db** em ambiente de teste, como pode ser visto a seguir:
+O arquivo de configuração
+[`docker-compose.test.yml`](https://gitlab.com/lappis-unb/internal/guides/examples/characters/blob/master/docker-compose.test.yml)
+define os serviços **api** e **db** em ambiente de teste, como pode ser visto a
+seguir:
 
 ```yaml
 version: '3.3'
@@ -716,13 +879,17 @@ POSTGRES_USER=characters_test
 POSTGRES_PASSWORD=characters_test
 ```
 
-A API não ficará disponível na porta `4000` de seu `localhost`, pois o arquivo de configuração não faz a configuração de portas. Para executar a aplicação em ambiente de teste, utilize o seguinte comando:
+A API não ficará disponível na porta `4000` de seu `localhost`, pois o arquivo
+de configuração não faz a configuração de portas. Para executar a aplicação em
+ambiente de teste, utilize o seguinte comando:
 
 ```bash
 docker-compose -f docker-compose.test.yml run --rm api
 ```
 
-**Docker Compose** irá inicializar o serviço **api** e todos os serviços associados à ele (no caso: **db**) e executará o comando padrão da imagem (`mix test`). Os resultados dos testes devem ser:
+**Docker Compose** irá inicializar o serviço **api** e todos os serviços
+associados à ele (no caso: **db**) e executará o comando padrão da imagem (`mix
+test`). Os resultados dos testes devem ser:
 
 ```markdown
 ## Performing Tests
@@ -789,11 +956,15 @@ push latest image:
 
 O _job_ em destaque para este guia é o `test`.
 
-Sua imagem `docker` é herdada da configuração raíz e o serviço `docker:dind` (**dind** significa _docker in docker_) permite a utilização do CLI do **Docker**.
+Sua imagem `docker` é herdada da configuração raíz e o serviço `docker:dind`
+(**dind** significa _docker in docker_) permite a utilização do CLI do
+**Docker**.
 
-A configuração definida em `before_script` adiciona [pip](https://pypi.python.org/pypi/pip) e instala o **Docker Compose**.
+A configuração definida em `before_script` adiciona
+[pip](https://pypi.python.org/pypi/pip) e instala o **Docker Compose**.
 
-A configuração definida em `script`, por fim, executa as configurações do serviço `api` definida no arquivo `docker-compose.test.yml`.
+A configuração definida em `script`, por fim, executa as configurações do
+serviço `api` definida no arquivo `docker-compose.test.yml`.
 
 As pipelines executadas no projeto podem ser vistas nos seguintes _links_:
 
@@ -802,17 +973,10 @@ As pipelines executadas no projeto podem ser vistas nos seguintes _links_:
 * [Pipeline da _branch_ develop](https://gitlab.com/lappis-unb/internal/guides/examples/characters/pipelines/18027406);
 * [Pipeline da _branch_ master](https://gitlab.com/lappis-unb/internal/guides/examples/characters/pipelines/18027409).
 
-
-
 # Anexo II - Alinhamento Estratégico
 
-
-
 # Anexo III - Resultados Pesquisa Devops Pesquisa  Survey de Acompanhamento
+
 ## Resultados parciais da revisão sistemática referente à Devops
-
-
-
-
 
 [https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill](https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill)
