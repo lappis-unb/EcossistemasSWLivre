@@ -1,6 +1,5 @@
 # RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA II - Ecossistemas de Software Livre - Abril 2018
 
-
 # Introdução
  O presente relatório apresenta o acompanhamento do trabalho realizado no projeto "Ecossistemas de Software Livre", Termo de Cooperação para Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços realizados na Etapa II (Janeiro 2018 à Março 2018), de acordo com o cronograma do Plano de Trabalho.
 
@@ -188,7 +187,7 @@ RocketChat e Rasa-core + Rasa-nlu.
 A implementação da nova versão do bot foi iniciada em paralelo ao
 desenvolvimento da versão 0.1 (beta) citada anteriormente, já utilizando uma
 abordagem mais poderosa de desenvolvimento de bots; escolha de mudança de
-arquitetura tecnologias a serem usadas para a próxima versão do chat.
+arquitetura e tecnologias a serem usadas para a próxima versão do chat.
 
 Em complemento ao desenvolvimento do chatbot realizamos estudos para
 compreensão do processo de projetos incentivados via Lei Rouanet, incluindo
@@ -215,7 +214,7 @@ O desenvolvimento desta frente está sendo feito com o levantamento de hipótese
 
 A API está em desenvolvimento em Python, utilizando-se o framework Django. Três hopóteses já foram levantadas e estão sendo validadas: 1. relação entre o tempo e a mudança dos preços de itens da planilha orçamentária de um projeto; 2. identificação de itens superfaturados a partir do histórico de projetos aprovados e recusados e; 3. categorização e identificação de similaridade de um projeto a partir de sua planilha orçamentária vigente.
 
-Caso as hipóteses de confirmem, elas serão implementadas e será possível verificar, para cada projeto, se sua planilha orçamentária contém itens possivelmente superfaturados e quais os projetos mais similares com o projeto em questão.
+Caso as hipóteses se confirmem, serão implementadas e será possível verificar, para cada projeto, se sua planilha orçamentária contém itens possivelmente superfaturados e quais os projetos mais similares com o projeto em questão.
 
 Microserviço SALIC Data - Microserviço que realiza a mineração dos dados dos
 projetos submetidos por meio da plataforma SALIC e aplica técnicas de machine
@@ -235,14 +234,12 @@ Ações programadas para esta etapa de acordo com o plano de trabalho:
 
 Aplicação de surveys com os gestores do MinC e desenvolvedores seniores do LAPPIS e MinC.
 
-
 Resultados do survey com os alunos
 
 # Acompanhamento Financeiro
 ![Detalhamento da execução do repasse na Etapa II.](figs/valores_executados_2.png)
 
-O valor do repasse referente à Etapa I foi de R$598.000,00. Todo esse repasse foi na rubrica 30.90.20, referente à auxílio Financeiro a Pesquisa (Bolsas). Desse repasse, um total de R$161.100,00 foi executado na Etapa I, representando na prática que o orçamento foi consumido apenas na categoria mão-de-obra.. Todo esse valor foi executado no pagamento das bolsas do time, e o valor gasto por frente do projeto pode ser visto na figura abaixo.
-
+O valor do repasse referente à Etapa I foi de R$598.000,00. Todo esse repasse foi na rubrica 30.90.20, referente à auxílio Financeiro a Pesquisa (Bolsas). Desse repasse, um total de R$161.100,00 foi executado na Etapa I, representando na prática que o orçamento foi consumido apenas na categoria mão-de-obra. Todo esse valor foi executado no pagamento das bolsas do time, e o valor gasto por frente do projeto pode ser visto na figura abaixo.
 
 ![Neste gráfico é possível observar a representação do percentual do custo da mão-de-obra incidido em cada equipe do projeto. A maior alocação de recursos encontram-se nas equipes do Catálogo de Softwares Culturais(representado pela cor azul), uma vez que grande parte das  funcionalidades desenvolvidas são providas através desta
 frente, e a equipe do Aprendizado de máquina(representado pela cor verde), que desenvolveu o chatbot.](figs/bolsas.png)
@@ -257,7 +254,6 @@ Nome:  Carla Silva Rocha Aguiar
 Assinatura:
 
 Data: 06/04/2018
-
 
 # Anexo I - GitLab CI/CD
 
