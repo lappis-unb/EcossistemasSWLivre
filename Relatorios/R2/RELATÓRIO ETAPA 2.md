@@ -1,4 +1,9 @@
-# RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA II - Ecossistemas de Software Livre - Abril 2018
+---
+title: RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA II - Ecossistemas de Software Livre - Abril 2018
+author: Carla Silva Rocha Aguiar (Coordenadora do Projeto)
+date: 02 de Maio de 2018
+geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
+---
 
 # Introdução
 
@@ -15,9 +20,9 @@ O período de Janeiro 2018 à Março de 2018 foi contemplado às fases de
 planejamento e execução. Abaixo serão apresentados, brevemente, os principais
 avanços alcançados no período. Toda a documentação e acompanhamento do projeto
 está disponibilizado e pode ser acessado na organização do laboratório
-(https://github.com/lappis-unb)[https://github.com/lappis-unb], e no
+[https://github.com/lappis-unb](https://github.com/lappis-unb), e no
 repositório específico do projeto
-(https://github.com/lappis-unb/EcossistemasSWLivre)[https://github.com/lappis-unb/EcossistemasSWLivre].
+[https://github.com/lappis-unb/EcossistemasSWLivre](https://github.com/lappis-unb/EcossistemasSWLivre).
 Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas
 issues quanto na pagina da wiki.
 
@@ -177,7 +182,7 @@ equipe de servidores técnicos do Minc foi concentrado nesse periodo em prática
 devops. Para tal, além de encontros técnicos para apresentação das práticas
 experimentadas no laboratório, alguns documentos técnicos foram elaborados para
 tal fim. Toda a documentação foi disponibilizado no repositório do laboratório
-(https://gitlab.com/lappis-unb/docs)[https://gitlab.com/lappis-unb/docs] e
+[https://gitlab.com/lappis-unb/docs](https://gitlab.com/lappis-unb/docs) e
 também disponibilizado em anexo, o que cobre tanto a primeira quanto a terceira
 meta do período. Foi então elaborado toda a documentação do pipeline usado para
 deploy contínuo no laboratório e elaboração dos seguintes tutoriais:
@@ -358,7 +363,7 @@ LAPPIS e MinC.
 Resultados do survey com os alunos
 
 # Acompanhamento Financeiro
-![Detalhamento da execução do repasse na Etapa II.](figs/valores_executados_2.png)
+![Detalhamento da execução do repasse na Etapa II.](figs/valores_executados_E2.png)
 
 O valor do repasse referente à Etapa I foi de R$598.000,00. Todo esse repasse
 foi na rubrica 30.90.20, referente à auxílio Financeiro a Pesquisa (Bolsas).
@@ -368,7 +373,7 @@ esse valor foi executado no pagamento das bolsas do time, e o valor gasto por
 frente do projeto pode ser visto na figura abaixo.
 
 ![Neste gráfico é possível observar a representação do percentual do custo da mão-de-obra incidido em cada equipe do projeto. A maior alocação de recursos encontram-se nas equipes do Catálogo de Softwares Culturais(representado pela cor azul), uma vez que grande parte das  funcionalidades desenvolvidas são providas através desta
-frente, e a equipe do Aprendizado de máquina(representado pela cor verde), que desenvolveu o chatbot.](figs/bolsas.png)
+frente, e a equipe do Aprendizado de máquina(representado pela cor verde), que desenvolveu o chatbot.](figs/bolsas_E2.png){width=400px}
 
 # Assinatura
 
