@@ -3,6 +3,7 @@ title: RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA II - Ecossistemas de Software L
 author: Carla Silva Rocha Aguiar (Coordenadora do Projeto)
 date: 02 de Maio de 2018
 geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
+colorlinks: true
 ---
 
 # Introdução
@@ -16,15 +17,15 @@ do Plano de Trabalho.
 
 ## FASE DE PLANEJAMENTO/EXECUÇÃO
 
-O período de Janeiro 2018 à Março de 2018 foi contemplado às fases de
+O período de Janeiro 2018 à Março de 2018 contemplou as fases de
 planejamento e execução. Abaixo serão apresentados, brevemente, os principais
 avanços alcançados no período. Toda a documentação e acompanhamento do projeto
 está disponibilizado e pode ser acessado na organização do laboratório
-[https://github.com/lappis-unb](https://github.com/lappis-unb), e no
+[lappis-unb](https://github.com/lappis-unb), e no
 repositório específico do projeto
-[https://github.com/lappis-unb/EcossistemasSWLivre](https://github.com/lappis-unb/EcossistemasSWLivre).
+[lappis-unb/EcossistemasSWLivre](https://github.com/lappis-unb/EcossistemasSWLivre).
 Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas
-issues quanto na pagina da wiki.
+_issues_ quanto nas páginas _wiki_.
 
 Abaixo serão apresentados os principais avanços alcançados no período, por
 pacote de trabalho (de acordo com o Plano de Trabalho). Os avanços
@@ -35,25 +36,25 @@ citado.
 
 Os repositórios presentes na organização MinC não possuem uma padronização:
 muitos deles tem pouca ou nenhuma documentação, alguns nem possuem licenças de
-software, testes automatizados, integração contínua, metricas de qualidade de
+software, testes automatizados, integração contínua, métricas de qualidade de
 código. A pouca conformidade com os modelos seguidos por comunidades de
 software livre, dificulta ou limita a contribuição de interessados em coloborar
 com os sistemas MinC.
 
-Muito sistemas legados carecem testes automatizados, boa documentação e
+Muito sistemas legados carecem de testes automatizados, boa documentação e
 práticas de desenvolvimento contínuo, o que dificulta enormemente qualquer
 forma de evolução. Estes também são fatores críticos na curva de aprendizado de
 novos desenvolvedores e criam uma barreira para a existência de comunidades de
 software livre/aberto colaborando com tais sistemas. Vários projetos mantidos
 pelo Ministério da Cultura possuem as características acima citados.
 
-A primeira etapa do projeto foi priorizado a visão "legacy in the box" (legado
+Durante a primeira etapa do projeto foi priorizado a visão "legacy in the box" (legado
 em uma caixa, tradução literal), no qual o foco foi isolar alguns projetos
-mantidos do Ministério da Cultura por meio de docker. Essa solução gera o
+mantidos pelo Ministério da Cultura por meio de Docker[^docker]. Essa solução gera o
 benefício de criar ambientes de desenvolvimento e produção estáveis, fazendo
 com que diminua o tempo de configuração de ambiente. Essa abordagem traz um
-grande benefício pois possibilita o uso de práticas Devops mesmo em sistemas
-legados. Esse modelo de dockerizar softwares legados possibilita um pipeline de
+grande benefício pois possibilita o uso de práticas DevOps mesmo em sistemas
+legados. Esse modelo de isolar pacotes de software legados através de containers Docker possibilita um pipeline de
 entrega contínua, deploy continuo, e diminui a fronteira entre a equipe de
 infraestrutura e equipe de desenvolvimento.
 Já foram observados benefícios dessa abordagem, principalmente em feedback de
@@ -61,15 +62,19 @@ desenvolvedores e mantenedores da infraestrutura, feito de forma espontânea.
 Pretende-se ainda fazer tanto uma avaliação qualitativa quanto quantitativa
 dessa abordagem.
 
+[^docker]: Docker fornece uma camada adicional de abstração e automação de virtualização de nível de sistema operacional. [http://www.docker.com](http://www.docker.com)
+
 Nessa segunda etapa do projeto, usamos uma segunda forma de lidar com software
 legado, sempre com o intuito de aplicar técnicas modernas de engenharia de
 software e padrões de comunidade de software livre, a fim de viabilizar o uso
 desses projetos legados em comunidades de software livre e em pipelines
 automatizados. O foco então foi transformar um software legado em software
 livre, a partir de técnicas de refatoração de código, e suite de testes
-automatizados. Com isso, abordamos um dos objetivos desse pacote é "Pesquisa em
-metodologias de refatoração de sistemas legados". Para tal, os padrões de
-comunidades de software livre devem estar presente nos projetos: desde
+automatizados.
+
+Com isso, abordamos um dos objetivos do pacote que é "Pesquisa em
+metodologias de refatoração de sistemas legados", adotando padrões de
+comunidades de software livre: desde
 documentação técnica, quanto código de qualidade (respeitando métricas de
 qualidade de software), cobertura de testes, suite de testes automatizado,
 ferramenta de integração contínua, e pipeline de deploy contínuo. Para que
@@ -80,69 +85,80 @@ auxilia no pacote de trabalho "Aprendizado de Máquina Lei Rouanet", uma vez que
 grande parte do trabalho consiste em acessar e processar dados providos da API
 (e demanda de dados geram demandas para a evolução da mesma).
 
-As ações programadas para esta etapa de acordo com o plano de trabalho:
+As ações programadas para esta etapa de acordo com o plano de trabalho foram:
 
 - [x] Realizar Estudos de conteinerização
 - [x] Realizar Estudo de refatoração em software legado
 - [x] Realizar Estudos sobre práticas de DevOps aplicada a software legado
 
 Grande parte do time foi alocado por dois meses nessa grande tarefa de
-refatorar a API do Salic, e as principais avanços alcançados nessa etapa foram:
+refatorar a API do Salic, e os principais avanços alcançados nessa etapa foram:
 
-1. Adicionada instalação automazada do ambiente de desenvolvimento através do Virtualenv e do Docker, a documentação está no README.
+1. Adicionada instalação automazada do ambiente de desenvolvimento através do
+   Virtualenv[^venv] e do Docker, a documentação está no README.
 1. A qualidade do código foi melhorada através das seguintes atividades:
-    1. Os SQL's em forma de textos foram refatorados, e agora é utilizado o SQLAlchemy. Essa refatoração melhora a manutenibilidade do código e também permite que o salic-api funcione com qualquer banco de dados que o SQLAlchemy oferece suporte.
-    1. O Python utilizado no projeto foi atualizado para a versão 3 (originalmente era utilizado a versão 2 do python).
-    1. Utilização do Flake8 para melhorar a estrutura do código.
-    1. Adicionado banco de dados local para o ambiente de desenvolvimento.
-    1. Classificação no Code Climate foi de "F" para "A", resultado da redução do débito técnico.
-    1. Criados testes para os endpoints da API, onde é testado se os dados das requisições são recebidos corretamente.
-    1. Adicionada integração, build e deploy contínuo.
-    1. Documentação do projeto atualizada.
+    * Os SQL's em forma de textos foram refatorados, agora é utilizado o
+      SQLAlchemy[^sqlalchemy]. Essa refatoração melhora a manutenibilidade do código e
+      também permite que o API do Salic funcione com qualquer banco de dados que o
+      SQLAlchemy oferece suporte.
+    * O Python utilizado no projeto foi atualizado para a versão 3
+      (originalmente era utilizado a versão 2 do Python).
+    * Utilização do Flake8[^flake] para melhorar a estrutura do código.
+    * Adicionado banco de dados local para o ambiente de desenvolvimento.
+    * Classificação no Code Climate foi de "F" para "A", resultado da redução
+      do débito técnico.
+    * Criados testes para os endpoints da API, onde é testado se os dados das
+      requisições são recebidos corretamente.
+    * Adicionada integração, build e deploy contínuo.
+    * Documentação do projeto atualizada.
 
-A mudança da utilização de strings SQL para o código python usando SQLAlchemy
+[^venv]: Virtualenv é um simulador de ambientes virtuais isolados para projetos Python. [http://virtualenv.pypa.io/](http://virtualenv.pypa.io/)
+[^sqlalchemy]: SQLAlchemy é uma biblioteca Python de mapeamento objeto-relacional SQL. [http://www.sqlalchemy.org/](http://www.sqlalchemy.org/)
+[^flake]: [http://flake8.pycqa.org](http://flake8.pycqa.org)
+
+A mudança da utilização de strings SQL para o código Python usando SQLAlchemy
 ocorreu para que além de melhorar a manutenção do código, o SQLAlchemy possui
 otmizações e suporte para se conectar com outros sistemas de banco de dados,
-por exemplo, caso o Salic passe a utilizar o PostgreSQL todo o sistema do
-salic-api continuará funcionando corretamente.
+por exemplo, caso o Salic passe a utilizar o PostgreSQL todo o sistema da
+API Salic continuará funcionando corretamente.
 
 O Flake8 é uma ferramenta de análise estática de código que confere algumas
 normas que deixam o código mais legivel, padronizado e manutenível, a
 refatoração do código utilizando o Flake8 visou melhorar a manutenção do
-salic-api adequando o código as normas do Flake8.
+API adequando o código as normas do Flake8.
 
 Antes da refatoração não era possível levantar um ambiente de desenvolvimento,
-pois era necessário estar conectado ao banco de dados do salic, porém agora,
-com o banco de dados local quem quiser contribuir com o salic-api pode levantar
+pois era necessário estar conectado ao banco de dados do Salic, porém agora,
+com o banco de dados local quem quiser contribuir com o projeto pode levantar
 o ambiente em seu próprio computador e usar um banco SQLite local, além disso,
-para se conectar a um banco de dados basta setar algumas variaveis de ambiente
-e o desenvolvedor pode conectar o salic-api a um banco de dados remoto, como
+para se conectar a um banco de dados basta setar algumas variáveis de ambiente
+e o desenvolvedor pode conectar a um banco de dados remoto, como
 por exemplo um banco de dados de homologação.
 
 Foi utilizado o Code Climate, um sistema que analisa a qualidade do
 código-fonte e atribui uma classificação ao projeto, essa ferramenta verifica
-coisas como duplicação de código e informa aonde no código aonde estão.
+coisas como duplicação de código informando em quais pontos estão estas duplicações.
 
-Os testes da API foram criados para que ao se realizar uma manutenção no código
-seja possivel ter uma garantia de que não foi introduzido algum bug no sistema,
-anteriormente a refatoração não existiam testes, logo era difícil saber se o
+Os testes da API foram criados para que ao realizar manutenção no código
+seja possivel ter uma garantia de que não foi introduzido bugs no sistema,
+anteriormente era difícil saber se o
 sistema está funcionando corretamente após o termino de uma manutenção. Também
-foram criados testes que comparam os resultados das requisições ao salic-api
-refatorado com o salic-api que está atualmente em produção, para se ter uma
-garantia de que ao atualizar o salic-api em produção os sistemas que usam a API
+foram criados testes que comparam os resultados das requisições ao novo projeto de API
+refatorado com a API original que está atualmente em produção, para se ter uma
+garantia de que ao atualizar para a nova versão em produção os sistemas que usam a API
 irão continuar funcionando.
 
 Afim de facilitar que a adição de novas features no salic-api possam chegar ao
 sistema em produção de forma mais rápida e prática, foi criado uma pipeline de
-deploy contínuo, aonde é executado os testes do projeto, é checado se a build
+deploy contínuo, onde é executado os testes do projeto, é checado se a build
 está sendo gerada corretamente e depois é feito o deploy para o servidor.
 
 Todas as melhorias implementadas acima, fez com que o projeto da API do Salic
-atendesse todos os padrões de comunidades de software livre, além de atender os
-requisitos de Devops para entrega e deploy contínuo (build de testes). Para
+atendesse os padrões de comunidades de software livre, além de atender os
+requisitos de DevOps para entrega e deploy contínuo (build de testes). Para
 tal, foram realizados ao total 300 commits (no qual foi aberto um pull request
 para o projeto no repositório do MinC). A API foi  então colocado em um
-ambiente de homologação no laboratório, e após todos testes passarem nesse
+ambiente de homologação no laboratório Lappis, e após todos testes passarem nesse
 periodo de homologação, o projeto será entregue para o Minitério.
 
 O acompanhamento do projeto realizado pode ser encontrado em
@@ -178,22 +194,25 @@ e inovação contínua no desenvolvimento do projeto de Catálogo de Software
 Culturais", além da execução de um ciclo completo de projeto de software.
 
 Grande parte do objetivo de transferência de conhecimento e capacitação da
-equipe de servidores técnicos do Minc foi concentrado nesse periodo em práticas
-devops. Para tal, além de encontros técnicos para apresentação das práticas
+equipe de servidores técnicos do MinC foi concentrado nesse período em práticas
+DevOps. Para tal, além de encontros técnicos para apresentação das práticas
 experimentadas no laboratório, alguns documentos técnicos foram elaborados para
-tal fim. Toda a documentação foi disponibilizado no repositório do laboratório
-[https://gitlab.com/lappis-unb/docs](https://gitlab.com/lappis-unb/docs) e
-também disponibilizado em anexo, o que cobre tanto a primeira quanto a terceira
-meta do período. Foi então elaborado toda a documentação do pipeline usado para
-deploy contínuo no laboratório e elaboração dos seguintes tutoriais:
+tal fim. Toda a documentação foi disponibilizada no repositório do laboratório
+[https://gitlab.com/lappis-unb/docs](https://gitlab.com/lappis-unb/docs),
+disponibilizada também como anexo no final deste documento, os documentos
+cobrem tanto a primeira quanto a terceira meta do período.
 
-1. GitLab CI/CD: guiar relacionados para o uso da Integração Contínua e Deploy contínup no Gitlab;
+Foi elaborado documentação descrevendo todo o pipeline usado para
+deploy contínuo no laboratório com os seguintes tutoriais:
 
-1. Overview e exemplo básico(pt-br): Um guia que ensina como usar o gitlab CI/CD para gerar integração contínua e deploy contínup em um projeto básico;
-
-1. Usando Docker Compose (pt-br): Um guia que ensica como usar o GitLab CI/CD para gerar integração contínua com o Docker Compose em um projeto ágil.
-
-1. Integrando GitLab CI/CD com projeto GitHub(pt-br): Um procedimento que possibilita o uso do GitLab CI/CD no projeto GitHub.
+1. GitLab CI/CD: Guia relacionado ao uso da Integração Contínua e Deploy
+   contínuo no Gitlab;
+1. Overview e exemplo básico(pt-br): Um guia que ensina como usar o gitlab
+   CI/CD para gerar integração contínua e deploy contínuo em um projeto básico;
+1. Usando Docker Compose (pt-br): Um guia que ensina como usar o GitLab CI/CD
+   para gerar integração contínua com o Docker Compose em um projeto ágil.
+1. Integrando GitLab CI/CD com projeto GitHub(pt-br): Um procedimento que
+   possibilita o uso do GitLab CI/CD no projeto GitHub.
 
 Toda a documentação foi realizada em português e disponibilizada para acesso.
 
@@ -230,7 +249,7 @@ Cultura.
 Além disso, técnicas de aprendizado de máquinas serão estudadas para
 automatizar processos nas trilhas de auditorias, tanto na etapa de habilitação
 e aprovação, quanto na etapa de prestação de contas. O objetivo é auxiliar
-auditores a encontrar erros, inconsistências e detecção de anomalias nas
+auditores a encontrar erros, inconsistências e detectar anomalias nas
 submissões.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
@@ -244,9 +263,11 @@ Todas as atividades relacionadas as ações listadas acima foram 100%
 finalizadas. Segue resumo da execução das atividades:
 
 Foi desenvolvido uma versão inicial do bot -- versão 0.1 (beta) -- com o
-framework Hubot Natural, o desenvolvimento aconteceu após estudos sobre
+framework Hubot Natural[^hubot], o desenvolvimento aconteceu após estudos sobre
 ferramentas para criação de chatbots. Decidiu-se utilizar o Rocket.Chat como
 interface para o chatbot, compondo a solução em conjunto com o Hubot Natural.
+
+[^hubot]: Hubot Natural é um chatbot de Processamento de Linguagem Natural para o Rocket.Chat. [https://github.com/RocketChat/hubot-natural](https://github.com/RocketChat/hubot-natural)
 
 Realizou-se evolução do projeto Hubot Natural, com contribuições da equipe ao
 repositório oficial do projeto. Além de colaboração com os desenvolvedores core
@@ -258,11 +279,11 @@ neste primeiro treinamento foi incluido especialmente conhecimentos avançados
 sobre a lei de incentivo, deixando de fora da base conhecimento básicos
 necessários para responder adequadamente questões mais básicas.
 
-Levantou-se um ambiente de homologação, incluindo uma landing page da Rouana
+Levantou-se um ambiente de homologação em [https://rouana.lappis.rocks](https://rouana.lappis.rocks), incluindo uma landing page da Rouana
 com instruções de como validar e homologar o assistente virtual, onde através
 da base de conhecimento criada a partir dos documentos disponibilizados pela
 ouvidoria da SEFIC, avaliou-se a eficácia do chatbot através de testes de
-usuários incluindo servidores do MinC e pesquisadores e alunos do Lappis.
+usuários incluindo servidores do MinC, pesquisadores e alunos do Lappis.
 
 Os testes realizados com chatbot versão 0.1 (beta) em ambiente de homologação
 revelaram que o assistente virtual com as tecnologias selecionadas atende
@@ -278,11 +299,10 @@ mais simples.
 Contribuimos com a documentação do repositório do Hubot Natural, incluindo
 documentar o processo de configuração do LiveTransfer, tradução da documentação
 do Hubot Natural para o inglês e adoção de solução de documentação para o
-hubot-natural.
-
-Foi feito levantamento de práticas e ferramentas para instrumentalização do
-Hubot Natural com ferramentas para análise estática como Coffeelint e
-Codeclimate, além de integração contínua ao Hubot Natural.
+Hubot Natural.
+Foi feito também levantamento de práticas e ferramentas para instrumentalização
+com ferramentas para análise estática como Coffeelint e
+Codeclimate, além de integração contínua ao projeto.
 
 Realizou-se também pesquisa e implementação de melhores práticas de UX para
 interfaces conversacionais, necessária para melhoria na experiência do usuário
@@ -312,12 +332,14 @@ características relevantes para o problema (_Exploratory Data Analysis_ e _Data
 Wrangling_), quanto na classificação de novos dados (usando modelos básicos de
 regressão do módulo _Scikit-learn_).
 
-São dois os objetivos dessa frente de trabalho: 1. Auxiliar o processo de
-admissão e prestação de contas do Salic: automatizar tarefas simples e
-repetitivas de tais processos para otimizar da criação à conclusão de projetos
-culturais; 2. Fornecer insumos para um sistema de transparência do Salic:
-fornecer métricas utilizadas para mapear as categorias e regiões de maior
-incentivo e para incentivar novos produtores culturais.
+São dois os objetivos dessa frente de trabalho:
+
+1. Auxiliar o processo de admissão e prestação de contas do Salic: automatizar
+   tarefas simples e repetitivas de tais processos para otimizar da criação à
+   conclusão de projetos culturais;
+2. Fornecer insumos para um sistema de transparência do Salic: fornecer
+   métricas utilizadas para mapear as categorias e regiões de maior incentivo e
+   para incentivar novos produtores culturais.
 
 A frente está trabalhando na criação de uma API que deve se comunicar, a
 princípio, com o Salic. Contudo, futuramente novos sistemas também podem
@@ -330,11 +352,14 @@ seguida de implementação na API das hipóteses confirmadas na etapa de
 validação.
 
 A API está em desenvolvimento em Python, utilizando-se o framework Django. Três
-hopóteses já foram levantadas e estão sendo validadas: 1. relação entre o tempo
-e a mudança dos preços de itens da planilha orçamentária de um projeto; 2.
-identificação de itens superfaturados a partir do histórico de projetos
-aprovados e recusados e; 3. categorização e identificação de similaridade de um
-projeto a partir de sua planilha orçamentária vigente.
+hopóteses já foram levantadas e estão sendo validadas:
+
+1. Relação entre o tempo e a mudança dos preços de itens da planilha
+   orçamentária de um projeto;
+2. Identificação de itens superfaturados a partir do histórico de projetos
+   aprovados e recusados e;
+3. Categorização e identificação de similaridade de um projeto a partir de sua
+   planilha orçamentária vigente.
 
 Caso as hipóteses se confirmem, serão implementadas e será possível verificar,
 para cada projeto, se sua planilha orçamentária contém itens possivelmente
@@ -372,8 +397,7 @@ na prática que o orçamento foi consumido apenas na categoria mão-de-obra. Tod
 esse valor foi executado no pagamento das bolsas do time, e o valor gasto por
 frente do projeto pode ser visto na figura abaixo.
 
-![Neste gráfico é possível observar a representação do percentual do custo da mão-de-obra incidido em cada equipe do projeto. A maior alocação de recursos encontram-se nas equipes do Catálogo de Softwares Culturais(representado pela cor azul), uma vez que grande parte das  funcionalidades desenvolvidas são providas através desta
-frente, e a equipe do Aprendizado de máquina(representado pela cor verde), que desenvolveu o chatbot.](figs/bolsas_E2.png){width=400px}
+![Neste gráfico é possível observar a representação do percentual do custo da mão-de-obra incidido em cada equipe do projeto. A maior alocação de recursos encontram-se nas equipes do Catálogo de Softwares Culturais(representado pela cor azul), uma vez que grande parte das  funcionalidades desenvolvidas são providas através desta frente, e a equipe do Aprendizado de máquina(representado pela cor verde), que desenvolveu o chatbot.](figs/bolsas_E2.png){width=400px}
 
 # Assinatura
 
@@ -980,7 +1004,7 @@ As pipelines executadas no projeto podem ser vistas nos seguintes _links_:
 
 # Anexo II - Alinhamento Estratégico
 
-# Anexo III - Resultados Pesquisa Devops Pesquisa  Survey de Acompanhamento
+# Anexo III - Resultados Pesquisa DevOps Pesquisa  Survey de Acompanhamento
 
 ## Resultados parciais da revisão sistemática referente à Devops
 
