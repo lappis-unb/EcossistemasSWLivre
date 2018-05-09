@@ -290,17 +290,59 @@ design sprint pode ser acompanhada em
 
 ### Práticas de gestão colaborativa
 
+Nessa etapa será realizada uma pesquisa exploratória tendo como objeto de
+estudo os movimentos, organizações, desenvolvedores e demais stakeholders que
+atuam na gestão colaborativa de software aberto. O principal objetivo do
+trabalho de gestão colaborativa dessas comunidades de software aberto é manter
+um conjunto de ações de governança digital e comunicação que aproveite ao
+máximo esse potencial em favor das necessidades do órgão e das metas comuns às
+organizações parte das comunidades. Esse esforço envolve um trabalho de
+mapeamento de atores de cada comunidade (atuais e potenciais futuros),
+assessoria para planejamento conjunto, facilitação de fluxos de comunicação e
+mobilização, realização de atividades conjuntas para integração, identificação
+de oportunidades externas, assessoria para comunicação e divulgação ao público
+externo à comunidade e apoio para solução de conflitos.
+
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
 - [x] Realizar Estudos sobre processo de planejamento conjunto
 - [x] Identificar grupos de opinião
 
-Todas as atividades relacionadas as ações listadas acima foram 100% finalizada
+Todas as atividades relacionadas as ações listadas acima foram 100% finalizada.
+Nessa etapa, foi focado na estratégia de colaboração entre os laboratórios de
+pesquisa que contribuem para os repositórios MinC:
 
-Proposta de colaboração entre os labs (anexo)
+1. Frente metodologias ágeis e devops: Por ser uma prática comum ao LAPPIS,
+   oriunda da própria história do laboratório e reforçada pelas disciplinas
+   práticas da FGA/UnB, é um ativo que pode ser compartilhado na comunidade de
+   laboratórios;
+    - Oficinas para intercâmbio de método de trabalho (funcionamento das
+      sprints, wikis, decisão sobre pull requests etc) - Maio ou junho/2018
+    - Evento prático de devops para apresentar o resultado da pesquisa e fazer
+      intercâmbio prático.
+1. Frente de tecnologias livres para chatbots: Pela carência de tecnologias
+   livres desse tipo e as inúmeras aplicações na qualificação dos serviços
+   públicos essa pode ser uma oportunidade para os outros laboratórios. O Lappis
+   pode auxiliar a incorporação dessa tecnologia nos serviços digitais em
+   desenvolvimento pelos outros laboratórios, assim como já está fazendo com o
+   Salic e pode fazer com o Mapas Culturais.
+    - Lançamento da tecnologia no MinC e Workshop técnico na semana seguinte
+      para os interessados em conhecer/colaborar na tecnologia;
+    - Incorporação de metas estratégicas conjuntas para devops e chatbots em
+      outros serviços digitais do MinC;
+    - Implementação de boas práticas para governança da comunidade em torno
+      desse ativo tecnológico (chatbots) visando aumento da contribuição de
+      desenvolvedores externos ao Lappis, com foco nos times dos laboratórios
+      parceiros.
+1. Frente de Governança de Comunidades: Essa frente envolve pesquisa e
+   realização de eventos conjuntos com temas estratégicos para a colaboração
+   aberta nas tecnologias desenvolvidas e mantidas pelo Estado.
 
-Proposta de agenda de eventos entre labs e minc e com a comunidade de software
-livre?
+Intercâmbio de pesquisa através do compartilhamento de referências e produção
+conjunta de artigos - Seminário Interno com UFG - Jul/2018 à Out/2018.
+
+Realização de eventos conjuntos sobre o tema da Governança de Comunidades Open
+Source com adesão do Estado e Contratação Pública de TICs - Maio ou junho/2018.
 
 ### Aprendizado de Máquina Lei Rouanet
 
