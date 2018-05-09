@@ -36,7 +36,7 @@ pacote de trabalho (de acordo com o Plano de Trabalho). Os avanços
 apresentados de acordo com o pacote de trabalho e com cronograma, no período
 citado.
 
-### Legado em Software Livre
+### Legado em Software Livre <!-- {{{ -->
 
 Os repositórios presentes na organização MinC não possuem uma padronização:
 muitos deles tem pouca ou nenhuma documentação, alguns nem possuem licenças de
@@ -168,7 +168,9 @@ periodo de homologação, o projeto será entregue para o Ministério.
 O acompanhamento do projeto realizado pode ser encontrado em
 [https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api).
 
-### Catálogo de Softwares Culturais
+<!-- }}} -->
+
+### Catálogo de Softwares Culturais <!-- {{{ -->
 
 O principal objetivo nessa etapa é exercitar em todo ciclo de projeto a
 experimentação e inovação contínua, de forma a subsidiar a pesquisa realizada
@@ -288,7 +290,9 @@ está previsto a aplicação de testes de uso dos protótipos. Toda a execução
 design sprint pode ser acompanhada em
 [https://github.com/lappis-unb/PromovaCultura](https://github.com/lappis-unb/PromovaCultura).
 
-### Práticas de gestão colaborativa
+<!-- }}} -->
+
+### Práticas de gestão colaborativa <!-- {{{ -->
 
 Nessa etapa será realizada uma pesquisa exploratória tendo como objeto de
 estudo os movimentos, organizações, desenvolvedores e demais stakeholders que
@@ -344,7 +348,9 @@ conjunta de artigos - Seminário Interno com UFG - Jul/2018 à Out/2018.
 Realização de eventos conjuntos sobre o tema da Governança de Comunidades Open
 Source com adesão do Estado e Contratação Pública de TICs - Maio ou junho/2018.
 
-### Aprendizado de Máquina Lei Rouanet
+<!-- }}} -->
+
+### Aprendizado de Máquina Lei Rouanet <!-- {{{ -->
 
 O principal objetivo é o estudo de técnicas de Aprendizado de Máquina que
 possam apoiar o sistema de recomendação e fiscalização da lei Rouanet. Nessa
@@ -477,7 +483,9 @@ Microserviço SALIC Data - Microserviço que realiza a mineração dos dados dos
 projetos submetidos por meio da plataforma SALIC e aplica técnicas de machine
 learning para extração de padrão, detecção de anomalias.
 
-### Aferição e aceitação de produtos de software
+<!-- }}} -->
+
+### Aferição e aceitação de produtos de software <!-- {{{ -->
 
 O objetivo geral desta frente de pesquisa é auxiliar os times de
 desenvolvimento e gestores de TI do MinC a aprimorarem sua capacidade em tomar
@@ -490,12 +498,18 @@ Ações programadas para esta etapa de acordo com o plano de trabalho:
 - [x] Diagnóstico sobre as práticas atualmente adotadas pelo MinC de garantia da qualidade de produto
 - [ ] Elaborar Plano de Pesquisa-Ação
 
-Aplicação de surveys com os gestores do MinC e desenvolvedores seniores do
-LAPPIS e MinC.
+Nessa etapa foram aplicadas surveys com os gestores do MinC e desenvolvedores
+seniores do Lappis e MinC. O objetivo do survey foi fazer uma análise
+qualitativa sobre o projeto e sobre práticas devops e práticas de comunidades
+de software livre.
 
-Resultados do survey com os alunos
+Nesse período também foi realizado a análise do survey aplicado aos alunos. O
+resultado é apresentado em anexo.
+
+<!-- }}} -->
 
 # Acompanhamento Financeiro
+
 ![Detalhamento da execução do repasse na Etapa II.](figs/valores_executados_E2.png)
 
 O valor do repasse referente à Etapa I foi de R$598.000,00. Todo esse repasse
@@ -518,7 +532,7 @@ Assinatura:
 
 Data: 06/04/2018
 
-# Anexo I - GitLab CI/CD
+# Anexo I - GitLab CI/CD <!-- {{{ -->
 
 Este _doc_ tem por objetivo capacitar um _dev_ em utilizar o **GitLab CI/CD**
 em projetos que exigem estruturas básicas de configuração. Para um melhor
@@ -1110,10 +1124,398 @@ As pipelines executadas no projeto podem ser vistas nos seguintes _links_:
 * [Pipeline da _branch_ develop](https://gitlab.com/lappis-unb/internal/guides/examples/characters/pipelines/18027406);
 * [Pipeline da _branch_ master](https://gitlab.com/lappis-unb/internal/guides/examples/characters/pipelines/18027409).
 
-# Anexo II - Alinhamento Estratégico
+<!-- }}} -->
 
-# Anexo III - Resultados Pesquisa DevOps Pesquisa  Survey de Acompanhamento
+# Anexo II - Estudo sobre ferramenta de chatbots <!-- {{{ -->
 
-## Resultados parciais da revisão sistemática referente à Devops
+## Introdução
+
+A fim de identificar as ferramentas mais adequadas ao contexto do MINC, foram analisadas as seguintes ferramentas:
+* botpress
+* RASA
+* IBM Bluemix
+
+Levando em conta os seguintes critérios:
+
+* Vantagens e Limitações
+* Licença
+* Analytics (indicadores e dados coletados sobre as interações com o bot)
+
+## Botpress
+
+![botpress](https://raw.githubusercontent.com/botpress/botpress/HEAD/assets/shot_01.png)
+
+### Vantagens
+* Permite que o bot faça perguntas ao usuário
+* Permite que sejam enviadas opções para que o usuário selecione
+* Possui ferramenta de análise
+* Possibilita integração externa
+
+### Limitações
+* Não há NLP (Natural Language Processing) nativo, entretanto é fácil a integração com módulos com NLP, como RASA, API.AI (Dialogflow), WIT.AI, entre outros.
+* Apesar de possibilitar integração externa, é necessária a criação de um conector. Há conectores tanto oficiais, quanto criados pela comunidade. Já existe um conector para páginas web criado pela comunidade, porém em versão alpha, ainda não contemplando o envio de imagens, vídeos, áudios e etc.
+
+### Licença
+O bot utiliza duas licenças: [AGPLv3](https://github.com/botpress/botpress/blob/master/licenses/LICENSE_AGPL3) e a [Botpress Proprietary License](https://github.com/botpress/botpress/blob/master/licenses/LICENSE_BOTPRESS).
+
+A Botpress Proprietary License permite que os módulos sejam usados apenas para a construção de chatbots, não podendo ser utilizados para construção de outras plataformas comerciais, como uma própria plataforma de desenvolvimento de chatbots, sem permissão prévia da Botpress.
+
+O core e os módulos utilizados em um projeto devem utilizar a mesma licensa.
+
+Para mais detalhes, acesse o [FAQ](https://botpress.io/faq).
+
+### Analytics
+O botpress oferece uma dashborad onde é possível visualizar as seguintes informações:
+* Número total de usuários por plataforma
+* Uso por gênero
+* Quantidade de usuários ativos nas últimas duas semanas
+* Média de interações que os usuários têm com o bot em um dia
+* Retenção por dia
+* Horas em que o bot esteve ocupado para os últimos sete dias
+
+### Exemplos
+
+#### Integração com páginas web
+
+Para integração do bot com páginas web é necessária a instalação do módulo botpress-web através do seguinte comando:
+
+```
+npm install botpress-web@next
+```
+
+Inclua o código abaixo dentro da tag `<body>` da página a qual você quer integrar o chat:
+
+```javascript
+<script>
+    window.botpressSettings = {
+        hostname: "localhost:3000" // <<-- Mude para o hostname do seu bot
+    };
+</script>
+<script>
+    !function() {
+        function t() {
+	    var t = n.createElement("script");
+	    t.type="text/javascript", t.async=!0,t.src="http://"+a.hostname+"/api/botpress-web/inject.js";
+	    var e = n.getElementsByTagName("script")[0];
+	    e.parentNode.insertBefore(t,e)
+        }
+
+	var e = window, a = e.botpressSettings,n = document;
+	e.attachEvent ? e.attachEvent("onload",t): e.addEventListener("load",t,!1)
+    }();
+</script>
+```
+Se a URL do host não for https, dentro do diretório do seu projeto, vá até o diretório **node_modules/botpress-web/bin** e no arquivo **node.bundle.js** troque a URL da definição do host para http.
+
+Reinicie a aplicação do bot e a janela de chat deverá aparecer na página web.
+
+#### Integração com wit.ai
+
+Para adicionar NLP ao bot é necessária a integração com algum módulo que forneça essas funcionalidades. A seguir será mostrado um exemplo de integração com o WIT.AI.
+
+Primeiramente é necessária a instalação do módulo através do seguinte módulo:
+
+```
+botpress install wit
+```
+
+Crie uma aplicação no WIT.AI e cadastre os contextos com suas respectivas questões, conforme este [este tutorial](https://wit.ai/docs/quickstart).
+
+Copie o **Service Access Token** na aba **Settings** do WIT.AI e cole no campo **Access Token** da opção Wit.ai no Botpress, marcando a opção Understanding.
+
+[[images/witi-set.png]]
+
+Neste exemplo, no arquivo content.yml foram configuradas as respostas para cada contexto definido no WIT.AI:
+
+```yaml
+projetos:
+  - typing: true
+    text: |
+      Para a Pessoa Física e para o Empresário Individual – EI com enquadramento em Microempresário Individual – MEI o valor máximo é de R$ 700.000,00 (setecentos mil reais).
+      Para os demais enquadramentos de Empresário Individual – EI o valor máximo é de R$ 5.000.000,00 (cinco milhões de reais).
+      Para a Empresa Individual de Responsabilidade Limitada – EIRELI, Sociedades Limitadas – Ltda. e demais Pessoas Jurídicas o valor máximo é de R$ 10.000.000,00 (dez milhões de reais). Referência inciso II e suas alíneas, da IN 01/17.
+
+ingressos:
+  - typing: true
+    text: |
+      A comercialização dos ingressos ou outros produtos culturais resultantes do projeto não possui teto de valor unitário, observando que esses valores estarão sempre sujeitos à aprovação do MinC com vistas a assegurar a democratização.
+      O preço médio do produto cultural a ser vendido a critério do proponente referente à cota de 50% da tiragem total de produtos é que deve ser no máximo de três vezes o valor mensal do Vale-Cultura, o que hoje representa R$ 150,00.
+      Rege a matéria o art. 53 da IN 01/17, em especial a alínea “e“ do inciso I e os §s 4º e 5º.
+```
+
+E por fim, foi feita a configuração para que quando o WIT.AI retornar que a frase feita pelo usuário representa um contexto, o bot identifique e retorne as respostas definidas para o contexto retornado:
+
+```javascript
+module.exports = function(bp) {
+
+  bp.hear({'wit.entities.intent[0].value': 'ingressos'}, (event, next) => {
+    event.reply('#ingressos')
+  })
+
+  bp.hear({'wit.entities.intent[0].value': 'projetos'}, (event, next) => {
+    event.reply('#projetos')
+  })
+}
+```
+
+Teste o bot:
+
+[[images/bot.png]]
+
+Há ainda módulos prontos para a integração com outras ferramentas, além do [Botpress NLU](https://github.com/botpress/botpress-nlu) que permite a integração com o RASA ou LUIS de forma que possam ser configurados pela própria interface do Botpress:
+
+![botpress nlu demo](https://raw.githubusercontent.com/botpress/botpress-nlu/master/assets/banner_demo.gif)
+
+## IBM Watson Conversation
+
+O [watson conversation](https://watson-conversation.ng.bluemix.net)
+é a solução da IBM para chatbots. Há um
+[curso online](https://cognitiveclass.ai/courses/how-to-build-a-chatbot/)
+que dá uma breve introdução sobre os chatbots e o IBM watson
+
+O fluxo de trabalho no Watson é:
+
+1. Criar as `intents`: que são intenções que o usuário possui. Cada intenção é
+formada por um conjunto de perguntas / frases, no mínimo 5, e um título identificador da
+intenção. Nesta etapa é bom prever muitas variações das perguntas e possíveis erros
+gramaticais que o usuário pode cometer para melhorar a acuracia do treinamento.
+1. Criar as `entities`: repsentam partes elementares de uma mensagem, por exemplo,
+um local, uma data ou um tipo de relação pessoal. Cada entidade possui um texto que
+representa ela, e vários sinônimos.
+1. Criar o diálogo: O diálogo é um fluxo de conversa com os passos em que ocorre um
+fluxo natural de conversa real. Ele é descrito como uma sequencia de estatos, e
+cada estado possui: intent ou ação, uma série de respostas para mostrar pro usuário,
+uma ação que deve ser tomada ao fim daquele estado. A ação do fim pode ser pular para
+um estado específico, pedir input para o o usuário, entre outras. Cada estado pode
+ter sub-estados.
+
+**Intents**
+
+[[images/intents-watson.png]]
+
+**Entities**
+
+[[images/entities-watson.png]]
+
+**Dialog**
+
+[[images/dialog-watson.png]]
+
+### Vantagens
+
+* Tem integração por padrão com o Slack e o Facebook Messenger
+* É possível integrar com outras aplicações
+* Inteface simples e agradável
+* Suporte a analytics, com poucas métricas
+
+### Limitações
+
+* Reconhecimento semi-automatico de entidades. Você precisa pré-cadastrar as opções
+* Código fechado e precificação por uso
+
+### Licença
+
+Copyright - código fechado da IBM.
+
+O Pricing é baseado no número de conversas feitas por mês.
+
+### Analytics
+
+O IBM Watson extrai as seginte métricas:
+
+- Gráfico de número de chats por hora
+- Número total de chats
+- Número de mensagens sem classificação (não identificou intenção ou entidade)
+- Top 3 intenções e entidades
+
+## Rasa NLU e Rasa Core
+
+### Rasa NLU
+
+O [Rasa NLU](https://nlu.rasa.ai/) é uma ferramenta open source para processamento de linguagem natural, sendo focada em classificação de intenções e extração de identidades.
+Rasa é um conjunto de API's para construção de um parser que utiliza as bibliotecas de NLP e ML existentes. Sendo que, este pode ser utilizado como uma alternativa à ferramentas como: `wit`,`LUIS`,`Dialog Flow`, e etc.
+
+Segundo o estudo [Evaluating Natural Language Understanding Services for Conversational Question Answering Systems](http://www.sigdial.org/workshops/conference18/proceedings/pdf/SIGDIAL22.pdf), é possível perceber que o Rasa possui um desempenho muito bom comparado às principais ferramentas comerciais de processamento de linguagem natural, tanto em relação à desempenho quanto à acurácia da extração de entidades e intenções.
+
+### Utilizando o Rasa NLU
+
+Para utilizar o Rasa basta instalar o pacote do Rasa NLU, escolher o modelo de backend que melhor se aplica ao contexto em questão, e seguir o [tutorial de instalação](https://nlu.rasa.ai/installation.html). Como o Rasa utiliza bibliotecas python de ML para processamento, tanto o rasa_nlu quanto o backend podem ser instalados utilizando o `pip`.
+
+Os dados para treinamento do Rasa NLU seguem um padrão que consiste na entrada de texto a ser processada, definição da intenção correspondente àquela entrada e das entidades presentes. Os arquivos de treinamento ficam no diretório `data`.
+
+Para selecionar o pipeline de backend a ser utilizado, para isso o Rasa NLU utiliza um arquivo `JSON` que define o pipeline a ser utilizado, o diretório onde estão os arquivos para treinamento, onde devem ser criados os modelos gerados a partir do treinamento e outros metadados. Todas as possíveis configurações que podem ser utilizadas no arquivo de configuração podem ser encontradas na [documentação oficial](https://nlu.rasa.ai/config.html#section-configuration). Se o pipeline sendo utilizado for o do `SPACY + SKLEARN` por exemplo, pode-se criar um arquivo chamado `config_spacy.json`.
+
+Depois de especificar o arquivo de configuração bastará rodar a linha de comando para treinar os modelos, e em seguida subir o server do rasa. A partir daí já será possível processar textos e o Rasa NLU devolverá um `JSON` com a classificação da intenção e as entidades identificadas.
+Para um melhor entendimento da execução desses passos, basta seguir as instruções de construção de um [bot básico](https://nlu.rasa.ai/tutorial.html).
+
+### Rasa Core
+
+O [RASA Core](https://core.rasa.ai/) é uma ferramenta livre para construção de sistemas de conversação, como Messengers e Chat Bots.
+
+### Utilizando o Rasa Core
+
+Para utilização do Rasa Core, além das dependências instaladas para utilização do Rasa NLU, é necessário instalar apenas o seu pacote, seguindo a [documentação](https://core.rasa.ai/installation.html).
+
+É preciso ter um arquivo `domain.yml` que define o universo de atuação do bot. Dentro desse arquivo são especificadas as intenções e ações a serem utilizadas durante a execução do bot.
+
+Dentro do diretório `data` deve existir um arquivo `nlu.md` que define os textos relacionados à cada intenção. E um arquivo `stories.md` que descreve os contextos de conversação esperados a partir das intenções.
+
+Na pasta raiz do projeto é necessário um arquivo de configuração como o utilizado no Rasa NLU, que defina as configurações da pipeline a ser utilizada.
+
+Por último, é necessário executar os comandos para treinar o Rasa NLU e o Rasa Core. São nesses passos onde serão gerados os modelos e os arquivos de treinamento que o bot consumirá. E então, executar o comando para subir o server do Rasa Core.
+Para mais informações a respeito da execução destes passos, basta seguir os passos para [construção de um bot básico usando o Rasa Core](https://core.rasa.ai/tutorial_basics.html).
+
+### Vantagens
+  * Livre e grátis;
+  * Todos os serviços citados acima não informações relevantes à respeito das tecnologias usadas(algoritmos de ML e datasets), diferentemente do RASA, que é mais flexível e te permite facilmente escolher às ferramentas a serem utilizadas no módulo de backend;
+  * O Rasa apresenta performance similar ou superior aos serviços acima citados;
+  * Possui funcionalidade de importar dados em lote;
+
+### Limitações
+  * Uma das desvantagens em relação aos serviços NLU que são baseados em nuvem é que o Rasa não é tão facilmente escalável;
+  * O Rasa possui uma pequena base para treinamento inicial. Por exemplo, para o backend usando o MITIE, o Rasa vem com um modelo de linguagem inicial de aproximadamente 300 MB. Enquanto que as outras ferramentas, por serem comerciais, são alimentadas com grandes entradas de dados;
+
+### Licença
+
+Tanto o Rasa NLU como o Rasa Core utilizam a licença permissiva **Apache License 2.0** - [Rasa NLU license](https://github.com/RasaHQ/rasa_nlu/blob/master/LICENSE.txt)/[Rasa Core license](https://github.com/RasaHQ/rasa_core/blob/master/LICENSE.txt).
+
+### Analytics
+
+Ambas as bibliotecas, Rasa core e Rasa NLU, não oferecem nativamente suporte à extração e análise de métricas.
+
+## Integração dos serviços: BotPress + Rasa NLU + Spacy
+
+### Utilização do BotPress
+
+É preciso instalar o pacote do BotPress através do npm.
+```bash
+  npm install -g botpress
+```
+
+Para iniciar um projeto com o BotPress é preciso utilizar o comando abaixo indicando o nome do seu projeto.
+
+```bash
+  botpress init my-bot
+```
+
+Por último basta iniciar o serviço do BotPress.
+
+```bash
+  botpress start
+```
+
+Após a execução dos passos anteriores, o BotPress estará rodando por padrão na porta 5000.
+
+Para o BotPress se comunicar com o rasa é preciso instalar o Middleware do rasa, utilizando o comando abaixo.
+
+```bash
+  botpress install rasa
+```
+Em seguida, na aba `Rasa NLU` no dashboard à esquerda é necessário configurar o endereço do host onde o seu Rasa NLU está rodando no campo `Rasa Address`. Se o servidor do Rasa estiver rodando no mesmo host basta apontar para a respectiva porta, que por padrão é a porta 5000.
+Também é preciso definir no campo `Project Name` o nome da pasta de projeto onde estão os modelos do rasa, que por padrão é a pasta `default`.
+
+Se o servidor do Rasa NLU estiver rodando corretamente o Botpress já estará conectado corretamente e para utilizar o Rasa como backend basta configurar uma resposta que utilize o Middleware do Rasa no arquivo `index.js`. Como no exemplo abaixo, em que sempre que o Rasa NLU indentificar a intenção `greet` o Botpress usará uma das respostas definidas na tag 'greet_response', dentro do arquivo 'content.yml'.
+
+```javascript
+bp.hear({'rasa_nlu.intent.name': 'greet'}, (event) => {
+  event.reply('#greet_response')
+})
+```
+### Utilização do Rasa NLU
+
+É possível instalar o Rasa NLU diretamente pelo pip. No contexto desenvolvimento é mais interessante clonar o [repositório do Rasa](https://github.com/RasaHQ/rasa_nlu) uma vez que provavelmente vários arquivos serão modificados.
+
+Uma vez configurados os arquivos de acordo com o contexto em questão, é necessário executar o comando abaixo para treinar os modelos com o backend em questão.
+
+```bash
+python -m rasa_nlu.train -c sample_configs/config_spacy.json
+```
+E então basta subir o servidor do Rasa.
+
+```bash
+python -m rasa_nlu.server -c sample_configs/config_spacy.json
+```
+
+### Utilizando Botpress web
+
+O [Botpress web](https://github.com/botpress/modules/tree/master/packages/botpress-channel-web) permite a utilização do chat de duas formas, com um iframe que pode ser utilizado embutido em qualquer página, ou como um web-app na tela inteira.
+Para utilizar o Botpress web é necessário instalar o pacote via botpress ou npm:
+```bash
+botpress install botpress-platform-webchat
+```
+Uma vez instalado o Middleware web, é possível ver se este está ativado na aba Middleware no menu principal do Botpress, à esquerda no dashboard.  
+
+Para utilizar a `view mobile` basta acessar o link a seguir a partir do seu hostname:
+ ${HOSTNAME}/lite/?m=platform-webchat&v=fullscreen (e.g http://localhost:3000/lite/?m=platform-webchat&v=fullscreen
+
+Para embutir o chat em uma página qualquer basta adicionar o código abaixo ao final da tag `<body>` em qualquer arquivo html.
+
+```html
+<script src="<host>/api/botpress-platform-webchat/inject.js"></script>
+<script>window.botpressWebChat.init({ host: '<host>' })</script>
+```
+
+## Integração dos serviços: Rasa NLU + Rasa Core
+
+Para a instalação do Rasa Core através do [pip](https://pip.pypa.io/en/stable/installing/), utilize o comando abaixo:
+
+```bash
+  pip install rasa_core
+```
+
+Para a instalação do Rasa NLU, utilize o comando abaixo ou instale através do repositório conforme descrito no tópico anterior (Integração dos serviços: BotPress + Rasa NLU + Spacy).
+
+```bash
+  pip install rasa_nlu
+```
+É possível utilizar o sklearn, spaCy e MITIE como backend para o Rasa NLU. Para utilização do spaCy, execute os seguintes comandos:
+
+```bash
+pip install rasa_nlu[spacy]
+python -m spacy download en_core_web_md
+python -m spacy link en_core_web_md en
+```
+
+O tutorial do [Rasa Core](https://core.rasa.ai/tutorial_basics.html) descreve um passo a passo para a criação de um bot simples utilizando estas tecnologias.
+
+<!-- }}} -->
+
+# Anexo III - Planejamento Estratétigo <!-- {{{ -->
+
+Planejamento referente à Etapa II do projeto (Março 2018 à Junho 2018)
+
+## Metas Estratégicas
+
+* Transformar softwares culturais abrindo-os para práticas colaborativas e abertas ([meta estratégica 1](https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Metas#meta-1-transforma%C3%A7%C3%A3o-de-software-legado-em-comunidades-de-software-aberto))
+* Estruturar a equipe e definir os primeiros passos da frente Governança ([meta estratégica 3](https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Metas#meta-3-estudos-sobre-pr%C3%A1ticas-de-gest%C3%A3o-colaborativa-em-comunidades-de-software-aberto))
+* Refatorar e re-escrever chatbot usando tecnologias mais "inteligentes", iniciando a modelagem de um produto lappis de assistentes virtuais para serviços públicos ([meta estratégica 4](https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Metas#meta-4-aprendizado-de-m%C3%A1quina-para-apoiar-a-fiscaliza%C3%A7%C3%A3o-da-lei-rouanet))
+* Coleta de dados para estudo sobre melhoria das práticas de gestão e desenvolvimento de software livre ([meta estratégica 3](https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Metas#meta-3-estudos-sobre-pr%C3%A1ticas-de-gest%C3%A3o-colaborativa-em-comunidades-de-software-aberto))
+* Primeitos passos para estudos sobre processos técnicos e gerenciais para aferição e aceitação de produtos de software ([meta estratégica 6](https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Metas#meta-6-estudos-dos-processos-t%C3%A9cnicos-e-gerenciais-minc-para-aferi%C3%A7%C3%A3o-e-aceita%C3%A7%C3%A3o-de-produtos-de-software))
+
+## Épicas
+
+### Governança
+* Sistematizar colaboração entre os atores internos e externos ao minc
+* Realizar e fomentar colaboração em software livre nos projetos do minc
+
+### Chatbot
+* Chat em produção com respostas sobre a lei e sobre o sistema salic
+* Evolução do bot com tecnologias mais inteligentes para refinamento de contexto
+
+### Plataforma
+* Modelo de processo multidisciplinar da equipe
+* Protótipos da solução VerSalic
+
+### Salic-ML
+* Sistematizar modelo de processo e trabalho com machine learning
+* Desenhar arquitetura da solução ML
+
+### Pesquisa/Paulo
+* Análise qualitativa da execução do modelo e fluxo de colaboração entre lappis/minc
+* Revisão sistemática sobre devops e mapa conceitual
+
+<!-- }}} -->
+
+# Anexo IV - Resultados Pesquisa Devops Pesquisa Survey de Acompanhamento
 
 [https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill](https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill)
