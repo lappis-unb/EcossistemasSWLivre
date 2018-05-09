@@ -163,7 +163,7 @@ requisitos de DevOps para entrega e deploy contínuo (build de testes). Para
 tal, foram realizados ao total 300 commits (no qual foi aberto um pull request
 para o projeto no repositório do MinC). A API foi  então colocado em um
 ambiente de homologação no laboratório Lappis, e após todos testes passarem nesse
-periodo de homologação, o projeto será entregue para o Minitério.
+periodo de homologação, o projeto será entregue para o Ministério.
 
 O acompanhamento do projeto realizado pode ser encontrado em
 [https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api).
@@ -182,7 +182,7 @@ Ações programadas para esta etapa de acordo com o plano de trabalho estão
 listados abaixo:
 
 - [x] Realizar Estudos de tecnologias e práticas devops;
-- [x] Realizar Estudos repositórios MINC;
+- [x] Realizar Estudos repositórios MinC;
 - [x] Elaborar Relatório de Resultado dos Estudos;
 - [x] Realizar estudos sobre funcionalidades de catálogo de software
 
@@ -255,11 +255,38 @@ deploy contínuo no laboratório com os seguintes tutoriais:
 
 Toda a documentação foi realizada em português e disponibilizada para acesso.
 
-Referente à segunda meta "Realizar Estudos repositórios MINC" nesse período foi.
+Referente à segunda meta "Realizar Estudos repositórios MINC" nesse período foi
+aprofundado o estudo sobre as funcionalidades do Salic e como a execução da lei
+Rouanet é realizada no Salic. Foram realizadas diversas reuniões técnicas com a
+equipe da SEFIC, desde a equipe responsável pela adsimibilidade até a equipe
+responsábel pela avaliação de resultados. Os objetivos dessas reuniões foram:
+(a) compreender o processo (fases, etapas) da lei de Incentivo, (b) identificar
+os principais envolvidos/stakeholders em cada etapa, (c) levantar os principais
+pontos de melhoria. A partir desses levantamentos, vamos na próxima etapa,
+propor melhorias, ou por meio do assistente virtual (chatbot) ou por meio de
+algoritmos de aprendizagem de maquinas, ou por meio do sistema "Promova
+Cultura" ou mesmo por meio de novos requisitos para o Salic.
 
 Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de
-software" foram realizadas diversas reuniões com a equipe técnica da SEFIC para
-compreender o processo da lei Rouanet e como é executado no Salic.
+software", primeiramente o sistema denominado no plano de trabalho "Catálogo de
+Software" foi renomeado para "Promova Cultura" em comum acordo entre a
+Universidade e a CGTEC. O motivo dessa alteração foi um entendimento mútuo que
+desenvolver um catálogo de software não seria prioritário no momento, e um
+sistema mais abrangente, que pudesse expor informações relevantes da lei de
+incentivo agrega mais valor para o ministério. Por isso, foram realizadas duas
+design sprints com duração de 2 semanas cada, guiadas pela equipe de
+Experiência de Usuário/ Design a fim de levantar possíveis escopos do sistema
+"Promova Cultura". O processo foi desenvolvido pela Google Ventures, uma
+vertente do Google focado em testar e acelerar ideias que ainda estão em
+estágio inicial de desenvolvimento. Essa abordagem permite iniciar um projeto
+de software orientada à usabilidade.
+
+Alguns protótipos de baixa fidelidade foram propostos. Na próxima etapa serão
+realizados protótipos em código de algumas das soluções propostas na design
+sprint, a fim de amadurecer a proposta de produto. Após esse período, em agosto
+está previsto a aplicação de testes de uso dos protótipos. Toda a execução da
+design sprint pode ser acompanhada em
+[https://github.com/lappis-unb/PromovaCultura](https://github.com/lappis-unb/PromovaCultura).
 
 ### Práticas de gestão colaborativa
 
