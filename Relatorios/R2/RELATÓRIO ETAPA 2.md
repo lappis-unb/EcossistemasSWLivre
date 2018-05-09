@@ -1130,8 +1130,10 @@ As pipelines executadas no projeto podem ser vistas nos seguintes _links_:
 
 ## Introdução
 
-A fim de identificar as ferramentas mais adequadas ao contexto do MINC, foram analisadas as seguintes ferramentas:
-* botpress
+A fim de identificar as ferramentas mais adequadas ao contexto do MINC, foram
+analisadas as seguintes ferramentas:
+
+* Botpress
 * RASA
 * IBM Bluemix
 
@@ -1166,6 +1168,7 @@ Para mais detalhes, acesse o [FAQ](https://botpress.io/faq).
 
 ### Analytics
 O botpress oferece uma dashborad onde é possível visualizar as seguintes informações:
+
 * Número total de usuários por plataforma
 * Uso por gênero
 * Quantidade de usuários ativos nas últimas duas semanas
