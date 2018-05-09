@@ -15,6 +15,10 @@ Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços
 realizados na Etapa II (Janeiro 2018 à Março 2018), de acordo com o cronograma
 do Plano de Trabalho.
 
+Toda alteração no cronograma proposto foi realizada  a partir de renegociação
+com a CGTEC do Ministério da Cultura, e tais alterações estão descritas no
+relatório.
+
 ## FASE DE PLANEJAMENTO/EXECUÇÃO
 
 O período de Janeiro 2018 à Março de 2018 contemplou as fases de
