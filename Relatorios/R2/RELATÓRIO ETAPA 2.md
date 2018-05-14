@@ -32,9 +32,8 @@ Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas
 _issues_ quanto nas páginas _wiki_.
 
 Abaixo serão apresentados os principais avanços alcançados no período, por
-pacote de trabalho (de acordo com o Plano de Trabalho). Os avanços
-apresentados de acordo com o pacote de trabalho e com cronograma, no período
-citado.
+pacote de trabalho (de acordo com o Plano de Trabalho),
+de acordo com o cronograma, no período citado.
 
 ### Legado em Software Livre <!-- {{{ -->
 
@@ -45,7 +44,7 @@ código. A pouca conformidade com os modelos seguidos por comunidades de
 software livre, dificulta ou limita a contribuição de interessados em coloborar
 com os sistemas MinC.
 
-Muito sistemas legados carecem de testes automatizados, boa documentação e
+Muitos sistemas legados carecem de testes automatizados, boa documentação e
 práticas de desenvolvimento contínuo, o que dificulta enormemente qualquer
 forma de evolução. Estes também são fatores críticos na curva de aprendizado de
 novos desenvolvedores e criam uma barreira para a existência de comunidades de
@@ -59,7 +58,7 @@ benefício de criar ambientes de desenvolvimento e produção estáveis, fazendo
 com que diminua o tempo de configuração de ambiente. Essa abordagem traz um
 grande benefício pois possibilita o uso de práticas DevOps mesmo em sistemas
 legados. Esse modelo de isolar pacotes de software legados através de containers Docker possibilita um pipeline de
-entrega contínua, deploy continuo, e diminui a fronteira entre a equipe de
+entrega contínua, deploy contínuo, e diminui a fronteira entre a equipe de
 infraestrutura e equipe de desenvolvimento.
 Já foram observados benefícios dessa abordagem, principalmente em feedback de
 desenvolvedores e mantenedores da infraestrutura, feito de forma espontânea.
@@ -69,9 +68,9 @@ dessa abordagem.
 [^docker]: Docker fornece uma camada adicional de abstração e automação de virtualização de nível de sistema operacional. [http://www.docker.com](http://www.docker.com)
 
 Nessa segunda etapa do projeto, usamos uma segunda forma de lidar com software
-legado, sempre com o intuito de aplicar técnicas modernas de engenharia de
-software e padrões de comunidade de software livre, a fim de viabilizar o uso
-desses projetos legados em comunidades de software livre e em pipelines
+legado, sempre com o intuito de aplicar técnicas modernas de Engenharia de
+Software e padrões de comunidade de software livre, a fim de viabilizar o uso
+desses projetos legados em outros contextos e em pipelines
 automatizados. O foco então foi transformar um software legado em software
 livre, a partir de técnicas de refatoração de código, e suite de testes
 automatizados.
@@ -82,7 +81,7 @@ comunidades de software livre: desde
 documentação técnica, quanto código de qualidade (respeitando métricas de
 qualidade de software), cobertura de testes, suite de testes automatizado,
 ferramenta de integração contínua, e pipeline de deploy contínuo. Para que
-pudessemos alcançar esses objetivos, foi escolhido a API do Salic como estudo
+pudéssemos alcançar esses objetivos, foi escolhido a API do Salic como estudo
 de caso, uma vez que esse é um sistema relativamente pequeno, de grande
 relevância e impacto no ecossistema Salic. A compreensão da API do Salic também
 auxilia no pacote de trabalho "Aprendizado de Máquina Lei Rouanet", uma vez que
@@ -91,30 +90,32 @@ grande parte do trabalho consiste em acessar e processar dados providos da API
 
 As ações programadas para esta etapa de acordo com o plano de trabalho foram:
 
-- [x] Realizar Estudos de conteinerização
-- [x] Realizar Estudo de refatoração em software legado
-- [x] Realizar Estudos sobre práticas de DevOps aplicada a software legado
+- [x] Realizar Estudos de conteinerização;
+- [x] Realizar Estudo de refatoração em software legado;
+- [x] Realizar Estudos sobre práticas de DevOps aplicada a software legado.
 
 Grande parte do time foi alocado por dois meses nessa grande tarefa de
 refatorar a API do Salic, e os principais avanços alcançados nessa etapa foram:
 
 1. Adicionada instalação automazada do ambiente de desenvolvimento através do
-   Virtualenv[^venv] e do Docker, a documentação está no README.
+   Virtualenv[^venv] e do Docker, a documentação está no [README](https://github.com/lappis-unb/salic-api/blob/master/README.rst).
 1. A qualidade do código foi melhorada através das seguintes atividades:
     * Os SQL's em forma de textos foram refatorados, agora é utilizado o
-      SQLAlchemy[^sqlalchemy]. Essa refatoração melhora a manutenibilidade do código e
-      também permite que o API do Salic funcione com qualquer banco de dados que o
-      SQLAlchemy oferece suporte.
+      SQLAlchemy[^sqlalchemy]. Essa refatoração melhora a manutenibilidade[^manutenibilidade] do código e
+      também permite que a API do Salic funcione com qualquer banco de dados que o
+      SQLAlchemy oferece suporte;
     * O Python utilizado no projeto foi atualizado para a versão 3
-      (originalmente era utilizado a versão 2 do Python).
-    * Utilização do Flake8[^flake] para melhorar a estrutura do código.
-    * Adicionado banco de dados local para o ambiente de desenvolvimento.
+      (originalmente era utilizado a versão 2 do Python);
+    * Utilização do Flake8[^flake] para melhorar a estrutura do código;
+    * Adicionado banco de dados local para o ambiente de desenvolvimento;
     * Classificação no Code Climate foi de "F" para "A", resultado da redução
-      do débito técnico.
+      do débito técnico;
     * Criados testes para os endpoints da API, onde é testado se os dados das
-      requisições são recebidos corretamente.
-    * Adicionada integração, build e deploy contínuo.
+      requisições são recebidos corretamente;
+    * Adicionada integração, build e deploy contínuo;
     * Documentação do projeto atualizada.
+
+[^manutenibilidade]: Manutenibilidade é uma característica de produtos de software referente à facilidade, precisão, segurança e economia na execução de ações de manutenção. [https://pt.wikipedia.org/wiki/Manutenibilidade](https://pt.wikipedia.org/wiki/Manutenibilidade)
 
 [^venv]: Virtualenv é um simulador de ambientes virtuais isolados para projetos Python. [http://virtualenv.pypa.io/](http://virtualenv.pypa.io/)
 [^sqlalchemy]: SQLAlchemy é uma biblioteca Python de mapeamento objeto-relacional SQL. [http://www.sqlalchemy.org/](http://www.sqlalchemy.org/)
@@ -127,7 +128,7 @@ por exemplo, caso o Salic passe a utilizar o PostgreSQL todo o sistema da
 API Salic continuará funcionando corretamente.
 
 O Flake8 é uma ferramenta de análise estática de código que confere algumas
-normas que deixam o código mais legivel, padronizado e manutenível, a
+normas que deixam o código mais legível, padronizado e manutenível, a
 refatoração do código utilizando o Flake8 visou melhorar a manutenção do
 API adequando o código as normas do Flake8.
 
@@ -141,18 +142,18 @@ por exemplo um banco de dados de homologação.
 
 Foi utilizado o Code Climate, um sistema que analisa a qualidade do
 código-fonte e atribui uma classificação ao projeto, essa ferramenta verifica
-coisas como duplicação de código informando em quais pontos estão estas duplicações.
+diversas métricas de qualidade de software, como por exemplo duplicação de código informando em quais pontos estão estas duplicações.
 
 Os testes da API foram criados para que ao realizar manutenção no código
 seja possivel ter uma garantia de que não foi introduzido bugs no sistema,
 anteriormente era difícil saber se o
-sistema está funcionando corretamente após o termino de uma manutenção. Também
+sistema está funcionando corretamente após o término de uma manutenção. Também
 foram criados testes que comparam os resultados das requisições ao novo projeto de API
 refatorado com a API original que está atualmente em produção, para se ter uma
 garantia de que ao atualizar para a nova versão em produção os sistemas que usam a API
 irão continuar funcionando.
 
-Afim de facilitar que a adição de novas features no salic-api possam chegar ao
+Afim de facilitar a adição de novas funcionalidades ao
 sistema em produção de forma mais rápida e prática, foi criado uma pipeline de
 deploy contínuo, onde é executado os testes do projeto, é checado se a build
 está sendo gerada corretamente e depois é feito o deploy para o servidor.
@@ -186,7 +187,7 @@ listados abaixo:
 - [x] Realizar Estudos de tecnologias e práticas devops;
 - [x] Realizar Estudos repositórios MinC;
 - [x] Elaborar Relatório de Resultado dos Estudos;
-- [x] Realizar estudos sobre funcionalidades de catálogo de software
+- [x] Realizar estudos sobre funcionalidades de catálogo de software.
 
 Todas as atividades relacionadas às ações listadas acima foram 100%
 finalizadas.
@@ -202,7 +203,7 @@ Grande parte do objetivo de transferência de conhecimento e capacitação da
 equipe de servidores técnicos do MinC foi concentrado nesse período em práticas
 DevOps. Para tal, além de encontros técnicos para apresentação das práticas
 experimentadas no laboratório, alguns documentos técnicos foram elaborados para
-tal fim. Toda a documentação foi disponibilizada no repositório do laboratório
+tal fim. Toda a documentação foi disponibilizada no repositório do laboratório em
 [https://gitlab.com/lappis-unb/docs](https://gitlab.com/lappis-unb/docs),
 disponibilizada também como anexo no final deste documento, os documentos
 cobrem tanto a primeira quanto a terceira meta do período.
@@ -215,43 +216,45 @@ deploy contínuo no laboratório com os seguintes tutoriais:
 1. Overview e exemplo básico(pt-br): Um guia que ensina como usar o gitlab
    CI/CD para gerar integração contínua e deploy contínuo em um projeto básico;
 1. Usando Docker Compose (pt-br): Um guia que ensina como usar o GitLab CI/CD
-   para gerar integração contínua com o Docker Compose em um projeto ágil.
+   para gerar integração contínua com o Docker Compose em um projeto ágil;
 1. Integrando GitLab CI/CD com projeto GitHub(pt-br): Um procedimento que
    possibilita o uso do GitLab CI/CD no projeto GitHub.
 
 Toda a documentação foi realizada em português e disponibilizada para acesso.
 
-Referente à segunda meta "Realizar Estudos repositórios MINC" nesse período foi
+Referente à segunda meta "Realizar Estudos repositórios MinC" nesse período foi
 aprofundado o estudo sobre as funcionalidades do Salic e como a execução da lei
 Rouanet é realizada no Salic. Foram realizadas diversas reuniões técnicas com a
-equipe da SEFIC, desde a equipe responsável pela adsimibilidade até a equipe
+equipe da SEFIC, desde a equipe responsável pela admissibilidade até a equipe
 responsábel pela avaliação de resultados. Os objetivos dessas reuniões foram:
-(a) compreender o processo (fases, etapas) da lei de Incentivo, (b) identificar
+(a) compreender o processo (fases, etapas) da Lei Federal de Incentivo à Cultura, (b) identificar
 os principais envolvidos/stakeholders em cada etapa, (c) levantar os principais
 pontos de melhoria. A partir desses levantamentos, vamos na próxima etapa,
 propor melhorias, ou por meio do assistente virtual (chatbot) ou por meio de
-algoritmos de aprendizagem de maquinas, ou por meio do sistema "Promova
+algoritmos de aprendizagem de máquinas, ou por meio do sistema "Promova
 Cultura" ou mesmo por meio de novos requisitos para o Salic.
 
 Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de
 software", primeiramente o sistema denominado no plano de trabalho "Catálogo de
 Software" foi renomeado para "Promova Cultura" em comum acordo entre a
-Universidade e a CGTEC. O motivo dessa alteração foi um entendimento mútuo que
-desenvolver um catálogo de software não seria prioritário no momento, e um
-sistema mais abrangente, que pudesse expor informações relevantes da lei de
-incentivo agrega mais valor para o ministério. Por isso, foram realizadas duas
-design sprints com duração de 2 semanas cada, guiadas pela equipe de
+Universidade e a CGTEC. O motivo dessa alteração foi influenciado pelo entendimento mútuo de que
+o desenvolvimento de um catálogo de software não seria prioritário no momento, e um
+sistema mais abrangente, que pudesse expor informações relevantes da Lei de
+Incentivo agrega mais valor para o Ministério da Cultura. Por isso, foram realizadas duas
+_Design Sprints_[^designsprint] com duração de 2 semanas cada, guiadas pela equipe de
 Experiência de Usuário/ Design a fim de levantar possíveis escopos do sistema
-"Promova Cultura". O processo foi desenvolvido pela Google Ventures, uma
+"Promova Cultura". O processo _Design Sprint_ foi desenvolvido pela Google Ventures, uma
 vertente do Google focado em testar e acelerar ideias que ainda estão em
 estágio inicial de desenvolvimento. Essa abordagem permite iniciar um projeto
 de software orientada à usabilidade.
 
+[^designsprint]: Google Ventures, The Design Sprint [http://www.gv.com/sprint/](http://www.gv.com/sprint/)
+
 Alguns protótipos de baixa fidelidade foram propostos. Na próxima etapa serão
-realizados protótipos em código de algumas das soluções propostas na design
-sprint, a fim de amadurecer a proposta de produto. Após esse período, em agosto
+realizados protótipos em código de algumas das soluções propostas na Design
+Sprint, a fim de amadurecer a proposta de produto. Após esse período, em agosto
 está previsto a aplicação de testes de uso dos protótipos. Toda a execução da
-design sprint pode ser acompanhada em
+Design Sprint pode ser acompanhada em
 [https://github.com/lappis-unb/PromovaCultura](https://github.com/lappis-unb/PromovaCultura).
 
 <!-- }}} -->
@@ -260,8 +263,8 @@ design sprint pode ser acompanhada em
 
 Nessa etapa será realizada uma pesquisa exploratória tendo como objeto de
 estudo os movimentos, organizações, desenvolvedores e demais stakeholders que
-atuam na gestão colaborativa de software aberto. O principal objetivo do
-trabalho de gestão colaborativa dessas comunidades de software aberto é manter
+atuam na gestão colaborativa de software livre. O principal objetivo do
+trabalho de gestão colaborativa dessas comunidades de software livre é manter
 um conjunto de ações de governança digital e comunicação que aproveite ao
 máximo esse potencial em favor das necessidades do órgão e das metas comuns às
 organizações parte das comunidades. Esse esforço envolve um trabalho de
@@ -273,35 +276,35 @@ externo à comunidade e apoio para solução de conflitos.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
-- [x] Realizar Estudos sobre processo de planejamento conjunto
-- [x] Identificar grupos de opinião
+- [x] Realizar Estudos sobre processo de planejamento conjunto;
+- [x] Identificar grupos de opinião.
 
 Todas as atividades relacionadas as ações listadas acima foram 100% finalizada.
 Nessa etapa, foi focado na estratégia de colaboração entre os laboratórios de
 pesquisa que contribuem para os repositórios MinC:
 
-1. Frente metodologias ágeis e devops: Por ser uma prática comum ao LAPPIS,
+1. Frente de metodologias ágeis e DevOps: Por ser uma prática comum ao Lappis,
    oriunda da própria história do laboratório e reforçada pelas disciplinas
    práticas da FGA/UnB, é um ativo que pode ser compartilhado na comunidade de
    laboratórios;
     - Oficinas para intercâmbio de método de trabalho (funcionamento das
-      sprints, wikis, decisão sobre pull requests etc) - Maio ou junho/2018
-    - Evento prático de devops para apresentar o resultado da pesquisa e fazer
-      intercâmbio prático.
+      sprints, wikis, decisão sobre pull requests etc) - Maio ou junho/2018;
+    - Evento prático de DevOps para apresentar o resultado da pesquisa e fazer
+      intercâmbio prático;
 1. Frente de tecnologias livres para chatbots: Pela carência de tecnologias
    livres desse tipo e as inúmeras aplicações na qualificação dos serviços
    públicos essa pode ser uma oportunidade para os outros laboratórios. O Lappis
    pode auxiliar a incorporação dessa tecnologia nos serviços digitais em
    desenvolvimento pelos outros laboratórios, assim como já está fazendo com o
-   Salic e pode fazer com o Mapas Culturais.
+   Salic e pode fazer com o Mapas Culturais;
     - Lançamento da tecnologia no MinC e Workshop técnico na semana seguinte
       para os interessados em conhecer/colaborar na tecnologia;
-    - Incorporação de metas estratégicas conjuntas para devops e chatbots em
+    - Incorporação de metas estratégicas conjuntas para DevOps e chatbots em
       outros serviços digitais do MinC;
     - Implementação de boas práticas para governança da comunidade em torno
       desse ativo tecnológico (chatbots) visando aumento da contribuição de
       desenvolvedores externos ao Lappis, com foco nos times dos laboratórios
-      parceiros.
+      parceiros;
 1. Frente de Governança de Comunidades: Essa frente envolve pesquisa e
    realização de eventos conjuntos com temas estratégicos para a colaboração
    aberta nas tecnologias desenvolvidas e mantidas pelo Estado.
@@ -317,11 +320,11 @@ Source com adesão do Estado e Contratação Pública de TICs - Maio ou junho/20
 ### Aprendizado de Máquina Lei Rouanet <!-- {{{ -->
 
 O principal objetivo é o estudo de técnicas de Aprendizado de Máquina que
-possam apoiar o sistema de recomendação e fiscalização da lei Rouanet. Nessa
+possam apoiar o sistema de recomendação e fiscalização da Lei Federal de Incentivo à Cultura (Lei Rouanet). Nessa
 etapa será realizada uma pesquisa exploratória em técnicas de aprendizado de
 máquina e processamento de linguagem natural. Tais técnicas e algoritmos serão
 aplicados para melhorar a experiência de usuário (UX) por meio da proposta de
-chatbots como interface entre os proponentes na lei Rouanet e o Ministério da
+chatbots como interface entre os proponentes na Lei Rouanet e o Ministério da
 Cultura.
 
 Além disso, técnicas de aprendizado de máquinas serão estudadas para
@@ -332,10 +335,10 @@ submissões.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
-- [x] Realizar Estudo Lei Rouanet/SALIC
-- [x] Realizar Estudo de aprendizado de máquina
-- [x] Realizar Estudo processamento linguagem natural
-- [x] Realizar Estudos de chatbots
+- [x] Realizar Estudo Lei Rouanet/SALIC;
+- [x] Realizar Estudo de aprendizado de máquina;
+- [x] Realizar Estudo processamento linguagem natural;
+- [x] Realizar Estudos de chatbots.
 
 Todas as atividades relacionadas as ações listadas acima foram 100%
 finalizadas. Segue resumo da execução das atividades:
@@ -454,9 +457,9 @@ seus fornecedores.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
-- [x] Revisão da área
-- [x] Diagnóstico sobre as práticas atualmente adotadas pelo MinC de garantia da qualidade de produto
-- [ ] Elaborar Plano de Pesquisa-Ação
+- [x] Revisão da área;
+- [x] Diagnóstico sobre as práticas atualmente adotadas pelo MinC de garantia da qualidade de produto;
+- [ ] Elaborar Plano de Pesquisa-Ação.
 
 Nessa etapa foram aplicadas surveys com os gestores do MinC e desenvolvedores
 seniores do Lappis e MinC. O objetivo do survey foi fazer uma análise
@@ -477,7 +480,7 @@ foi na rubrica 30.90.20, referente à auxílio Financeiro a Pesquisa (Bolsas).
 Desse repasse, um total de R$190.635,90 foi executado na Etapa II, representando
 na prática que o orçamento foi consumido apenas na categoria mão-de-obra. Todo
 esse valor foi executado no pagamento das bolsas do time, e o valor gasto por
-frente do projeto pode ser visto na figura abaixo.
+frente do projeto pode ser visto na Figura 2 abaixo.
 
 ![Neste gráfico é possível observar a representação do percentual do custo da mão-de-obra incidido em cada equipe do projeto. A maior alocação de recursos encontram-se nas equipes do Catálogo de Softwares Culturais(representado pela cor azul), uma vez que grande parte das  funcionalidades desenvolvidas são providas através desta frente, e a equipe do Aprendizado de máquina(representado pela cor verde), que desenvolveu o chatbot.](figs/bolsas_E2.png){width=400px}
 
@@ -1227,8 +1230,6 @@ Teste o bot:
 
 Há ainda módulos prontos para a integração com outras ferramentas, além do [Botpress NLU](https://github.com/botpress/botpress-nlu) que permite a integração com o RASA ou LUIS de forma que possam ser configurados pela própria interface do Botpress:
 
-![botpress nlu demo](https://raw.githubusercontent.com/botpress/botpress-nlu/master/assets/banner_demo.gif)
-
 ## IBM Watson Conversation
 
 O [watson conversation](https://watson-conversation.ng.bluemix.net)
@@ -1241,28 +1242,16 @@ O fluxo de trabalho no Watson é:
 1. Criar as `intents`: que são intenções que o usuário possui. Cada intenção é
 formada por um conjunto de perguntas / frases, no mínimo 5, e um título identificador da
 intenção. Nesta etapa é bom prever muitas variações das perguntas e possíveis erros
-gramaticais que o usuário pode cometer para melhorar a acuracia do treinamento.
+gramaticais que o usuário pode cometer para melhorar a acuracia do treinamento;
 1. Criar as `entities`: repsentam partes elementares de uma mensagem, por exemplo,
 um local, uma data ou um tipo de relação pessoal. Cada entidade possui um texto que
-representa ela, e vários sinônimos.
+representa ela, e vários sinônimos;
 1. Criar o diálogo: O diálogo é um fluxo de conversa com os passos em que ocorre um
 fluxo natural de conversa real. Ele é descrito como uma sequencia de estatos, e
 cada estado possui: intent ou ação, uma série de respostas para mostrar pro usuário,
 uma ação que deve ser tomada ao fim daquele estado. A ação do fim pode ser pular para
 um estado específico, pedir input para o o usuário, entre outras. Cada estado pode
 ter sub-estados.
-
-**Intents**
-
-[[images/intents-watson.png]]
-
-**Entities**
-
-[[images/entities-watson.png]]
-
-**Dialog**
-
-[[images/dialog-watson.png]]
 
 ### Vantagens
 
