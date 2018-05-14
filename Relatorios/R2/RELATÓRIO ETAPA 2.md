@@ -198,42 +198,6 @@ objetivo principal do pacote, que é a "Aplicação de práticas de experimenta�
 e inovação contínua no desenvolvimento do projeto de Catálogo de Software
 Culturais", além da execução de um ciclo completo de projeto de software.
 
-O planejanento e construção do produto "Promova Cultura" está sendo guiado pela
-metodologia de **Design Sprint**[^designsprint], um processo voltado a responder perguntas
-críticas de negócios por meio de Design, Prototipagem e Teste de ideias com
-Clientes.
-
-[^designsprint]: [http://www.gv.com/sprint/](http://www.gv.com/sprint/)
-
-![Foto do quadro utilizado no encontro da equipe em 21 de Março para planejamento do fluxo principal entre os usuários finais e o objetivo final do produto.](figs/foto_quadro_design_sprint.jpg)
-
-Durante a Design Sprint chegou-se a pesquisar soluções semelhantes que atendam
-ao objetivo definido para o produdo, são soluções que se aproximam, mesmo que
-parcialmente, ao objetivo final, incluindo plataformas para visualização de
-projetos culturais existentes, bem como soluções para visualização de projetos
-detalhados, personalização da visualização, facilitar a compreensão, e que
-explicite o impacto social.
-
-O principal desafio trabalhado nesta frente foi o seguinte:
-
-> **Como apresentar projetos de incentivo à cultura de forma que as pessoas
-> queiram contar para alguém?**
-
-Como resultado do trabalho a partir deste desafio foi planejado inicialmente
-três soluções:
-
-1. [Visualização dos Projetos](https://github.com/lappis-unb/PromovaCultura/issues/6)
-1. [Indicadores culturais](https://github.com/lappis-unb/PromovaCultura/issues/5)
-1. [Timeline cultural](https://github.com/lappis-unb/PromovaCultura/issues/4)
-
-Todos os detalhes de execução, planejamento, resultados e próximos passos estão
-publicamente documentados e disponíveis em [https://github.com/lappis-unb/PromovaCultura](https://github.com/lappis-unb/PromovaCultura).
-
-Além do foco no processo de **Design Sprints** para os produtos acima descritos
-o laboratório Lappis deu início a ações para transferência de tecnologia para
-o Ministério com objetivo de fomentar as boas práticas de desenvolvimento, evolução,
-manutenção, testes, entrega e deploy contínuos.
-
 Grande parte do objetivo de transferência de conhecimento e capacitação da
 equipe de servidores técnicos do MinC foi concentrado nesse período em práticas
 DevOps. Para tal, além de encontros técnicos para apresentação das práticas
@@ -466,7 +430,7 @@ seguida de implementação na API das hipóteses confirmadas na etapa de
 validação.
 
 A API está em desenvolvimento em Python, utilizando-se o framework Django. Três
-hopóteses já foram levantadas e estão sendo validadas:
+hipóteses já foram levantadas e estão sendo validadas:
 
 1. Relação entre o tempo e a mudança dos preços de itens da planilha
    orçamentária de um projeto;
@@ -478,10 +442,6 @@ hopóteses já foram levantadas e estão sendo validadas:
 Caso as hipóteses se confirmem, serão implementadas e será possível verificar,
 para cada projeto, se sua planilha orçamentária contém itens possivelmente
 superfaturados e quais os projetos mais similares com o projeto em questão.
-
-Microserviço SALIC Data - Microserviço que realiza a mineração dos dados dos
-projetos submetidos por meio da plataforma SALIC e aplica técnicas de machine
-learning para extração de padrão, detecção de anomalias.
 
 <!-- }}} -->
 
@@ -512,9 +472,9 @@ resultado é apresentado em anexo.
 
 ![Detalhamento da execução do repasse na Etapa II.](figs/valores_executados_E2.png)
 
-O valor do repasse referente à Etapa I foi de R$598.000,00. Todo esse repasse
+O valor do repasse referente à Etapa II foi de R$202.600,00. Todo esse repasse
 foi na rubrica 30.90.20, referente à auxílio Financeiro a Pesquisa (Bolsas).
-Desse repasse, um total de R$161.100,00 foi executado na Etapa I, representando
+Desse repasse, um total de R$190.635,90 foi executado na Etapa II, representando
 na prática que o orçamento foi consumido apenas na categoria mão-de-obra. Todo
 esse valor foi executado no pagamento das bolsas do time, e o valor gasto por
 frente do projeto pode ser visto na figura abaixo.
@@ -1521,4 +1481,10 @@ Planejamento referente à Etapa II do projeto (Março 2018 à Junho 2018)
 
 # Anexo IV - Resultados Pesquisa Devops Pesquisa Survey de Acompanhamento
 
+Abaixo segue o resultado da análise do survey realizado com os alunos participantes do projeto. 
+
+O formulário enviado para os alunos pode ser acessado em:
+
 [https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill](https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill)
+
+
