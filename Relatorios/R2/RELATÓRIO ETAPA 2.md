@@ -1470,10 +1470,8 @@ Planejamento referente à Etapa II do projeto (Março 2018 à Junho 2018)
 
 # Anexo IV - Resultados Pesquisa Devops Pesquisa Survey de Acompanhamento
 
-Abaixo segue o resultado da análise do survey realizado com os alunos participantes do projeto. 
+Abaixo segue o resultado da análise do survey realizado com os alunos participantes do projeto.
 
 O formulário enviado para os alunos pode ser acessado em:
 
 [https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill](https://docs.google.com/forms/d/1SpZMX8qYLZGl7q6nTO4JPpI4eFbMHAJHP5NivG-jMhw/prefill)
-
-
