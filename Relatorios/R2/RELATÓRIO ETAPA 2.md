@@ -187,29 +187,24 @@ listados abaixo:
 - [x] Realizar Estudos de tecnologias e práticas devops;
 - [x] Realizar Estudos repositórios MinC;
 - [x] Elaborar Relatório de Resultado dos Estudos;
-- [x] Realizar estudos sobre funcionalidades de catálogo de software.
+- [ ] Realizar estudos sobre funcionalidades de catálogo de software.
 
-Todas as atividades relacionadas às ações listadas acima foram 100%
-finalizadas.
 
-No último item, o foco do produto foi alterado de "catálogo de
-software" para "Promova Cultura". Tal mudança foi acordado com os gestores do
-Ministério. Apesar da mudança de foco do produto, a nova visão não altera o
-objetivo principal do pacote, que é a "Aplicação de práticas de experimentação
-e inovação contínua no desenvolvimento do projeto de Catálogo de Software
-Culturais", além da execução de um ciclo completo de projeto de software.
 
 Grande parte do objetivo de transferência de conhecimento e capacitação da
 equipe de servidores técnicos do MinC foi concentrado nesse período em práticas
 DevOps. Para tal, além de encontros técnicos para apresentação das práticas
 experimentadas no laboratório, alguns documentos técnicos foram elaborados para
-tal fim. Toda a documentação foi disponibilizada no repositório do laboratório em
+tal fim. Grande parte do time ficou focado em amadurecer o pipeline devops, atualizar
+o pipeline dos softwares do Minc trabalhados no laboratório (Salic API, Salic, Mapas culturais), além de
+gerar a documentação técnica do conhecimento adquirido.
+ Toda a documentação foi disponibilizada no repositório do laboratório em
 [https://gitlab.com/lappis-unb/docs](https://gitlab.com/lappis-unb/docs),
 disponibilizada também como anexo no final deste documento, os documentos
 cobrem tanto a primeira quanto a terceira meta do período.
 
-Foi elaborado documentação descrevendo todo o pipeline usado para
-deploy contínuo no laboratório com os seguintes tutoriais:
+Foi elaborado documentação/relatório descrevendo todo o pipeline usado para
+deploy contínuo no laboratório com os seguintes tutoriais, que podem ser aplicados em diversos contextos:
 
 1. GitLab CI/CD: Guia relacionado ao uso da Integração Contínua e Deploy
    contínuo no Gitlab;
@@ -222,8 +217,9 @@ deploy contínuo no laboratório com os seguintes tutoriais:
 
 Toda a documentação foi realizada em português e disponibilizada para acesso.
 
-Referente à segunda meta "Realizar Estudos repositórios MinC" nesse período foi
-aprofundado o estudo sobre as funcionalidades do Salic e como a execução da lei
+Referente à segunda meta "Realizar Estudos repositórios MinC" nesse período foram finalizadas
+o checklist dos projetos/repositórios priorizados pelo ministério e também aprofundado o estudo sobre
+ as funcionalidades do Salic e como a execução da lei
 Rouanet é realizada no Salic. Foram realizadas diversas reuniões técnicas com a
 equipe da SEFIC, desde a equipe responsável pela admissibilidade até a equipe
 responsábel pela avaliação de resultados. Os objetivos dessas reuniões foram:
@@ -231,31 +227,13 @@ responsábel pela avaliação de resultados. Os objetivos dessas reuniões foram
 os principais envolvidos/stakeholders em cada etapa, (c) levantar os principais
 pontos de melhoria. A partir desses levantamentos, vamos na próxima etapa,
 propor melhorias, ou por meio do assistente virtual (chatbot) ou por meio de
-algoritmos de aprendizagem de máquinas, ou por meio do sistema "Promova
-Cultura" ou mesmo por meio de novos requisitos para o Salic.
+algoritmos de aprendizagem de máquinas ou mesmo por meio de novos requisitos para o Salic.
 
 Referente à última meta "Realizar estudos sobre funcionalidades de catálogo de
-software", primeiramente o sistema denominado no plano de trabalho "Catálogo de
-Software" foi renomeado para "Promova Cultura" em comum acordo entre a
-Universidade e a CGTEC. O motivo dessa alteração foi influenciado pelo entendimento mútuo de que
-o desenvolvimento de um catálogo de software não seria prioritário no momento, e um
-sistema mais abrangente, que pudesse expor informações relevantes da Lei de
-Incentivo agrega mais valor para o Ministério da Cultura. Por isso, foram realizadas duas
-_Design Sprints_[^designsprint] com duração de 2 semanas cada, guiadas pela equipe de
-Experiência de Usuário/ Design a fim de levantar possíveis escopos do sistema
-"Promova Cultura". O processo _Design Sprint_ foi desenvolvido pela Google Ventures, uma
-vertente do Google focado em testar e acelerar ideias que ainda estão em
-estágio inicial de desenvolvimento. Essa abordagem permite iniciar um projeto
-de software orientada à usabilidade.
+software", foi feito um levantamento, juntamente com a CGTEC, da necessidade de se desenvolver um catálogo de software
+como previsto no plano de trabalho. Foram levantados como alguns governos lidam com o portifólio de software livres, tais como as iniciativas do governo inglês de trabalhar majoritamente com software livre
+[https://governmenttechnology.blog.gov.uk/2016/12/15/next-steps-for-open-source-in-government/](https://governmenttechnology.blog.gov.uk/2016/12/15/next-steps-for-open-source-in-government/), e manter seu catálogo de software na própria organização github [http://gds-operations.github.io/](http://gds-operations.github.io/). Observamos também uma tendência mundial do uso de software livre no governo (egovernment - [http://www.egov4dev.org/success/definitions.shtml](http://www.egov4dev.org/success/definitions.shtml)), com uma quantidade crescente de adesão [https://government.github.com/community/](https://government.github.com/community/). Observamos que o próprio repositório, organização, e wiki do repositório são utilizados para compor o catálogo de software. Como o principal objetivo dessa etapa é executar um ciclo completo de projeto, de comum acordo com a CGTEC, decidimos não desenvolver o catálogo de software, como previsto no calendário. Para atender o objetivo principal da etapa, o ciclo completo de projeto será realizado no pacote de trabalho "Aprendizado de Máquina Lei Rouanet". A equipe devops manteve na frente catálogo, e os demais integrantes da frente foram realocados paro pacote de trabalho "Aprendizado de Máquina Lei Rouanet". Essa última mudança foi motivada pela prioridade e importância dadas tanto pela CGTEC quanto SEFIC em relação ao chatbot e à frente aprendizagem de máquina. Isso fez com que o cronograma de entregas fossem encurtados, justificando o aumento das equipes para garantir tais entregas. Porém, não houveram alterações no processo administrativo dos membros das equipes, e como visto na análise finaceira, parte da equipe manteve alocada no pacote de trabalho "Catálogo de Softwares Culturais".
 
-[^designsprint]: Google Ventures, The Design Sprint [http://www.gv.com/sprint/](http://www.gv.com/sprint/)
-
-Alguns protótipos de baixa fidelidade foram propostos. Na próxima etapa serão
-realizados protótipos em código de algumas das soluções propostas na Design
-Sprint, a fim de amadurecer a proposta de produto. Após esse período, em agosto
-está previsto a aplicação de testes de uso dos protótipos. Toda a execução da
-Design Sprint pode ser acompanhada em
-[https://github.com/lappis-unb/PromovaCultura](https://github.com/lappis-unb/PromovaCultura).
 
 <!-- }}} -->
 
@@ -492,6 +470,7 @@ Nome:  Carla Silva Rocha Aguiar
              (Coordenadora do Projeto)
 
 Assinatura:
+![assinatura](figs/assinatura.png)
 
 Data: 06/04/2018
 
