@@ -148,7 +148,7 @@ A análise de objeto tem por objetivo verificar se o projeto executado seguiu o 
 |  Prestação de contas |   17097 |
  
  
-**Oportunidades de aprendizagem de máquina:** Grande parte da análise é feita baseada na experiencia dos técnicos/especialista. A grande oportunidade é desenvolver sistemas de recomendação para orientar a tomada de decisão dos técnicos, agilizar o processo de avaliação de projetos, e gerar jurisprudência baseada em avaliações anteriores para respaldar os pareceres do Ministério.
+**Oportunidades de aprendizagem de máquina:** Grande parte da análise é feita baseada na experiencia dos técnicos/especialistas. A grande oportunidade é desenvolver sistemas de recomendação para orientar a tomada de decisão dos técnicos, agilizar o processo de avaliação de projetos, e gerar jurisprudência baseada em avaliações anteriores para respaldar os pareceres do Ministério.
 
 **Proposta**: Propor uma série de indicadores/métricas, recomendações para orientar a avaliação de prestação de contas. Os indicadores/métricas validadas com a SEFIC foram:
 
@@ -164,7 +164,7 @@ A análise de objeto tem por objetivo verificar se o projeto executado seguiu o 
 
 
 #### Admissibilidade
-**Oportunidades de aprendizagem de máquina:** A grande oportunidade consiste em recomendar do proponente para que este faça um projeto de melhor qualidade. A recomendação deve ser feita a partir não da IN (Instrução normativa), mas sim de aprendizagem da base de dados dos projetos já aprovados/finalizados. O objetivo é gerar recomendações para o proponente para que este faça um projeto de qualidade (com menor probabilidade de haver diligencias), desde a concepção.
+**Oportunidades de aprendizagem de máquina:** A grande oportunidade consiste em recomendar ações ao proponente para que este faça um projeto de melhor qualidade. A recomendação deve ser feita a partir não da IN (Instrução normativa), mas sim de aprendizagem da base de dados dos projetos já aprovados/finalizados. O objetivo é gerar recomendações para o proponente para que este faça um projeto de qualidade (com menor probabilidade de haver diligencias), desde a concepção.
 
 Voltando ao processo de admissibilidade, o Salic já utiliza um sistema automatizado para validação de preço dos itens cadastrados em uma proposta: PROCEDURE dbo.spCalcularMedianaItemOrcamentario.
 
@@ -190,7 +190,7 @@ Usar o aprendizado de máquina para detectar, inferir e exibir informações em 
 
 Essa ação também terá efeitos de médio e longo prazo no aumento da qualidade dos projetos propostos e na antecipação de eventuais erros durante a fase de execução, diminuindo o número de projetos que necessitam ser diligenciados ou reprovados.
 
-#### Evolução Chatbot Chatbot
+#### Evolução Chatbot
 
 Após os testes, junto a SEFIC, na entrega anterior, foram analisados os resultados. Estes resultados mostram que houveram muitas falhas de usabilidade, de contéudo e de tecnologia. As falhas de usabilidade dizem respeito sobre como o usuário reage as interações da bot, a maior parte dos usuários não conseguiram manter uma conversa fluida e não chegaram no objetivo deles. As falhas de conteúdo dizem respeito sobre os textos utilizados pela assistente, eles se mostraram muito longos e técnicos, não contribuindo para a fluidez da conversa. As falhas de tecnologia dizem respeito sobre a tecnologia hubot-natural que se mostrou incapaz de analisar algumas palavras e contextos em portugês do brasil, pois ela é voltada para o português de portugal, impossibilitando alguns fluxos de conversa.
 
@@ -200,7 +200,7 @@ Após o estudos, conduzimos um experimento de elaboração de possíveis fluxos 
 
 Como resultados dessa etapa foi gerado uma primeira baseline do fluxo de conversa com a Rouana, no contexto de admissibilidade, no qual será implementado e validado na próxima etapa. A ultima versão do fluxo é mostrado abaixo. As versões testadas dos fluxos anteriores estão disponíveis no Anexo III.
 
-(figs/v2_fluxo_principal_rouana.png){width=400px}
+![Fluxo chatbot Rouana](figs/v2_fluxo_principal_rouana.png){width=600px}
 
 O problema relativo a tecnologia foi resolvido com o uso de outra tecnologia, o Rasa. Esta tecnologia se mostrou mais capaz em resolver os problemas que estamos enfrentando com a tecnologia anterior. Porém esta tecnologia não se conecta a nossa plataforma de chat, RocketChat, a qual não foi trocada. Para resolver isso, tivemos que desenvolver um conector entre o Rasa e o RocketChat. Este connector será incluido, como contribuição, para a comunidade do Rasa, possibilitando qualquer pessoa utilizar esta nossa solução assim que for utilizar o Rasa.
 
@@ -253,12 +253,11 @@ Data: 06/04/2018
 
 ## Processo de Homologação da Rouana
 
-Disponivel em : (https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Rouana-Homologação)[https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Rouana-Homologação]
+Disponivel em : [https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Rouana-Homologação](https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Rouana-Homologação)
+
 ## O que é a Rouana?
 
 A **Rouana** é a assistente virtual de incentivo à Cultura em desenvolvimento pelo MinC, em parceria com o LAPPIS (UnB - FGA), para interagir com os cidadãos (produtores culturais e outros interessados) de forma simplificada com objetivo de apoiá-los no entendimento da Lei Rouanet e no uso da plataforma SALIC.
-
-- [Versão: 0.1 (beta)](#versão-01)
 
 ## Vesão 0.1
 
@@ -550,7 +549,8 @@ Não é o foco, mas seria interessante responder, só para dar um ar de intelige
 
 
 ## Avaliação da Homologação da Rouana
-Documento disponível em: (https://github.com/lappis-unb/EcossistemasSWLivre/issues/60)[https://github.com/lappis-unb/EcossistemasSWLivre/issues/60]
+
+Documento disponível em: [https://github.com/lappis-unb/EcossistemasSWLivre/issues/60](https://github.com/lappis-unb/EcossistemasSWLivre/issues/60)
 
 Critério de aceitação de homologação de chatbot: 30% dos usuários satisfeitos, ou seja, conseguiram resolver seus problemas.
 
