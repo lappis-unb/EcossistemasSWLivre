@@ -43,7 +43,7 @@ de acordo com o cronograma, no período citado.
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
 - [x] Realizar Estudo de Refatoração em software legado
-- [x ] Realizar Estudos sobre práticas de DevOps aplicada a software legado
+- [x] Realizar Estudos sobre práticas de DevOps aplicada a software legado
 
 Durante a primeira etapa do projeto foi priorizado a visão "legacy in the box" (legado em uma caixa, tradução literal), no qual o foco foi isolar alguns projetos mantidos pelo Ministério da Cultura por meio de Docker[^docker]. Essa solução gera o benefício de criar ambientes de desenvolvimento e produção estáveis, fazendo com que diminua o tempo de configuração de ambiente. Essa abordagem traz um grande benefício pois possibilita o uso de práticas DevOps mesmo em sistemas legados. Esse modelo de isolar pacotes de software legados através de containers Docker possibilita um pipeline de entrega contínua, deploy contínuo, e diminui a fronteira entre a equipe de infraestrutura e equipe de desenvolvimento.
 
@@ -382,7 +382,7 @@ está. Para mim esta pergunta deveria estar em uma categoria própria do salic.
 quantos projetos já participaram da Lei Rouanet
 
 rouana 9:54 AM
-Que bom! A lei Rouanet é meu assunto preferido 🙂
+Que bom! A lei Rouanet é meu assunto preferido :)
 O que você gostaria de saber sobre a lei Rouanet?
 
 @guest-26 9:54 AM
@@ -397,7 +397,7 @@ após a Rouna ter detectado um contexto. Então ele obteve a resposta correta.
 situação d52
 
 rouana 9:55 AM
-Acho que ainda não estou treinada para responder esse tipo de assunto 😞
+Acho que ainda não estou treinada para responder esse tipo de assunto :(
 tente outro assunto
 Além da Lei Rouanet, eu sei falar sobre:
 - Preenchimento de proposta no SALIC
@@ -461,7 +461,7 @@ causaria menos confusão no fluxo geral.
 perdi minha senha do salic
 
 rouana 9:57 AM
-Ah isso acontece com todo mundo 😉
+Ah isso acontece com todo mundo ;)
 você pode gerar uma nova senha aqui: http://salic.cultura.gov.br/autenticacao/index/solicitarsenha
 salic.cultura.gov.br
 Sistema de Apoio Ã s Leis de Incentivo Ã  Cultura
@@ -836,8 +836,3 @@ https://github.com/lappis-unb/salic-ml/blob/master/notebooks/exploratory/project
 
 
 # Anexo V - Estudo de aprendizagem de máquina
-
-
-
-
-
