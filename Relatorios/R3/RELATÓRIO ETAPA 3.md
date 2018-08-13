@@ -21,7 +21,6 @@ relatório.
 
 ## FASE DE PLANEJAMENTO/EXECUÇÃO
 
-
 O período de Abril 2018 à Junho de 2018 contemplou as fases de
 planejamento e execução. Abaixo serão apresentados, brevemente, os principais
 avanços alcançados no período. Toda a documentação e acompanhamento do projeto
@@ -32,11 +31,11 @@ repositório específico do projeto
 Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas
 _issues_ quanto nas páginas _wiki_.
 
-Na segunda etapa, houve em conjunto a CGTEC a alteração do cronograma do projeto, no qual a frente de trabalho "Catálogo de Software" foi retirado do projeto. No presente relatório está disponibilizado o novo cronograma, com atualização citada
+Na segunda etapa, houve em conjunto a CGTEC a alteração do cronograma do projeto, no qual a frente de trabalho "Catálogo de Software" foi retirado do projeto. No presente relatório está disponibilizado o novo cronograma, com atualização citada.
 
 Abaixo serão apresentados os principais avanços alcançados no período, por
-pacote de trabalho (de acordo com o Plano de Trabalho),
-de acordo com o cronograma, no período citado.
+pacote de trabalho de acordo com o Plano de Trabalho
+e cronograma.
 
 ### Legado em Software Livre <!-- {{{ -->
 
@@ -57,36 +56,36 @@ As ações realizadas  na terceira etapa (referente ao presente relatório) para
 - [x] Estudo de estratégias possíveis para a implementação de novas funcionalidades em um sistema legado/monolítico;
 - [x] Proposta de uma estratégia pra implementação de novas funcionalidades no SALIC (Estudo de caso).
 
-A terceira etapa do projeto teve como objetivo inserir o software refatorado na etapa passada em um pipeline de entrega e deploy contínua. Após uma homologação interna na própria infraestrutura do laboratório LAPPIS, realizada na etapa anterior, foi realizada a entrega técnica ao ministério, no qual foi apresentada a estratégia de refatoração e a versão inicial da API do Salic. A API foi então homolagada na infraestrutura do Ministério da Cultura. Foi configurado um pipeline de deploy/entrega contínua, no qual toda a mudança no código da API passa por um pipeline no gitlabCI automatizado até um ambiente de homologação no MinC. Todo o pipeline pode ser acompado em [https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api).
+A terceira etapa do projeto teve como objetivo inserir o software refatorado na etapa passada em um pipeline de entrega e deploy contínua. Após uma homologação interna na própria infraestrutura do laboratório LAPPIS, realizada na etapa anterior, foi realizada a entrega técnica ao ministério, no qual foi apresentada a estratégia de refatoração e a versão inicial da API do Salic. A API foi então homolagada na infraestrutura do Ministério da Cultura. Foi configurado um pipeline de deploy/entrega contínua, no qual toda a mudança no código da API passa por um pipeline no Gitlab-CI automatizado até um ambiente de homologação no MinC. Todo o pipeline pode ser acompanhado em [https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api).
 
-Nessa etapa também teve como objetivo principal a realização de uma pesquisa teórica e prática sobre alternativas para lidar com sistemas legados para a adição de novas funcionalidades. Foram estudadas duas possíveis abordagens: (a) adição de novas funcionalidades mantendo a arquitetura monolítica (b) adição de novas funcionalidades utilizando o modelo arquitetural microsserviços. 
+Nessa etapa também teve como objetivo principal a realização de uma pesquisa teórica e prática sobre alternativas para lidar com sistemas legados para a adição de novas funcionalidades. Foram estudadas duas possíveis abordagens: (a) adição de novas funcionalidades mantendo a arquitetura monolítica (b) adição de novas funcionalidades utilizando o modelo arquitetural microserviços.
 
 Uma primeira estratégia é manter um repositório e sistema monolítico, somente acrescentando novas funcionalidades respeitando boas práticas de software  (qualidade de software, testes unitários, testes de aceitação, etc). Dentre as vantagens dessa abordagem estão:
 
 - **Centralização**: toda a base de código é contido em um único repositório com suas diversas funcionalidades;
 - **Visibilidade**: código é visível e pesquisável por todos os engenheiros da organização e contribuidores externos;
-- **Sincronização**: o processo de desenvolvimento é orientado a branches, e colaboradores contribuem para branches especificas no repositório
-- **Completude**: qualquer projeto/funcionalidade do repositório pode ser compilado a partir das dependências presentes no próprio repositório. Dependências são versionadas, projetos  devem usar a versão de suas dependências no repositório.
-- **Padronização**: um conjunto de ferramentas compartilhadas governam como colaboradores interagem com o código, incluindo compilando, testando, pesquisando e revisando código.
+- **Sincronização**: o processo de desenvolvimento é orientado a branches, e colaboradores contribuem para branches especificas no repositório;
+- **Completude**: qualquer projeto/funcionalidade do repositório pode ser compilado a partir das dependências presentes no próprio repositório. Dependências são versionadas, projetos  devem usar a versão de suas dependências no repositório;
+- **Padronização**: um conjunto de ferramentas compartilhadas governam como colaboradores interagem com o código, incluindo testes, pesquisa e revisão de código.
 
-Uma segunda estratégia é adotar uma arquitetura microsserviços, no qual a componentização de novas funcionalidades é feita por meio de serviços. Microsserviços  são componentes executados de forma independente (out-of-process), que comunicam entre sim com mecanismos como requisição de serviço web, ou chamadas de processos remotos. Uma das principais razões de usar serviços como componentes é que serviços são disponibizado (deploy) de forma independente. Se uma aplicação monolítica (executada apenas um processo) alterar um único componente, isso resulta na necessidade de executar a disponibilzação (deploy) de toda a aplicação. Dentre as vantagens dessa abordagens estão:
+Uma segunda estratégia é adotar uma arquitetura de microserviços, no qual a componentização de novas funcionalidades é feita por meio de serviços. Microserviços  são componentes executados de forma independente (out-of-process), que comunicam entre si com mecanismos como requisição de serviço web, ou chamadas de processos remotos. Uma das principais razões de usar serviços como componentes é que serviços são disponibizados (deploy) de forma independente. Se uma aplicação monolítica (executando apenas um processo) alterar um único componente, isso resulta na necessidade de realizar o deploy de toda a aplicação. Dentre as vantagens dessa abordagens estão:
 
 - **Serviços organizados como capabilidade de negócio**: cada serviço é responsável por uma capabilidade do negócio, e é desenvolvida full stack (do design, requisitos, implementação, implantação). Mais próximo ao movimento DevOps;
 - **Produtos, não projetos**: time é responsável por todo o ciclo de vida do produto, do projeto à implantação;
-- **Endpoints inteligentes**: Comunicação entre microsserviços tende a ser altamente desacoplados e altamente coesos. Protocolos mais utilizados HTTP, protocolos RESTful;
-- **Governança Descentralizada**: decisões técnicas e negociais são realizadas localmente, dependendo da necessidade de cada microsserviço;
-- **Gestão de dados descentralizados**: cada microsserviço gerencia seu próprio banco de dados, e a lógica de armazenamento.
-- **Automação da Infraestrutura**:  todo o pipeline de deploy/ entrega  contínuos pode ser feito de forma automatizada, filtrada por meio de testes realizados em vários estágios do pipeline.
-- **Projetado para falhas**: aplicações são projetadas para serem tolerantes à falha de serviços. 
-- **Design Evolutivo**: a aplicação pode ser evoluida gradativamente e contiuamente, ao contrário de arquitetur componentizada que requer um projeto de como as funcionalidades serão dividas em componentes. 
+- **Endpoints inteligentes**: Comunicação entre microserviços tende a ser altamente desacoplados e altamente coesos. Protocolos mais utilizados HTTP, protocolos RESTful;
+- **Governança Descentralizada**: decisões técnicas e negociais são realizadas localmente, dependendo da necessidade de cada microserviço;
+- **Gestão de dados descentralizados**: cada microserviço gerencia seu próprio banco de dados e lógica de armazenamento;
+- **Automação da Infraestrutura**:  todo o pipeline de deploy e entrega contínuos pode ser feito de forma automatizada, filtrada por meio de testes realizados em vários estágios do pipeline;
+- **Projetado para falhas**: aplicações são projetadas para serem tolerantes à falha de serviços;
+- **Design Evolutivo**: a aplicação pode ser evoluida gradativamente e contiuamente, ao contrário de arquitetura componentizada que requer um projeto de como as funcionalidades serão dividas em componentes. 
 
-A arquitetura microsserviço é um padrão dos sistemas de software modernos, e tem se tornado um padrão nas grandes empresas.  Após essa revisão literária e  revisão técnica sobre possíveis soluções arquiteturais para lidar com a adição de novas funcionalidades optamos por abordar a solução via arquitetura microsserviços. Como estudo de caso, optamos por utilizar as funcionalidades desenvolvidas no pacote de trabalho "aprendizagem de máquina" que serão integradas ao salic. Ou seja, as funcionalidades de aprendizagem de máquina que serão integradas ao Salic vão ser implementadas como microsserviços. A próxima etapa do projeto essa abordagem de tratar com sistemas legados será implementado, colocado em ambiente de homologação/produção, e avaliado.
+A arquitetura microserviço é um padrão dos sistemas de software modernos, e tem se tornado um padrão nas grandes empresas.  Após essa revisão literária e  revisão técnica sobre possíveis soluções arquiteturais para lidar com a adição de novas funcionalidades optamos por abordar a solução via arquitetura microserviços. Como estudo de caso, optamos por utilizar as funcionalidades desenvolvidas no pacote de trabalho "aprendizagem de máquina" que serão integradas ao Salic. Ou seja, as funcionalidades de aprendizagem de máquina que serão integradas ao Salic vão ser implementadas como microserviços. A próxima etapa do projeto essa abordagem de tratar com sistemas legados será implementado, colocado em ambiente de homologação/produção, e avaliado.
 
 <!-- }}} -->
 
 ### Práticas de gestão colaborativa <!-- {{{ -->
 
-O objeto de estudo os movimentos, organizações, desenvolvedores e demais stakeholders que atuam na gestão colaborativa de software livre. O principal objetivo do trabalho de gestão colaborativa dessas comunidades de software livre é manter um conjunto de ações de governança digital e comunicação que aproveite ao máximo esse potencial em favor das necessidades do órgão e das metas comuns às organizações parte das comunidades. Esse esforço envolve um trabalho de mapeamento de atores de cada comunidade (atuais e potenciais futuros), assessoria para planejamento conjunto, facilitação de fluxos de comunicação e mobilização, realização de atividades conjuntas para integração, identificação de oportunidades externas, assessoria para comunicação e divulgação ao público externo à comunidade e apoio para solução de conflitos.
+O objetivo de estudar os movimentos, organizações, desenvolvedores e demais stakeholders que atuam na gestão colaborativa de software livre é manter um conjunto de ações de governança digital e comunicação que aproveite ao máximo esse potencial em favor das necessidades do órgão e das metas comuns às organizações parte das comunidades. Esse esforço envolve um trabalho de mapeamento de atores de cada comunidade (atuais e potenciais futuros), assessoria para planejamento conjunto, facilitação de fluxos de comunicação e mobilização, realização de atividades conjuntas para integração, identificação de oportunidades externas, assessoria para comunicação e divulgação ao público externo à comunidade e apoio para solução de conflitos.
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
@@ -110,20 +109,20 @@ Além disso, técnicas de aprendizado de máquinas serão estudadas para automat
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
-- [x] Realizar Estudo Lei Rouanet/SALIC;
+- [x] Realizar Estudo da Lei Rouanet/SALIC;
 - [x] Realizar Estudo de aprendizado de máquina;
-- [x] Realizar Estudo processamento linguagem natural;
-- [x] Realizar Estudos de chatbots.
+- [x] Realizar Estudo de processamento linguagem natural;
+- [x] Realizar Estudo de chatbots.
 
 As ações realizadas  nesta etapa para atender os objetivos do plano de trabalho foram:
 
-- [x] Reuniões com a equipe técnica da SEFIC para a compreensão do processo da execução da lei Rouanet 
+- [x] Reuniões com a equipe técnica da SEFIC para a compreensão do processo de execução da lei Rouanet 
 - [x] Levantamento dos principais gargalos de execução da lei Rouanet no Salic
 - [x] Levantamento dos principais dados no Salic usados para monitoramento e controle do Ministério
 - [x] Proposta de  solução utilizando algoritmos de aprendizagem de máquina para melhorar a execução da lei Rouanet no Salic
 - [x] Estudo de algoritmos de aprendizagem de máquina/estatísticas para extrair padrões/outliers do banco de dados
 - [x] Estudo de um processo para desenvolver produtos de softwares com módulos de aprendizagem de máquina
-- [x] Proposta arquitetural micro serviços para disponibilizar as soluções de aprendizagem de máquina no Salic
+- [x] Proposta arquitetural de microserviços para disponibilizar as soluções de aprendizagem de máquina no Salic
 - [x] Estudo de processamento de linguagem natural para extrair dados de notas fiscais
 - [x] Implementação do conector Rasa com o Rocket.Chat
 - [x] Estudo de usabilidade (UX) de fluxo de conversas em chatbot
@@ -132,7 +131,7 @@ As ações realizadas  nesta etapa para atender os objetivos do plano de trabalh
 
 Todo o acompanhamento técnico e documentação evidenciando as atividades citadas acima estão disponibilizados nos repositórios do projetos (commits, issues, wiki), sob licença GPL3: [https://github.com/lappis-unb/salic-ml/tree/master/salicml](https://github.com/lappis-unb/salic-ml/tree/master/salicml), [https://github.com/lappis-unb/rouana](https://github.com/lappis-unb/rouana), [https://github.com/lappis-unb/EcossistemasSWLivre](https://github.com/lappis-unb/EcossistemasSWLivre).
 
-Durante os meses de abril/maio foram realizadas reuniões semanais seja com a equipe gerencial da CGTEC, seja com a equipe gerencial da SEFIC, mas principalmente com a equipe técnica da SEFIC. O objetivo dessas reuniões semanais foi principalmente compreender o processo de execução da Lei Rouanet. Com a equipe técnica, além de compreensão do processo, foram levantados os principais gargalos encontrados pela a equipe que acompanha e  avalia projetos culturais, principais limitações do SALIC, e principais oportunidades de melhorias sugeridas pelos técnicos/especialistas. Abaixo estão documentados os principais avanços na etapa.
+Durante os meses de abril/maio foram realizadas reuniões semanais seja com a equipe gerencial da CGTEC, seja com a equipe gerencial da SEFIC, mas principalmente com a equipe técnica da SEFIC. O objetivo dessas reuniões semanais foi principalmente compreender o processo de execução da Lei Rouanet. Com a equipe técnica, além de compreensão do processo, foram levantados os principais gargalos encontrados pela equipe que acompanha e avalia projetos culturais, principais limitações do SALIC, e principais oportunidades de melhorias sugeridas pelos técnicos/especialistas. Abaixo estão documentados os principais avanços na etapa.
 
 #### Prestação de Contas
 
@@ -140,7 +139,7 @@ Durante os meses de abril/maio foram realizadas reuniões semanais seja com a eq
 
 A análise de objeto tem por objetivo verificar se o projeto executado seguiu o planejamento, neste passo não é feita uma análise de custos do projeto, apenas é verificado se o que foi executado segue o objetivo inicial do projeto. Se o projeto for reprovado neste ponto, a planilha orçamentária nem é analisada e o proponente é obrigado e devolver todo o dinheiro captado. Já análise financeira tem por objetivo verificar se os custos do projeto estão de acordo com a planilha orçamentária vigente para o projeto, se estão de acordo com a IN vigente ou a IN do momento da aprovação do projeto, e se os comprovantes apresentados estão de acordo com os valores e fornecedores declarados. A imagem abaixo evidencia o gargalo na prestação de contas, no qual é apresentado tanto a quantidade de projetos abertos/aprovados, e a quantidade de projetos finalizados.
 
-(figs/Grafico_projetos_finalizados.png){width=400px}
+![Gráfico de Projetos Finalizados](figs/Grafico_projetos_finalizados.png){width=400px}
 
 | Etapa  | Num de Projetos   |
 |---|---|
@@ -161,14 +160,16 @@ A análise de objeto tem por objetivo verificar se o projeto executado seguiu o 
 - Relação de similaridade entre projetos
 - Recomendação de comprovantes com algum tipo de inconsistência
 
-**Resultados Preliminares:** Alguns experimentos foram realizados, seja para aprender sobre os dados disponíveis no SaliC, seja para testar algumas hipóteses e algoritmos. Cada experimento fo registrado na forma de jupyter-notebook, disponível no repositório do projeto [https://github.com/lappis-unb/salic-ml/tree/master/salicml](https://github.com/lappis-unb/salic-ml/tree/master/salicml). No anexo IV é apresentado o template proposto pela equipe para manter a padronização das análises dos dados. 
+**Resultados Preliminares:** Alguns experimentos foram realizados, seja para aprender sobre os dados disponíveis no Salic, seja para testar algumas hipóteses e algoritmos. Cada experimento foi registrado na forma de jupyter-notebook, disponível no repositório do projeto [https://github.com/lappis-unb/salic-ml/tree/master/salicml](https://github.com/lappis-unb/salic-ml/tree/master/salicml). No anexo IV é apresentado o template proposto pela equipe para manter a padronização das análises dos dados. 
 
 
 #### Admissibilidade
 **Oportunidades de aprendizagem de máquina:** A grande oportunidade consiste em recomendar do proponente para que este faça um projeto de melhor qualidade. A recomendação deve ser feita a partir não da IN (Instrução normativa), mas sim de aprendizagem da base de dados dos projetos já aprovados/finalizados. O objetivo é gerar recomendações para o proponente para que este faça um projeto de qualidade (com menor probabilidade de haver diligencias), desde a concepção.
 
 Voltando ao processo de admissibilidade, o Salic já utiliza um sistema automatizado para validação de preço dos itens cadastrados em uma proposta: PROCEDURE dbo.spCalcularMedianaItemOrcamentario.
+
 **Proposta**: Sistema de recomendações de projetos durante admissão/execução:
+
 - Sugestões de modificação da planilha orçamentária
 - Sugestões de acompanhamento do projeto
 
