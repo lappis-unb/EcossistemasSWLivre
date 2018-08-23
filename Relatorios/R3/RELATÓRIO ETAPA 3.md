@@ -824,16 +824,90 @@ Quanto aos erros, em [[7]](#referências-bibliográficas), existem 4 categorias 
 
 # Anexo III - Estratégias para disponibilizar grandes datasets para a comunidade de aprendizagem de máquina
 
-https://github.com/lappis-unb/salic-ml/wiki/Estratégias-para-disponibilizar-grandes-datasets-para-a-comunidade
+Ao trabalhar com aprendizado de máquina, é inevitável a utilização de grandes quantidades de dados. Neste documento serão apresentadas as estratégias estudadas e a adotada para disponibilizar para a comunidade os dados utilizados durante as pesquisas realizadas neste repositório.
+
+O Salic é o sistema de acompanhamento de projetos culturais do Ministério da Cultura. Atualmente, tal sistema conta com mais de 1.5TB de dados. Muitos desses dados são vídeos e imagens e não serão utilizados nas pesquisas do salic-ml. A expectativa é a utilização de algumas dezenas de GB de dados, retirados do banco de dados do Salic. Para encontrar a melhor estratégia para armazenar tais dados, foram estudadas as seguintes estratégias:
+
+* Utilização do Git-LFS
+* Repositório Git para dados como submódulo do salic-ml
+* Repositório Git-LFS para dados como submódulo do salic-ml
+* Google Drive, Dropbox e similares
+* Servidor FTP local com acesso externo
+
+A estratégia adotada foi a utilização de um servidor FTP na infraestrutura local com acesso externo, devido a sua maior capacidade de armazenamento e facilidade de download dos dados. Abaixo são detalhadas as estratégias utilizadas.
+
+### Utilização do Git-LFS
+
+O [Git-LFS](https://git-lfs.github.com/) (Large Files Storage) é uma extensão do Git para versionamento de grandes arquivos de dados em um repositório. Além de facilitar o versionamento de grandes arquivos, o Git-LFS permite o download de tais arquivos individualmente e separados do `git clone`. Contudo, o GitHub permite o armazenamento de, no máximo, 1GB por repositório \[[link](https://help.github.com/articles/working-with-large-files/)\], o que não é suficiente para armazenar os dados utilizados. A primeira conclusão é que é preciso armazenar os dados fora do GitHub.
+
+### Repositório Git para dados como submódulo do salic-ml
+
+Estudou-se a possibilidade de criação de um repositório Git para armazenamento dos dados em uma outra plataforma e utilização de tal repositório como um submódulo do salic-ml. A primeira plataforma estudada foi o [GitLab](https://about.gitlab.com/), contudo, ele permite o armazenamento de, no máximo, 10GB por repositório \[[link](https://about.gitlab.com/2015/04/08/gitlab-dot-com-storage-limit-raised-to-10gb-per-repo/)\], o que também não é suficiente para armazenar os dados utilizados. Uma alternativa foi a utilização de uma instância do [Gitea](https://gitea.io/en-us/) na infraestrutura local e com acesso externo. Desta forma, seria possível armazenar todos os dados necessários sem restrição de espaço e ainda utilizar o repositório como submódulo do salic-ml. Uma desvantagem desta abordagem é a impossibilidade de baixar arquivos individuais do repositório: o comando `git clone` baixa todo o repositório em uma única vez.
+
+### Repositório Git-LFS para dados como submódulo do salic-ml
+
+Para contornar a impossibilidade de baixar arquivos individuais do repositório de dados, estudou-se a possibilidade de utilização do repositório em uma instância local do Gitea com a extensão Git-LFS, desta forma, não haveria limitação de capacidade de armazenamento de dados e seria possível baixar arquivos individuais do repositório. A desvantagem desta abordagem é a complexidade de sua utilização, não seria prático ter que utilizar os comandos específicos do `git-submodules` e do `git-lfs` sempre que fosse necessário baixar um arquivo de dados.
+
+### Google Drive, Dropbox e similares
+
+Para simplificar a utilização dos arquivos de dados, foram estudadas plataformas de armazenamento em nuvem, como [Google Drive](https://www.google.com/drive/), [Dropbox](https://www.dropbox.com/) e [OneDrive](https://onedrive.live.com/), contudo, todas as ferramentas têm limitações de capacidade de armazenamento de dados e, assim, não são viáveis.
+
+### Servidor FTP
+
+Por fim, foi estudada e adotada a utilização de um servidor FTP na infraestrutura local com acesso externo. O servidor FTP conta com acesso de leitura para usuários anônimos e escrita para um usuário administrador. É possível baixar todos os dados ou arquivos individuais, além de não ter limitação para armazenamento. Para baixar todos os dados ou apenas dados específicos, basta acessar o servidor FTP, uma maneira para baixar os dados facilmente é utilizando o comando `wget`, conforme mostrado no README deste repositório. Os arquivos devem ser salvos na pasta `data` do repositório local, pasta ignorada pelo Git.
+
+### Acesso aos dados
+
+
+Todos os datasets (em `.csv`) usados neste projeto são obtidos a partir do banco de dados do Salic. Este documento explica brevemente o processo de obtenção dos datasets.
+
+1. Conecte-se com o banco de dados do Salic via VPN: [Guia de acesso ao banco de dados via VPN](https://github.com/lappis-unb/EcossistemasSWLivre/wiki/Acessando-banco-de-dados-via-VPN)
+
+2. Identifique os bancos de dados, tabelas e colunas relevantes ao seu objetivo.
+
+3. Execute comandos/scripts SQL para exibir os dados de interesse:
+
+`SELECT * FROM Sac_db.tbPlanilha;`
+
+4. No DBeaver os resultados dos comandos executados são exibidos na aba/view "Results"
+
+5. Clicando com o botão direito em qualquer linha do resultado da aba "Results", selecione a opção "Export resultset"
+
+6. Escolha a opção CSV
+
+7. Configure a saída de acordo com seu interesse, em geral as opções padrão são suficiente.
+
+8. O CSV será baixado será salvo no local escolhido.
+
+
 
 # Anexo IV - Template de notebooks para algoritmos de aprendizagem de máquina usando dados da Lei Rouanet
 
-https://github.com/lappis-unb/salic-ml/tree/master/notebooks
+A frente tem como meta para a primeira entrega a implementação de um sistema de indicadores de complexidade de projetos culturais. Ao fim das primeiras 4 entregas, a meta do grupo é entregar todo o sistema de informações de projetos na etapa de análise de resultados, e a meta de toda a Fase 2 é entregar os dois sistemas listados acima (sistema de informações e sistema de recomendações).
 
-https://github.com/lappis-unb/salic-ml/blob/master/notebooks/exploratory/project_historic_situation-v0.1.ipynb
+As entregas ainda foram divididas em _sprints_ de duas semanas e a frente se organizou em três equipes:
+1. Time de pesquisa e geração: responsável pelo estudo dos dados do Salic e geração de métricas e indicadores que possam ajudar os técnicos da Sefic (Secretaria de Fomento e Incentivo à Cultura) a analisar projetos culturais, por exemplo: métricas de nível de complexidade de projetos culturais, semelhança entre projetos culturais, entre outras. Repositório da equipe: [salic-ml](https://github.com/lappis-unb/salic-ml)
+1. Time de disponibilização de dados: responsável por disponibilizar as métricas e indicadores gerados pelo time de pesquisa e extração para que os mesmos possam ser utilizados de alguma forma na plataforma Salic ou em algum outro sistema de interesse. Repositório da equipe: [salic-ml-web](https://github.com/lappis-unb/salic-ml-web)
+1. Time de DataViz: responsável pela integração das métricas e indicadores gerados na plataforma Salic. Repositório da equipe: [salic-ml-web](https://github.com/lappis-unb/salic-ml-web)
 
-# Anexo V - Resultados preliminares da análise dos dados referentes aos projetos submetidos via Lei Rouanet
+Todas as _sprints_ contam com uma reunião inicial de planejamento com duração de aproximadamente 3 horas, reuniões não formais ao longo do período de desenvolvimento (conforme a necessidade) e, ao final, uma reunião de revisão e retrospectiva. As reuniões inicial e final são realizadas, idealmente, com todos os membros dos três times da frente.
+
+Como todo o produto será software livre e disponibilizado na plataforma [GitHub](https://github.com/), o grupo decidiu por utilizar o GitHub com a extensão [ZenHub](https://www.zenhub.com/) para gerenciar o backlog de tarefas.
+
+Ao início de cada entrega, as tarefas de todas as equipes são cadastradas no repositório `salic-ml` do GitHub como _issues_ e adicionadas à _milestone_ referente àquela entrega. À cada entrega é dado o nome de uma ponte famosa (Golden Bridge, JK Bridge, entre outras) para facilitar a associação da mesma às suas tarefas.
+
+Todas as _issues_ são adicionadas também ao _board_ "_Backlog_" do ZenHub. Durante a reunião de planejamento, as tarefas da _sprint_ são priorizadas, atribuídas aos membros do time e movidas para a aba "_Sprint Backlog_". Durante a _sprint_, as _issues_ em andamento são movidas para a aba "_Doing_". Após finalizadas, é aberto um _pull request_ e, assim que ele é revisado e aprovado, a _issue_ é movida para a aba "_Done_". Durante a reunião de revisão e retrospectiva, as _issues_ finalizadas são movidas para a aba "_Closed_", o que encerra o ciclo de vida de uma tarefa.
+
+Todas as tarefas devem ter critérios de aceitação bem definidos em sua descrição. É comum para todas as tarefas que a documentação e a criação de testes automatizados sejam escritos como critério de aceitação.
+
+Por fim, aqui na _Wiki_ são documentadas todas as reuniões da frente e eventuais estudos sobre temas relacionados ao projeto.
+
+
+Os notebooks são disponibilizados em [https://github.com/lappis-unb/salic-ml/tree/master/notebooks](https://github.com/lappis-unb/salic-ml/tree/master/notebooks).
+
+Exemplo de um notebook:
+
+[https://github.com/lappis-unb/salic-ml/blob/master/notebooks/exploratory/project_historic_situation-v0.1.ipynb](https://github.com/lappis-unb/salic-ml/blob/master/notebooks/exploratory/project_historic_situation-v0.1.ipynb)
 
 
 
-# Anexo V - Estudo de aprendizagem de máquina
