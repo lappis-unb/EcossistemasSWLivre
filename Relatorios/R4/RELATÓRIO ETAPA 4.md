@@ -358,7 +358,265 @@ Além das visualizações acima citados, todos disponiblizados na página do [gi
 
 # DevOps, infraestrutura e experimentação contínua
 
-(descrever avanços da frente de infra aqui)
+A equipe de infra-estrutura do projeto realizou estudos sobre como executar e
+rodar o banco de dados MS SQL Server do Salic em ambiente local com servidores
+Linux utilizando Ubuntu, o aprendizado é relatado abaixo:
+
+A Microsoft disponibiliza SQL Server nativo para Ubuntu 16.04, basta seguir o
+passo-a-passo no link abaixo para fazer o setup:
+
+* [https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-2017)
+
+Após ter uma instância configurada é possível restaurar os backups seguindo os seguintes passos:
+
+### Restaurar arquivos .bak
+
+Conectar ao console do MS SQL Server via linha de comando
+
+`/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<senha>'`
+
+Restaurar cada banco separadamente a partir do console com o comando:
+
+```
+restore database [Agentes] from disk='/tmp/bak/Agentes_20180216230500.BAK'
+   with replace, move 'Agentes_Data' to '/tmp/bak/Agentes_Data.MDF', move 'Agentes_Log'
+   to '/tmp/bak/Agentes_Log.LDF'
+GO
+```
+
+Se o comando executar corretamente o output com sucesso deve ser:
+
+```
+"RESTORE DATABASE successfully processed 34414 pages in 10.682 seconds (25.169 MB/sec)."
+```
+
+É necessário repetir os passos para cada banco de dados:
+
+* ControleDeAcesso
+* Tabelas
+* BDCorporativo
+* etc...
+
+Algumas referências úteis sobre operação do banco MS SQL:
+
+* [Quickstart: Run SQL Server container images with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017)
+* [Configure SQL Server container images on Docker](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-docker?view=sql-server-2017#production)
+* [Script shell para instalacao do sql server no linux](https://blogs.msdn.microsoft.com/sqlcat/2017/10/03/unattended-install-and-configuration-for-sql-server-2017-on-linux/)
+* [SQL Server List Tables: How to Show All Tables](https://chartio.com/resources/tutorials/sql-server-list-tables-how-to-show-all-tables/)
+* [Connect to SQL Server from command prompt – list tables and database](https://www.cyberciti.biz/faq/howto-ms-sql-list-tables-and-database/)
+* [Restore SQL Server database from bak file command line](http://www.sqlservergeeks.com/restore-sql-server-database-from-bak-file-command-line/)
+* [Restore database sql server standard](https://www.codeproject.com/questions/314769/restore-database-sql-server-standard)
+
+Feito o restore dos bancos é necessário habilitar conexão via ODBC ao MS SQL.
+Por padrão o MS SQL server sobe com driver padrão (não-odbc), mas as aplicações desenvolvidas pelo Lappis acessam o banco via odbc, especificamente o pyodbc, então é necessário configurar o servidor para permitir conexão via odbc.
+
+COnsulte o link para instruções sobre como [instalar os pacotes odbc para o MS SQL](https://docs.microsoft.com/pt-br/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017).
+Após instalar os pacotes odbc configure seguindo os tutoriais abaixo:
+
+* https://blogs.technet.microsoft.com/latam/2016/11/05/instalando-o-odbc-driver-for-sql-server-no-linux-step-by-step/
+* https://communities.actian.com/s/article/How-to-configure-SQL-Server-Linux-ODBC-driver
+
+Segue abaixo a configuração utilizada no servidor local do Lappis (desktop
+Positivo) que está atualmente servindo o banco do SALIC para desenvolvimento.
+
+```terminal
+root@SQLSERVER:~# cat /etc/odbc.ini
+
+[SAC]
+Description=Microsoft ODBC Driver 17 for SQL Server
+Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.2.so.0.1
+Database=SAC
+Server=tcp:localhost,1433
+
+[AGENTES]
+Description=Microsoft ODBC Driver 17 for SQL Server
+Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.2.so.0.1
+Database=Agentes
+Server=tcp:localhost,1433
+
+[BDCORPORATIVO]
+Description=Microsoft ODBC Driver 17 for SQL Server
+Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.2.so.0.1
+Database=BDCorporativo
+Server=tcp:localhost,1433
+
+[CONTROLEDEACESSO]
+Description=Microsoft ODBC Driver 17 for SQL Server
+Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.2.so.0.1
+Database=ControleDeAcesso
+Server=tcp:localhost,1433
+
+[TABELAS]
+Description=Microsoft ODBC Driver 17 for SQL Server
+Driver=/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.2.so.0.1
+Database=Tabelas
+Server=tcp:localhost,1433
+
+```
+
+Para testar a conexão via ODBC basta usar o comando `isql`, exemplos:
+
+```terminal
+lappis@SQLSERVER:~$ isql BDCORPORATIVO <USUARIO> <SENHA>
++---------------------------------------+
+| Connected!                            |
+|                                       |
+| sql-statement                         |
+| help [tablename]                      |
+| quit                                  |
+|                                       |
++---------------------------------------+
+SQL> 
+```
+
+Outro exemplo acessando o banco ControleDeAcesso:
+
+```terminal
+lappis@SQLSERVER:~$ isql CONTROLEDEACESSO <USUARIO> <SENHA>
++---------------------------------------+
+| Connected!                            |
+|                                       |
+| sql-statement                         |
+| help [tablename]                      |
+| quit                                  |
+|                                       |
++---------------------------------------+
+SQL> 
+```
+
+Além dos estudos e configuração do MS SQL Server realizamos também pesquisas
+sobre o Kubernetes com objetivo de ser utilizado no ambiente de Experimentação
+Contínua. O Kubernetes é uma plataforma para orquestraçao de clusters e
+containers com recursos suficientemente flexíveis para ser considerado um
+framework para implementar soluções com infrestrutura.
+
+O Kubernetes está sendo testado em ambiente local no laboratório Lappis através
+de cluster utilizando Desktops com sistema operacional Debian e configurados
+através do `kubeadm`, o `kubeadm` é uma entre as inúmeras formas e opções de
+instanciar um cluster, ele tem sido documentado e referenciado como uma forma
+prática e viável para configurar clusters para produção conforme indica
+documento abaixo:
+
+* [Creating a single master cluster with kubeadm](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
+
+O Kubernetes é um sistema extremamente flexível e possui inúmeros add-ons para
+compor a solução completa e ter um cluster funcionando, entre os addo-ons
+primordiais temos o add-on de rede que cuida de simular e gerir uma rede em
+software para os containers no cluster, cada nó do cluster possui uma sub-rede
+em faixas de endereço IP locais, estas sub-redes necessitam comunicar entre sí
+e num ambiente virtualizado como é o caso é necessário alguma solução que
+possibilite cada serviço, cada pod e cada container se comunicar entre sí,
+entre as diversas opções existentes o Lappis tem dado foco ao `flannel` que é
+um dos mais indicados e feito com atenção voltada ao Kubernetes.
+
+Este cluster Kubernetes sendo projeto será utilizado num ambiente de
+Experimentação Contínua, neste contexto a frente de infraestrutura também
+iniciou estudos teóricos sobre o tema e até o momento tem feito levantamento de
+conceitos e práticas a serem implementadas neste ambiente clusterizado, segue alguns dos conceitos estudados:
+
+### Entrega contínua (Continuous delivery)
+
+Prática de desenvolvimento de software com possibilidade de entregas em
+produção a qualquer momento e com um alto grau de automatização (fonte: We’re
+Doing It Live: A Multi-Method Empirical Study on Continuous Experimentation).
+
+### Implantação contínua (Continuous deployment)
+
+Prática de desenvolvimento de software similar a entrega contínua com um nível
+maior de automatização onde o softawre é entregue e implantado em produção
+assim que estiver pronto, exemplo, uma vez que passem todos os testes de
+qualidde o pipeline de deploy é executado automaticamente (fonte: We’re Doing
+It Live: A Multi-Method Empirical Study on Continuous Experimentation).
+
+### Experimento guiado pelo negócio (Business-driven experiment)
+
+É um tipo (sabor - flavor) de experimentação contínua utilizado para avaliar
+novas funcionalidades do ponto de vista do negócio, a princípio utilizando
+teste A/B (fonte: We’re Doing It Live: A Multi-Method Empirical Study on
+Continuous Experimentation).
+
+### Experimento guiado por regressão (Regression-driven experiment)
+
+É um tipo (sabor - flavor) de experimentação contínua utilizado para avaliar
+aspectos não-funcionais de uma certa mudança em ambiente de produção, exemplo,
+validar que uma mudança não introduz uma regreção perceptível pelo usuário
+(fonte: We’re Doing It Live: A Multi-Method Empirical Study on Continuous
+Experimentation).
+
+## Práticas de experimentação contínua
+
+### Teste A/B (A/B testing)
+
+Prática engloba executar dois ou mais variações de uma mesma aplicação em
+paralelo, com diferenças isoladas em nível de implementação. O objetivo é
+avaliar estatisticamente, usualmente a partir de métricas de negócio (business
+metrics), qual das versões performa melhor, ou se existe alguma diferença
+estatísticamente significante entre alguma das versões. Está entre as
+principais práticas de experimentação contínuas adotadas por empresas para
+mitigar os riscos associados com erros em produção dos seus produtos.
+
+### Canary Release (Releases canários)
+
+São práticas de lançamento de novas versões ou funcionalidades para um pequeno
+subconjunto de clientes (por exemplo, selecionando 5% dos clientes de uma certa
+região geográfica), enquanto o restante dos clientes continuam utilizando a
+versão anterior estável.
+
+Está entre as principais práticas de experimentação contínuas adotadas por
+empresas para mitigar os riscos associados com erros em produção dos seus
+produtos.
+
+### Dark (or shadow) Launches (lançamentos escuros)
+
+Prática utilizada para mitigar problemas de performance ou confiabilidade
+(reliability) de uma nova funcionalidade, seja uma funcionalidade inteiramente
+nova ou uma funcionalidade redesenhada, ao atingir ambiente de produção com
+alto tráfego.
+
+A nova funcionalidade é posta em produção em modo invisível, os usuários não
+são habilitados a ver ou mesmo utilizar a nova funcionalidade. No entando, no
+backend, em silêncio, queries são geradas com base no tráfego existente em
+produção e encaminhadas para a versão invisível (shadow).
+
+### Gradual rollouts (lançamentos graduais)
+
+É uma prática, usualmente, combinada com outras práticas de experimentação
+contínua, como releases canários ou dark launches. O número de usuários
+selecionados para uma nova versão é gradualmente incrementada até que a versão
+anterior seja completamente sibstituída ou que um limite pré-definido seja
+atingido. Está entre as principais práticas de experimentação contínuas
+adotadas por empresas para mitigar os riscos associados com erros em produção
+dos seus produtos. (fonte: We’re Doing It Live: A Multi-Method Empirical Study
+on Continuous Experimentation).
+
+## Técnicas de implementação para experimentação:
+
+### Feature toggles (alternancia de features)
+
+São técnicas de experimentação em nível de código-fonte. Em sua forma mais
+simples, é composto de blocos condicionais no código para decidir qual código
+será executado na sequencia (exemplo: se uma certa funcionalidade deve ser
+habilitada para um certo usuário ou grupo).
+
+### Runtime traffic routing (roteamento de tráfego em tempo de execução)
+
+É uma técnicas de experimentação em nível de rede. Múltiplas versões de uma
+aplicação ou serviço são executadas em paralelo (em VMs, cloud ou containers).
+Dependendo de critérios de filtros aplicados as requisições dos usuários,
+componentes (exemplo: proxies) dinâmicamente configurados (em nível de rede)
+decidem para qual versão da uma aplicação ou serviço uma requisição deve ser
+encaminhada.
+
+A special type of traffic routing are blue/green deployments [13], which
+include two or more active versions at the same time, but only one serves
+production traffic. (fonte: We’re Doing It Live: A Multi-Method Empirical
+Study on Continuous Experimentation).  
+
+Estes conceitos, métodos e práticas associados a Experimentação Contínua serão
+aprofundados em termos de estudo teórico com objetivo de serem implementados
+num ambiente com Kubernetes para que produtos de software sejam automaticamente
+validados através de experimentos, coleta e análise de métricas, tanto de uso e
+qualidade externa quanto de qualidade interna.
 
 # Acompanhamento Financeiro
 
