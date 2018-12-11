@@ -2,7 +2,8 @@
 title: RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA IV - Ecossistemas de Software Livre - Outubro 2018
 author: Carla Silva Rocha Aguiar (Coordenadora do Projeto)
 date: 08 de outubro de 2018
-
+geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
+colorlinks: true
 ---
 
 # Introdução
@@ -80,9 +81,9 @@ Além de resolver problemas já conhecidos essa arquitetura é proposta para que
 
 #### O estado da arte da indústria x Salic
 
-As arquiteturas [Lambda](http://lambda-architecture.net/) e [Kappa](http://milinda.pathirage.org/kappa-architecture.com/) estão hoje populares no mercado como soluções arquiteturais para projetos envolvendo Big Data. Existe também movimentos de propor melhorias para estas arquiteturas `[3]` e não há consenso sobre uma melhor arquitetura para softwares envlvendo Big Data.
+As arquiteturas [Lambda](http://lambda-architecture.net/) e [Kappa](http://milinda.pathirage.org/kappa-architecture.com/) estão hoje populares no mercado como soluções arquiteturais para projetos envolvendo Big Data. Existe também movimentos de propor melhorias para estas arquiteturas `[3]` e não há consenso sobre uma melhor arquitetura para softwares envolvendo Big Data.
 
-Existem dois motivos para o caso do `Salic-ml` em particular, atualmente, não ser um bom candidado te projeto para se utilizar as arquiteturas `Lambda` ou `Kappa`.
+Existem dois motivos para o caso do `Salic-ml` em particular, atualmente, não ser um bom candidado de projeto para se utilizar as arquiteturas `Lambda` ou `Kappa`.
 
 1. O volume de novos dados da Análise Financeira é baixo. Atualmente as informações sobre todos os itens comprovados (excluindo imagens e `.pdfs`) é `117 MB`. É conhecido que o banco de dados do Salic passou a ser utilizado por padrão na análise financeira a partir de `2014`, portanto há uma média menor que `39 MB` de dados novos por ano.
 
@@ -99,7 +100,6 @@ O caso do `Salic-ML` não se encaixa nas arquiteturas que estão no estado da ar
 - [3] https://www.oreilly.com/ideas/questioning-the-lambda-architecture
 
 
-
 <!-- }}} -->
 
 ### Práticas de gestão colaborativa <!-- {{{ -->
@@ -113,12 +113,12 @@ Ações programadas para esta etapa de acordo com o plano de trabalho:
 As ações realizadas  nesta etapa para atender os objetivos do plano de trabalho foram:
 
 - [x] Reuniões contínuas com os parceiros
-- [x] Relacionamento com os beta testes da Tais
+- [x] Relacionamento com os _beta testers_ da Tais
 
 Entrando em entrega contínua, as reuniões de alinhamento e entrega com os parceiros (SEFIC, CGTEC) se intensificaram.
 
 
-Além disso, com a entrega da chatbot para tirar dúvidas sobre a lei Rouanet, a Tais, foi criado um ambiente de homologação, para que beta testes. Nesse ambiente, os beta testes foram proponentes e pessoas que trabalham na área cultural que foram selecionadas para testar a assistente Virtual. Nesse processo, esse frente trabalhou para desenhar esse processo de colaboração, como de apresentar o produto, os requisitos e necessidades os links de uso, canais de comunicação e, finalmente, avaliação da ferramenta.
+Além disso, com a entrega da chatbot para tirar dúvidas sobre a lei Rouanet, a Tais, foi criado um ambiente de homologação. Nesse ambiente, os _beta testers_ foram proponentes e pessoas que trabalham na área cultural cuidadosamente selecionadas para testar a assistente Virtual. Nesse processo a frente trabalhou para desenhar o processo de colaboração, como de apresentar o produto, os requisitos e necessidades de uso, canais de comunicação e, finalmente, avaliação da ferramenta.
 
 <!-- }}} -->
 
@@ -130,7 +130,7 @@ Além disso, técnicas de aprendizado de máquinas serão estudadas para automat
 
 Ações programadas para esta etapa de acordo com o plano de trabalho:
 
-- [X] Realizar Estudo da Lei Rouanet/SALIC;
+- [x] Realizar Estudo da Lei Rouanet/SALIC;
 - [x] Realizar Estudo de aprendizado de máquina;
 - [x] Realizar Estudo de processamento linguagem natural;
 - [x] Realizar Estudo de chatbots.
@@ -191,7 +191,6 @@ O principais objetivos foram o teste e finalização dos fluxo da nova versão d
 ### Documentos Gerados
 
 - [Análise do Beta](https://github.com/lappis-unb/rouana/wiki/Plano-de-comunica%C3%A7%C3%A3o-com-beta-testers)
-- [Tutorial de instalação do livechat](https://github.com/lappis-unb/rouana/wiki/Instala%C3%A7%C3%A3o-do-Livechat-de-Produ%C3%A7%C3%A3o)
 - [Monitoramento do beta](https://github.com/lappis-unb/rouana/wiki/Processo-de-Monitoramento-do-Beta)
 - [Conteúdo Atual](https://github.com/lappis-unb/rouana/wiki/Mensagens-da-Ta%C3%ADs)
 - Classificação de tópicos: [1](https://github.com/lappis-unb/rouana/wiki/Novos-t%C3%B3picos-para-inserir-no-futuro) [2](https://github.com/lappis-unb/rouana/wiki/Intents-classificados-errado) [3](https://github.com/lappis-unb/rouana/wiki/Sin%C3%B4nimos-de-t%C3%B3picos-existentes) [4](https://github.com/lappis-unb/rouana/wiki/T%C3%B3picos-complicados-para-avaliar)
@@ -258,19 +257,19 @@ Nesta seção são apresentados os principais documentos produzidos pela equipe.
 
 ### Arquitetura do Salic-ML
 
-https://github.com/lappis-unb/salic-ml/wiki/Desenvolvimento-Arquitetura-ML
+* [https://github.com/lappis-unb/salic-ml/wiki/Desenvolvimento-Arquitetura-ML](https://github.com/lappis-unb/salic-ml/wiki/Desenvolvimento-Arquitetura-ML)
 
 ### Roadmap do projeto
 
-https://github.com/lappis-unb/salic-ml/wiki/Roadmap-do-Salic-ML
+* [https://github.com/lappis-unb/salic-ml/wiki/Roadmap-do-Salic-ML](https://github.com/lappis-unb/salic-ml/wiki/Roadmap-do-Salic-ML)
 
 ### Brainstorming de métricas e indicadores
 
-https://github.com/lappis-unb/salic-ml/wiki/Brainstorming-de-features-para-estimar-Complexidade-Financeira
+* [https://github.com/lappis-unb/salic-ml/wiki/Brainstorming-de-features-para-estimar-Complexidade-Financeira](https://github.com/lappis-unb/salic-ml/wiki/Brainstorming-de-features-para-estimar-Complexidade-Financeira)
 
 ### Template para notebooks de pesquisa
 
-https://github.com/lappis-unb/salic-ml/blob/master/notebooks/template.ipynb
+* [https://github.com/lappis-unb/salic-ml/blob/master/notebooks/template.ipynb](https://github.com/lappis-unb/salic-ml/blob/master/notebooks/template.ipynb)
 
 <!-- }}} -->
 ### Visualização de dados e criação de Dashboards <!-- {{{ -->
@@ -279,8 +278,8 @@ Devido à mudanças de escopo do pacote de trabalho "Catálogo de Software", o p
 
 As seguintes atividades foram desenvolvidas nesse período:
 
--[x] Execução do método Design Sprint para elaborar propostas de visualização
--[x] Desenvolvimento de protótipos em código usando a prática de desenvolvimento em power trios
+- [x] Execução do método Design Sprint para elaborar propostas de visualização
+- [x] Desenvolvimento de protótipos em código usando a prática de desenvolvimento em power trios
 
 #### Objetivos
 
@@ -301,12 +300,11 @@ Durante o período, foram desenvolvidos diversos protótipos a partir da __Desig
 - Acessos Gratuitos: exibe grafos de quais segmentos possuem projetos que disponibiliza um percentual de acessiveis gratuitos.
 - Projetos por ano - representa variações na quantidade de projetos por segmentos submetidos através de gráficos inteligados.
 
-Além das visualizações acima citados, todos disponiblizados na página do githubpages do projeto, forma realizadas diversas reuniões de alinhamento com a equipe técnica da Sefic, a fim de validar as visualizações e levantar outros requisitos sobre informações úteis que podem ser extraído dos dados.
+Além das visualizações acima citados, todos disponiblizados na página do [github pages](https://lappis-unb.github.io/PromovaCultura/) do projeto, forma realizadas diversas reuniões de alinhamento com a equipe técnica da Sefic, a fim de validar as visualizações e levantar outros requisitos sobre informações úteis que podem ser extraído dos dados.
 
 ![visualizacoes](figs/visualizacao.png)
 
 #### Descrição dos objetivos
-
 
 1. Desenvolver protótipos para apresentar visão transversal da cultura
 
@@ -335,13 +333,11 @@ Além das visualizações acima citados, todos disponiblizados na página do git
 	- Definição de instrução de uso (#154)
 	- Ajustes de design visual e experiência de usuário (#168, #167)
 
-
 2. Estudar, testar e definir tecnologias para apresentação das informações
 
    - Efeitos Visuais (#72)
    - Bibliotecas (#155)
    - Visualização Mobile (#163)	 	
-
 
 3. Evolução da página principal do PromovaCultura
 
@@ -358,11 +354,13 @@ Além das visualizações acima citados, todos disponiblizados na página do git
 - [Modos de interação com os mapas (#24)](https://github.com/lappis-unb/PromovaCultura/files/2160189/Interacao.com.os.mapas.pdf)
 - [Visualização mobile para segmentos por ano](https://github.com/lappis-unb/PromovaCultura/files/2419835/arquivo.editavel.inkscape.zip)
 
-
 <!-- }}} -->
 
-# Acompanhamento Financeiro
+# DevOps, infraestrutura e experimentação contínua
 
+(descrever avanços da frente de infra aqui)
+
+# Acompanhamento Financeiro
 
 Desse repasse, um total de R$198.250,00 foi executado na Etapa IV. Todo
 esse valor foi executado no pagamento das bolsas do time, viagem, diaria, pessoa jurídica (mudança de local de container para a instalaçao do conteiner comprado, de acordo com o plano de trabalho do projeto) e o valor gasto por

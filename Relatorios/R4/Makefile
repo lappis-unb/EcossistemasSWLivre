@@ -1,5 +1,5 @@
 pdf:
-	pandoc "RELATÓRIO ETAPA 3.md" -o "RELATÓRIO ETAPA 3.pdf"
+	pandoc "RELATÓRIO ETAPA 4.md" -o "RELATÓRIO ETAPA 4.pdf"
 
 clean:
 	rm -rf *.pdf
