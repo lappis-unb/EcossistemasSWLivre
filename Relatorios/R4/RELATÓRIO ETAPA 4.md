@@ -1,7 +1,7 @@
 ---
-title: RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA IV - Ecossistemas de Software Livre - Outubro 2018
+title: RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA IV - Ecossistemas de Software Livre - Janeiro 2019
 author: Carla Silva Rocha Aguiar (Coordenadora do Projeto)
-date: 08 de outubro de 2018
+date: 28 de janeiro de 2019
 geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
 colorlinks: true
 ---
@@ -12,7 +12,7 @@ O presente relatório apresenta o acompanhamento do trabalho realizado no
 projeto "Ecossistemas de Software Livre", Termo de Cooperação para
 Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência
 Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços
-realizados na Etapa IV (Julho 2018 à Setembro 2018), de acordo com o cronograma
+realizados na Etapa VI (Outubro 2018 à Janeiro 2019), de acordo com o cronograma
 do Plano de Trabalho.
 
 Toda alteração no cronograma proposto foi realizada  a partir de renegociação
