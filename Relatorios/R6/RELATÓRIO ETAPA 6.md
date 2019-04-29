@@ -23,7 +23,7 @@ O período de fevereiro 2019 à abril 2019 contemplou as fases de planejamento e
 
 Abaixo serão apresentados os principais avanços alcançados no período, por pacote de trabalho (de acordo com o Plano de Trabalho), de acordo com o cronograma, no período citado.
 
-------
+
 
 # Chatbot Tais
 
@@ -149,8 +149,8 @@ Para isso, parte da equipe realizou um estudo preliminar das relações entre CP
 
 O passo seguinte foi explorar os dados reais da Lei de Incentivo para entendê-los. Criamos aproximadamente 10 alternativas de grafos para estudo, cada um abordando aspectos ligeiramente diferentes. Eis alguns exemplos:  
 1. relação de pessoas em um quadro societário de proponente;  
-1. visualização do fluxo financeiro em um projeto, onde se identificam os incentivadores, os proponentes e todos os fornecedores;  
-1. identificação de “ciclos” de pessoas relacionadas seja por sociedade ou seja por participação no mesmo projeto.  
+2. visualização do fluxo financeiro em um projeto, onde se identificam os incentivadores, os proponentes e todos os fornecedores;  
+3. identificação de “ciclos” de pessoas relacionadas seja por sociedade ou seja por participação no mesmo projeto.  
 
 **Relação de pessoas em um quadro societário de proponente**
 
@@ -193,8 +193,8 @@ As ações realizadas nesta etapa para atender os objetivos do plano de trabalho
 
 - [x] Reuniões contínuas com os parceiros
 - [x] Gnpapo sobre chatbots
-  [x] Eventos internos ao laboratório para articulação com parceiros externos
-  [x] Publicação de artigo com o detalhamento do framework de assistente virtual
+- [x] Eventos internos ao laboratório para articulação com parceiros externos
+- [x] Publicação de artigo com o detalhamento do framework de assistente virtual
 
 Nesse primeiro trimestre houveram diversas mudanças de gestão no Ministério da Cidadania, e foram realizadas diversas reuniões de apresentação do modelo do TED, e em especial sobre os objetivos e acompanhamento do projeto do LAPPIS. Pelas dificuldades enfrentadas pelo orgão no processo de reorganização interna, ainda não foi possível realizar a reunião estratégica para o próximo ciclo. Por outro lado apresentamos nossa proposta de metas e atividades nas reuniões de apresentação do TED. Além das reuniões, a frente de gestão colaborativa manteve o compartilhamento do conhecimento por meio da organização de webinars, participação do evento Gnpapo sobre chatbots e publicação do artigo sobre o framework do assistente virtual.
 
