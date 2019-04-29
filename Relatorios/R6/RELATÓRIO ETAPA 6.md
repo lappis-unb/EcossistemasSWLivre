@@ -8,51 +8,27 @@ colorlinks: true
 
 # Introdução
 
-O presente relatório apresenta o acompanhamento do trabalho realizado no
-projeto "Ecossistemas de Software Livre", Termo de Cooperação para
-Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência
-Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços
-realizados na Etapa VII (Fevereiro 2019 à Abril 2019), de acordo com o cronograma
-do Plano de Trabalho.
+O presente relatório apresenta o acompanhamento do trabalho realizado no projeto "Ecossistemas de Software Livre", Termo de Cooperação para Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços realizados na Etapa VII (Fevereiro 2019 à Abril 2019), de acordo com o cronograma do Plano de Trabalho.
 
-Toda alteração no cronograma proposto foi realizada  a partir de renegociação
-com a CGTEC do Ministério da Cultura, e tais alterações estão descritas no
-relatório.
-O presente relatório apresenta o acompanhamento do trabalho realizado no 
-projeto "Ecossistemas de Software Livre", Termo de Cooperação para
-Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência
-Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços
-realizados na Etapa VII (Fevereiro 2019 à Abril 2019), de acordo com o cronograma
-do Plano de Trabalho.
+Toda alteração no cronograma proposto foi realizada  a partir de renegociação com a Secretaria de Tecnologia da Informação (STI) do Ministério da Cidadania, e tais alterações estão descritas no relatório. O presente relatório apresenta o acompanhamento do trabalho realizado no projeto "Ecossistemas de Software Livre", Termo de Cooperação para Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência Outubro 2017 à Outubro 2019. O relatório apresentado é referente aos avanços realizados na Etapa VII (Fevereiro 2019 à Abril 2019), de acordo com o cronograma do Plano de Trabalho.
 
-Toda alteração no cronograma proposto foi realizada  a partir de renegociação
-com a CGTEC do Ministério da Cultura, e tais alterações estão descritas no
-relatório.
+Toda alteração no cronograma proposto foi realizada  a partir de renegociação com a Secretaria de Tecnologia da Informação (STI) do Ministério da Cidadania, e tais alterações estão descritas no relatório.
 
 Todas as frentes contempladas no plano de trabalho no período foram aplicadas em dois principais produtos desenvolvidos no laboratório: o salic-ml e a Tais.
 
 ## FASE DE PLANEJAMENTO/EXECUÇÃO
 
-O período de fevereiro 2019 à abril 2019 contemplou as fases de
-planejamento e execução. Abaixo serão apresentados, brevemente, os principais
-avanços alcançados no período. Toda a documentação e acompanhamento do projeto
-está disponibilizado e pode ser acessado na organização do laboratório
-[lappis-unb](https://github.com/lappis-unb), e no
-repositório específico do projeto
-[lappis-unb/EcossistemasSWLivre](https://github.com/lappis-unb/EcossistemasSWLivre).
-Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas
-_issues_ quanto nas páginas _wiki_.
+O período de fevereiro 2019 à abril 2019 contemplou as fases de planejamento e execução. Abaixo serão apresentados, brevemente, os principais avanços alcançados no período. Toda a documentação e acompanhamento do projeto está disponibilizado e pode ser acessado na organização do laboratório
+[lappis-unb](https://github.com/lappis-unb), e no repositório específico do projeto [lappis-unb/EcossistemasSWLivre](https://github.com/lappis-unb/EcossistemasSWLivre). Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas _issues_ quanto nas páginas _wiki_.
 
-Abaixo serão apresentados os principais avanços alcançados no período, por
-pacote de trabalho (de acordo com o Plano de Trabalho),
-de acordo com o cronograma, no período citado.
+Abaixo serão apresentados os principais avanços alcançados no período, por pacote de trabalho (de acordo com o Plano de Trabalho), de acordo com o cronograma, no período citado.
 
 ------
 
 # Chatbot Tais
 
 ## Objetivos
-O período de de fevereiro à Abril iniciamos a consolidação do projeto Tais. Os principais objetivos nesse período foram evoluir as visualizações de uso do chatbot (BI),além de automatizar o framework desenvolvido para facilitar a evolução e manutenção por parte do Ministério.
+O período de de fevereiro à Abril iniciamos a consolidação do projeto Tais. Os principais objetivos nesse período foram evoluir as visualizações de uso do chatbot (BI), além de automatizar o framework desenvolvido para facilitar a evolução e manutenção por parte do Ministério.
 
 O assistente virtual utiliza um conjunto de ferramentas e abordagens cuja gestão é realizada por pesquisadores de diversos backgrounds, incluindo engenheiros de software, designers de experiência e roteiristas. A esse conjunto de ferramentas e abordagens gerido por um time multidisciplinar damos o nome de "Framework de Assistente Virtual do Laboratório Lappis". Esse Framework tem duas características que tornam ele especialmente interessante para o uso no relacionamento dos cidadãos com as políticas e serviços públicos do Estado. (i) A primeira é que sua concepção é baseada no uso de ferramentas open source que permitem à organização ter total autonomia e independência em relação a guarda dessas informações. Todo o conteúdo planejado, o histórico de conversas e os dados gerados pelo monitoramento ficam armazenados nos servidores da organização ("on premises"), sem a necessidade de cedê-las ou fazê-las circular ou por servidores de terceiros (atendendo a regulação de dados GDPR). (ii) A segunda característica é que o assistente virtual desenvolvido pelo laboratório Lappis não trabalha com o conceito de árvore de decisão, mas sim com redes neurais, que conseguem interpretar a mensagem de fato, inferir o contexto do diálogo e aproximar a conversa com o chatbot de uma conversa natural.
 
@@ -60,10 +36,9 @@ Dessa maneira, de toda demanda recebida pelo assistente são inferidas as inten�
 
 É igualmente importante que o planejamento e gestão de um assistente virtual no órgão sejam feitos de forma integrada à gestão dos demais processos de relacionamento com os cidadãos, sob o risco de fragmentar e complexificar ainda mais a busca por informações sobre as políticas. O assistente não pode ser tratado como uma ferramenta "ad hoc", isolada das outras estratégias de relacionamento já executadas pelo órgão, levando ao risco de atender apenas a demandas pontuais de grupos específicos, diminuindo a eficiência do gasto público e o impacto na missão global do orgão. Tratar o assistente virtual de forma complementar aos meios disponíveis para atendimento dos cidadãos permitirá ao órgão realizar integrações de canais (como por exemplo a assistente virtual respondendo perguntas por comandos de voz) além de viabilizar uma leitura e interpretação mais holística das estatísticas de monitoramento. Isso permitirá aferir o quanto a ativação do assistente virtual melhorou de fato a qualidade do atendimento e a resolução de problemas do público alvo das políticas, sem falar na redução de custos operacionais. Dessa forma, a nossa visão estratégica sobre a ativação de um assistente virtual é menos a da instalação de uma nova ferramenta e mais a da melhoria da eficiência do gasto público e da agilidade e qualidade do relacionamento dos cidadãos com as políticas públicas.
 
-Vamos indicar quais são as tecnologias utilizadas e os perfis mínimos necessários para o funcionamento desse framework de assistente virtual criado pelo laboratório Lappis. Dentro da visão estratégica exposta aqui, alguns desses perfis provavelmente já existirão na organização e devem ser aproveitados para a gestão do assistente virtual, favorecendo a integração e transversalidade dos canais de atendimento do órgão.
-O framework
+No Anexo I indicamos quais são as tecnologias utilizadas e os perfis mínimos necessários para o funcionamento desse framework de assistente virtual criado pelo laboratório Lappis. Dentro da visão estratégica exposta aqui, alguns desses perfis provavelmente já existirão na organização e devem ser aproveitados para a gestão do assistente virtual, favorecendo a integração e transversalidade dos canais de atendimento do órgão.
 
-A arquitetura geral do framework desenvolvido pelo Laboratório é mostrado na figura abaixo. Foi desenvolvido com a Licença AGPL3.
+A arquitetura geral do framework desenvolvido pelo Laboratório está representado pela Figura 1. Foi desenvolvido com a Licença AGPL3.
 
 ![Arquitetura do framework desenvolvido para a TAIS.](figs/arquitetura.png)
 
@@ -103,32 +78,32 @@ Foi disponibilizado a página de dashboard no kibana para acompanhar o uso da Ta
 - Média de perguntas por usuário
 - Perguntas mais frequentes
 - Quantidade de pessoas que usaram #MEAJUDA
-- Tendências de intents 
+- Tendências de intents
 
-Além dessas métricas, foi realizado um estudo para levantas as métricas mais relevantes para chatbots (em anexo). Nos próximos ciclos, iremos implementar grande parte dessas métricas.
+Além dessas métricas, foi realizado um estudo para levantar as métricas mais relevantes para chatbots (em anexo). Nos próximos ciclos, iremos implementar grande parte dessas métricas.
 
 O monitoramento da Tais em produção nos fornece as seguintes informações
 - O número médio de usuários atendidos pela Tais por dia é 40 usuários
-- A quantidade de usuários atendidos por mês é cerca de 1100 
+- A quantidade de usuários atendidos por mês é cerca de 1100
 - Há em média 5,4 perguntas por usuários
 - 18% dos usuários usam o recurso #MEAJUDA
 - As perguntas mais realizadas para a Tais são: "Como faço para submeter um projeto pela Lei Rouanet" e "Quem pode ser proponente"
-- A Tais ficou fora do ar em 2 ocasiões. Isso porque a atualização da página da lei rouanet é realizada de forma manual pela equipe do Ministério da Cidadania, e o script com o livechat da Tais é inserido na página a mão. Nas duas ocasiões, esqueceram de inserir o script da TAIS.
+- A Tais ficou fora do ar em 2 ocasiões. Isso porque a atualização da página da lei rouanet é realizada de forma manual pela equipe do Ministério da Cidadania, e o script com o livechat da Tais é inserido na página a mão. Nas duas ocasiões, faltou inserir o script da TAIS.
 
 
 ![Dashboard do kibana com as métricas da TAIS nos últimos 6 meses.](figs/dashboard.png)
 
 ### Plataforma de inserção de Conteúdo
 
-Foi levantado durante o projeto, a necessidade de uma plataforma para inserção de conteúdo. Atualmente, o conteúdo é inserido como arquivo markdown, arquivo técnico que dificulta, e até inviabiliza equipes de conteúdo inserir conteúdos na Tais. 
+Com o objetivo de conferir mais autonomia na gestão da tecnologia da Tais pelo orgão, foi levantada a necessidade de uma plataforma para inserção de conteúdo. Atualmente, o conteúdo é inserido como arquivo markdown, arquivo técnico que dificulta, e até inviabiliza equipes de conteúdo inserir conteúdos na Tais.
 
 Foi iniciado então uma nova frente de trabalho para desenvolver uma plataforma de inserção de conteúdo, integrado com o bot da Tais.
 
-O repositório do projeto pode ser acessado em [https://github.com/lappis-unb/rasa-nlu-trainer](https://github.com/lappis-unb/rasa-nlu-trainer) e o projeto está na fase inicial (os requisitos foram levantados). 
+O repositório do projeto pode ser acessado em [https://github.com/lappis-unb/rasa-nlu-trainer](https://github.com/lappis-unb/rasa-nlu-trainer) e o projeto está na fase inicial (os requisitos foram levantados).
 
 ### Contribuições
 
-Além do trabalho com o projeto da Tais, foram realizadas as seguintes contribuições para comunidade de software livre e de chatbots:
+O desenvolvimento do framework de assistente virtual requer uma preocupação constante para que as melhorias realizadas sejam incorporadas pelas comunidades "upstream", fortalecendo a sustentabilidade do projeto. Além do trabalho com o projeto da Tais, foram realizadas as seguintes contribuições para comunidade de software livre e de chatbots:
 
 - Contribuições para o Rasa - foram realizadas duas contribuições para a comunidade do Rasa. Primeiro, a capacidade de utilizad o kafka com broker no bot. Essa funcionalidade faz com que o histórico das conversas do chatbot não fique armazenado em RAM (Como era realizado anteriormente na Tais), e também faz a conexão com o elastik search. A segunda contribuição para o Rasa foi a funcionalidade de validador, que valida o formato de todos arquivos de intents, utters, e domain. Essa funcionalidade agiliza enormemente a adição de novos conteúdos no chatbot. Ambas as funcionalidade foram aceitas pela comunidade Rasa.
 
@@ -142,7 +117,7 @@ Além do trabalho com o projeto da Tais, foram realizadas as seguintes contribui
 
 # SALIC-ML
 
-O primeiro trimestre de 2019 foi marcado pela transição de Ministério da Cultura para Secretaria Especial, o que afetou o planejamento das atividades. Durante esse período de pouca interação com a Secretaria Especial, continuamos evoluindo o ML na direção acordada no final de 2018. 
+O primeiro trimestre de 2019 foi marcado pela transição de Ministério da Cultura para Secretaria Especial, o que afetou o planejamento das atividades. Durante esse período de pouca interação com a Secretaria Especial, continuamos evoluindo o ML na direção acordada no final de 2018.
 
 
 # Atividades planejadas
@@ -155,8 +130,7 @@ O primeiro trimestre de 2019 foi marcado pela transição de Ministério da Cult
 
 ### Modificações no relatório de complexidade da análise de resultado
 
-Na última reunião de trabalho de 2018, identificamos a necessidade de mudar as métricas que compõem o relatório de complexidade da análise de resultado. As seguintes métricas foram retiradas: *Itens orçamentários inesperados*,  
-*Preços acima da média* e *Valor aprovado*. Retirá-las do relatório não significa eliminar o trabalho realizado. Essas métricas foram reservadas para possível uso no futuro, por exemplo na fase de admissibilidade. Já as métricas de  *Valor captado* e *Valor comprovado* foram combinadas para identificar o saldo que ainda falta ser comprovado. 
+Na última reunião de trabalho de 2018, identificamos a necessidade de mudar as métricas que compõem o relatório de complexidade da análise de resultado. As seguintes métricas foram retiradas: *Itens orçamentários inesperados*, *Preços acima da média* e *Valor aprovado*. Retirá-las do relatório não significa eliminar o trabalho realizado. Essas métricas foram reservadas para possível uso no futuro, por exemplo na fase de admissibilidade. Já as métricas de  *Valor captado* e *Valor comprovado* foram combinadas para identificar o saldo que ainda falta ser comprovado.
 
 A métrica de *Comprovantes por código de operação* foi separada em três. Uma métrica para cada tipo de operação: saque, cheque ou transferência. Os técnicos da SEFIC foram enfáticos no impacto dessas métricas para a complexidade da análise, contudo não identificamos em nossos estudos uma ocorrência alta de casos onde uma operação estava relacionada a dois comprovantes ou mais. O que indica a necessidade de uma análise mais profunda para confirmar a baixa ocorrência dessa situação ou identificar a discrepância entre o esperado e o encontrado.
 
@@ -173,14 +147,14 @@ Para avançar no cálculo do escore de proponentes precisamos entender a qualida
 
 Para isso, parte da equipe realizou um estudo preliminar das relações entre CPFs e CNPJs no contexto da Lei de Incentivo. Iniciamos com uma análise técnica para identificar as melhores abordagens e ferramentas na geração de grafos de relacionamento. Bibliotecas como NetworkX e Pandas foram escolhidas para uma etapa de experimentação. Esta etapa de experimentação serviu para capacitar a equipe tanto no cálculo de geração desses grafos, quanto na sua representação visual.
 
-O passo seguinte foi explorar os dados reais da Lei de Incentivo para entendê-los. Criamos aproximadamente 10 alternativas de grafos para estudo, cada um abordando aspectos ligeiramente diferentes. Eis alguns exemplos:
-1. relação de pessoas em um quadro societário de proponente;
-1. visualização do fluxo financeiro em um projeto, onde se identificam os incentivadores, os proponentes e todos os fornecedores;
-1. identificação de “ciclos” de pessoas relacionadas seja por sociedade ou seja por participação no mesmo projeto.
-
-![Relação de pessoas em um quadro societário de proponente](https://images.zenhubusercontent.com/5a8b078c4b5806bc2bc7840d/c4f018bf-cbc2-4b94-9906-6e5385496af0)
+O passo seguinte foi explorar os dados reais da Lei de Incentivo para entendê-los. Criamos aproximadamente 10 alternativas de grafos para estudo, cada um abordando aspectos ligeiramente diferentes. Eis alguns exemplos:  
+1. relação de pessoas em um quadro societário de proponente;  
+1. visualização do fluxo financeiro em um projeto, onde se identificam os incentivadores, os proponentes e todos os fornecedores;  
+1. identificação de “ciclos” de pessoas relacionadas seja por sociedade ou seja por participação no mesmo projeto.  
 
 **Relação de pessoas em um quadro societário de proponente**
+
+![Relação de pessoas em um quadro societário de proponente](https://images.zenhubusercontent.com/5a8b078c4b5806bc2bc7840d/c4f018bf-cbc2-4b94-9906-6e5385496af0)
 
 ![O maior "ciclo" de pessoas que conseguimos renderizar](https://images.zenhubusercontent.com/5a8b078c4b5806bc2bc7840d/310de4b8-a4ff-418b-be5b-1e11d6eb0fa9)
 
@@ -194,16 +168,16 @@ Ao mesmo tempo, fizemos algumas explorações propositivas. Isso foi uma tentati
 
 Todo esse trabalho foi uma primeiro contato com a identificação e representação entre pessoas no contexto da Lei de Incentivo. Se por um lado, não possível identificar problemas flagrantes como o caso Bellini, por outro lado conseguimos identificar outras situações curiosas como alguém que fez um incentivo de R$1,00 e foi contratado pelo projeto para preparar a proposta; ou uma empresa de mídia que incentivou uma série de projetos e forneceu serviços de impressão.
 
-Ao final do período, tivemos um dia de palestras e workshops com o Sr. Jackson Maia, membro do corpo técnico do CGEE (Centro de Gestão e Estudos Estratégicos). O Sr. Jackson é um cientista de dados, especializado em visualizações complexas. 
+Ao final do período, tivemos um dia de palestras e workshops com o Sr. Jackson Maia, membro do corpo técnico do CGEE (Centro de Gestão e Estudos Estratégicos). O Sr. Jackson é um cientista de dados, especializado em visualizações complexas.
 Ele orientou a equipe a usar grafos como uma ferramenta de exploração inicial, para gerar hipóteses, que talvez acabem sendo apresentadas de uma outra forma. Isso corroborou a percepção da equipe que talvez a entrega de grafos complexos para os técnicos da SEFIC não seja a melhor solução. Ainda há trabalho de análise e exploração pela frente.
 
 ### Melhoria de performance da geração de métricas
 
 Nas entregas anteriores estabelecemos um ritmo de avanço na pesquisa e geração de métricas seguido por um movimento de estabilização e aumento de precisão. No período coberto por este relatório, parte da equipe foi alocada para as atividades do segundo movimento.
 
-A arquitetura dos microserviços estava se tornando complexa demais. Fizemos uma reestruturação dessa arquitetura não só para estabilizar o SALIC-ML como um todo, mas porque o cálculo de algumas métricas não estavam funcionando corretamente. Um dos benefícios secundários dessa reestruturação foi facilitar a criação de novas métricas uma vez que todo o processo de treinamento das métricas, que era feito manualmente, foi 100% automatizado. 
+A arquitetura dos microserviços estava se tornando complexa demais. Fizemos uma reestruturação dessa arquitetura não só para estabilizar o SALIC-ML como um todo, mas porque o cálculo de algumas métricas não estavam funcionando corretamente. Um dos benefícios secundários dessa reestruturação foi facilitar a criação de novas métricas uma vez que todo o processo de treinamento das métricas, que era feito manualmente, foi 100% automatizado.
 
-Concretamente, transferimos todo o processamento dos cálculos e treinamentos que geram as métricas para o banco de dados. Até então, o processamento era feito em memória, para aumentar a performance. Essa era uma solução pouco resiliente já que qualquer incidente que fizesse o servidor reiniciar implicava na perda das métricas e obrigava um recálculo. Agora, os resultados são persistidos o que evita quedas abruptas no serviço. Ainda que a performance seja um pouco mais lenta, a considerável redução do risco garante uma melhor qualidade do serviço como um todo. Também recombinamos os repositórios no GitHub em função das mudanças recém descritas. 
+Concretamente, transferimos todo o processamento dos cálculos e treinamentos que geram as métricas para o banco de dados. Até então, o processamento era feito em memória, para aumentar a performance. Essa era uma solução pouco resiliente já que qualquer incidente que fizesse o servidor reiniciar implicava na perda das métricas e obrigava um recálculo. Agora, os resultados são persistidos o que evita quedas abruptas no serviço. Ainda que a performance seja um pouco mais lenta, a considerável redução do risco garante uma melhor qualidade do serviço como um todo. Também recombinamos os repositórios no GitHub em função das mudanças recém descritas.
 
 Completamos a conteinerização de todos os serviços, o que é fundamental para um processo de entrega contínua. No contexto específico do SALIC-ML isso é relevante porque à partir do próximo ciclo de trabalho esperamos ter ambientes de desenvolvimento e homologação ativos em paralelo. Para isso, precisamos de flexibilidade e velocidade ao lidar com múltiplos ambientes.
 
@@ -211,24 +185,24 @@ Por fim, conseguimos aumentar o tamanho da amostra de projetos utilizada no cál
 
 Essas atividades foram executadas já pensando que a sustentação do SALIC-ML será eventualmente absorvida pelo Ministério da Cidadania. Por isso focamos em simplificar ao máximo o processo de deploy e resiliência do catálogo de serviços.
 
-
-
-
 ### Práticas de gestão colaborativa <!-- {{{ -->
 
 O objetivo de estudar os movimentos, organizações, desenvolvedores e demais stakeholders que atuam na gestão colaborativa de software livre é manter um conjunto de ações de governança digital e comunicação que aproveite ao máximo esse potencial em favor das necessidades do órgão e das metas comuns às organizações parte das comunidades. Esse esforço envolve um trabalho de mapeamento de atores de cada comunidade (atuais e potenciais futuros), assessoria para planejamento conjunto, facilitação de fluxos de comunicação e mobilização, realização de atividades conjuntas para integração, identificação de oportunidades externas, assessoria para comunicação e divulgação ao público externo à comunidade e apoio para solução de conflitos.
 
-As ações realizadas  nesta etapa para atender os objetivos do plano de trabalho foram:
+As ações realizadas nesta etapa para atender os objetivos do plano de trabalho foram:
 
 - [x] Reuniões contínuas com os parceiros
 - [x] Gnpapo sobre chatbots
+  [x] Eventos internos ao laboratório para articulação com parceiros externos
+  [x] Publicação de artigo com o detalhamento do framework de assistente virtual
 
-Nesse primeiro trimestre houveram diversas mudanças de gestão no Ministério da Cidadania, e foram realizadas diversas reuniões de apresentação do modelo do TED, e em especial sobre os objetivos e acompanhamento do projeto do LAPPIS. Além das reuniões, a frente de gestão colaborativa manteve o compartilhamento do conhecimento por meio da organização de webinars e participação do evento Gnpapo sobre chatbots. 
+Nesse primeiro trimestre houveram diversas mudanças de gestão no Ministério da Cidadania, e foram realizadas diversas reuniões de apresentação do modelo do TED, e em especial sobre os objetivos e acompanhamento do projeto do LAPPIS. Pelas dificuldades enfrentadas pelo orgão no processo de reorganização interna, ainda não foi possível realizar a reunião estratégica para o próximo ciclo. Por outro lado apresentamos nossa proposta de metas e atividades nas reuniões de apresentação do TED. Além das reuniões, a frente de gestão colaborativa manteve o compartilhamento do conhecimento por meio da organização de webinars, participação do evento Gnpapo sobre chatbots e publicação do artigo sobre o framework do assistente virtual.
 
 
 <!-- }}} -->
 
 # Acompanhamento Financeiro
+
 
 ![Neste gráfico é possível observar a representação do percentual do custo da mão-de-obra incidido em cada equipe do projeto.](figs/executado.png)
 
@@ -239,16 +213,16 @@ Responsável pela Execução:
 Nome:  Carla Silva Rocha Aguiar
              (Coordenadora do Projeto)
 ![](figs/assinatura.png)
-Assinatura: 
+Assinatura:
 
 Data: 28/04/2019
 
 
-# Anexo 1 
+# Anexo 1
 
 ## Ferramentas que compõem o framework
 
-### Rasa NLU 
+### Rasa NLU
 
 O Rasa NLU é uma ferramenta de processamento de linguagem natural utilizado para a classificação de intenções e extração de entidades aplicadas ao Bot, ou seja, o NLU é responsável por entender o que os usuários escreveram. Isso é feito por uma comparação da mensagem do usuário com  os modelos de Machine Learning, procurando  inferir a intenção mais próxima da base de conhecimento. A partir daí, a saída do Rasa NLU será a intenção do usuário que enviou a mensagem, que pode ser, por exemplo, cumprimentar, despedir ou uma dúvida específica.
 
@@ -258,7 +232,7 @@ O Rasa Core é o centro do chatbot, o que é um diferencial do Framework LAPPIS.
 
 ### Jupyter Notebooks
 
-Uma das maiores dificuldades ao projetar o conteúdo e diálogos de um chatbot é a construção adequada do conjunto de dados de treinamento para as intents e as stories. Jupyter Notebooks é uma aplicação web que ajuda a entender e visualizar dados e resultados de análises, facilitando a experimentação, colaboração e publicação online. O Jupyter foi a ferramenta escolhida para automatizar a análise do conteúdo do chatbot e gerar recomendações de ajustes nas intents e stories. O que nos permite antecipar os problemas de interação com o chatbot antes de colocar o conteúdo em produção. 
+Uma das maiores dificuldades ao projetar o conteúdo e diálogos de um chatbot é a construção adequada do conjunto de dados de treinamento para as intents e as stories. Jupyter Notebooks é uma aplicação web que ajuda a entender e visualizar dados e resultados de análises, facilitando a experimentação, colaboração e publicação online. O Jupyter foi a ferramenta escolhida para automatizar a análise do conteúdo do chatbot e gerar recomendações de ajustes nas intents e stories. O que nos permite antecipar os problemas de interação com o chatbot antes de colocar o conteúdo em produção.
 
 
 
@@ -292,7 +266,7 @@ O roteirista de bot tem a responsabilidade de adaptar os conteúdos das polític
 
 #### Especialista em UX
 
-A pessoa responsável pela experiência de usuário (UX) trabalha lado-a-lado com a equipe de roteiristas. Especialistas de UX atuam para otimizar a experiência de conversa e reforçar a ideia de uma interação que flui naturalmente. Garantem que sequências de pergunta-resposta se desenvolvam de forma harmônica tanto dentro do mesmo tópico, quanto de forma global na base de conhecimento. 
+A pessoa responsável pela experiência de usuário (UX) trabalha lado-a-lado com a equipe de roteiristas. Especialistas de UX atuam para otimizar a experiência de conversa e reforçar a ideia de uma interação que flui naturalmente. Garantem que sequências de pergunta-resposta se desenvolvam de forma harmônica tanto dentro do mesmo tópico, quanto de forma global na base de conhecimento.
 
 ### Importância do Parceiro
 Órgãos da administração pública federal, governos estaduais e prefeituras, além de órgãos públicos ligados aos outros poderes são os parceiros preferenciais na adoção do framework de assistente virtual do Lappis. Na linha de que o framework de assistente virtual do Laboratório Lappis é um processo sustentado por tecnologia que busca a melhoria dos indicadores de atendimento do órgão, ele deve ser implementado num arranjo de parceria do laboratório com o próprio órgão. É um trabalho a ser realizado a quatro mãos em que o laboratório entra com a pesquisa, facilitação de aprendizado, desenvolvimento e costura das tecnologias necessárias para a operação do framework e o órgão entra com a definição das prioridades, metas e indicadores (gestão), o esforço de homologação e disponibilização em produção (tecnologia da informação) além da definição da equipe que fará a sustentação e gestão do assistente em caráter permanente. O papel do Laboratório Lappis na parceria será o de customizar o framework para o contexto do parceiro, colaborar no processo de implantação e facilitar o aprendizado da equipe do órgão. Do lado do parceiro, será necessária a indicação de responsáveis para ocupar os papéis de Líder de projeto, Tecnologia da Informação e Comunicação. A indicação desses responsáveis é especialmente importante pois eles cuidarão do serviço dentro do órgão de forma permanente. Nesse arranjo, tanto o Lappis quanto o órgão serão parceiros do resultado final da iniciativa, que é o de melhorar a eficiência do gasto público e do atendimento à população.
@@ -300,8 +274,8 @@ A pessoa responsável pela experiência de usuário (UX) trabalha lado-a-lado co
 # Estudos chatbots
 # Estudo de Ferramentas de Gerenciamento de Conteudo
 
-Este documento contém um estudo sobre ferramentas capazes de gerenciar o 
-conteúdo de um **chatbot**. 
+Este documento contém um estudo sobre ferramentas capazes de gerenciar o
+conteúdo de um **chatbot**.
 
 O objetivo principal deste estudo é econtrar **ferramentas, frameworks,**
 **softwares ou scripts** que permitam o gerenciamento do coteúdo (`intents`,
@@ -356,7 +330,7 @@ Não permite importar um bot pronto e não tem integração com rasa_core
 
 Articulate é uma plataforma bem completa no gerenciamento de `chatbots`.
 Possui uma interface bonita e utiliza o `rasa-nlu` e `rasa-core` "por dentro",
-outro ponto interessante desta ferramenta é a importação e exportação de um 
+outro ponto interessante desta ferramenta é a importação e exportação de um
 arquivo `json` com todo o bot.
 
 Esta plataforma é divida principalmente em **API** e **UI**, onde é necessário
@@ -392,24 +366,24 @@ Plataforma que propõe uma solução completa para o desenvolvimento de um chatb
 Não funcionou no período de teste, e não encontramos a solução.
 
 ## Custom Action
-As _actions_ são as respostad do bot para as entradas de usuário. Elas podem ter 3 tipos: 
+As _actions_ são as respostad do bot para as entradas de usuário. Elas podem ter 3 tipos:
 * default actions (action_listen, action_restart, action_default_fallback)
 * utter actions, começa com utter_, manda mensagem para os usuários
 * custom actions - qualquer outra ação, pode rodar outros trechos de código
 
-Quando o bot prediz a intenção de uma custom action, ele chama um webserver no endpoint especificado no arquivo `endpoints.yml`: 
-``` 
+Quando o bot prediz a intenção de uma custom action, ele chama um webserver no endpoint especificado no arquivo `endpoints.yml`:
+```
   action_endpoint:
-    url: "http://localhost:5055/webhook" 
+    url: "http://localhost:5055/webhook"
 ```
 
 Deve passar a flag ` --endpoints endpoints.yml ` ao rodar os scripts.
-Rodar `python -m rasa_core_sdk.endpoint --actions actions`. 
+Rodar `python -m rasa_core_sdk.endpoint --actions actions`.
 
-É preciso criar um arquivo para as _custom actions_: 
+É preciso criar um arquivo para as _custom actions_:
 
 ``` python
-from rasa_core_sdk import Action 
+from rasa_core_sdk import Action
 from rasa_core_sdk.events import SlotSet # importar slots para pegar valores vindos do usuário.  Ainda não usado
 import requests
 import random
@@ -430,7 +404,7 @@ class ActionTest(Action):
 
 ```
 
-Deve acrescentar as intents, stories e actions nos arquivos apropriados. 
+Deve acrescentar as intents, stories e actions nos arquivos apropriados.
 
 
 ## Referências
@@ -572,7 +546,7 @@ Uma vez que os valores possíveis para um *slot* foram definidos no `domain`, de
    Uma forma comum de conversação de chatbot é ir coletando informações do usuário, isso é chamado de *slot filling*. Para coletar várias informações seguidas no Rasa é recomendado o uso de *FormAction*. Para usar *forms* é necessário incluir *FormPolicy* no arquivo de configuração e criar uma sessão de *forms* no domain:
 
    ``` yml
-   forms: 
+   forms:
     - my_form
     ...
    ```
@@ -588,7 +562,7 @@ Uma vez que os valores possíveis para um *slot* foram definidos no `domain`, de
    ```
 
    O *FormAction* faz com que o bot somente solicite informações ainda não obtidas. Os slots devem ser do tipo *unfeaturized*.
-   
+
    Para a utilização do *FormAction* também é necessária a criação de uma classe com o nome do formulário, essa classe deverá ter três metodos, *name*, *required_slots* e *submit*.
    * **name:** Retorna o nome para indentificação do *form*;
    * **required_slots:** Retorna uma lista de *slots* do *form*;
