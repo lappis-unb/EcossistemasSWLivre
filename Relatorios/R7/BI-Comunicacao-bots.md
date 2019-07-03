@@ -30,3 +30,12 @@ O monitoramento da Tais em produção no período dos últimos 3 meses nos forne
 - As perguntas mais realizadas para a Tais são: "Como faço para submeter um projeto pela Lei Rouanet" e "Quem pode ser proponente"
 - As perguntas tais como "Como aprovar um projeto?" e "Quem pode incentivar" foram umas das perguntas que obtiveram mais resultados em relação às ocorrências incomuns.
 - A Tais ficou fora do ar em 1 ocasião. Houve a migração e adaptação da página para a reformada Lei de Incentivo à Cultura Isso. Essa migração é feita manualmente, assim como a inserção do _script_ com o livechat da Tais. Nesta ocasião o chatbot ficou quase 1 mês fora do ar.
+
+
+### Comunicação entre chatbots
+
+Quando perguntado para Tais um assunto que não esteja descrito em seu escopo ela entra no fallback. Então, foi identificado uma necessidade de que quando o chatbot não entenda a intenção do usuário, ele (chatbot) se comunique com outros bots para tentar buscar uma resposta adequada à pergunta feita inicialmente.
+
+Foi iniciado então uma nova frente de trabalho para desenvolver modo de comunicação entre bots. O projeto é desenvolver uma _custom action_ para quando o chatbot entre no _fallback_. Assim, ele se comunicará com os outros bots via API's externas.
+
+O projeto encontra-se no próprio repositório da Tais [https://github.com/lappis-unb/tais](https://github.com/lappis-unb/tais)
