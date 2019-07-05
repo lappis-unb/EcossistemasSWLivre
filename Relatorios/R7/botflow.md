@@ -5,4 +5,9 @@ Inicialmente, o desenvolvimento foi feito a partir de uma plataforma do Rasa que
 
 O repositório anterior [rasa-nlu-trainer](https://github.com/lappis-unb/rasa-nlu-trainer) foi depreciado e o desenvolvimento foi continuado em dois novos repositórios. Um dos repositórios trata do desenvolvimento do serviço de [API](https://github.com/lappis-unb/botflowapi), e o outro é a [plataforma web](https://github.com/lappis-unb/botflow).
 Além disso, foram disponibilizados dois ambientes de homologação para o projeto. O ambiente de homologação da API pode ser acessado no endereço [https://botflow.api.lappis.rocks/api-docs](https://botflow.api.lappis.rocks/api-docs). O ambiente de homologação do front end web pode ser acessado no endereço [https://botflow.lappis.rocks/](https://botflow.lappis.rocks/). 
-Esse link da api direciona para a sua documentação. Lá são descritos os endpoints disponibilizados para a utilização, junto com o que cada um deles retorna e os parâmetros esperados.
+
+Esse link da api(https://botflow.api.lappis.rocks/api-docs) direciona para a sua documentação. Lá são descritos os endpoints disponibilizados para a utilização, junto com o que cada um deles retorna e os parâmetros esperados. As figuras abaixo exemplificam os endpoints criados até então e mostram como a cada um deles pode ser usado e o que esperar.
+
+![Documentação da api](figs/botflowapi-1.png)
+
+![Documentação da api](figs/botflowapi-2.png)
