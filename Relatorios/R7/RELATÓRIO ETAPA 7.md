@@ -34,13 +34,13 @@ Abaixo serão apresentados os principais avanços alcançados no período, por p
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
 - [x] Realizar estudo de refatoração em software legado - Evolução do caso de estudo SalicML
-- [x]  Realizar Estudos sobre praticas de DevOps aplicada a software legado - Evolução do caso de estudo SalicML
+- [x]  Realizar Estudos sobre práticas de DevOps aplicada a software legado - Evolução do caso de estudo SalicML
 
 # Práticas  de Gestão Colaborativa
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
 - [x] Realizar Estudos sobre processo de planejamento conjunto
-- [x] Identificar grupos de opiniao
+- [x] Identificar grupos de opinião
 
 chatbots + boilerplate
 
@@ -49,20 +49,24 @@ As macro atividades referentes a essa etapa de acordo com o cronograma do plano 
 
 - [x] Realizar Estudo Lei Rouanet/SALIC
 
-SalicML + Tais
+SalicML + Tais + botflow
 
 # Visualização de dados e criação de Dashboards
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
-- [x] Realizar Estudos sobre Visualizacao de dados
+- [x] Realizar Estudos sobre Visualização de dados
 
 # Aferição e aceitação de produtos de software
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
-- [x] Revisão da area
-- [x] Diagnostico sobre as práticas atualmente adotadas pelo MinC de garantia da qualidade de produto
+- [x] Revisão da área
+- [x] Diagnóstico sobre as práticas atualmente adotadas pelo MinC de garantia da qualidade de produto
 
 
+# Entrega final 
+
+- Reuniões de transferência de conhecimento e tecnologia
+- A frequência desas reuniões e profundidade dos encontros
 
 <!-- }}} -->
 
