@@ -79,6 +79,32 @@ As macro atividades referentes a essa etapa de acordo com o cronograma do plano 
 - [x] Revisão da área
 - [x] Diagnóstico sobre as práticas atualmente adotadas pelo MinC de garantia da qualidade de produto
 
+## Revisão da área
+
+Foi realizado estudos sobre SPQ (Software Product Quality, ou Qualidade de
+Produto de Software) e sobre a necessidade de observar os relacionamentos entre
+múltiplas dimensões das características de qualidade de software e sobre os
+diversos modelos de SPQ existentes, por exemplo, o ISO 9126 e ISO 25010.
+Observou-se que há carência de estudos com evidências empíricas a respeito do
+relacionamento entre os diversos fatores relacionados a qualidade de software,
+e mesmo entre as propostas mais recentes de modelos para SPQ, como por exemplo
+SQuale, Quamoco e QATCH, nota-se ausência de uma visão abrangente entre as
+múltiplas dimensões que envolvem qualidade de software.
+
+O estudo chama atenção ainda para as dificuldades e desafios em atingir níveis
+eficientes de integração entre ambientes de desevolvimento, entrega contínua e
+aferição de qualidade de produto de software de maneira integrada e conectada a
+camada de negócio e gerencial de um projeto de software, necessário para guiar
+de maneira objetiva a aceitação de entregas de software dentro de padrões
+pré-estabelecidos, e avalia ainda as dificuldades deste cenário num contexto de
+contratação de software pelo governo Brasileiro.
+
+O caminho proposto na pesquisa realizada aponta para aplicação de um conceito
+matemático conhecido como tensor, uma noção generalizada de vetores e conceitos
+escalares, a partir do qual é possível relacionar as múltiplas dimensões que
+compõem uma medida precisa de qualidade de software para guiar critérios de
+aceitação de software, sugere a abordagem chamada MeasureSoftGram como um novo
+modelo para observação contínua multidimensional de qualidade de software.
 
 # Entrega final 
 
