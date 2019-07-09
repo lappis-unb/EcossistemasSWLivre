@@ -51,6 +51,23 @@ As macro atividades referentes a essa etapa de acordo com o cronograma do plano 
 
 SalicML + Tais + botflow
 
+## Botflow
+
+Essa frente não estava inicialmente prevista no plano de trabalho. Contudo, a experiência adquirida pelo LAPPIS demonstra que a curadoria de conteúdos de um chatbot pode se tornar uma tarefa complexa sem as ferramentas apropriadas ou, na falta destas, de conhecimento avançado de programação.  
+
+Atualmente não existe nenhuma ferramenta visual de edição de conteúdos que se adeque à arquitetura da Tais e que seja 100% livre. Sendo assim, iniciamos uma frente para criar uma ferramenta visual: o [BotFlow](https://github.com/lappis-unb/BotFlow/). Essa iniciativa foi balizada pelo projeto estar em fase de consolidação e transferência de conhecimento. 
+
+No período compreendido por este relatório, foram realizadas a prototipação das linhas gerais da experiência da ferramenta, bem como testes com usuários para validar essas ideias. O protótipo pode ser visualizado em: https://k6edxq.axshare.com/home.html.
+
+Em paralelo, foi preparada uma [API](https://github.com/lappis-unb/BotFlowApi/) para desacoplar o BotFlow dos arquivos de conteúdo da Tais. Assim, a estabilidade da Tais fica garantida ao mesmo tempo que a experimentação com os conteúdos é estimulada dentro do BotFlow. Além disso, a estratégia de desacoplamento facilita a conexão de vários chatbots ao BotFlow.
+
+O desenvolvimento do front-end foi iniciado, priorizando a curadoria de *utterances*, as respostas dadas pela Tais, já que elas podem ser alteradas com menor impacto sobre os treinamentos do motor da Tais. Dessa forma, poderemos continuar a evolução do BotFlow em paralelo à transferência de conhecimento para o Ministério da Cidadania.
+
+Versão de homologação do BotFlow: https://botflow.lappis.rocks/
+
+Versão de desenvolvimento do BotFlow: https://botflow.dev.lappis.rocks
+
+
 # Visualização de dados e criação de Dashboards
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
