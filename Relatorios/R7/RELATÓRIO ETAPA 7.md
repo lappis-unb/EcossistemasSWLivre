@@ -1,5 +1,5 @@
 ---
-title: RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA VI - Ecossistemas de Software Livre - julho 2019
+title: RELATÓRIO DE CUMPRIMENTO DO OBJETO ETAPA VII - Ecossistemas de Software Livre - julho 2019
 author: Carla Silva Rocha Aguiar (Coordenadora do Projeto)
 date: 15 de julho de 2019
 geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
@@ -53,7 +53,17 @@ As macro atividades referentes a essa etapa de acordo com o cronograma do plano 
 - [x] Realizar Estudos sobre processo de planejamento conjunto
 - [x] Identificar grupos de opinião
 
-chatbots + boilerplate
+Foi aceito no OpenSym, um dos principais simpósios de Software livre, o trabalho desenvolvido no projeto da Tais. O artigo, intitulado _"FLOSS FAQ chatbot project reuse – how to allow nonexperts to develop a chatbot"_, apresenta o projeto da Tais e como  organizamos o framework para possibilitar reuso e evolução do chatbot sem a necessidade de especialistas. O programa do simpósio com o dia/hora da apresentação está disponível em [https://opensym.org/os2019/program/](https://opensym.org/os2019/program/).
+
+A equipe participou de vários eventos com o intuito de compartilhar as lições aprendidas com a comunidade. Entre os eventos destaca:
+
+- 17 PyData Brasília (25/06/2019) - o aluno Victor Moura, que lidera a frente SalicML apresentou o trabalho realizado. O título da apresentação foi: _Os desafios de se transformar a ciência de dados dos notebooks em features de um produto – Estudo de caso da prestação de contas da Lei de Incentivo Cultura._
+
+- Campus Party Brasília 2019 (20/06/2019) - a professora Carla Rocha apresentou o framework da Tais, 
+
+- Campus Party Brasília 2019 (21/06/2019) - o aluno Guilherme fez um workshop sobre dashboard e métricas para chatbots.
+
+- Webinars - "arquitetura desacoplada no rasa"- fizemos o webinar sobre as evoluções arquiteturais do framework da tais - [https://www.youtube.com/watch?v=f35j9yydcEU&t=1s](https://www.youtube.com/watch?v=f35j9yydcEU&t=1s).
 
 # Aprendizado de Máquina Lei Rouanet
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
@@ -272,11 +282,11 @@ Solução proposta: Pode-se utilizar a funcionalidade de [evaluation](https://ra
 
 Dentro da TAIS foi adicionada mais uma camada de testes com um [script para melhoria da visualização dos testes](https://github.com/lappis-unb/tais/blob/master/bot/test_stories.py). Onde é possível ver no *console* quais são as *intents* e *utters* que falharam. Isso permite que a equipe de desenvolvimento possa identificar diretamente os pontos onde a acurácia do *bot* não está tão boa ou o comportamento não está sendo o esperado.
 
-![](./assets/teste_quebrado.png)
+![](./figs/teste_quebrado.png)
 
 Ao fim desse *script* é exibido um log das histórias que falharam dentro de cada um dos arquivos.
 
-![](./assets/teste_resultado.png)
+![](./figs/teste_resultado.png)
 
 # Utilização do Pipeline
 
