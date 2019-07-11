@@ -52,13 +52,46 @@ As macro atividades referentes a essa etapa de acordo com o cronograma do plano 
 
 ## Tais
 
-### Comunicação entre chatbots
+Os esforços de pesquisa aplicada referentes à chatbot Tais nesse período foram
+- Evoluir a Tais em termos de conteúdo 
+- Evoluir a o framework da Tais
+- Desenvolver uma ferramenta para manutenção de conteúdo - Botflow
+- Documentação técnica de entrega de produto
+
+### Evolução do conteúdo da Tais
+
+Continuamente, as métricas de uso da Tais em produção foram avaliadas, e issues de melhoria/evolução foram levantadas. Encontramos algumas melhorias a serem feitas na intents, uma vez que algumas perguntar não foram corretamente respondidas, mesmo estando presentes na Tais. Levantamos também perguntas feitas recorrentemente pelos usuários, mas que não estavam presentes na Tais. E levantamos também, necessidade de evolução contíua na personalidade da Tais, e na qualidade das utters. 
+
+Nesse período, houveram duas releases com a adição dos seguintes conteúdos:
+
+- Adição de explicações sobre o 'VerSalic'
+- Adição de utter de agradecimento
+- Adição de utter que explica como entrar em contato com a SEC
+- Melhoria nas utters 'Me ajuda' e 'Cumprimentar'
+- Remoção da utilização de '#' para indicar dúvidas
+- Novos conteúdos adicionados:
+- Melhoria na conversação da Tais
+- Atualização contínua de 'intents' (PR #517)
+- Remoção da intent de expressões indesejadas
+
+### Evolução do framework Tais
 
 Quando perguntado para Tais um assunto que não esteja descrito em seu escopo ela entra no fallback. Então, foi identificado uma necessidade de que quando o chatbot não entenda a intenção do usuário, ele (chatbot) se comunique com outros bots para tentar buscar uma resposta adequada à pergunta feita inicialmente.
 
 Foi iniciado então uma nova frente de trabalho para desenvolver modo de comunicação entre bots. O projeto é desenvolver uma _custom action_ para quando o chatbot entre no _fallback_. Assim, ele se comunicará com os outros bots via API's externas.
 
+A evolução do framework da Tais vai ser realizado continuamente até o final do projeto. Toda a documentação técnica necessária para manter, evoluir e instanciar o chatbot também será desenvolvido até o final do projeto. O objetivo é garantir a qualidade e a receptividade do projeto da Tais como uma comunidade de software livre. 
+
 O projeto encontra-se no próprio repositório da Tais [https://github.com/lappis-unb/tais](https://github.com/lappis-unb/tais)
+
+Além dessa frente, que continua até o final do projeto, outras evoluções foram implementadas:
+- Adição de documentação sobre as Policies utilizadas na Tais
+- Adição da documentação sobre como criar um primeiro bot
+- Adição da documentação sobre como fazer um pipeline de deploy contínuo usando gitlab
+- Adição da documentação sobre como fazer testes de aceitação de diálogos
+- Melhoria da qualidade do código segundo as métricas do CodeClimate (Melhoria da nota do CodeClimate de 'D' para 'A')
+- Correção dos jupyter-notebooks
+- Contribuição para a comunidade rasa - validador para garantir a formatação dos dados de treinamento (https://github.com/RasaHQ/rasa/pull/3613)
 
 ## Botflow
 
@@ -81,6 +114,8 @@ Versão de desenvolvimento do BotFlow: https://botflow.dev.lappis.rocks
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
 - [x] Realizar Estudos sobre Visualização de dados
+
+O foco dessa frente foi estudar e aplicar métricas de monitoramento de chatbots e aplicar tais métricas no monitoramento e evolução da Tais. Utilizamos o elasticsearch como ferramenta de BI integrado a Tais, que está em produção desde o inicio de dezembro de 2018.
 
 O Dashboard (Perfil de usuário) de acompanhamento de uso da Taís que continha as métricas de negócio (Usuários por dia, usuários e mensagens por semana, total de usuários, média de perguntas por usuário, perguntas mais frequentes, quantidade de pessoas que usaram #MEAJUDA, tendências de intents) foi aprimorado com novas visualizações:
 
@@ -114,7 +149,7 @@ O monitoramento da Tais em produção no período dos últimos 3 meses nos forne
 - A Tais ficou fora do ar em 1 ocasião. Houve a migração e adaptação da página para a reformada Lei de Incentivo à Cultura Isso. Essa migração é feita manualmente, assim como a inserção do _script_ com o livechat da Tais. Nesta ocasião o chatbot ficou quase 1 mês fora do ar.
 
 
-
+Essas métricas foram usadas  para orientar a evolução do conteúdo da Tais, além de identificar falhas no treinamento das intents.
 
 # Aferição e aceitação de produtos de software
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
