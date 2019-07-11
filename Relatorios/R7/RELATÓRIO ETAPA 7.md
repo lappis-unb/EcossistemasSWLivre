@@ -16,9 +16,9 @@ Toda alteração no cronograma proposto foi realizada  a partir de renegociaçã
 
 Todas as frentes contempladas no plano de trabalho no período foram aplicadas em dois principais produtos desenvolvidos no laboratório: o salic-ml e a Tais.
 
-## FASE DE PLANEJAMENTO/EXECUÇÃO
+## FASE DE EXECUÇÃO/CONCLUSÃO
 
-O período de maio 2019 à junho 2019 contemplou as fases de execução e início da fase de transição e finalização do projeto. Abaixo serão apresentados, brevemente, os principais avanços alcançados no período. Toda a documentação e acompanhamento do projeto está disponibilizado e pode ser acessado na organização do laboratório
+O período de maio 2019 à julho 2019 contemplou as fases de execução e início da fase de transição e finalização do projeto. Abaixo serão apresentados, brevemente, os principais avanços alcançados no período. Toda a documentação e acompanhamento do projeto está disponibilizado e pode ser acessado na organização do laboratório
 [lappis-unb](https://github.com/lappis-unb), e no repositório específico do projeto [lappis-unb/EcossistemasSWLivre](https://github.com/lappis-unb/EcossistemasSWLivre). Todo o planejamento e execução das tarefas podem ser acompanhados tanto nas _issues_ quanto nas páginas _wiki_. Os principais repositórios dos projetos são:
 
 * [Chatbot Tais](https://github.com/lappis-unb/rouana)
@@ -27,10 +27,11 @@ O período de maio 2019 à junho 2019 contemplou as fases de execução e iníci
 * [Bot Flow](https://github.com/lappis-unb/BotFlow)
 
 
-
 Abaixo serão apresentados os principais avanços alcançados no período, por pacote de trabalho (de acordo com o Plano de Trabalho), de acordo com o cronograma, no período citado.
 
 # Legado de Software
+Na frente de legado de software, a principal pesquisa realizada foi aplicar estratégias de lidar com Software Legado. A última estratégia testada foi o uso de arquitetura microsserviços no qual um dos serviços é um software legado. Para isso, temos o projeto SALIC-ML que além de aplicar algoritmos de aprendizagem de máquina aos dados do salic, conecta tanto ao banco de dados do Salic quanto acessando os dados via a API. Nesse projeto, tanto fazemos pesquisa aplicada de uso de técnicas de aprendizagem de máquina quanto estatísticas nos dados do SALIC. 
+
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
 - [x] Realizar estudo de refatoração em software legado - Evolução do caso de estudo SalicML
@@ -49,7 +50,15 @@ As macro atividades referentes a essa etapa de acordo com o cronograma do plano 
 
 - [x] Realizar Estudo Lei Rouanet/SALIC
 
-SalicML + Tais + botflow
+## Tais
+
+### Comunicação entre chatbots
+
+Quando perguntado para Tais um assunto que não esteja descrito em seu escopo ela entra no fallback. Então, foi identificado uma necessidade de que quando o chatbot não entenda a intenção do usuário, ele (chatbot) se comunique com outros bots para tentar buscar uma resposta adequada à pergunta feita inicialmente.
+
+Foi iniciado então uma nova frente de trabalho para desenvolver modo de comunicação entre bots. O projeto é desenvolver uma _custom action_ para quando o chatbot entre no _fallback_. Assim, ele se comunicará com os outros bots via API's externas.
+
+O projeto encontra-se no próprio repositório da Tais [https://github.com/lappis-unb/tais](https://github.com/lappis-unb/tais)
 
 ## Botflow
 
@@ -72,6 +81,40 @@ Versão de desenvolvimento do BotFlow: https://botflow.dev.lappis.rocks
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
 - [x] Realizar Estudos sobre Visualização de dados
+
+O Dashboard (Perfil de usuário) de acompanhamento de uso da Taís que continha as métricas de negócio (Usuários por dia, usuários e mensagens por semana, total de usuários, média de perguntas por usuário, perguntas mais frequentes, quantidade de pessoas que usaram #MEAJUDA, tendências de intents) foi aprimorado com novas visualizações:
+
+- Ocorrências incomuns nas intents
+- Quantidade de _fallbacks_ e perguntas que caíram no _fallback_
+
+![Novas visualizações](figs/kibana-1.png)
+
+Foi disponibilizado um novo _dashboard_ para fazer o acompanhamento mais técnico e auxiliar no aprimoramento dos fluxos já existentes ou na criação de novos fluxos, amparando a evolução do chatbot e o trabalho dos designers de conversação.
+
+Esse novo painel possui primeiramente um tutorial de como utilizá-lo e segue com três novas visualizações:
+
+- Como utilizar a nuvem de palavras como filtro
+- Cloud tag intents
+- Perguntas dos usuários (texto das intents)
+- Quantidade de _fallbacks_ e perguntas que caíram no _fallback_
+
+![Como utilizar a nuvem de palavras e nuvem de palavras das intents](figs/kibana-2.png)
+
+![Perguntas dos usuários e Quantidade de fallbacks e perguntas que caíram no fallback](figs/kibana-3.png)
+
+Estão disponibilizados dois sites em homologação para visualização dos dashboards existentes. Houve a separação em duas aplicações para fazermos a separação de usuário. No primeiro caso (https://dados.tais.lappis.rocks) os dashboards estão disponíveis somente para a visualização. No segundo caso (https://analytics.tais.lappis.rocks) o usuário pode editar ou criar novos dashboards e visualizações.
+
+O monitoramento da Tais em produção no período dos últimos 3 meses nos fornece as seguintes informações:
+- O número médio de usuários atendidos pela Tais por dia é 43 usuários
+- A quantidade de usuários atendidos por mês é cerca de 1300
+- Há em média 5,5 perguntas por usuários
+- 24% dos usuários usam o recurso #MEAJUDA
+- As perguntas mais realizadas para a Tais são: "Como faço para submeter um projeto pela Lei Rouanet" e "Quem pode ser proponente"
+- As perguntas tais como "Como aprovar um projeto?" e "Quem pode incentivar" foram umas das perguntas que obtiveram mais resultados em relação às ocorrências incomuns.
+- A Tais ficou fora do ar em 1 ocasião. Houve a migração e adaptação da página para a reformada Lei de Incentivo à Cultura Isso. Essa migração é feita manualmente, assim como a inserção do _script_ com o livechat da Tais. Nesta ocasião o chatbot ficou quase 1 mês fora do ar.
+
+
+
 
 # Aferição e aceitação de produtos de software
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
