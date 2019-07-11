@@ -37,6 +37,16 @@ As macro atividades referentes a essa etapa de acordo com o cronograma do plano 
 - [x] Realizar estudo de refatoração em software legado - Evolução do caso de estudo SalicML
 - [x]  Realizar Estudos sobre práticas de DevOps aplicada a software legado - Evolução do caso de estudo SalicML
 
+## DevOps SALIC-ML
+
+Além de fazer parte da cultura do Lappis, DevOps tem sido uma prática constante do SALIC-ML. Uma vez que o projeto entrou na fase de consolidação, concentramos um esforço maior em melhorar a performance de deploy e dos treinamentos de aprendizado de máquina. 
+
+A conteinerização completa da a aplicação foi terminada o que vai garantir flexibilidade total do deploy. O relatório de complexidade de análise de resultados tem uma dezena de métricas que requerem um alto grau de processamento. Antes o treinamento completo demorava 6 horas. Conseguimos reduzir esse tempo para 1,5 hora, paralelizando os cálculos em vários processadores. 
+
+Além disso, foram implementadas abordagens mais eficazes de amostragem que evitam que dados utilizados em mais de uma métrica precisem ser carregados várias vezes em memória. Esse esforço trouxe também uma noção mais clara dos requisitos mínimos para rodar o SALIC-ML em produção. 
+
+Outro benefício planejado desse esforço foi reduzir o tempo de transferência de conhecimento para o Ministério da Cidadania. Muitos problemas que só seriam enfrentados quando a equipe LAPPIS iniciasse a transição para a infraestrutura do Ministério já foram antecipados e corrigidos. 
+
 # Práticas  de Gestão Colaborativa
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
@@ -49,6 +59,7 @@ chatbots + boilerplate
 As macro atividades referentes a essa etapa de acordo com o cronograma do plano de trabalho são:
 
 - [x] Realizar Estudo Lei Rouanet/SALIC
+
 
 ## Tais
 
@@ -108,6 +119,21 @@ O desenvolvimento do front-end foi iniciado, priorizando a curadoria de *utteran
 Versão de homologação do BotFlow: https://botflow.lappis.rocks/
 
 Versão de desenvolvimento do BotFlow: https://botflow.dev.lappis.rocks
+
+## SALIC-ML no contexto da Lei de Incentivo à cultura
+
+Ao aplicar as otimizações apresentadas no tópico "DevOps SALIC-ML" acima, encontramos algumas discrepâncias no cálculo das métricas que nos forçaram a reavaliar os algoritmos de cálculo em detrimento de avançar com novas funcionalidades na solução. Julgamos que um cálculo preciso será mais útil para o Ministério do que um leque maior de funcionalidades que funcionam de modo pouco confiável.
+
+Sendo assim, iniciamos uma revisão completa dos algoritmos de cálculo e de apresentação das métricas. O que, de certa forma, dá sequência ao trabalho de estabilização do relatório que havia sido planejado no período anterior.
+
+Todas as métricas foram melhoradas, sendo que algumas como "Projetos do mesmo proponente" foram profundamente alteradas. Essa atividade de reavaliação prosseguirá durante a próxima etapa, enquanto preparamos o material de treinamento para que a equipe de TI do Ministério da Cidadania possa se apropriar e sustentar o ML a longo prazo.
+
+De forma concreta, a entrega final incluirá:
+
+- O relatório de complexidade de análise de prestação de contas com todas as métricas funcionando plenamente, no limite dos testes realizados com a versão de homologação dos dados do SALIC.
+- Material de treinamento sobre o cálculo das métricas para que a equipe de TI do Ministério da Cidadania.
+- Documentação dos estudos realizados para cálculo de similaridade entre projetos.
+- Documentação dos estudos realizados com grafos de associação de CPFs e CNPJs.
 
 
 # Visualização de dados e criação de Dashboards
