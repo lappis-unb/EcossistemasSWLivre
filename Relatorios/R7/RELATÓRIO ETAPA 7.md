@@ -230,6 +230,60 @@ compõem uma medida precisa de qualidade de software para guiar critérios de
 aceitação de software, sugere a abordagem chamada MeasureSoftGram como um novo
 modelo para observação contínua multidimensional de qualidade de software.
 
+## Práticas utilizadas no MinC (agora Secretaria Especial de Cultura)
+
+O principal arranjo para desenvolvimento de softwares culturais é o do Termo de
+Execução Descentralizada, o TED. O instrumento do termo de Execução Descentralizada
+é definido pelo Decreto nº 8.180, de 30 de dezembro de 2013, como “instrumento por
+meio do qual é ajustada a descentralização de crédito entre órgãos e/ou entidades
+integrantes dos Orçamentos Fiscal e da Seguridade Social da União, para execução
+de ações de interesse da unidade orçamentária descentralizadora e consecução do
+objeto previsto no programa de trabalho, respeitada fielmente a classificação
+funcional programática”. Esse instrumento é utilizado para realização de parceria
+entre órgãos vinculados ao Orçamento Geral da União (OGU), podendo parte do orçamento
+ser transferido para ser empenhado e executado por outros órgãos, desde que cumprindo
+a função original para a qual aquele orçamento foi destinado. É um instrumento
+amplamente utilizado para que órgãos da administração direta possam financiar
+pesquisa e desenvolvimento nas universidades públicas e assim auxiliar e qualificar
+a entrega dos objetivos pretendidos pelo órgão.
+
+Na comparação com o instrumento da fábrica de software, o TED permite uma proximidade
+maior da gestão e das áreas de negócio no andamento do desenvolvimento das soluções.
+As reuniões estratégicas e os planejamentos de ciclo de desenvolvimento (chamadas
+de "sprints") permitem especificar as necessidades de negócio de forma mais detalhada
+e, mais importante ainda, ao longo do processo de desenvolvimento, já que cada ciclo
+desse dura aproximadamente duas semanas. Por outro lado não há garantias contratuais
+já que a universidade tem autonomia para estabelecer o ritmo de entrega das soluções
+com base no andamento do trabalho de pesquisa e aprendizado que subsidia o trabalho.
+O instrumento da fábrica de software busca estabelecer a qualidade do que foi desenvolvido
+através de métricas objetivas definidas a priori. Embora exista um grande conjunto
+de conhecimentos nessa área, o que a percepção dos gestores mostra é que na prática
+isso exige um conhecimento sobre métricas de software que não é comumente encontrado
+na área de negócios e consequentemente no servidor que comumente desempenha o papel
+de "product owner" (PO). Por outro lado, a substituição da métrica de ponto de função,
+típica do instrumento de fábrica de software, por UST (Unidade de Serviço Técnico)
+tem sido feita em alguns órgãos sob o nome de "Ateliê de Software" mas até o momento
+da realização dessa pesquisa não havia uso desse instrumento para o desenvolvimento
+dos softwares culturais.
+
+No desenvolvimento de soluções pelo instrumento do TED, o "product owner" (PO) tem papel
+fundamental na aferição de qualidade do que foi desenvolvido. Usualmente o PO é um
+servidor ligado à área de negócio, que possui o conhecimento necessário para aferir
+se o software atinge os objetivos pretendidos e tem qualidade adequada. Através de ciclos
+curtos de desenvolvimento o PO afere a qualidade a partir da junção de critérios objetivos
+(como os critérios de aceitação nas issues) com critérios subjetivos baseados no
+conhecimento do publico alvo da solução. O fato do instrumento do TED ser orientado a
+pesquisa, faz com que possam ser realizadas atividades que conferem mais assertividade
+ao trabalho de aceitação, como articulação de grupos de beta-testers e oficinas presenciais
+com o publico alvo dos softwares que estão sendo aprimorados. No caso dos softwares culturais
+ambas as atividades foram realizadas.
+
+A aferição de qualidade de software é uma área de pequisa em franco desenvolvimento e
+um dos objetivos é poder coletar mais dados sobre o uso que os usuários fazem de diferentes
+versões do software, de forma a aferir cientificamente a qualidade do que foi entregue.
+Por isso a importância em se avançar nas pesquisas de aferição e aceitação de produtos
+de software que foram citadas na revisão bibliográfica sobre o tema.
+
 # Entrega final
 
 - Reuniões de transferência de conhecimento e tecnologia
