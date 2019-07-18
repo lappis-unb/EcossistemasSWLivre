@@ -60,9 +60,9 @@ A equipe participou de vários eventos com o intuito de compartilhar as lições
 
 - 17 PyData Brasília (25/06/2019) - o aluno Victor Moura, que lidera a frente SalicML apresentou o trabalho realizado. O título da apresentação foi: _Os desafios de se transformar a ciência de dados dos notebooks em features de um produto – Estudo de caso da prestação de contas da Lei de Incentivo Cultura._
 
-- Campus Party Brasília 2019 (20/06/2019) - a professora Carla Rocha apresentou o framework da Tais,
+- Campus Party Brasília 2019 (20/06/2019) - a professora Carla Rocha apresentou o framework da Tais, a arquitetura proposta para a chatbot Tais e como outros projetos podem se beneficiar da TAIS como referência.
 
-- Campus Party Brasília 2019 (21/06/2019) - o aluno Guilherme fez um workshop sobre dashboard e métricas para chatbots.
+- Campus Party Brasília 2019 (21/06/2019) - o aluno Guilherme Lacerda fez um workshop sobre como criar dashboard e métricas para chatbots.
 
 - Webinars - "arquitetura desacoplada no rasa"- fizemos o webinar sobre as evoluções arquiteturais do framework da tais - [https://www.youtube.com/watch?v=f35j9yydcEU&t=1s](https://www.youtube.com/watch?v=f35j9yydcEU&t=1s).
 
@@ -118,7 +118,7 @@ A evolução do framework da Tais vai ser realizado continuamente até o final d
 O projeto encontra-se no próprio repositório da Tais [https://github.com/lappis-unb/tais](https://github.com/lappis-unb/tais)
 
 Além dessa frente, que continua até o final do projeto, outras evoluções foram implementadas:
-- Adição de documentação sobre as Policies utilizadas na Tais
+- Adição de documentação sobre as _Policies_ utilizadas na Tais
 - Adição da documentação sobre como criar um primeiro bot
 - Adição da documentação sobre como fazer um pipeline de deploy contínuo usando gitlab
 - Adição da documentação sobre como fazer testes de aceitação de diálogos
@@ -288,14 +288,19 @@ de software que foram citadas na revisão bibliográfica sobre o tema.
 
 # Entrega final
 
-- Reuniões de transferência de conhecimento e tecnologia
-- A frequência desas reuniões e profundidade dos encontros
+Iniciamos a fase de transferência de tecnologia, entrega e finalização do TED. Para isso, está sendo preparado nessa etapa e na próxima,  além dos códigos, documentos técnicos e webinars. Cabe ao Ministério definir como será feito a transferência para a equipe técnica do ministério. Isso será feito por meio das seguintes definições:
+
+- Reuniões de transferência de conhecimento e tecnologia - as reuniões com a equipe técnico administrativa tem como objetivo apresentar overview dos produtos desenvolvidos, o roadmap dos produtos, features, tecnologias, o que foi feito e, principalmente, como fazer a manutenção e evolução dos produtos entregues.
+- A frequência dessas reuniões e profundidade dos encontros - fica a cargo do ministério estabelecer a frequência dessas reuniões, pessoas do ministério envolvidas, local das reuniões, e profundidade do conteúdo apresentado. 
+
+Será de responsabilidade do laboratório preparar o material para as reuniões, e disponibilizar tais materiais.
 
 <!-- }}} -->
 
 # Acompanhamento Financeiro
+Abaixo está o detalhamento do financeiro executado no período.
 
-
+![Neste gráfico é possível observar a representação do percentual do custo da mão-de-obra incidido em cada equipe do projeto.](figs/executado.png)
 
 # Assinatura
 
@@ -305,9 +310,8 @@ Nome:  Carla Silva Rocha Aguiar
              (Coordenadora do Projeto)
 
 Assinatura:
-
+![](figs/assinatura.png)
 Data: 15/07/2019
-
 
 # Anexo I
 Nesta seção são apresentados os principais documentos produzidos pela equipe.
@@ -1098,110 +1102,216 @@ Perguntas do survey sobre aspectos técnicos e negociais para implantação de c
 Carimbo de data/hora
 Endereço de e-mail
 i1 - Nome da instituição/empresa:
+
 i2 - Tipo de instituição/empresa:
+
 i3 - Tamanho da instituição/empresa:
+
 e1 - De onde partiu a iniciativa de usar chatbots na instituição/empresa?
+
 e2 - Quais os objetivos de negócio que orientam a decisão em usar chatbots? [Redução do custo de atendimento]
+
 e2 - Quais os objetivos de negócio que orientam a decisão em usar chatbots? [Aumentar a capacidade de atendimento]
+
 e2 - Quais os objetivos de negócio que orientam a decisão em usar chatbots? [Padronização / Melhoria de qualidade do atendimento]
+
 e2 - Quais os objetivos de negócio que orientam a decisão em usar chatbots? [Aproveitar novas oportunidades de negócio]
+
 e2 - Quais os objetivos de negócio que orientam a decisão em usar chatbots? [Personalização do atendimento]
+
 e3 - Quais os canais de atendimento utilizados atualmente na instituição/empresa?
 Quais as motivações para as escolhas tecnológicas sobre chatbots?
+
 e5 - Quais as motivações para as escolhas tecnológicas sobre chatbots? [Flexibilidade para implementação (customização, maturidade da stack etc)]
+
 e5 - Quais as motivações para as escolhas tecnológicas sobre chatbots? [Facilidade para criação de fluxos e parametrização]
+
 e5 - Quais as motivações para as escolhas tecnológicas sobre chatbots? [Facilidade para gestão de conteúdos (administração do conhecimento do chatbot)]
+
 e5 - Quais as motivações para as escolhas tecnológicas sobre chatbots? [Custo geral do projeto]
+
 e5 - Quais as motivações para as escolhas tecnológicas sobre chatbots? [Custo de manutenção (geral ou por "intent")]
+
 e5 - Quais as motivações para as escolhas tecnológicas sobre chatbots? [Qualidade do produto]
+
 e5 - Quais as motivações para as escolhas tecnológicas sobre chatbots? [Adequação ou facilidade por agentes externos (fornecedores ou consultorias)]
+
 e5 - Quais as motivações para as escolhas tecnológicas sobre chatbots? [Stack open source/software livre]
+
 Quais métricas de resultado foram utilizadas?
+
 m2 - Descreva como são utilizadas as métricas de resultado para chatbots na sua instituição/empresa
+
 m4 - O chatbot atingiu o resultado esperado?
+
 m5 - Houve algum custo inesperado durante o processo? Qual?
+
 m6 - Quais os próximos passos na utilização de chatbot pela sua instituição/empresa?
+
 m7 - Quais as principais lições aprendidas durante o trabalho com chatbots na sua instituição/empresa?
+
 f1 - Qual seu nome?
+
 f2 - Qual seu telefone/whatsapp?
+
 f3 - Qual seu cargo?
-e2 - Quais os objetivos de negócio que orientam a decisão em usar chatbots? [Experimentação com novas tecnologias]
+
+e2 - Quais os objetivos de negócio que orientam a decisão em usar chatbots? 
+[Experimentação com novas tecnologias]
+
 m1 - Quais métricas de resultado do projeto de chatbot foram utilizadas? [Recursos economizados ($) / Percentual do orçamento economizado (%)]
+
 m1 - Quais métricas de resultado do projeto de chatbot foram utilizadas? [Quantidade de atendimentos / usuários atendidos (tanto relativo ao volume de atendimento existente em outros canais quanto de novos atendimentos graças ao novo canal de chatbot)]
+
 Quais métricas de resultado foram utilizadas? [Linha 3]
+
 m1 - Quais métricas de resultado do projeto de chatbot foram utilizadas? [Nível de melhoria na satisfação dos usuários/cidadãos (%)]
+
 m1 - Quais métricas de resultado do projeto de chatbot foram utilizadas? [Nível de melhoria na confiança na instituição]
+
 e4 - Quais canais (atuais ou novos) serão aprimorados com o uso de chatbot?
+
 m1 - Quais métricas de resultado do projeto de chatbot foram utilizadas? [Taxa de Self-service (Quantos usuários conseguem atingir o seu objetivo com a conversa, sem a interação externa de um humano)]
+
 m1 - Quais métricas de resultado do projeto de chatbot foram utilizadas? [Taxa de retenção (Quantos usuários retornam a interagir com a assistente virtual)]
+
 m1 - Quais métricas de resultado do projeto de chatbot foram utilizadas? [Taxa de conversão (Quantos usuários atingiram os objetivos do negócio, como tirar uma dúvida, comprar um produto etc)]
+
 m3 - Vocês fazem avaliação de satisfação com os usuários do chatbot? Como é feita?
+
 i8 - Você trabalha na área de TI da sua instituição/empresa?
+
 q1 - Qual o tipo de chatbot da sua instituição/empresa? (atualmente em uso ou em processo de planejamento)
+
 i4 - Qual o nome do chatbot da instituição/empresa? (se houver)
+
 i7 - Descreva brevemente o chatbot de sua instituição/empresa (se houver)
+
 q2 - Qual a tecnologia utilizada no chatbot de sua instituição ou empresa?
+
 i5 - Há quanto tempo o chatbot está no ar?
+
 A quanto tempo o chatbot está no ar?
+
 i6 - Qual o público atendido pelo chatbot?
+
 q3 - Quantas intenções dos usuários ("intents") seu chatbot é capaz de responder?
+
 O seu chatbot faz processamento de linguagem natural?
+
 q4 - O seu chatbot interage com APIs externas?
+
 q5 - O seu chatbot trabalha com texto puro ou com processamento de voz?
+
 q6 - Qual a quantidade de acessos que seu chatbot recebe por mês?
+
 q7 - Qual a média de interações por usuário do seu chatbot?
+
 q7 - Qual a taxa de retenção de usuários do seu chatbot? (Indique o percentual de usuários que retornam)
+
 q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Permite a instalação on-premises (os dados ficam na organização)]
+
 q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Permite acesso permanente aos dados de treinamento]
+
 q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Possui portabilidade dos dados de treinamento (exportação/importação)]
+
 q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Possui suporte a Whatsapp]
+
 q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Possui suporte a Facebook Messenger]
+
 q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Possui funcionalidades como botões, imagens, emojis]
-q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Custo escalável (o custo da solução não inviabiliza a continuidade da adoção quando a escala de uso aumenta)]
+
+q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Custo escalável (o custo da solução não inviabiliza a continuidade da 
+adoção quando a escala de uso aumenta)]
+
 Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Adequação do mecanismo de gestão de diálogo à necessidade de negócio]
+
 Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Ferramenta simples para a gestão dos diálogos integrada ao bot]
+
 q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Facilidade em se conectar com sistemas externos]
+
 Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Flexibilidade de customização dos algoritmos do bot]
+
 Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Interface amigável para configuração do bot]
-Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Ferramenta amigável para gestão do conhecimento integrada ao bot]
+
+Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização 
+[Ferramenta amigável para gestão do conhecimento integrada ao bot]
+
 Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Baixa complexidade para evoluir a tecnologia]
+
 q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Tecnologia Open Source/Software Livre]
+
 q10 - Conte um pouco como foi o processo de escolha da tecnologia utilizada para o chatbot da sua instituição/empresa?
+
 q11 - Qual a sua satisfação em relação a tecnologia escolhida?
+
 q12 - Fale um pouco mais sobre o seu nível de satisfação com a tecnologia escolhida
+
 q13 - Como você avalia a sustentabilidade da tecnologia escolhida considerando o futuro da organização?
+
 q14 - Você pretende mudar de tecnologia nos próximos 6 meses? Porque?
 Avalie os critérios para a escolha da tecnologia de chatbot de sua organização [Possui portabilidade dos dados de treinamento (exportação/importação)]
+
 Avalie os critérios para a escolha da tecnologia de chatbot de sua organização [Custo escalável (o custo da solução não inviabiliza a continuidade da adoção quando a escala de uso aumenta)]
+
 Avalie os critérios para a escolha da tecnologia de chatbot de sua organização [Possui suporte a Whatsapp]
+
 Avalie os critérios para a escolha da tecnologia de chatbot de sua organização [Possui suporte a Facebook Messenger]
+
 Avalie os critérios para a escolha da tecnologia de chatbot de sua organização [Possui suporte a múltiplos mensageiros]
+
 Avalie os critérios para a escolha da tecnologia de chatbot de sua organização [Facilidade em se conectar com sistemas externos]
+
 Avalie os critérios para a escolha da tecnologia de chatbot de sua organização [Tecnologia Open Source/Software Livre]
+
 q9 - Avalie critérios de ferramentas de gestão para a escolha da tecnologia de chatbot [Ferramenta simples para a gestão dos diálogos integrada ao bot]
+
 q9 - Avalie critérios de ferramentas de gestão para a escolha da tecnologia de chatbot [Ferramenta amigável para gestão do conhecimento integrada ao bot]
+
 q9 - Avalie critérios de ferramentas de gestão para a escolha da tecnologia de chatbot [Adequação do mecanismo de gestão de diálogo à necessidade de negócio]
+
 q9 - Avalie critérios de ferramentas de gestão para a escolha da tecnologia de chatbot [Flexibilidade de customização dos algoritmos do bot]
+
 q9 - Avalie critérios de ferramentas de gestão para a escolha da tecnologia de chatbot [Interface amigável para configuração do bot]
+
 q9 - Avalie critérios de ferramentas de gestão para a escolha da tecnologia de chatbot [Baixa complexidade para evoluir a tecnologia]
+
 q8 - Avalie os critérios técnicos para a escolha da tecnologia de chatbot de sua organização [Instalado em Infraestrutura externa (não precisa ser mantido pela equipe de TI)]
+
 c1 - Quais temas de chatbot você considera  mais difícil encontrar informações disponíveis?
+
 c2 - Qual foi a última vez que você participou de uma capacitação sobre chatbot?
+
 c3 - Para atender a necessidade da sua instituição/empresa acerca do uso de chatbot, quais conteúdos deveriam ser explorados em uma capacitação?
+
 f4 - O que
+
 c4 - Qual o nível de importância para a sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Não importante e 5 = Muito importante) [Critérios de escolha para as soluções tecnológicas]
+
 c4 - Qual o nível de importância para a sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Não importante e 5 = Muito importante) [Custos da iniciativa]
+
 c4 - Qual o nível de importância para a sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Não importante e 5 = Muito importante) [Contratação de chatbot no setor público]
+
 c4 - Qual o nível de importância para a sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Não importante e 5 = Muito importante) [Métricas sobre o desempenho da solução tecnológica]
+
 c4 - Qual o nível de importância para a sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Não importante e 5 = Muito importante) [Métricas de negócio]
+
 c5 - Qual o grau de domínio da sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Nenhum domínio e 5 = Domínio pleno) [Critérios de escolha para as soluções tecnológicas]
+
 c5 - Qual o grau de domínio da sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Nenhum domínio e 5 = Domínio pleno) [Custos da iniciativa]
+
 c5 - Qual o grau de domínio da sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Nenhum domínio e 5 = Domínio pleno) [Contratação de chatbot no setor público]
+
 c5 - Qual o grau de domínio da sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Nenhum domínio e 5 = Domínio pleno) [Métricas sobre o desempenho da solução tecnológica]
+
 c5 - Qual o grau de domínio da sua instituição/empresa dos seguintes temas sobre chatbot? (Considere: 1 = Nenhum domínio e 5 = Domínio pleno) [Métricas de negócio]
+
 c6 - O que você espera ser capaz de fazer (quanto ao seu trabalho) após participar de uma capacitação sobre chatbot?
 
 Avalie os critérios para a escolha da tecnologia de chatbot (backend) de sua organização [Linha 1]
+
 Avalie os critérios para a escolha da tecnologia de chatbot de sua organização [Linha 16]
+
 De onde partiu a iniciativa de usar chatbots na instituição/empresa?
+
 Quais as motivações para as escolhas tecnológicas sobre chatbots? [Linha 9]
