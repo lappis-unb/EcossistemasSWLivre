@@ -72,6 +72,8 @@ Colaboramos ativamente na organização da segunda roda de conversa do grupo, re
 
 Outro produto esperado do survey é a construção, no âmbito do grupo, de uma grade de conteúdos imprescindíveis para a formação de gestores de negócio, tencologia e curadoria de conteúdos para chatbots. A construção dessa grade vai permitir que o grupo tenha um ponto de partida para viabilizar um ciclo formativo no tema e avance na disseminação dessas competências no âmbito da administração pública. A contribuição do Laboratório Lappis será de facilitar os encontros necessários para a construção dessa grade.
 
+No quesito articulação com comunidades de software livre, seguimos no curso de aproximação da comunidade internacional do RASA, um dos principais componentes do framework de assistente virtual do Lappis. Ao longo dos últimos meses, tivemos 3 contribuições relevantes aceitas no código do software e já começamos a construção de um processo de planejamento conjunto para alinhamento dos roadmaps Rasa e Lappis que renderá frutos tanto para o laboratório quanto para todos os órgãos e iniciativas que utilizam o nosso boilerplate em suas soluções de chatbot.
+
 ![Segunda roda de conversa ChatBotLab - 18 de Junho, ENAP](figs/rodachatbotlab.png)
 
 ![Survey ChatBots no setor público](figs/printsurveychatbot.png)
