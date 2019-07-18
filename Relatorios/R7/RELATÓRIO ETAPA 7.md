@@ -292,6 +292,8 @@ Iniciamos a fase de transferência de tecnologia, entrega e finalização do TED
 
 - Reuniões de transferência de conhecimento e tecnologia - as reuniões com a equipe técnico administrativa tem como objetivo apresentar overview dos produtos desenvolvidos, o roadmap dos produtos, features, tecnologias, o que foi feito e, principalmente, como fazer a manutenção e evolução dos produtos entregues.
 - A frequência dessas reuniões e profundidade dos encontros - fica a cargo do ministério estabelecer a frequência dessas reuniões, pessoas do ministério envolvidas, local das reuniões, e profundidade do conteúdo apresentado. 
+- É importante que o ministério acompanhe esta etapa e disponibilize pessoas da sua equipe, especialmente da área técnica de desenvolvimento ou infraestrutura, assim será possível ao ministério absorver o conhecimento e práticas necessárias ao desenvolvimento e manutenção das soluções desenvolvidas pelo laboratório.
+- Desde o início do projeto o laboratório Lappis tem preocupação com documentação a respeito da gestão e manutenção, ao final o laboratório se compromete a revisar e atualizar esses documentos a fim de facilitar a apropriação por parte do ministério, algo que tem sido estimulado pelo laboratório ao longo do projeto.
 
 Será de responsabilidade do laboratório preparar o material para as reuniões, e disponibilizar tais materiais.
 
