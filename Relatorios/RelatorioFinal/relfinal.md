@@ -302,4 +302,27 @@ Esse pacote de trabalho teve seu cronograma alterado e escopo limitado. Tais mud
 
 # Acompanhamento Financeiro
 
+Tivemos completa transparência quanto ao acompanhamento financeiro do projeto. A prestação de contas foi feita a cada relatório de acompanhamento, no qual apresentamos não só o montante gasto, quanto também o valor gasto por pacote de trabalho. O tamanho do time por frente de trabalho foi definido de acordo com as prioridades estabelecidas pelo ministério, nas reuniões estratégicas. Porém, vale ressaltar, que por se tratar de times multidisciplinares, membros poderiam ser alocados em diferentes frentes por diversas __sprints__ de acordo com necessidade de projeto e deadlines de entrega. 
+
+O financeiro completo do projeto pode ser visto na figura abaixo.
+
+
+# Assinatura
+
+Responsável pela Execução:
+---
+Nome:  Carla Silva Rocha Aguiar
+             (Coordenadora do Projeto)
+
+Assinatura:
+
+Data:/2019
+
+# Anexos
+
+# Artigos
+
+# 
+
+
 
