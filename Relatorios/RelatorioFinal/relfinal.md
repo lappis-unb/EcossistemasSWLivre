@@ -8,6 +8,11 @@ colorlinks: true
 
 # Objetivo Geral
 
+O objetivo geral da parceria foi constituir a rede de laboratórios de pesquisa e desenvolvimento de tecnologias inovadoras para políticas públicas do Ministério da Cultura. O principal objetivo é pesquisar e aplicar técnicas, metodologias de desenvolvimento de software, além de aferição qualidade produto de software, em ambiente experimental do Laboratório Avançade de Pesquisa, Produção e Inovação em Software (LAPPIS).  Tais pesquisas e práticas serão usadas para subsidiar o Ministério da Cultura de  ferramentas de gestão e desenvolvimento de software colaborativo, aberto e contínuo, em diferentes arranjos produtivos,  aprimorando os mecanismos de governança digital; além de fornecer subsídios tecnológicos que apoiem a execução da lei Lei 8.313/91, conhecida como Rouanet e das demais políticas de fomento e incentivo à cultura.  
+
+
+O presente relatório apresenta o acompanhamento do trabalho realizado no projeto "Ecossistemas de Software Livre", Termo de Cooperação para Descentralização de Crédito, Processo Ofício No 0646/2017/FUB-UnB, Vigência Outubro 2017 à Outubro 2019. O relatório apresentado é relatório final do projeto e vai apresentar o que foi realizado no âmbito do projeto, os principais resultados, e entregas, a partir das expectativas do plano de trabalho vigente.
+
 
 # Objetivos Específicos
 
@@ -25,7 +30,7 @@ maneira a contribuir para transparência pública e participação social__ Todo
 -  __Fornecer suporte tecnológico para estimular a participação da sociedade civil na governança
 digital em torno das tecnologias livres do portfólio do ministério__: esse objetivo foi alcançado ao seguir as boas práticas e documentações adotadas pela comunidade de software livre. Dessa maneira, diminui a barreira de contribuição para os interessados em contribuir com os projetos desenvolvidos ao longo da parceria.
 
--  __Mineração em repositórios de software para extração e análise de dados__: esse objetivo foi alncançado nos notebooks de análise de dados. Isso foi feito tanto no contexto da Lei de Incentivo Cultural, por meio da mineração do banco de dados do Salic, quanto da análise dos próprios repositórios e métricas dos projetos desenvolvidos ao longo do parceria.
+-  __Mineração em repositórios de software para extração e análise de dados__: esse objetivo foi alcançado nos notebooks de análise de dados. Isso foi feito tanto no contexto da Lei de Incentivo Cultural, por meio da mineração do banco de dados do Salic, quanto da análise dos próprios repositórios e métricas dos projetos desenvolvidos ao longo do parceria.
 
 - __Processamento de linguagem natural dos dados extraídos dos diferentes sistemas de software
 culturais__: esse objetivo foi alcaçando por meio da assistente virtual TAIS. Nela, aplicamos algoritmos de __Natural Language Understanding (NLU)__ para a classificação da intenção dos usuários que interagem com a chatbot por meio de linguagem natural.
@@ -78,7 +83,7 @@ A ferramenta sloccount considera como valores padrão um parâmetro de overhead 
 
 Nota-se ainda que o projeto abrange atividades de pesquisa, formação de alunos treinamento e desenvolvimento de identidade visual que estão fora do escopo da programação que em um acordo comercial aumentariam ainda mais o custo do projeto. 
 
-Finalmente, além do desenvolvimento de uma solução para o Ministério da Cidadania, o projeto parte de uma lógica de parceria com a universidade e pressupõe a criação de insumos de pesquisa e produção acadêmica. A maior parte dos membros da equipe é formada por alunos do curso de Engenharia de Software, sendo que a participação no projeto contribuiu diretamente para a formação dos mesmos. Alguns destes alunos adotaram o temas relacionados ao projeto como tema em trabalhos de conclusão de curso ainda em andamento. Foram publicados dois artigos científicos. Um deles, com o título "X" que contem a experienca no desenvolvimento da Tais foi apresentado no OpenSym, uma dos maiores simposios de pesquisa acadêmica em software livre. O segundo, com o título "X" foi aceito  na revista X, de alto impacto acadêmico (A1 no critério de Qualis da Capes) e mostra o resultado acadêmico dos estudos em devops. Foi publicado também um capítulo do livro "X", no qual discutimos os modelos de contratação nas equipes de TI do governo federal.
+Finalmente, além do desenvolvimento de uma solução para o Ministério da Cidadania, o projeto parte de uma lógica de parceria com a universidade e pressupõe a criação de insumos de pesquisa e produção acadêmica. A maior parte dos membros da equipe é formada por alunos do curso de Engenharia de Software, sendo que a participação no projeto contribuiu diretamente para a formação dos mesmos. Alguns destes alunos adotaram o temas relacionados ao projeto como tema em trabalhos de conclusão de curso ainda em andamento. Foram publicados dois artigos científicos. Um deles, com o título "FLOSS FAQ chatbot project reuse - how to allow nonexperts to develop a chatbot" que contém a experienca no desenvolvimento da Tais foi apresentado no OpenSym, uma dos maiores simposios de pesquisa acadêmica em software livre. O segundo, com o título "A Survey of DevOps Concepts and Challenges" foi aceito  na revista **Computing Surveys** da ACM, de alto impacto acadêmico (A1 no critério de Qualis da Capes) e mostra o resultado acadêmico dos estudos em devops. Foi publicado também um capítulo do livro "Software e Cultura no Brasil - Produção, gestão e políticas publicas",  no qual discutimos os modelos de contratação nas equipes de TI do governo federal, no capítulo "Colaboração aberta e sua relação com a contratação de software na administração pública".
 
 
 
@@ -90,27 +95,28 @@ desenvolvedores e desestimulantes no contexto de fomento a comunidades. Por outr
 a reescrita desses softwares é impraticável e, em se tratando de software implantado,
 a necessidade de adicionar novas funcionalidades e dar manutenção persiste. 
 
-Os objetivos gerais desse pacote de trabalho, e o alcance desses objetivos foram:
-
-- [x] Pesquisa em metodologias de refatoração de sistemas legados - 100% alcançado;
-- [x] Utilizar como estudo de casos alguns sistemas legados do Ministério da Cultura, tais como o
-projeto SIMEC (Sistema Integrado de Monitoramento Execução e Controle) e o projeto Salic (Sistema de Apoio às Leis de Incentivo à Cultura), Sistel - 100% alcançado.
-
 ### Metas Específicas
 
 Quanto as metas específicas dessa frente de trabalho definidas plano de trabalho são:
 
 1. __Estudos e documentação do processo de conteinerização, testes automatizados, refatoração de sistemas legados em uma estrutura de DevOps para viabilizar trabalhos futuros__
 
-**Concluído**
+**Concluído**. No início do projeto, fizemos um checklist com as principais boas práticas, documentações, automações de comunidades de software livre. Esse checklist foi aplicado em uma lista de projetos evoluidos e mantidos pelo Ministério da Cultura. Para cada projeto, colocamos a solução em containers, documentamos  o básico (README), instrumentamos com serviços de análise de qualidade estátiva de código, e integração contínua. A importância desse trabalho é que, além de fazer com que os projetos mantidos pelo ministério façam adesão às  práticas modernas de engenharia de software, permite que outras equipes de desenvolvimentos possam executar, testar e evoluir os projetos mais facilmente. Adicionalmente, tais ferramentas aceleram a curva de aprendizado de novos membros no time, além de incentivar boas práticas de desenvolvimento por meio de monitoramento das métricas.
 
+Essa estratégia, chamada *legacy in the box*, é sugerida na literatura do estado da prática como primeira ação a ser feita em direção ao DevOps em sistemas legados. Conteinerizar e instrumentar um software legado permite que esse seja configurados em um pipeline de deploy contínuo. A falta de testes cria a vulnerabilidade de se colocar em ambiente de produção/homologação features defeituosos. Porém esse risco está presente naturalmente em softwares legados sem testes. Logo, a estrégia *legacy in the box* agiliza a entrega de novas features, possibilitando entrega contínua, criação de comunidade, e incentivo as boas práticas de engenharia de software.
 
 **Documentação comprobatória**
 
 
+
+
 2.  __Pesquisa em metodologias de refatoração de sistemas legados__
 
-**Concluído**
+**Concluído**. O principal problema tratado foi a pesquisa de estratégias de fazer inovação em plataformas compostas por software legado. Utilizamos o SALIC, principal software mantido pelo antigo Ministério da Cultura, que além de ser  o maior software ainda é o software que executa a lei de Incentivo a cultura. Nesse contexto, refatorar e/ou reescrever o Salic é uma tarefa inviável com custos proibitivos. Uma particularidade do Salic é a quantidade de bancos de dados (cerca de 10 bancos), e o fato que várias regras de negócios estão do próprio banco. A documentação técnica no início do projeto era mínima, quase inexistente. 
+
+Dado o contexto, além da estratégia *legacy in the box*, descrita na seção acima, pesquisamos e aplicamos outras duas técnicas de refatoração de sistemas legados. Identificamos o *SalicAPI*, projeto que disponibiliza os dados sobre a execução de projetos da Lei de incentivo, como sendo o software com o maior pontencial de se ter comunidade, uma vez que os dados acessados via o *SalicAPI* são de interesse tanto da sociedade civil quanto de jornalistas. Para o o *SalicAPI* aplicamos a técnica tradicional de refatoração orientados a métricas. Para isso, atualizamos a versão do *python*, automatizamos a execução de testes automatizados, dockerizamos, fizemos toda a documentação técnica e dos *endpoints*. Essa técnica de refatoração (reescrita de código, melhoria das práticas, execução de testes unitários) modernizou o *SalicAPI* e permitiu um pipeline de entrega/deploy continuo seguro.
+
+A terceira técnica de refatoração de sistemas legados foi no contexto de inserir novas *features*. Mais especificamente, novas  *features* com inovação em funcionalidades que fazem o processamento de dados com algoritmos de *machine learning*. Como o código do SALIC é PHP, e maioria dos frameworks e bibliotecas de aprendizagem de máquina são desenvolvidos na linguagem *python*. Por isso, escolhemos a técnica de adotar uma arquitetura microsserviços, no qual novas funcionalidade são adicionadas à plataforma como novos microsserviços que compartilham o banco de dados com o software legado. Essa técnica foi colocada em prática com o serviço *"SaliML"*. Nele, construimos uma APU no qual adicionamos várias métricas de complexidade de análise de projetos culturais.
 
 
 **Documentação comprobatória**
@@ -118,6 +124,7 @@ Quanto as metas específicas dessa frente de trabalho definidas plano de trabalh
 3.  __Utilizar como estudo de casos alguns sistemas legados do Ministério da Cultura, tais como o projeto SIMEC (Sistema Integrado de Monitoramento Execução e Controle) e o projeto Salic (Sistema de Apoio às Leis de Incentivo à Cultura), Sistel__ 
 
 **Concluído**
+Dos três projetos citados, trabalhamos com o *SALIC* e o *Sistel*. O *Sistel* aplicamos a técnica de *legacy in a box*. Ja no *SALIC*, aplicamos as três técnias pesquisadas: *legacy in a box*, *refatoração de código orientado a métricas* e *arquitetura microsserviços*. Toda a documentação técnica das técnicas, assim como os resultados técnicos obtidos, decisões colaborativas com o Ministério estão disponibilizadas na wiki do respectivo repositório. 
 
 
 **Documentação comprobatória**
@@ -136,7 +143,7 @@ De acordo com o plano de trabalho, "O foco dessa etapa é executar o ciclo de pr
 
 2. __Realizar estudos e documentação do processo de desenvolvimento e das boas práticas e automações realizadas__
 
-**Concluído**
+**Concluído** - Checklist (falar do checklist e da lista de boas práticas consideradas)
 
 
 **Documentação comprobatória**
@@ -144,15 +151,17 @@ De acordo com o plano de trabalho, "O foco dessa etapa é executar o ciclo de pr
 
 3. __Relatório com os  modelos de desenvolvimento e comunidade para serem aplicados aos projetos de software do Minc__
   
-**Concluído**
+**Concluído** - Poppi 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** (mestrado Poppi) + 
 
 
 4. __Transferência de conhecimento e capacitar a equipe de servidores e técnicos do MinC em práticas de gestão e desenvolvimento de software aberto, colaborativo e contínuo__
 
-**Concluído**
+**Concluído** - Durante toda a execução do projeto, tivemos a preocupação em manter a documentação técnica atualizada para deixar a comunidade dos projetos desenvolvidas receptivas. Além disso, realizamos ao longo do projeto diversos workshops de Devops, chatbots, ML, boas práticas, com a equipe técnica do ministério
+treinamentos. Ao amadurecer tecnicamente conhecimento sobre chatbots e a arquitetura da Tais, realizamos diversos webinares que estão disponibilizados no youtube, que abordam diversos aspectos técnicos importantes para a manutenção e evolução da Tais. Participamos também de 2 edições do pydata gravadas no qual apresentamos a visão geral da Tais e do SalicML. Tais materiais estão organizados e disponibilizados de forma que pessoas interessadas em manter e evoluir os projetos desenvolvidos no projeto terão todo o apoio técnico necessário.
+
 
 
 **Documentação comprobatória**
@@ -215,7 +224,22 @@ De acordo com o plano de trabalho, "O principal objetivo é o estudo de técnica
 
 1. __Realizar estudos e propor técnicas de processamento de linguagem natural, aprendizado supervisionado e o desenvolvimento de chatbots para interagir com proponentes da Lei Rouanet__
 
-**Concluído**
+**Concluído**: Principal pesquisa do projeto TAIS. Durante o projeto foram testados diversos frameworks de chatbots, dentre eles o *hubot natural*, *botpress*, e *rasa*. O objetivo era pesquisar os algoritmos, dados de treinamento e performance de algoritmos de processamento de linguagem natural em português. Pela novidade da tecnologia, e das ferramentas, existia poucos ou nenhum experimento executado em português. 
+
+Após diversos experimentos, testes (a primeira versão da Tais utilizamos o *hubot natural* com o classificador X), escolhemos o Rasa, pois além de crescente comunidade, possuia a vantagem de trazer a possibilidade de customizar o pipeline de processamento e algoritmos. Além disso, já estava implementado algoritmos modernos de processmanto de linguagem natural, tais como *Embeddings*, *LSTM*, entre outros.
+
+Testamos diversas técnicas de  classificadores de intenção do usuário: Supervised Vector Machine (SVM), Embeddings. Após diversos experimentos observamos que o embeddings classificava melhor com poucos dados de treinamento, que é o caso do chatbot em português que tem poucos ddos para treinamento. Além de testes de algoritmos de *Natural Language Processing* (NLU), um chatbot tem que prever a ação mais adequadava a partir da intenção do usuário e o contexto da conversa. Com isso, tem-se uma segunda etapa de processamento de chatbots que é a gestão de conversa. Nessa etapa, testamos duas formas de fazer a gestão de conversa: a partir de um fluxo de conversa (árvore de decisão), ou utilizando redes neurais preditivas (LSTMs). O primeiro caso se mostrou muito limitado, pois impões a estrutura burocrática do órgão para o usuário, e obriga o chatbot a controlar a conversa para garantir a boa experiência do usuáio. Mas testes em uso mostraram que esse tipo de diálogo é não natural e, mesmo o chatbot tendo o contexto e sabendo responder a  determinadas perguntas, deixa a experiência para o usuário de muitos erros na interação. Já a abordagem utilizando redes neurais demanda mais conhecimento técnico do time de projeto, mais dados de treinamento, mas traz o benefício de permitir o usuário conduzir a conversa com o chatbot e tivemos mais feedbacks positivos dos nossos testes em uso.
+
+Todos os experimentos conduzidos foram documentados e os resultados disponibilizaos na wiki do repositório do projeto Tais.
+
+Após a etapa de experimento, implementamos a chatbot TAIS. Até o final do projeto, todo o conteúdo demandado pela SEFIC foi inserido no bot, e também foi feito uma curadoria orientado a dados. Como parte da arquitetura da Tais é um BI com os dados, métricas e indicadores sobre o comportamento dos usuários, utilizamos esses dados para melhorar de forma contínua novos conteúdos.
+
+Os dados gerais sobre o projeto da Tais são detalhados
+- Total de intenções:
+
+- Total de utters:
+
+
 
 
 **Documentação comprobatória**
@@ -245,14 +269,14 @@ processados nas etapas anteriores. Os gráficos produzidos servem de embasamento
 
 1. __Painéis com estatísticas sobre projetos cadastrados no Salic__
 
-**Concluído**
+**Concluído**: Promova Cultura
 
 
 **Documentação comprobatória**
 
  2. __Estudos sobre a apresentação visual de resultados de algoritmos de aprendizado de máquina e análises estatísticas__ 
 
- **Concluído**
+ **Concluído** - Esse estudo foi realizado no contexto do projeto da Tais. Foi acoplado a arquitetura a stack elastic/Kibana para a mineração dos dados de conversa entre a Tais e o usuário. A partir dos dados em uso, foram projetados dashboards com métricas de uso, comportamento, e de negócio. Ao total, foram propostos X graficos de negócio, X de compartamento do usuário, e X de uso/técnico. Essas métricas foram validadas e evoluidas. Ao final do projeto, utilizamos esses dashboards para melhorar o desempenho da Tais, acrescentar novos conhecimentos à sua base de treinamento. Também conseguimos prever tendências e conteúdos mais pesquisados pelo usuário. 
 
 
 **Documentação comprobatória**
@@ -260,7 +284,7 @@ processados nas etapas anteriores. Os gráficos produzidos servem de embasamento
  
  3. __Dashboard  para a visualização e análise das relações entre proponentes e financiadores por meio de grafos__
 
- **Concluído**
+ **Concluído** - Promova Cultura
 
 
 **Documentação comprobatória**
@@ -278,7 +302,7 @@ Esse pacote de trabalho teve seu cronograma alterado e escopo limitado. Tais mud
 
 1. __Experimentação contínua aplicada à engenharia de produto de software__
 
- **Concluído**
+ **Concluído** - Durante todo o projeto foi abordado a experimentação contínua, no qual passavamos continuamento por três etapas: (1) levantamento de hipoteses para solucionar um problema, (2) teste de parte da solução para validar a hipótese, (3) validação da hipótese, (4) implementação da solução no produto final. Além disso, trabalhamos com times full-stack e orientados a produto, a fim de ter uma qualidade alta do produto entregue. Com isso, para cada pacote de trabalho, tinha-se um time composto por alunos de Engenharia de Software, Designers, Alunos de letras, e profissionais plenos e seniores para gerir os riscos de projeto.
 
 
 **Documentação comprobatória**
@@ -286,7 +310,7 @@ Esse pacote de trabalho teve seu cronograma alterado e escopo limitado. Tais mud
  
 2. __a mineração em repositórios de software e a análise científica de dados do software__
 
- **Concluído**
+ **Concluído** - Análise que o Renato está fazendo
 
 
 **Documentação comprobatória**
@@ -294,7 +318,7 @@ Esse pacote de trabalho teve seu cronograma alterado e escopo limitado. Tais mud
 
  3. __prospectar uma sistemática, baseada em evidência científica, que auxilie  a homologação de produtos de software, em obediência ao normativo estabelecido__
 
-  **Concluído**
+  **Concluído parcialmente** - 
 
 
 **Documentação comprobatória**
@@ -320,9 +344,9 @@ Data:/2019
 
 # Anexos
 
-# Artigos
+# Artigos Acadêmicos
 
-# 
+# Artigos de Comunidade
 
 
 
