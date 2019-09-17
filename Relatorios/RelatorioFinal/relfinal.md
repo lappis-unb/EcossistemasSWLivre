@@ -20,7 +20,6 @@ No plano de trabalho foram levantados alguns objetivos específicos referentes �
 
 -  __Realizar estudos de algoritmos de aprendizado de máquina para analisar dados da execução da Lei Rouanet__:O projeto "Salic-ML" realizou esse objetivo. Além de inúmeras reuniões com a equipe da Sefic, para entender o processo da Lei de Incentivo a Cultura e o SALIC, foram levantados os principais gargalos do processo. O gargalo mais crítico foi a prestação de contas, no qual o Ministério tem um passivo de cerca de 17 mil projetos a serem análisado o objeto e a prestação de contas. O time então priorizou em desenvolver algoritmos de ciência de dados para gerar métricas/indicadores que explicitem a **complexidade** de um projeto cultural, no que tange a análise financeira. O objetivo é direcionar o trabalho dos técnicos da sefic no trabalho técnico, e aos gestores a priorizar e delegar as análises de forma eficiente e orientadas a dados. Esse trabalho foi finalizado e entregue como um microsserviço a ser integrado no SALIC.
 
-- _
 -  __Realizar estudos de métodos/práticas ágeis e de desenvolvimento lean de software, além das práticas de engenharia de software e de governança utilizadas nas comunidades de software livre, de forma a prover uma infraestrutura computacional para desenvolvimento e experimentação contínua de software__: Esse objetivo foi alcaçado com as reuniões estratégias trimestrais com os principais stakeholders do ministério, além de mantermos as boas prática de comunidades de software livre nos projetos desenvolvidos ao longo da cooperação. Um grande trabalho de governança foi feito com a chatbot "Tais", engajando outros ministérios a adotarem a solução técnica da Tais, aumentando assim a comunidade.
 
 
@@ -58,18 +57,18 @@ Os pacotes de trabalho da presente parceria acarretou em X projetos, distribuido
 
 Obviamente é impraticável anexar toda esta produção à este documento, portanto este documento apresenta um resumo com estatísticas e os resultados mais importantes obtidos e direções sobre como obter o código para fazer uma análise detalhada. Todo software desenvolvido no projeto está disponível publicamente sob licenças livres na plataforma Github (principal plataforma de disponibilização de código no mundo). Os repositórios e seus respectivos endereços estão listados abaixo e podem ser acessados publicamente por qualquer pessoa:
 
-- Ecossitemas ([https://github.com/lappis-unb/EcossistemasSWLivre](https://github.com/lappis-unb/EcossistemasSWLivre)): todos os documentos administrativos do projeto estão disponibilizados nesse repositório. Registro de reuniões, decisões, relatórios de acompanhamento, plano de trabalho.
+- _Ecossitemas de Software Livre_ ([https://github.com/lappis-unb/EcossistemasSWLivre](https://github.com/lappis-unb/EcossistemasSWLivre)) - todos os documentos administrativos do projeto estão disponibilizados nesse repositório. Registro de reuniões, decisões, relatórios de acompanhamento, plano de trabalho.
 
-- TAIS ([https://github.com/lappis-unb/tais](https://github.com/lappis-unb/tais)): aplicação principal da TAIS, com o bot, interface web, dashboard de BI. 
+- _TAIS_ ([https://github.com/lappis-unb/tais](https://github.com/lappis-unb/tais)) - aplicação principal da TAIS, com o bot, interface web, dashboard de BI. 
 
 
-- Salic-ML ([https://github.com/lappis-unb/salic-ml](https://github.com/lappis-unb/salic-ml)): aplicação principal do microsserviço SALIC-ML. Nesse se encontra tanto a API do microsserviço, quanto toda a documentação técnica na Wiki, e estudos realizados nos notebooks.
+- _Salic-ML_ ([https://github.com/lappis-unb/salic-ml](https://github.com/lappis-unb/salic-ml)) - aplicação principal do microsserviço SALIC-ML. Nesse se encontra tanto a API do microsserviço, quanto toda a documentação técnica na Wiki, e estudos realizados nos notebooks.
 
-- Promova Cultura ([https://github.com/lappis-unb/PromovaCultura](https://github.com/lappis-unb/PromovaCultura)): estudo de visualização de dados dos dados do banco de dados do Salic. Contém toda a documentação técnica, resultados da design sprint realizadas para definição do escopo e as visualizações implementadas.
+- _Promova Cultura_ ([https://github.com/lappis-unb/PromovaCultura](https://github.com/lappis-unb/PromovaCultura)) - estudo de visualização de dados dos dados do banco de dados do Salic. Contém toda a documentação técnica, resultados da design sprint realizadas para definição do escopo e as visualizações implementadas.
 
-- Botflow ([https://github.com/lappis-unb/BotFlow](https://github.com/lappis-unb/BotFlow) e [https://github.com/lappis-unb/BotFlowAPI](https://github.com/lappis-unb/BotFlowAPI)): não previsto no plano de trabalho, mas foi julgado pelo time necessário para facilitar a manutenção e evolução da base de conhecimento da Tais.
+- _Botflow_ ([https://github.com/lappis-unb/BotFlow](https://github.com/lappis-unb/BotFlow) e [https://github.com/lappis-unb/BotFlowAPI](https://github.com/lappis-unb/BotFlowAPI))- não previsto no plano de trabalho, mas foi julgado pelo time necessário para facilitar a manutenção e evolução da base de conhecimento da Tais.
 
-- Salic-API ([https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api)): refatoramos, criamos testes unitários, pipelinde de integração contínua, documentação técnica. Ou seja, adequamos a API do Salic, que é o projeto do ministério de maior interesse externo, para os padrões, boas práticas e documentação de comunidades de software livre.
+- _Salic-API_ ([https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api)) - refatoramos, criamos testes unitários, pipelinde de integração contínua, documentação técnica. Ou seja, adequamos a API do Salic, que é o projeto do ministério de maior interesse externo, para os padrões, boas práticas e documentação de comunidades de software livre.
 
 Existem metodologias na área de Engenharia de Software para estimar o esforço de desenvolvimento de um produto. É importante notar que estes modelos são apenas aproximados, mas ajudam a estabelecer uma ordem de grandeza do esforço de desenvolvimento de um software em comparação com projetos semelhantes encontrados na indústria. 
 
@@ -90,10 +89,7 @@ Finalmente, além do desenvolvimento de uma solução para o Ministério da Cida
 ## Pacote de Trabalho: Estratégia/modelo de transformação de softwares legados em comunidades de software aberto
 
 
-Evoluir e manter um software legado é uma experiência desgastante para 
-desenvolvedores e desestimulantes no contexto de fomento a comunidades. Por outro lado, 
-a reescrita desses softwares é impraticável e, em se tratando de software implantado,
-a necessidade de adicionar novas funcionalidades e dar manutenção persiste. 
+Evoluir e manter um software legado é uma experiência desgastante para  desenvolvedores e desestimulantes no contexto de fomento a comunidades. Por outro lado, a reescrita desses softwares é impraticável e, em se tratando de software implantado, a necessidade de adicionar novas funcionalidades e dar manutenção persiste. 
 
 ### Metas Específicas
 
@@ -105,7 +101,7 @@ Quanto as metas específicas dessa frente de trabalho definidas plano de trabalh
 
 Essa estratégia, chamada *legacy in the box*, é sugerida na literatura do estado da prática como primeira ação a ser feita em direção ao DevOps em sistemas legados. Conteinerizar e instrumentar um software legado permite que esse seja configurados em um pipeline de deploy contínuo. A falta de testes cria a vulnerabilidade de se colocar em ambiente de produção/homologação features defeituosos. Porém esse risco está presente naturalmente em softwares legados sem testes. Logo, a estrégia *legacy in the box* agiliza a entrega de novas features, possibilitando entrega contínua, criação de comunidade, e incentivo as boas práticas de engenharia de software.
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 
 
@@ -119,7 +115,7 @@ Dado o contexto, além da estratégia *legacy in the box*, descrita na seção a
 A terceira técnica de refatoração de sistemas legados foi no contexto de inserir novas *features*. Mais especificamente, novas  *features* com inovação em funcionalidades que fazem o processamento de dados com algoritmos de *machine learning*. Como o código do SALIC é PHP, e maioria dos frameworks e bibliotecas de aprendizagem de máquina são desenvolvidos na linguagem *python*. Por isso, escolhemos a técnica de adotar uma arquitetura microsserviços, no qual novas funcionalidade são adicionadas à plataforma como novos microsserviços que compartilham o banco de dados com o software legado. Essa técnica foi colocada em prática com o serviço *"SaliML"*. Nele, construimos uma APU no qual adicionamos várias métricas de complexidade de análise de projetos culturais.
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 3.  __Utilizar como estudo de casos alguns sistemas legados do Ministério da Cultura, tais como o projeto SIMEC (Sistema Integrado de Monitoramento Execução e Controle) e o projeto Salic (Sistema de Apoio às Leis de Incentivo à Cultura), Sistel__ 
 
@@ -127,7 +123,7 @@ A terceira técnica de refatoração de sistemas legados foi no contexto de inse
 Dos três projetos citados, trabalhamos com o *SALIC* e o *Sistel*. O *Sistel* aplicamos a técnica de *legacy in a box*. Ja no *SALIC*, aplicamos as três técnias pesquisadas: *legacy in a box*, *refatoração de código orientado a métricas* e *arquitetura microsserviços*. Toda a documentação técnica das técnicas, assim como os resultados técnicos obtidos, decisões colaborativas com o Ministério estão disponibilizadas na wiki do respectivo repositório. 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 ## Pacote de Trabalho: Estudo sobre catálogos de Software Culturais
 
@@ -143,7 +139,11 @@ De acordo com o plano de trabalho, "O foco dessa etapa é executar o ciclo de pr
 
 2. __Realizar estudos e documentação do processo de desenvolvimento e das boas práticas e automações realizadas__
 
-**Concluído** - Checklist (falar do checklist e da lista de boas práticas consideradas)
+**Concluído** - O projeto foi dividido em ciclos de 3 meses, no qual a cada ciclo era realizado um planejamento estratético com a equipe estratégica do Ministério da Cidadania (tanto a equipe de coordenação quanto de negócio). Nessa reunião de planejamento estratégico, amadurecido ao longo do projeto, era definido as metas estratéficas para o próximo ciclo, além das épicas priorizadas. Essas reuniões foram documentadas na wiki do repositório ou em apresentações com o alinhamento. Então, a equipe se reunia para criar as issues, histórias de usuário e tarefas a serem desenvolvidas. Tais tarefas estão todas documentadas em forma de issue, no repositório de cada repositório. Utilizamos _sprints_ de duas semanas para planejar e revisar o desenvolvimento. A cada mês, a equipe técnica/gestão da TI do ministério era convidado para visitar o laboratório e acompanhar a evolução das frentes. 
+
+Em relação as automações realizadas, elas foram tomas mapeadas nas _issues_ e toda documentação técnica necessária para evoluir e manter as soluções.
+
+Como o desenvolvimento do catálogo de software foi cancelado, tanto as práticas quanto métodos e automações, além da documentação foi usada nos outros projetos desenvolvidos, como o projeto da Tais e SalicML.
 
 
 **Documentação comprobatória**
@@ -151,7 +151,7 @@ De acordo com o plano de trabalho, "O foco dessa etapa é executar o ciclo de pr
 
 3. __Relatório com os  modelos de desenvolvimento e comunidade para serem aplicados aos projetos de software do Minc__
   
-**Concluído** - Poppi 
+**Concluído** - O principal modelo defendido pela comunidade de software livre no desenvolvimento de projeto é o Bazar. No projeto, aplicam os 
 
 
 **Documentação comprobatória** (mestrado Poppi) + 
@@ -164,12 +164,11 @@ treinamentos. Ao amadurecer tecnicamente conhecimento sobre chatbots e a arquite
 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 ## Pacote de Trabalho: Estudos sobre práticas de gestão colaborativa em comunidades de software aberto
 
-De acordo com o plano de trabalho, "O principal resultado dessa pesquisa será sistematizar e produzir conhecimento sobre as práticas das comunidades de software livre que o Estado participa por adesão e, a partir dos aprendizados com seus arranjos, orientar e capacitar os servidores e técnicos do MinC nas práticas de 
-planejamento, gestão de softwares abertos, aprimorando os mecanismos de governança digital dos softwares presentes no portifólio do MinC".
+De acordo com o plano de trabalho, "O principal resultado dessa pesquisa será sistematizar e produzir conhecimento sobre as práticas das comunidades de software livre que o Estado participa por adesão e, a partir dos aprendizados com seus arranjos, orientar e capacitar os servidores e técnicos do MinC nas práticas de planejamento, gestão de softwares abertos, aprimorando os mecanismos de governança digital dos softwares presentes no portifólio do MinC".
 
 ### Metas Específicas
 
@@ -178,42 +177,42 @@ planejamento, gestão de softwares abertos, aprimorando os mecanismos de governa
 **Concluído**
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 2. __Estudos sobre boas práticas para planejamento conjunto de milestones e releases entre as organizações que fazem parte das comunidades__
-**Concluído**
+**Concluído** - 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
   
 3. __Estudos sobre boas práticas de comunicação e mobilização no contexto das comunidades onde o Estado participa__
   
-  **Concluído**
+  **Concluído** - 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 4. __Participação em eventos e encontros das comunidades de software livre que contribuem para o portifólio mantido pelo MinC__
 
-**Concluído**
+**Concluído** - 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
   
 5. __Estudos sobre arranjos econômicos utilizados pelas comunidades com fins de sustentabilidade de seus comuns de software__
 
-**Concluído**
+**Concluído** - 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 6. __Estudos sobre metodologias e suportes tecnológicos para a gestão colaborativa em comunidades de software livre nas quais o Estado participa por adesão__
 
-**Concluído**
+**Concluído** - 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 
 ## Pacote de Trabalho: Estudo de técnicas de Aprendizado de Máquina para apoiar a fiscalização da Lei Rouanet
@@ -242,23 +241,23 @@ Os dados gerais sobre o projeto da Tais são detalhados
 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 
 2. __Realizar estudos e propor técnicas de aprendizado supervisionado e detecção de anomalias para automatizar as trilhas de auditoria na fase de aprovação e prestação de contas__
 
-**Concluído**
+**Concluído** - 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 3. __Realizar estudos e propor técnicas de reconhecimento de padrão e Inteligência de Negócio para análise dos projetos submetidos via Lei Rouanet__
 
 
-**Concluído**
+**Concluído** - 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 ## Pacote de Trabalho: Visualização de dados e criação de Dashboards
 
@@ -269,17 +268,17 @@ processados nas etapas anteriores. Os gráficos produzidos servem de embasamento
 
 1. __Painéis com estatísticas sobre projetos cadastrados no Salic__
 
-**Concluído**: Promova Cultura
+**Concluído** - Promova Cultura
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
  2. __Estudos sobre a apresentação visual de resultados de algoritmos de aprendizado de máquina e análises estatísticas__ 
 
  **Concluído** - Esse estudo foi realizado no contexto do projeto da Tais. Foi acoplado a arquitetura a stack elastic/Kibana para a mineração dos dados de conversa entre a Tais e o usuário. A partir dos dados em uso, foram projetados dashboards com métricas de uso, comportamento, e de negócio. Ao total, foram propostos X graficos de negócio, X de compartamento do usuário, e X de uso/técnico. Essas métricas foram validadas e evoluidas. Ao final do projeto, utilizamos esses dashboards para melhorar o desempenho da Tais, acrescentar novos conhecimentos à sua base de treinamento. Também conseguimos prever tendências e conteúdos mais pesquisados pelo usuário. 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
  
  3. __Dashboard  para a visualização e análise das relações entre proponentes e financiadores por meio de grafos__
@@ -287,7 +286,7 @@ processados nas etapas anteriores. Os gráficos produzidos servem de embasamento
  **Concluído** - Promova Cultura
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 
 ## Pacote de Trabalho: Estudos dos processos técnicos e gerenciais MinC para aferição e aceitação de produtos de software
@@ -305,7 +304,7 @@ Esse pacote de trabalho teve seu cronograma alterado e escopo limitado. Tais mud
  **Concluído** - Durante todo o projeto foi abordado a experimentação contínua, no qual passavamos continuamento por três etapas: (1) levantamento de hipoteses para solucionar um problema, (2) teste de parte da solução para validar a hipótese, (3) validação da hipótese, (4) implementação da solução no produto final. Além disso, trabalhamos com times full-stack e orientados a produto, a fim de ter uma qualidade alta do produto entregue. Com isso, para cada pacote de trabalho, tinha-se um time composto por alunos de Engenharia de Software, Designers, Alunos de letras, e profissionais plenos e seniores para gerir os riscos de projeto.
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
  
 2. __a mineração em repositórios de software e a análise científica de dados do software__
@@ -313,7 +312,7 @@ Esse pacote de trabalho teve seu cronograma alterado e escopo limitado. Tais mud
  **Concluído** - Análise que o Renato está fazendo
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 
  3. __prospectar uma sistemática, baseada em evidência científica, que auxilie  a homologação de produtos de software, em obediência ao normativo estabelecido__
@@ -321,7 +320,7 @@ Esse pacote de trabalho teve seu cronograma alterado e escopo limitado. Tais mud
   **Concluído parcialmente** - 
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 
 # Acompanhamento Financeiro
@@ -347,6 +346,8 @@ Data:/2019
 # Artigos Acadêmicos
 
 # Artigos de Comunidade
+
+# Participação em eventos
 
 
 
