@@ -37,7 +37,7 @@ culturais__: esse objetivo foi alcaçando por meio da assistente virtual TAIS. N
 - __Transferência de conhecimento da academia para o Estado__: além dos diversos workshops realizados ao longo do projeto com a equipe de TI do Ministério da Cidadania, foram realizados pela frente de governanças do projeto, diversas interaçoes com comunidades de software livre e outros ministérios.
 
 - __Formação de alunos de graduação em pós-graduação em projetos com problemas reais do
-contexto cultural__: esse objetivo foi alcançado com grande parte da equipe do projetos sendo alunos de graduação de Engenharia de Software, design e letras. Ao total, X alunos de alunos de graduação foram bolsistas do projeto.
+contexto cultural__: esse objetivo foi alcançado com grande parte da equipe do projetos sendo alunos de graduação de Engenharia de Software, design e letras. Ao total, 43 alunos de alunos de graduação foram bolsistas do projeto.
 
 - __Contribuir para o fomento da cultura de software livre na Administração Pública Federal__: esse objetivo foi alcançado;
 
