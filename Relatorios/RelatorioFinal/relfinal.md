@@ -24,27 +24,27 @@ No plano de trabalho foram levantados alguns objetivos específicos referentes �
 
 
 -  __Fornecer suporte tecnológico para apropriação das informações por parte da sociedade civil de
-maneira a contribuir para transparência pública e participação social__ Todos os estudos, código, apresentações, material de treinamento foram disponibilizados com licenças livres, de modo que a sociedade civil possa acessar, dar feedback, contribuir, etc.
+maneira a contribuir para transparência pública e participação social__: Todos os estudos, código, apresentações, material de treinamento foram disponibilizados com licenças livres, de modo que a sociedade civil possa acessar, dar feedback, contribuir, etc.
 
 -  __Fornecer suporte tecnológico para estimular a participação da sociedade civil na governança
-digital em torno das tecnologias livres do portfólio do ministério__: esse objetivo foi alcançado ao seguir as boas práticas e documentações adotadas pela comunidade de software livre. Dessa maneira, diminui a barreira de contribuição para os interessados em contribuir com os projetos desenvolvidos ao longo da parceria.
+digital em torno das tecnologias livres do portfólio do ministério__: Esse objetivo foi alcançado ao seguir as boas práticas e documentações adotadas pela comunidade de software livre. Dessa maneira, diminui a barreira de contribuição para os interessados em contribuir com os projetos desenvolvidos ao longo da parceria.
 
--  __Mineração em repositórios de software para extração e análise de dados__: esse objetivo foi alcançado nos notebooks de análise de dados. Isso foi feito tanto no contexto da Lei de Incentivo Cultural, por meio da mineração do banco de dados do Salic, quanto da análise dos próprios repositórios e métricas dos projetos desenvolvidos ao longo do parceria.
+-  __Mineração em repositórios de software para extração e análise de dados__: Esse objetivo foi alcançado nos notebooks de análise de dados. Isso foi feito tanto no contexto da Lei de Incentivo Cultural, por meio da mineração do banco de dados do Salic, quanto da análise dos próprios repositórios e métricas dos projetos desenvolvidos ao longo do parceria.
 
 - __Processamento de linguagem natural dos dados extraídos dos diferentes sistemas de software
-culturais__: esse objetivo foi alcaçando por meio da assistente virtual TAIS. Nela, aplicamos algoritmos de __Natural Language Understanding (NLU)__ para a classificação da intenção dos usuários que interagem com a chatbot por meio de linguagem natural.
+culturais__: Esse objetivo foi alcaçando por meio da assistente virtual TAIS. Nela, aplicamos algoritmos de __Natural Language Understanding (NLU)__ para a classificação da intenção dos usuários que interagem com a chatbot por meio de linguagem natural.
 
-- __Transferência de conhecimento da academia para o Estado__: além dos diversos workshops realizados ao longo do projeto com a equipe de TI do Ministério da Cidadania, foram realizados pela frente de governanças do projeto, diversas interaçoes com comunidades de software livre e outros ministérios.
+- __Transferência de conhecimento da academia para o Estado__: Além dos diversos workshops realizados ao longo do projeto com a equipe de TI do Ministério da Cidadania, foram realizados pela frente de governanças do projeto, diversas interaçoes com comunidades de software livre e outros ministérios.
 
 - __Formação de alunos de graduação em pós-graduação em projetos com problemas reais do
-contexto cultural__: esse objetivo foi alcançado com grande parte da equipe do projetos sendo alunos de graduação de Engenharia de Software, design e letras. Ao total, 43 alunos de alunos de graduação foram bolsistas do projeto.
+contexto cultural__: Esse objetivo foi alcançado com grande parte da equipe do projetos sendo alunos de graduação de Engenharia de Software, design e letras. Ao total, 43 alunos de graduação foram bolsistas do projeto.
 
-- __Contribuir para o fomento da cultura de software livre na Administração Pública Federal__: esse objetivo foi alcançado;
+- __Contribuir para o fomento da cultura de software livre na Administração Pública Federal__: Esse objetivo foi alcançado;
 
 - __Contribuir para o desenvolvimento da cultura de tomada de decisões orientadas a dados e
-evidência__: esse objetivo foi alncançado com o projeto Salic-ML no qual  estimamos métricas e indicadores de complexidade de projetos de projetos culturais. Na TAIS, criamos um dashboard de BI que fornece, em tempo real, o comportamento dos usuários que interagem com a TAIS. Esse dashboard disponibiliza dados preciosos para compreender o perfil do usuário que acessa a o portal da Lei de Incentivo, e o comportamento desse usuário;
+evidência__: Esse objetivo foi alncançado com o projeto Salic-ML no qual  estimamos métricas e indicadores de complexidade de projetos de projetos culturais. Na TAIS, criamos um dashboard de BI que fornece, em tempo real, o comportamento dos usuários que interagem com a TAIS. Esse dashboard disponibiliza dados preciosos para compreender o perfil do usuário que acessa a o portal da Lei de Incentivo, e o comportamento desse usuário;
 
-- __Contribuir para o estabelecimento da cultura de desenvolvimento e experimentação contínua__: alcançamos esse objetivo pela forma como escolhemos as ferramentas, técnicas, e escopos a serem desenvolvidos, sempre realizados após um período de experimentação. Esses aprendizado e amadurecimento de experimentação contínua foi registrado nas wikis e notebooks disponibilizados em licenças livre nos repositórios dos projetos, no qual estudos comparativos precedem escolhas técnicas.
+- __Contribuir para o estabelecimento da cultura de desenvolvimento e experimentação contínua__: Alcançamos esse objetivo pela forma como escolhemos as ferramentas, técnicas, e escopos a serem desenvolvidos, sempre realizados após um período de experimentação. Esses aprendizado e amadurecimento de experimentação contínua foi registrado nas wikis e notebooks disponibilizados em licenças livres nos repositórios dos projetos, no qual estudos comparativos precedem escolhas técnicas.
 
 
 # Metodologia, metas e etapas do projeto
