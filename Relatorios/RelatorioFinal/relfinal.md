@@ -262,10 +262,34 @@ processados nas etapas anteriores. Os gráficos produzidos servem de embasamento
 
 1. __Painéis com estatísticas sobre projetos cadastrados no Salic__
 
-**Concluído** - Promova Cultura
+**Concluído** - Inicialmente, o objetivo desta meta era gerar visualizações com base nos dados disponíveis no portal VerSalic. A equipe fez uma análise extensa tanto desse portal quanto de todo o processo da Lei de Incentivo. Em seguida, aplicou-se uma versão modificada da técnica de Design Sprint para geração de ideias de visualização. A dedicação dos bolsistas e apreço pelo tema, foi tamanha que resolveram batizar o grupo de trabalho de “Promova Cultura”.
+
+Foram geradas 18 ideias, possibilidades de visualização divididas em dois grupos chamados de “Panorama da cultura” e “Visualização de projetos”. Destas 18, foram escolhidas 5 considerando tanto o potencial de benefício quanto viabilidade técnica. Estas 5 ideias foram prototipadas sob a forma de painéis interativos on-line. Para isso, foi adotada a tecnologia VueJS para o front-end, tecnologia essa usada pela equipe do SALIC. Além disso, a maioria dos painéis acessava dados reais via a versão refatorada da Salic-API. 
+
+Dentre os painéis prototipados, ressalta-se o de “Mapa de Calor”, que demonstra a distribuição de projetos de incentivo, incentivadores e valores incentivados pelo território nacional. O painel confirmou suspeitas conhecidas, como a concentração de incentivadores no eixo Rio-São Paulo, mas também surpreendeu ao revelar projetos no Acre sendo fortemente incentivados pela região Nordeste. O painel de “Deslocamentos" é bastante relevante pois mostra claramente o deslocamento de projetos pelo país e também trás algumas interpretações inusitadas. Por exemplo, pouquíssimos projetos circula entre o RS e SC, mesmo com a proximidade geográfica entre os estados. Cabe indicar que as visualizações prototipadas são todas responsivas, funcionando tanto em versão desktop quanto mobile.
+
+Os painéis foram combinados em uma biblioteca de visualizações e o resultado amplamente documento no Relatório de Acompanhamento 04. Sendo este apresentado e aprovado para os gestores do projeto. Aliás, foi durante a reunião de apresentação deste relatório, em 21/09/2018, que a equipe gestora de uma das áreas finalísticas do então Ministério da Cultura, solicitou à coordenação do projeto que o desenvolvimento dos painéis não fossem avançado e que a equipe fosse alocada para a refatoração completa do Portal Comparar, um portal de dados mais antigo do Ministério.
+
+O pedido foi acatado pela coordenação do projeto, na medida que não ferisse o escopo e as metas dos projeto. Procedeu-se uma análise aprofundada de compatibilidade tecnológica e disponibilidade dos dados. O resultado dessa análise indicou que a refatoração completa seria inviável, já que dos 105 relatórios disponíveis no Portal Comparar, apenas 4 tinham dados compatíveis com o que era disponibilizado na SALIC-API. Além disso, uma refatoração completa necessitaria de uma mudança de base tecnológica que fugiria tanto das competências disponíveis na equipe, quanto da essência deste projeto. 
+
+Isso foi comunicado aos gestores do projeto e, no final de dezembro 2018, acordou-se uma tentativa de converter o relatório “Captação de recurso por UF - desde 1992” em uma visualização baseada no “Mapa de Calor”. A equipe então realizou essa adaptação e conversão, adicionando aí a exportação dos dados em formato tabular. O resultado foi uma visualização com o mesmo nome do relatório original, disponível também na biblioteca de visualizações, junto com os outros painéis. 
+
+Todos os resultados desta segunda empreitada, foram documentados no Relatório de acompanhamento 05 e aprovados pela equipe gestora de transição para o Ministério da Cidadania. Nesta mesma oportunidade, foi acordado que o custo de avançar com a adaptação do Portal Comparar seria muito grande para o projeto. Sendo assim, por decisão da CGTI, essa iniciativa foi dada como finalizada e concluída, ainda no Relatório de acompanhamento 05. A equipe “Promova Cultura”, em seguida, foi realocada para outras frentes, a saber: SALIC-ML, dashboard de BI da Tais e BotFlow.
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** 
+
+- [Repositório do “Promova Cultura”](https://github.com/lappis-unb/PromovaCultura/)
+- [Técnica de Design Sprint - Ideias de “Panorama da cultura”](https://github.com/lappis-unb/PromovaCultura/wiki/Design-Sprints-Panorama)
+- [Técnica de Design Sprint - Ideias de “Visualização de projetos”](https://github.com/lappis-unb/PromovaCultura/wiki/Design-Sprints-Visualizacao)
+- [Repositório da API dos protótipos do “Promova Cultura”](https://github.com/lappis-unb/PromovaCultura/)
+- [Biblioteca de painéis prototipados](https://lappis-unb.github.io/PromovaCultura/)
+- Visualizações: ![Visualizações](https://raw.githubusercontent.com/lappis-unb/EcossistemasSWLivre/master/Relatorios/R4/figs/visualizacao.png)
+- [Relatório de Acompanhamento 4](https://github.com/lappis-unb/EcossistemasSWLivre/tree/master/Relatorios/R4)
+- [Portal Comparar](http://sistemas.cultura.gov.br/comparar/salicnet/salicnet.php)
+- [Planilha de comparação dos dados necessários no portal Comparar contra os dados disponíveis na SALIC-API](https://docs.google.com/spreadsheets/d/1HjrNITQ8EGYVrMCxTMUh14Ogyaxum5WVYP4jVDwki4o/edit#gid=1949184657)
+- [Relatório “Captação de recurso por UF - desde 1992”](http://sistemas.cultura.gov.br/comparar/grid_Proponente_Captacao_UF/grid_Proponente_Captacao_UF.php)
+- [Relatório de Acompanhamento 5](https://github.com/lappis-unb/EcossistemasSWLivre/tree/master/Relatorios/R5)
 
  2. __Estudos sobre a apresentação visual de resultados de algoritmos de aprendizado de máquina e análises estatísticas__ 
 
@@ -277,10 +301,31 @@ processados nas etapas anteriores. Os gráficos produzidos servem de embasamento
  
  3. __Dashboard  para a visualização e análise das relações entre proponentes e financiadores por meio de grafos__
 
- **Concluído** - Promova Cultura
+ **Concluído** - A parte da equipe do “Promova Cultura” que foi realocada para o SALIC-ML, conforme relatado na meta 1 deste pacote de trabalho, se juntou aos esforços de estudo das relações entre proponentes e incentivadores por meio de grafos. O assunto é bastante complexo pois os mesmos atores podem assumir papéis distintos em projetos diferentes. Por exemplo, uma incentivadora de um projeto, pode ser proponente de um outro projeto e, ao mesmo tempo, ser fornecedora para este mesmo projeto. Além disso, existe circularidade, onde é necessário desmembrar pessoas jurídicas em seus sócios componentes para aí sim, analisar a relação entre eles.
+
+Com base nas análises preliminares dos dados e nas explorações computacionais, foram geradas propostas de visualização, documentadas as issues 312 e 326 do repositório. Em, 02/04/2019 a equipe recebeu a visita de um especialista da CGEE que fez uma jornada de treinamento e co-trabalho, apontando vários pontos que precisavam ser revistos e aprofundados. Dada essa perspectiva e a necessidade de aprofundamento do relatório de complexidade de análise financeira dos projetos, o tópico principal do SALIC-ML, a equipe foi realocada para garantir a qualidade do relatório de complexidade. 
+
+Cabe frisar que os estudos computacionais de caráter exploratório foram 100% documentados em Jupyter notebooks (em anexo), apresentando os cálculos em associação à visualizações científicas e explicitando as relações entre proponentes e financiadores por meio de grafos. O que cumpre plenamente esta meta.
+
+O material produzido, todos os estudos e esboços de visualização, foram apresentados como parte do Relatório de Acompanhamento 6 e aprovado pelos gestores. 
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** 
+
+- [Repositório do “SALIC-ML”](https://github.com/lappis-unb/salic-ml/)
+- Exemplos de estudos de grafos:
+
+![Ex. 1](https://user-images.githubusercontent.com/38992510/55029111-07993980-4fe8-11e9-8be0-54c0abb829c5.png)
+![Ex. 2](https://user-images.githubusercontent.com/38992510/55029348-a32aaa00-4fe8-11e9-8dc9-abf585f80618.png)
+![Ex. 3](https://user-images.githubusercontent.com/38992510/55029567-24823c80-4fe9-11e9-920a-545b249fdb20.png)
+![Ex. 4](https://user-images.githubusercontent.com/38992510/55029711-85117980-4fe9-11e9-87ac-676af291d7ac.png)
+![Ex. 5](https://user-images.githubusercontent.com/38992510/55029866-e9ccd400-4fe9-11e9-9d00-bf29971c8971.png)
+![Ex. 6](https://user-images.githubusercontent.com/38992510/55030330-eede5300-4fea-11e9-8eee-58a3ef8ffb82.png)
+![Ex. 7](https://user-images.githubusercontent.com/38992510/55030556-68764100-4feb-11e9-8dc5-a8c69815d69e.png)
+![Ex. 8](https://user-images.githubusercontent.com/38992510/55031159-ba6b9680-4fec-11e9-9a0b-614b20f3afd3.png)   
+- [Issue 312](https://github.com/lappis-unb/salic-ml/issues/312)
+- [Issue 326](https://github.com/lappis-unb/salic-ml/issues/326)
+- [Relatório de Acompanhamento 6](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R6/)
 
 
 ## Pacote de Trabalho: Estudos dos processos técnicos e gerenciais MinC para aferição e aceitação de produtos de software
