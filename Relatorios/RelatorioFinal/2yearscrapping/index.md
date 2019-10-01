@@ -106,3 +106,99 @@ https://photos.app.goo.gl/yNHXQ4mhWvMmQ2DW7
 https://photos.app.goo.gl/NSqRum7rmYYRxNy28
 
 parei setembro 12
+
+# 13/12/2018
+
+* Fazendo seu chatbot inteligente com RASA e Rocket.Chat
+
+Autor(es): Arthur Temporim, Bruna Pinos, Carla Rocha, Gabriela Guedes, Matheus de Sousa Faria e Paloma C. Mamede
+
+https://www.youtube.com/watch?v=5fbdIwsGrQ4 </br>
+![Webinar customizando chatbot](figs/webinar_chatbot_rasa_rocketchat.png)
+
+
+# 23/01/2019
+
+* Boilerplate de FAQ Chatbot em português usando RASA - Customizando seu chatbot
+
+Autor(es): Arthur Temporim e Bruna Moreira
+
+https://www.youtube.com/watch?v=tW4x-R82hNc </br>
+![Webinar customizando chatbot](figs/webinar_faq_ptbr_rasa.png)
+
+
+# 27/03/2019
+
+* Chatbot Rasa conectado com API do Google
+
+Autor(es): Arthur Temporim e Bruna Moreira
+
+https://www.youtube.com/watch?v=zL8zCbmfLwM </br>
+![Webinar chat api google](figs/webinar_rasa_google_api.png)
+
+
+## 10/04/2019
+
+* Webinar Rasa Bot no Telegram com Slots e Entities
+
+Autor(es): Arthur Temporim e Gabriela Guedes
+
+https://www.youtube.com/watch?v=ZPUtt2AFhjM </br>
+![Webinar relampago rasa](figs/webinar_rasa_bot_telegram.png)
+
+
+webinar_rasa_bot_telegram.png
+
+## 17/04/2019
+
+* Webinar relâmpago - Rasa Stack
+
+Autor(a): Arthur Temporim
+
+https://www.youtube.com/watch?v=5kXLmnWJe5g </br>
+![Webinar relampago rasa](figs/webinar_relampago_rasa.png)
+
+
+## 24/04/2019
+
+* Webinar - Métricas importantes para chatbots
+Autor(es): Guilherme Lacerda e Bruna Pinos
+
+https://www.youtube.com/watch?v=yqzxZsOa3gg </br>
+![Webinar metricas](figs/webinar_metricas_importantes.png)
+
+
+## 30/04/2019
+
+* Apresentação Tais
+Autor(a): Matheus de Sousa Faria
+
+https://www.youtube.com/watch?v=uR0W-fDUr9g </br>
+![Apresentacao Tais](figs/apresentacao_tais_matheus_faria.png)
+
+
+## 22/05/2019
+
+* Webinar Arquitetura desaplocada
+Autor(es): Pablo Diego e Arthur Temporim
+
+https://www.youtube.com/watch?v=f35j9yydcEU </br>
+![Webinar arquitetura](figs/webinar_arquitetura_desaplocada.png)
+
+
+## 31/07/2019
+
+* Webinar Testes automatizados de ChatBot
+Autor(a): Leonardo Gomes
+
+https://www.youtube.com/watch?v=6YlFhpj6JSs </br>
+![Webinar teste chatbot](figs/webinar_teste_chatbot.png)
+
+## 18/09/2019
+
+* Webinar Encantando pessoas: o poder da personalidade
+Autor(a): Paloma C. Mamede
+
+https://www.youtube.com/watch?v=hmFoxEYTK0Y </br>
+![Webinar personalidade](figs/webinar_personalidade.png)
+
