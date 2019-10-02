@@ -253,6 +253,54 @@ Os dados gerais sobre o projeto da Tais são detalhados
 
 **Documentação comprobatória** - 
 
+4. __Realizar estudos e compartilhar resultados sobre inovação DevOps e melhores práticas no contexto de integração e deploy contínuos__
+
+**Concluído**: Em algumas frentes, buscou-se cultuar a cultura DevOps para otimizar a entrega de valor no produto de software. Como fator comum na maioria dos casos, temos o uso de gerência de configuração utilizando:
+- Docker
+- Docker-Compose
+- Makefiles
+- _scripts_ em outras linguagens (principalmente Shell Script e Python)
+
+Em relação aos ambientes de deploy, houve sucesso na experimentação das seguintes abordagens:
+- Uso de máquina virtual disponibilizada pelo Ministério
+- Uso de máquina virtual em plataformas de cloud (Google Cloud e Digital Ocean)
+- Uso de máquina virtual na infraestrutura do LAPPIS
+- Orquestração de contâineres com Rancher 1.6 (Rancher Cattle) na infraestrutura do LAPPIS
+- Orquestração de contâineres com Rancher 2.0 (Kubernetes) na infraestrutura do LAPPIS
+
+Apesar dos diversos ambientes mencionados, todos possuiam um orquestrador Docker instalado (Docker Compose, Rancher Cattle ou Kubernetes), padronizando e abstraindo toda a configuração necessária para o desenvolvedor. Além das ferramentas, o processo de _deploy_ em diferentes ambientes agregou nas documentações de instalação dos serviços, uma vez que estas eram realimentados com eventuais peculiaridades observadas durante a instalação e disponibilização.
+
+Além da disponibilização, houve preocupação com o aspecto da entrega contínua, utilizando integração e deploy contínuos (CI e CD, respectivamente). Como plataforma de CI, foi utilizado o GitLabCI pelos seguintes motivos:
+- Plataforma feita em código aberto
+- Possibilidade de se instanciar um Runner em infraestrutura externa para auxiliar no _pipeline_
+- Integrável ao GitHub e GitLab
+- Comunidade ativa compartilhando experiências e dando suporte
+- Experiência prévia de alguns membros do laboratório
+
+Também houve a experimentação do Jenkins integrado ao Rancher 2.0. Todas as configurações de cada frente estão disponíveis em arquivos `.gitlab-ci.yml` localizados na raíz de cada repositório que fez uso da tecnologia. Os avanços feitos nesta tecnologia incluem:
+- Otimização de pipeline
+  - Reaproveitamento de imagens Docker entre os _jobs_ do _pipeline_ para reduzir a duração do processo
+  - Uso de imagem Docker separada para as dependências das aplicações para permitir sua construção apenas quando necessário, também reduzindo duração do processo
+  - Uso de _job image_ customizada para permitir o _deploy_ em instâncias do Rancher 1.6 sem o uso de requisições explícitas para a API
+- Deploy multiplataforma
+  - Definição de _stage_ contendo deploy para diferentes ambientes em um mesmo _pipeline_
+- Disponibilização de imagens Docker em múltiplos _registries_
+  - DockerHub
+  - GitLabCI Registry
+  - Rancher Registry
+
+Alguns resultados e lições aprendidas foram apresentados e discutidos pelos alunos de graduação nos Workshops organizados pelo laboratório e em eventos abertos à comunidade.
+
+**Documentação comprobatória**
+- [Configuração GitLabCI SALIC-ML](https://github.com/lappis-unb/salic-ml/blob/master/.gitlab-ci.yml)
+- [Configuração GitLabCI Tais (com reaproveitamento de _build_ entre _stages_)](https://github.com/lappis-unb/tais/blob/master/.gitlab-ci.yml)
+- [Apresentação sobre otimização de _pipeline_ no Workshop realizado na ENAP em 27/09/2019](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Workshop/Apresentacao/DevOps/PipelineTais_TrilhaDevOps.pdf)
+- [Apresentação sobre deploy da Tais no Workshop realizado na ENAP em 27/09/2019](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Workshop/Apresentacao/DevOps/deploy%20de%20bots.pdf)
+- [Apresentação sobre construção de _pipeline_ de entrega no SALIC-ML (17º PyData Brasília)](https://www.youtube.com/watch?v=CuRs9XpwGE0&feature=youtu.be)
+- [Configuração Rancher Pipeline BotFlow](https://github.com/lappis-unb/BotFlow/blob/master/.rancher-pipeline.yml)
+- [Configuração Rancher Pipeline BotFlowAPI](https://github.com/lappis-unb/BotFlowAPI/blob/master/.rancher-pipeline.yml)
+- [DockerHub do laboratório com todas as imagens publicadas nos _pipelines_](https://hub.docker.com/u/lappis)
+
 ## Pacote de Trabalho: Visualização de dados e criação de Dashboards
 
 De acordo com o plano de trabalho, "O tema deste estudo é buscar formas visuais de apresentar os dados obtidos e 
