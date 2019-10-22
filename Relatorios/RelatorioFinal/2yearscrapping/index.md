@@ -11,28 +11,26 @@
 * UFG e UFABC PHp meio merda
   
 
-Fontes:
-youtube lappis
-grupo do lappis
-minilappisconf
 
 
 # 30/01/2018
 
 * Workshop Ux/Design - Rodrigo Maia e Peter - https://gitlab.com/lappis-unb/internal/docs/wikis/events/workshops/usability/UX,-UI,-uai,-WTF
 
-# 13/06/2018
+# GNPapo - Mesa redonda sobre software livre e bolhas de opinião (13/06/2018)
 
-* GNPapo1 
+* Link para o vídeo do evento [aqui](https://www.youtube.com/watch?v=CBM0Cy8ERug&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=7)
 ![Alt text](figs/gnpapo1.jpg)
 ![Alt text](figs/gnpapo2.jpg)
 ![Alt text](figs/gnpapo3.jpg)
 
-# 15/06/2018
+# Serenata de amor - workshop técnico (15/06/2018)
 
-* Serenata de amor - Irio 
+* visita técnica do fundador do software Livre "Projeto Serenata de Amor"([https://serenata.ai](https://serenata.ai)), Irio Irineu Musskopf Junior. Tema: "Workshop técnico focado nos desafios de aprendizado de máquina do projeto serenata de amor" . 
+
 
 https://photos.app.goo.gl/yNHXQ4mhWvMmQ2DW7
+
 
 # 30/06/2018
 
@@ -58,19 +56,19 @@ https://photos.app.goo.gl/yNHXQ4mhWvMmQ2DW7
 
 ![Alt text](figs/lappisconfatos.jpg)
 
-# 15/08/2018
+# Entrega Técnica Ciclo trimestral (15/08/2018)
 
-* Entrega Minc 
+*  A equipe Técnica do Ministério reuniu com a equipe projeto Ecossistemas para apresentação das entregas realizadas no ciclo trimestral de desenvolvimento.
 
 ![Alt text](figs/entrega1.jpg)
 
-# 16/08/2018
+# Entrega Técnica Ciclo trimestral (16/08/2018)
 
-* Entrega Minc 
+* A equipe negocial do Ministério reuniu com a equipe projeto Ecossistemas para apresentação das entregas realizadas no ciclo trimestral de desenvolvimento.
 
 ![Alt text](figs/entrega2.jpg)
 
-# 17/08/2018
+# Participação de alunos no evendo Indie Warehouse (17/08/2018)
 
 * Lappis na indie warehouse
 
@@ -78,22 +76,22 @@ https://photos.app.goo.gl/yNHXQ4mhWvMmQ2DW7
 ![Alt text](figs/indie2.jpg)
 
 
-# 20/08/2018
+# Lappis Conf Chatbot (20/08/2018)
 
-* Lappis Conf - CHatbo
+* Para fomentar a disseminação do conhecimento internamenta na Universidade de Brasília, foram organizados Lappis conf especiais para apresentar os avanços realizados no projeto da TAIS e nas demais frentes do projeto "Ecossistemas de Software Livre".
 
 ![Alt text](figs/lappisconf20-08.jpg)
 ![Alt text](figs/lappisconf20-08-2.jpg)
 
-# 20/08/2018
+# Lappis Conf (20/08/2018)
 
-* Lappis Conf
+* Para fomentar a disseminação do conhecimento internamenta na Universidade de Brasília, foram organizados Lappis conf especiais para apresentar os avanços realizados no projeto da TAIS e nas demais frentes do projeto "Ecossistemas de Software Livre".
 
 ![Alt text](figs/lappisconf27-08.jpg)
 
-# 31/08/2018
+# LabConf (31/08/2018)
 
-* LabConf - Conferência dos laboratórios de inovação da cultura
+* LabConf, ou Conferência dos laboratórios de inovação da cultura, foi o evento organizado pelo LAPPIS no Ministério da Cultura para que o arranjo de TED entre Universidade e o Ministério da Cultura pudesse ser discutido. Nesse dia, os demais laboratório (UFG, UFABC, UnB) puderam apresentar os avanços alcançados em seus respectivos projetos, diversos workshops práticos relacionados a DevOps foram ministrados pelos bolsistas do LAPPIS, e mesas rendondas foram realizadas para discutir modelos de contratação.
 
 ![Alt text](figs/labconf.png)
 ![Alt text](figs/labconf2.jpg)
@@ -102,9 +100,9 @@ https://photos.app.goo.gl/NSqRum7rmYYRxNy28
 
 parei setembro 12
 
-# 17/09/2018
+# MiniLappisConf (17/09/2018)
 
-* MiniLappisConf - Moldura
+* Foram organizados MiniLappisConf - Moldura
 
 ![Alt text](figs/lappisconf17-09.jpg)
 
@@ -159,9 +157,9 @@ Autor(es): Arthur Temporim e Bruna Moreira
 https://www.youtube.com/watch?v=tW4x-R82hNc </br>
 ![Webinar customizando chatbot](figs/webinar_faq_ptbr_rasa.png)
 
-# 14/03/2019
+# Tais no prefeitos do Futuro (14/03/2019)
 
-* Apresentação TAIS no evetno Prefeitos Do Futuro
+* Apresentação TAIS no evetno Prefeitos Do Futuro [https://www.youtube.com/watch?v=CKM4ieBsMLw&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=6](https://www.youtube.com/watch?v=CKM4ieBsMLw&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=6)
 
 ![Alt text](figs/prefeitos.jpg)
 ![Alt text](figs/prefeitosproof.png)
