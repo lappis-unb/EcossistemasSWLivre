@@ -298,89 +298,88 @@ Um exemplo da documentação técnica de estudos da Tais está apresentado abaix
 
 ### Estudo de Métricas para Bots
 
-Este documento contém um estudo sobre métricas relevantes para o contexto de um(a) assistente virtual.
+&emsp;&emsp;Este documento contém um estudo sobre métricas relevantes para o contexto de um(a) assistente virtual.
 
-O objetivo deste estudo é encontrar métricas que possam contribuir para a análise da dados da interação entre o usuário-bot, auxiliando na área de _business_ e de desenvolvimento.
+&emsp;&emsp;O objetivo deste estudo é encontrar métricas que possam contribuir para a análise da dados da interação entre o usuário-bot, auxiliando na área de _business_ e de desenvolvimento.
 
 ### Métricas
 
-Uma métrica é uma medida quantificável que é usada para rastrear e avaliar o status de um processo específico.
+&emsp;&emsp;Uma métrica é uma medida quantificável que é usada para rastrear e avaliar o status de um processo específico.
 
-Os próximos dois subtópicos serão responsáveis por expor as métricas que foram definidas como apropriadas para a área de negócio e de desenvolvimento, no contexto da Tais.
+&emsp;&emsp;Os próximos dois subtópicos serão responsáveis por expor as métricas que foram definidas como apropriadas para a área de negócio e de desenvolvimento, no contexto da Tais.
 
 #### Métricas de Negócio
 
 - **Quantidade de usuários totais**
 
-Medir a quantidade de usuários/sessões que já interagiram com a Tais. As medidas podem variar de acordo com o intervalo de tempo definido (por dia, por semana, por mês, ...).
+&emsp;&emsp;&emsp;&emsp;Medir a quantidade de usuários/sessões que já interagiram com a Tais. As medidas podem variar de acordo com o intervalo de tempo definido (por dia, por semana, por mês, ...).
 
 - **Interações por usuário [IU]**
 
-Quantificar a média de perguntas realizadas por usuário.
+&emsp;&emsp;&emsp;&emsp;Quantificar a média de perguntas realizadas por usuário.
 
-IU = (Qtd. total de perguntas do usuário) / (Qtd. total de usuários)
+&emsp;&emsp;&emsp;&emsp;IU = (Qtd. total de perguntas do usuário) / (Qtd. total de usuários)
 
 - **Horas com mais atividades**
 
-Identificar em qual horário os usuários mais interagem com o bot. Definir por intervalo de tempo (De 11:00 as 12:30, etc).
+&emsp;&emsp;&emsp;&emsp;Identificar em qual horário os usuários mais interagem com o bot. Definir por intervalo de tempo (De 11:00 as 12:30, etc).
 
 - **Perguntas mais frequentes**
 
-Analisar as perguntas que são feitas com mais frequências.
+&emsp;&emsp;&emsp;&emsp;Analisar as perguntas que são feitas com mais frequências.
 
-Neste caso, pode-se definir como a pergunta mais realizada em todo o tempo, ou então a pergunta que foi tendência em determinado intervalo de tempo.
+&emsp;&emsp;&emsp;&emsp;Neste caso, pode-se definir como a pergunta mais realizada em todo o tempo, ou então a pergunta que foi tendência em determinado intervalo de tempo.
 
 - **Taxa de satisfação**
 
-Medida que diz respeito a taxa de satisfação em relação ao serviço prestado pelo bot. Se o assistente virtual está conseguindo suprir as necessidades do usuário e em qual "qualidade".
+&emsp;&emsp;&emsp;&emsp;Medida que diz respeito a taxa de satisfação em relação ao serviço prestado pelo bot. Se o assistente virtual está conseguindo suprir as necessidades do usuário e em qual "qualidade".
 
 - **Self-service rate**
 
-Quantos usuários conseguem atingir o seu objetivo com a conversa, sem a interação externa de um humano.
+&emsp;&emsp;&emsp;&emsp;Quantos usuários conseguem atingir o seu objetivo com a conversa, sem a interação externa de um humano.
 
 - **Retention Rate**
 
-Quantos usuários retornam a interagir com a assistente virtual. Esta métrica pode se relacionar, também, com o intervalo de tempo entre cada sessão do usuário.
+&emsp;&emsp;&emsp;&emsp;Quantos usuários retornam a interagir com a assistente virtual. Esta métrica pode se relacionar, também, com o intervalo de tempo entre cada sessão do usuário.
 
-É importante identificar também se após retornar o objetivo do usuário é diferente do anterior. Porque pode sinalizar que suas dúvidas não foram sanadas anteriormente.
+&emsp;&emsp;&emsp;&emsp;É importante identificar também se após retornar o objetivo do usuário é diferente do anterior. Porque pode sinalizar que suas dúvidas não foram sanadas anteriormente.
 
 #### Métricas de Desenvolvimento
 
 - **Taxa de confusão (CR)**
 
-Calcular a quantidade de _fallbacks_ em relação a quantidade de perguntas realizadas pelos usuários.
+&emsp;&emsp;&emsp;&emsp;Calcular a quantidade de _fallbacks_ em relação a quantidade de perguntas realizadas pelos usuários.
 
-CR = (Qtd. de _fallbacks_) / (Qtd. total de perguntas)
+&emsp;&emsp;&emsp;&emsp;CR = (Qtd. de _fallbacks_) / (Qtd. total de perguntas)
 
 - **Frases/palavras mais frequentes**
 
-Analisar as frases/palavras que são mais realizadas. Neste caso, pode-se definir também como as palavras mais realizadas em todo o tempo, ou então a que foi tendência em determinado intervalo de tempo.
+&emsp;&emsp;&emsp;&emsp;Analisar as frases/palavras que são mais realizadas. Neste caso, pode-se definir também como as palavras mais realizadas em todo o tempo, ou então a que foi tendência em determinado intervalo de tempo.
 
 - **Perguntas mais frequentes**
 
-Analisar as perguntas que são feitas com mais frequências. Neste caso, pode-se definir como a pergunta mais realizada em todo o tempo, ou então a pergunta que foi tendência em determinado intervalo de tempo.
+&emsp;&emsp;&emsp;&emsp;Analisar as perguntas que são feitas com mais frequências. Neste caso, pode-se definir como a pergunta mais realizada em todo o tempo, ou então a pergunta que foi tendência em determinado intervalo de tempo.
 
 - **Etapas de conversação**
 
-Calcular a quantidade média de etapas realizadas por sessão. Uma etapa é definida por uma inteção do usuário e a resposta do bot.
+&emsp;&emsp;&emsp;&emsp;Calcular a quantidade média de etapas realizadas por sessão. Uma etapa é definida por uma inteção do usuário e a resposta do bot.
 
-As conversas que excedem significativamente ou ficam aquém da média da etapa de conversação geralmente indicam uma experiência ruim para o usuário.
+&emsp;&emsp;&emsp;&emsp;As conversas que excedem significativamente ou ficam aquém da média da etapa de conversação geralmente indicam uma experiência ruim para o usuário.
 
 - **Fallback por intent**
 
-Identificar quais são as intenções de usuários que mais geram _fallbacks_.
+&emsp;&emsp;&emsp;&emsp;Identificar quais são as intenções de usuários que mais geram _fallbacks_.
 
 - **Fluxo de sessão**
 
-Um fluxograma que mostra o "caminho" percorrido pelos usuários em cada sessão de conversa e a porcentagem de cada "caminho". Relacionando também com a métrica anterior de **_Fallback_ por intent**, a qual identifica em qual intenção o bot entrou no fallback.
+&emsp;&emsp;&emsp;&emsp;Um fluxograma que mostra o "caminho" percorrido pelos usuários em cada sessão de conversa e a porcentagem de cada "caminho". Relacionando também com a métrica anterior de **_Fallback_ por intent**, a qual identifica em qual intenção o bot entrou no fallback.
 
 ### Links das referências
 
-- [http://www.topbots.com/5-bot-metrics-every-chatbot-should-track/](http://www.topbots.com/5-bot-metrics-every-chatbot-should-track/)
-- [https://blog.ubisend.com/optimise-chatbots/right-chatbot-kpi](https://blog.ubisend.com/optimise-chatbots/right-chatbot-kpi)
-- [https://blog.growthbot.org/](https://blog.growthbot.org/)
-- [https://blog.growthbot.org/the-practical-guide-to-chatbot-metrics-and-analytics](https://blog.growthbot.org/the-practical-guide-to-chatbot-metrics-and-analytics)
-- [https://chatbotsmagazine.com/chatbot-analytics-101-e73ba7013f00](https://chatbotsmagazine.com/chatbot-analytics-101-e73ba7013f00)
+- http://www.topbots.com/5-bot-metrics-every-chatbot-should-track/
+- https://blog.ubisend.com/optimise-chatbots/right-chatbot-kpi
+- https://blog.growthbot.org/the-practical-guide-to-chatbot-metrics-and-analytics
+- https://chatbotsmagazine.com/chatbot-analytics-101-e73ba7013f00
 
 
 
