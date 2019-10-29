@@ -20,9 +20,9 @@
 # GNPapo - Mesa redonda sobre software livre e bolhas de opinião (13/06/2018)
 
 * Link para o vídeo do evento [aqui](https://www.youtube.com/watch?v=CBM0Cy8ERug&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=7)
-![Alt text](figs/gnpapo1.jpg)
-![Alt text](figs/gnpapo2.jpg)
-![Alt text](figs/gnpapo3.jpg)
+![Alt text](2yearscrapping/figs/gnpapo1.jpg)
+![Alt text](2yearscrapping/figs/gnpapo2.jpg)
+![Alt text](2yearscrapping/figs/gnpapo3.jpg)
 
 # Serenata de amor - workshop técnico (15/06/2018)
 
@@ -35,66 +35,66 @@ https://photos.app.goo.gl/yNHXQ4mhWvMmQ2DW7
 # 30/06/2018
 
 * Hackaton Saude - Moura e Diniz
-![Alt text](figs/hackatonsaude.jpg)
+![Alt text](2yearscrapping/figs/hackatonsaude.jpg)
 
 # 04/07/2018
 
 * Workshop devops com MDH
 
-![Alt text](figs/devopsmdh.jpg)
+![Alt text](2yearscrapping/figs/devopsmdh.jpg)
 
 # 30/07/2018
 
 * Lappis conf - softwares livres pra controle social, eleições.
 
-![Alt text](figs/lappisconf1.jpg)
-![Alt text](figs/lappisconf2.jpg)
+![Alt text](2yearscrapping/figs/lappisconf1.jpg)
+![Alt text](2yearscrapping/figs/lappisconf2.jpg)
 
 # 13/08/2018
 
 * Lappis conf - Atos (Vida após lappis)
 
-![Alt text](figs/lappisconfatos.jpg)
+![Alt text](2yearscrapping/figs/lappisconfatos.jpg)
 
 # Entrega Técnica Ciclo trimestral (15/08/2018)
 
 *  A equipe Técnica do Ministério reuniu com a equipe projeto Ecossistemas para apresentação das entregas realizadas no ciclo trimestral de desenvolvimento.
 
-![Alt text](figs/entrega1.jpg)
+![Alt text](2yearscrapping/figs/entrega1.jpg)
 
 # Entrega Técnica Ciclo trimestral (16/08/2018)
 
 * A equipe negocial do Ministério reuniu com a equipe projeto Ecossistemas para apresentação das entregas realizadas no ciclo trimestral de desenvolvimento.
 
-![Alt text](figs/entrega2.jpg)
+![Alt text](2yearscrapping/figs/entrega2.jpg)
 
 # Participação de alunos no evendo Indie Warehouse (17/08/2018)
 
 * Lappis na indie warehouse
 
-![Alt text](figs/indie1.jpg)
-![Alt text](figs/indie2.jpg)
+![Alt text](2yearscrapping/figs/indie1.jpg)
+![Alt text](2yearscrapping/figs/indie2.jpg)
 
 
 # Lappis Conf Chatbot (20/08/2018)
 
 * Para fomentar a disseminação do conhecimento internamenta na Universidade de Brasília, foram organizados Lappis conf especiais para apresentar os avanços realizados no projeto da TAIS e nas demais frentes do projeto "Ecossistemas de Software Livre".
 
-![Alt text](figs/lappisconf20-08.jpg)
-![Alt text](figs/lappisconf20-08-2.jpg)
+![Alt text](2yearscrapping/figs/lappisconf20-08.jpg)
+![Alt text](2yearscrapping/figs/lappisconf20-08-2.jpg)
 
 # Lappis Conf (20/08/2018)
 
 * Para fomentar a disseminação do conhecimento internamenta na Universidade de Brasília, foram organizados Lappis conf especiais para apresentar os avanços realizados no projeto da TAIS e nas demais frentes do projeto "Ecossistemas de Software Livre".
 
-![Alt text](figs/lappisconf27-08.jpg)
+![Alt text](2yearscrapping/figs/lappisconf27-08.jpg)
 
 # LabConf (31/08/2018)
 
 * LabConf, ou Conferência dos laboratórios de inovação da cultura, foi o evento organizado pelo LAPPIS no Ministério da Cultura para que o arranjo de TED entre Universidade e o Ministério da Cultura pudesse ser discutido. Nesse dia, os demais laboratório (UFG, UFABC, UnB) puderam apresentar os avanços alcançados em seus respectivos projetos, diversos workshops práticos relacionados a DevOps foram ministrados pelos bolsistas do LAPPIS, e mesas rendondas foram realizadas para discutir modelos de contratação.
 
-![Alt text](figs/labconf.png)
-![Alt text](figs/labconf2.jpg)
+![Alt text](2yearscrapping/figs/labconf.png)
+![Alt text](2yearscrapping/figs/labconf2.jpg)
 
 https://photos.app.goo.gl/NSqRum7rmYYRxNy28
 
@@ -104,7 +104,7 @@ parei setembro 12
 
 * Foram organizados MiniLappisConf - Moldura
 
-![Alt text](figs/lappisconf17-09.jpg)
+![Alt text](2yearscrapping/figs/lappisconf17-09.jpg)
 
 # 20/09/2018
 
@@ -113,13 +113,13 @@ parei setembro 12
 Autor(es): Arthur Temporim e Bruna Pinos
 
 https://www.youtube.com/watch?v=wpi5xDhofW4 </br>
-![Webinar personalidade](figs/labhacker.png)
+![Webinar personalidade](2yearscrapping/figs/labhacker.png)
 
 # 01/10/2018
 
 * MiniLappisConf - Promova Cultura
 
-![Alt text](figs/lappisconf01-10.jpg)
+![Alt text](2yearscrapping/figs/lappisconf01-10.jpg)
 
 # 22/11/2018
 
@@ -127,8 +127,8 @@ https://www.youtube.com/watch?v=wpi5xDhofW4 </br>
 
 Autor(es): Carla Rocha
 
-![Alt text](figs/pydatameetup.jpg)
-![Alt text](figs/pydatameetup2.jpg)
+![Alt text](2yearscrapping/figs/pydatameetup.jpg)
+![Alt text](2yearscrapping/figs/pydatameetup2.jpg)
 
 # 02/12/2018
 
@@ -136,7 +136,7 @@ Autor(es): Carla Rocha
 
 Autor(es): Heloise Cullen, Bruna Moreira
 
-![Alt text](figs/iv.jpg)
+![Alt text](2yearscrapping/figs/iv.jpg)
 
 # 13/12/2018
 
@@ -145,7 +145,7 @@ Autor(es): Heloise Cullen, Bruna Moreira
 Autor(es): Arthur Temporim, Bruna Pinos, Carla Rocha, Gabriela Guedes, Matheus de Sousa Faria e Paloma C. Mamede
 
 https://www.youtube.com/watch?v=5fbdIwsGrQ4 </br>
-![Webinar customizando chatbot](figs/webinar_chatbot_rasa_rocketchat.png)
+![Webinar customizando chatbot](2yearscrapping/figs/webinar_chatbot_rasa_rocketchat.png)
 
 
 # 23/01/2019
@@ -155,14 +155,14 @@ https://www.youtube.com/watch?v=5fbdIwsGrQ4 </br>
 Autor(es): Arthur Temporim e Bruna Moreira
 
 https://www.youtube.com/watch?v=tW4x-R82hNc </br>
-![Webinar customizando chatbot](figs/webinar_faq_ptbr_rasa.png)
+![Webinar customizando chatbot](2yearscrapping/figs/webinar_faq_ptbr_rasa.png)
 
 # Tais no prefeitos do Futuro (14/03/2019)
 
 * Apresentação TAIS no evetno Prefeitos Do Futuro [https://www.youtube.com/watch?v=CKM4ieBsMLw&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=6](https://www.youtube.com/watch?v=CKM4ieBsMLw&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=6)
 
-![Alt text](figs/prefeitos.jpg)
-![Alt text](figs/prefeitosproof.png)
+![Alt text](2yearscrapping/figs/prefeitos.jpg)
+![Alt text](2yearscrapping/figs/prefeitosproof.png)
 
 
 # 27/03/2019
@@ -172,20 +172,20 @@ https://www.youtube.com/watch?v=tW4x-R82hNc </br>
 Autor(es): Arthur Temporim e Bruna Moreira
 
 https://www.youtube.com/watch?v=zL8zCbmfLwM </br>
-![Webinar chat api google](figs/webinar_rasa_google_api.png)
-![Alt text](figs/webinar.jpg)
+![Webinar chat api google](2yearscrapping/figs/webinar_rasa_google_api.png)
+![Alt text](2yearscrapping/figs/webinar.jpg)
 
 # 01/04/2019
 
 * MiniLappisConf 
 
-![Alt text](figs/lappisconf01-04.jpg)
+![Alt text](2yearscrapping/figs/lappisconf01-04.jpg)
 
 # 02/04/2019
 
 * MiniLappisConf - Projection Mapping
 
-![Alt text](figs/lappisconf02-04.jpg)
+![Alt text](2yearscrapping/figs/lappisconf02-04.jpg)
 
 
 # 10/04/2019
@@ -195,22 +195,22 @@ https://www.youtube.com/watch?v=zL8zCbmfLwM </br>
 Autor(es): Arthur Temporim e Gabriela Guedes
 
 https://www.youtube.com/watch?v=ZPUtt2AFhjM </br>
-![Webinar relampago rasa](figs/webinar_rasa_bot_telegram.png)
+![Webinar relampago rasa](2yearscrapping/figs/webinar_rasa_bot_telegram.png)
 
 
-![Alt text](figs/webinar10-04.jpg)
+![Alt text](2yearscrapping/figs/webinar10-04.jpg)
 
 # 11/04/2019
 
 * GNPapo 
 
-![Alt text](figs/gnpapo11-04.jpg)
+![Alt text](2yearscrapping/figs/gnpapo11-04.jpg)
 
 # 15/04/2019
 
 * MiniLappisConf - E-Democracia
 
-![Alt text](figs/lappisconf15-04.jpg)
+![Alt text](2yearscrapping/figs/lappisconf15-04.jpg)
 
 
 
@@ -221,7 +221,7 @@ https://www.youtube.com/watch?v=ZPUtt2AFhjM </br>
 Autor(a): Arthur Temporim
 
 https://www.youtube.com/watch?v=5kXLmnWJe5g </br>
-![Webinar relampago rasa](figs/webinar_relampago_rasa.png)
+![Webinar relampago rasa](2yearscrapping/figs/webinar_relampago_rasa.png)
 
 
 # 24/04/2019
@@ -230,9 +230,9 @@ https://www.youtube.com/watch?v=5kXLmnWJe5g </br>
 Autor(es): Guilherme Lacerda e Bruna Pinos
 
 https://www.youtube.com/watch?v=yqzxZsOa3gg </br>
-![Webinar metricas](figs/webinar_metricas_importantes.png)
+![Webinar metricas](2yearscrapping/figs/webinar_metricas_importantes.png)
 
-![Alt text](figs/webinar24-04.jpg)
+![Alt text](2yearscrapping/figs/webinar24-04.jpg)
 
 # 29/04/2019
 
@@ -245,7 +245,7 @@ https://www.youtube.com/watch?v=yqzxZsOa3gg </br>
 6h - Ações culturais do Sesc no Brasil - 
 6:30 - Comunidade de Rpg - fabricando novos jogos
 
-![Alt text](figs/lappisconfgeek.jpg)
+![Alt text](2yearscrapping/figs/lappisconfgeek.jpg)
 
 
 # 30/04/2019
@@ -254,7 +254,7 @@ https://www.youtube.com/watch?v=yqzxZsOa3gg </br>
 Autor(a): Matheus de Sousa Faria
 
 https://www.youtube.com/watch?v=uR0W-fDUr9g </br>
-![Apresentacao Tais](figs/apresentacao_tais_matheus_faria.png)
+![Apresentacao Tais](2yearscrapping/figs/apresentacao_tais_matheus_faria.png)
 
 
 # 14/05/2019
@@ -264,7 +264,7 @@ https://www.youtube.com/watch?v=uR0W-fDUr9g </br>
 Autor(es): Carla Rocha
 
 
-![Alt text](figs/talkshow.jpg)
+![Alt text](2yearscrapping/figs/talkshow.jpg)
 
 
 
@@ -274,7 +274,7 @@ Autor(es): Carla Rocha
 Autor(es): Pablo Diego e Arthur Temporim
 
 https://www.youtube.com/watch?v=f35j9yydcEU </br>
-![Webinar arquitetura](figs/webinar_arquitetura_desaplocada.png)
+![Webinar arquitetura](2yearscrapping/figs/webinar_arquitetura_desaplocada.png)
 
 # 01/06/2019
 
@@ -283,27 +283,27 @@ https://www.youtube.com/watch?v=f35j9yydcEU </br>
 Autor(es): Guilherme Lacerda, Mateus Miranda, Joenio Costa
 
 
-![Alt text](figs/feirageek.jpg)
-![Alt text](figs/feirageek2.jpg)
+![Alt text](2yearscrapping/figs/feirageek.jpg)
+![Alt text](2yearscrapping/figs/feirageek2.jpg)
 
 # 20/06/2019
 
 * Campus Party
 
-![Alt text](figs/campusparty.jpg)
-![Alt text](figs/campusparty2.jpg)
-![Alt text](figs/campusparty3.jpg)
-![Alt text](figs/campusparty4.jpg)
-![Alt text](figs/campusparty5.jpg)
-![Alt text](figs/campusparty6.jpg)
-![Alt text](figs/campusparty7.jpg)
+![Alt text](2yearscrapping/figs/campusparty.jpg)
+![Alt text](2yearscrapping/figs/campusparty2.jpg)
+![Alt text](2yearscrapping/figs/campusparty3.jpg)
+![Alt text](2yearscrapping/figs/campusparty4.jpg)
+![Alt text](2yearscrapping/figs/campusparty5.jpg)
+![Alt text](2yearscrapping/figs/campusparty6.jpg)
+![Alt text](2yearscrapping/figs/campusparty7.jpg)
 
 # 25/06/2019
 
 * 17º Pydata - Como construir uma aplicaçã ocom features baseadas em data science
 
-![Alt text](figs/pydatamoura.jpg)
-![Alt text](figs/pydatamoura2.jpg)
+![Alt text](2yearscrapping/figs/pydatamoura.jpg)
+![Alt text](2yearscrapping/figs/pydatamoura2.jpg)
 
 # 12/07/2019
 
@@ -317,17 +317,17 @@ https://www.youtube.com/watch?v=Vx3U6tmQBhY&feature=youtu.be
 Autor(a): Leonardo Gomes
 
 https://www.youtube.com/watch?v=6YlFhpj6JSs </br>
-![Webinar teste chatbot](figs/webinar_teste_chatbot.png)
+![Webinar teste chatbot](2yearscrapping/figs/webinar_teste_chatbot.png)
 
 # 05/09/2019
 
 * Python Cerrado
 
-![Alt text](figs/pythoncerrado.jpg)
-![Alt text](figs/pythoncerrado3.jpg)
-![Alt text](figs/pythoncerrado4.jpg)
-![Alt text](figs/pythoncerrado5.jpg)
-![Alt text](figs/pythoncerrado2.jpg)
+![Alt text](2yearscrapping/figs/pythoncerrado.jpg)
+![Alt text](2yearscrapping/figs/pythoncerrado3.jpg)
+![Alt text](2yearscrapping/figs/pythoncerrado4.jpg)
+![Alt text](2yearscrapping/figs/pythoncerrado5.jpg)
+![Alt text](2yearscrapping/figs/pythoncerrado2.jpg)
 
 
 # 18/09/2019
@@ -336,11 +336,11 @@ https://www.youtube.com/watch?v=6YlFhpj6JSs </br>
 Autor(a): Paloma C. Mamede
 
 https://www.youtube.com/watch?v=hmFoxEYTK0Y </br>
-![Webinar personalidade](figs/webinar_personalidade.png)
+![Webinar personalidade](2yearscrapping/figs/webinar_personalidade.png)
 
 # 27/09/2019
 
 * Projetando chatbots inteligentes
 
-![Alt text](figs/projetando.jpg)
+![Alt text](2yearscrapping/figs/projetando.jpg)
 
