@@ -788,12 +788,29 @@ se comportam de maneira diferente a depender do
 dia da semana, assim ao longo de 1 semana é possível coletar as diversas
 variações de comportamento.
 
+Em termos práticos costuma-se utilizar diversas ferramentas num ambiente de
+experimentação contínua, desde ferramentas para automatização de
+infra-estrutura como Docker, Kubernetes e outros em nível de orquestração,
+chegando a soluções específicas para guiar experimentos, coletar métricas e
+automatizar análise de dados, neste sentido a ferramenta PlanOut desenvolvida
+pelo Facebook é o padrão "de facto" utilizado por grandes empresas como Google,
+Microsoft e o próprio Facebook.
+
+O PlanOut fornece uma linguagem específica de domínio (DSL) para descrever em
+nível de código habilitar e desabilitar certas funcionalidades, como por
+exemplo exibir uma feature para parte dos usuários e não exibir essa mesma
+feature para outra parte ou grupo de usuários, essa linguagem é integrada em
+diversas linguagens de programação, sendo possível realizar experimentos em
+produtos escritos em Python, PHP, Ruby, Javascript, entre outras.
+
+
 **Documentação comprobatória**
 
 - [Relatório Etapa 3](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELATÓRIO%20ETAPA%203.md)
 
 - [Relatório Etapa 4](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R4/RELATÓRIO%20ETAPA%204.pdf)
 
+- [MeasureSoftGram: A Future Vision of Software Product Quality](anexos/ESEM%202018%20-%20PAPER%20229%20-%20camera_ready%20-%20final.pdf)
 
 2. __a mineração em repositórios de software e a análise científica de dados do software__
 
