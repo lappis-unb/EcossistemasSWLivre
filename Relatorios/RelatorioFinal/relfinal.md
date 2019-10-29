@@ -477,6 +477,35 @@ Esse pacote de trabalho teve seu cronograma alterado e escopo limitado. Tais mud
 
  **Concluído** - Durante todo o projeto foi abordado a experimentação contínua, no qual passavamos continuamento por três etapas: (1) levantamento de hipoteses para solucionar um problema, (2) teste de parte da solução para validar a hipótese, (3) validação da hipótese, (4) implementação da solução no produto final. Além disso, trabalhamos com times full-stack e orientados a produto, a fim de ter uma qualidade alta do produto entregue. Com isso, para cada pacote de trabalho, tinha-se um time composto por alunos de Engenharia de Software, Designers, Alunos de letras, e profissionais plenos e seniores para gerir os riscos de projeto.
 
+Experimentação contínua fundamenta-se na formulação de hipóteses a respeito de
+comportamento dos usuários do sistema, na verificação dessas hipóteses através
+da coleta automatizada de métricas para guiar a execução de experimentos
+controlados realizados contínuamente, resultando em incrementos no produto de
+software entregues automaticamente num ciclo contínuo de experimentação.
+
+Um pipeline de experimentação contínua requer: (a) Integração contínua, (b)
+Entrega contínua e (c) Deploy contínuo. Neste ambiente diferentes versões do
+produto de software são expostos a diferentes grupos de usuários, selecionados
+aleatoriamente. Hipóteses são testadas para cada grupo e para cada versão, então
+decide-se qual será eleita e entregue a toda a base de usuários.
+
+Assim, temos que o primeiro passo no planejamento de experimentação contínua é
+a definição de hipóteses a respeito do comportamento dos usuários, essas
+hipóteses devem ser formuladas sempre com objetivo em mente de serem úteis na
+tomada de decisão sobre evolução e melhoria do produto de software, a partir
+das hipóteses métricas serão definidas, deve-se eleger métricas que suportem e
+promovam conjunto de dados suficiente para realizar testes das hipóteses
+definidas.
+
+Uma vez tendo planejado e implementado a infreestrutura necessária, um
+experimento se inicia logo após o deploy de um novo código, contendo novas
+features ou alterações em features existentes, experimentos geralmente tomam
+tempo de 1 semana ou mais para coleta de dados, o grupo de usuários
+participantes do experimento cresce ao longo do tempo, o tempo mínimo de 1
+semana para execução de um experimento se justifica pois usualmente os usuários
+se comportam de maneira diferente a depender do
+dia da semana, assim ao longo de 1 semana é possível coletar as diversas
+variações de comportamento.
 
 **Documentação comprobatória**
 
