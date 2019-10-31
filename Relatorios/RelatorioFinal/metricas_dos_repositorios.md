@@ -59,7 +59,13 @@ Repositório	|	Número de Arquivos	|	Número de Commits	|	Número de Linhas Adic
 **Sailc ML FrontEnd**	|	38	|	113	|	43966 / 23038	|	593
 **Salic API**	|	156	|	399	|	69973 / 57328	|	319
 
-#### Métricas de boas práticasde Eng. de Software
+Considerando que a *Média de Linhas modificadas por commit* ainda representa um valor considerado alto de modificações cuja qualidade possa ser mais facilmente analisada e rastreada, levantou-se um histograma, mostrando, de maneira mais granular, a frequência de commits com a respectiva quantidade de modificações conforme pode ser observado na figura abaixo.
+
+![Histograma de commits](figs/histograma_commits.pdf)
+
+Neste caso, é possível observar que 40% dos commits não passa de 50 linhas modificadas. Na prática 63% dos commits altera até 150 linhas. Se observa ainda que em torno de 20% dos commits realizam alterações acima de 500 linhas por commit e, em análise pontual, foi possível observar que em sua maioria representam inclusões de bibliotecas externas ou mesmo arquivos de dados para treinamento de modelos de Machine Learning que podem chegar a até 20 mil linhas, cada um. Conclui-se então que, em sua maioria, os commits realizados estão seguindo as boas práticas de fazerem alterações pequenas de mais fácil compreensão e rastreamento.
+
+#### Métricas de boas práticas de Eng. de Software
 
 Para avaliar boas práticas no desenvolvimento das soluções de software, são consideradas 3 métricas gerais conforme à seguir:
 
@@ -67,6 +73,7 @@ Para avaliar boas práticas no desenvolvimento das soluções de software, são 
 * **Quantidade de issues abertas/fechadas:** a *issues* de um repositório documentam tanto os requisitos do projeto em sua fase de desenvolvimento quanto necesisdades de evolução e necessidades de correções (*bugs*) observados em seu funcionamento. Seu propósito é socializar estas tarefas a serem realizadas, designar responsáveis, bem como deixar transparendo o que está sendo desenvolvido através da documentação do processo de construção do software.
 * **Pipeline de CI/CD:** configuração das técnicas de integração contínua (CI) e deploy contúnuo (CD) mostrando a maturidade do processo de desenvolvimento e manutenção da solução de software.
 
+  
 Neste caso, a tabela à seguir aponta estas métricas em cada um dos repositórios onde é possível observar que praticamente todos eles adotaram as boas práticas de documentar *issues* nos repositórios e distribuí-las entre os membros da equipe, socializando o conhecimento e documentando a evolução do software. Os dois repositórios que não contém *issues* cadastradas (*BotFlowAPI* e *Sailc ML FrontEnd*) tiveram suas *issues* gerenciadas em nos repositórios equivalentes em suas frentes de trabalho. Uma outra boa prática observada é o uso do mecanismo de *Pull Request* onde as submissões de alterações no código são feitas para o repositório e tem que ser aprovadas por outros membros do projeto, incentivando a revisão do código, bem como ampliando o conhecimento de toda a equipe sobre a base se código que está sendo desenvolvida. Por fim, a configuração do pipeline de CI/CD em praticament todos os repositórios demonstra a maturidade da solução de software com testes automatizados e métricas de análise estática de código. Este pipeline aumenta a confiança da equipe em realiar modificações em uma grande base de código uma vez que os testes podem apontar falhas antes que submissões novas possam ser aceitas.
 
 Repositório	|	Quantidade de Pull Requests (Abertos/Fechados)	|	Número de Issues (Abertas / Fechadas)	|	Pipeline CI/CD
@@ -99,3 +106,15 @@ Repositório	|	Forks	|	Número de Estrelas	|	Data de Criação
 **Salic-ML**	|	0	|	4	|	21/03/2018
 **Sailc ML FrontEnd**	|	0	|	0	|	27/08/2018
 **Salic API**	|	4	|	2	|	10/01/2018
+
+#### Documentação dos repositórios
+
+Por fim, foi realizada uma análise da documentação dos projetos nos respectivos repositórios. Foi identificado que todos adotam a boa prática de ter a documentação resumida no arquivo *Readme.md* na raiz de cada repositório. Neste arquivo, em todos os repositórios estão contidas as descrições gerais da solução e instruções de como executar o software. Além disso, a maioria dos projetos também descreve a arquitetura e tecnologias envolvidas já no arquivo *Readme.md*. 
+
+Documentações mais detalhadas de cada uma das soluções estão disponíveis na *Wiki* de cada repositório. Damos destaque aqui aos projetos que extrapolam a documentação formal de arquitetura e descrição geral da solução e incluem a documentação de tutoriais e de todo o processo de aprendizagem durante o desenvolvimento do produto de software:
+
+* *Tais* (https://lappis-unb.github.io/tais
+* *Rasa-ptbr-Boilerplate* (https://docs.rasaboilerplate.lappis.rocks)
+* *Promova Cultura* (https://lappis-unb.github.io/PromovaCultura/)
+* *Salic-ML* (https://lappis-unb.github.io/salic-ml-frontend/)
+* *Salic-API* (https://salic-api.readthedocs.io/pt/latest/)
