@@ -100,93 +100,10 @@ Estão contemplados nesta análise 8 repositórios, sendo eles:
 7. **SalicAPI:** API aberta para o sistema SALIC. Tem por objetivo expor os dados de projetos da lei Rouanet. Disponível em: https://github.com/lappis-unb/salic-api.
 8. **SailcMLFrontEnd:** Protótipo de front-end para o módulo SalicML. Disponível em: https://github.com/lappis-unb/salic-ml-frontend.
 
-## Métricas Gerais 
-Iniciamos a análise dos repositórios apontando três métricas gerais, sendo elas:
-
-* **Número de linhas de código (LOC):** quantidade total de linhas de código  do projeto indicando, em parte, sua complexidade.
-* **Número de contribuidores:** quantidade de pessoas que contribuiram diretamente com o código do projeto.
-* **Esforço em meses:** quantidade de tempo pela qual a equipe trabalhou no projeto.
-
-A tabela abaixo apresenta estas métricas juntamente com as linguagens de programação predominantes utilizadas em cada uma das soluções para ajudar a contextualizar as tecnologias de cada projeto.
-
-Repositório	|	Linhas de Código	|	Número de Contribuidores	|	Esforço em Meses	|	Linguagem predomintante
--	|	:-:	|	:-:	|	:-:	|	:-:
-**Tais**	|	15085	|	34	|	19	|	Python/Markdown/Jupyter Notebook
-**Rasa-ptbr-Boilerplate**	|	5397	|	17	|	8	|	Markdown
-**BotFlow**	|	4117	|	10	|	3	|	JavaScript
-**BotFlow API**	|	2062	|	11	|	4	|	Python
-**Promova Cultura**	|	103368	|	11	|	18	|	JavaScript
-**Salic-ML**	|	80268	|	14	|	18	|	Python/Jupyter Notebook / Markdown
-**Sailc ML FrontEnd**	|	20675	|	6	|	13	|	Vue / JavaScript
-**Salic API**	|	9786	|	15	|	-	|	Python
-
-Neste caso, destacam-se os projetos *Promova Cultura*, *Salic-ML*, *Sailc ML FrontEnd* e *Tais* como os de maior complexidade, o que é apontado pelo número de linhas de código e, consequentemente, os que tiveram maior tempo de dedicação da equipe. Considerando que todos as soluções são aplicações para serem executadas em servidor *web* com acesso via browser ou via API,  observa ainda o caráter inovador dos projeto que adotam de maneira predominante as linguagens de programação que estão hoje (Ano base 2019) com o maior crescimento de adoção no mercado (https://www.sciencealert.com/master-website-programming-with-these-ten-amazing-deals, https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/).
-
-## Métricas de volume de trabalho
-
-Em seguida, consideramos outras 4 métricas que apontam o volume de trabalho e fornecem uma noção da complexidade do projeto:
-
-* **Número de Commits:** indicam o número de grupos de alterações no código fonte, sendo um indicador do volume de atividades realizadas ao longo do projeto.
-* **Número de Arquivos:** quantidade total de arquivos do projeto indicando, em parte, sua complexidade.
-* **Número de linhas adicionadas / removidas:** quantidade de linhas de código adicionadas e removidas durante o período do projeto, indicando a quantidade de trabalho realizada incluindo melhorias à partir de refatoração do código.
-* **Média de Linhas modificadas por commit:** esta métrica indica a quantidade média de modificações realizadas à cada nova versão do sistema. Este é um importante indicador de boas práticas de desenvolvimeto, uma vez que novas submissões devem passar por revisão e, se forem muito extensas, dificultam sua avaliação e extendem o tempo necessários para as mesmas serem integradas à base de código e estarem disponíveis para os demais desenvolvedores. 
-
-Neste caso, se observa na tabela à seguir o grande volume de *commits* e alterações de código realizadas ao longo do desenvolvimetno de cada um dos projetos.
-
-Repositório	|	Número de Arquivos	|	Número de Commits	|	Número de Linhas Adicionadas / Linhas Removidas	|	Média de Linhas modificadas por commit
--	|	:-:	|	:-:	|	:-:	|	:-:
-**Tais**	|	224	|	1441	|	167750 / 166147	|	232
-**Rasa-ptbr-Boilerplate**	|	62	|	297	|	30689 / 23840	|	184
-**BotFlow**	|	82	|	291	|	41078 / 35942	|	265
-**BotFlow API**	|	50	|	152	|	5947 / 3414	|	62
-**Promova Cultura**	|	133	|	229	|	800202 / 669861	|	6419
-**Salic-ML**	|	203	|	638	|	3150841 / 3076296	|	9760
-**Sailc ML FrontEnd**	|	38	|	113	|	43966 / 23038	|	593
-**Salic API**	|	156	|	399	|	69973 / 57328	|	319
-
-## Métricas de boas práticasde Eng. de Software
-
-Para avaliar boas práticas no desenvolvimento das soluções de software, são consideradas 3 métricas gerais conforme à seguir:
-
-* **Quantidade de *Pull Requests*:** indicam a quantidade de submissões de alterações no código fonte. Associada ao número de commits, esta métrica demonstra o volume de atividades realizadas e também indica a boa prática de revisão de códigos submetidos antes das modificações serem aceitas.
-* **Quantidade de issues abertas/fechadas:** a *issues* de um repositório documentam tanto os requisitos do projeto em sua fase de desenvolvimento quanto necesisdades de evolução e necessidades de correções (*bugs*) observados em seu funcionamento. Seu propósito é socializar estas tarefas a serem realizadas, designar responsáveis, bem como deixar transparendo o que está sendo desenvolvido através da documentação do processo de construção do software.
-* **Pipeline de CI/CD:** configuração das técnicas de integração contínua (CI) e deploy contúnuo (CD) mostrando a maturidade do processo de desenvolvimento e manutenção da solução de software.
-
-Neste caso, a tabela à seguir aponta estas métricas em cada um dos repositórios onde é possível observar que praticamente todos eles adotaram as boas práticas de documentar *issues* nos repositórios e distribuí-las entre os membros da equipe, socializando o conhecimento e documentando a evolução do software. Os dois repositórios que não contém *issues* cadastradas (*BotFlowAPI* e *Sailc ML FrontEnd*) tiveram suas *issues* gerenciadas  nos repositórios equivalentes em suas frentes de trabalho. Uma outra boa prática observada é o uso do mecanismo de *Pull Request* onde as submissões de alterações no código são feitas para o repositório e tem que ser aprovadas por outros membros do projeto, incentivando a revisão do código, bem como ampliando o conhecimento de toda a equipe sobre a base se código que está sendo desenvolvida. Por fim, a configuração do pipeline de CI/CD em praticamente todos os repositórios demonstra a maturidade da solução de software com testes automatizados e métricas de análise estática de código. Este pipeline aumenta a confiança da equipe em reavaliar modificações em uma grande base de código uma vez que os testes podem apontar falhas antes que submissões novas possam ser aceitas.
-
-Repositório	|	Quantidade de Pull Requests (Abertos/Fechados)	|	Número de Issues (Abertas / Fechadas)	|	Pipeline CI/CD
--	|	:-:	|	:-:	|	:-:
-**Tais**	|	0 / 158	|	39 / 387	|	GitlabCI / CD
-**Rasa-ptbr-Boilerplate**	|	1 / 55	|	15 / 44	|	GitlabCI 
-**BotFlow**	|	1 / 54	|	34 / 50	|	TravisCI
-**BotFlow API**	|	0 / 24	|	0 / 0	|	-
-**Promova Cultura**	|	1 / 78	|	19 / 157	|	-
-**Salic-ML**	|	0 / 89	|	38 / 292	|	GitlabCI
-**Sailc ML FrontEnd**	|	1 / 17	|	0 / 0	|	GitlabCI / TravisCI
-**Salic API**	|	2/31	|	17/53	|	GitlabCI
-
-## Métricas de adoção pela comunidade
-
-Duas métricas importantes para avaliar a adoção do software livre pela comunidade são o número de *Estrelas* e o número de *Forks* nos reposirótios conforme explicados à seguir:
-
-* **Estrelas:** O número de estrelas em um repositório demonstra como a comunidade classifica cada um dos projetos. Quanto maior é o número, mais visível é o projeto da comunidade. (Ref. https://medium.appbase.io/analyzing-20k-github-repositories-af76de21c3fc)
-* **Forks:** Os *Forks* representam as cópias do repositório feita por membros da comunidade. Um *fork* pode ser feito por membros da comunidade tanto para que contribuam para o projeto original (atrávés de *Pull Requests* / *Merge Requests*) quanto para a realização de derivações do projeto original em outras soluções. (Ref. https://medium.appbase.io/analyzing-20k-github-repositories-af76de21c3fc)
-
-A tabela à seguir apresenta estas duas métricas para cada um dos repositórios juntamente com a data de criação de cada um dos projetos. Pela tabela, é possível observar que projetos com caráter mais interno como os do Salic tem menos adoção da comunidade, enquanto projetos cuja base de código pode ser aproveitada por outros órgãos como a *Tais* e o *Rasa-ptbr-Boilerplate* apresentam um índice de adoção da comunidade bem mais alto. O destaque aqui fica com o projeto *Rasa-ptbr-Boilerplate* que foi baseado na experiência da *Tais* e, mesmo tendo sido desenvolvido só em 2019, já possui 65 *Forks* mostrando uma ótima adoção da comunidade. Além disso, pode ser observado que os projetos do *BotFlow* / *BotFlowAPI* que foram iniciados em meados de 2019 e só tiveram sua primeira versão estável em set/2019 também já contam com *Forks* da comunidade.
-
-Repositório	|	Forks	|	Número de Estrelas	|	Data de Criação
--	|	:-:	|	:-:	|	:-:
-**Tais**	|	26	|	28	|	21/03/2018
-**Rasa-ptbr-Boilerplate**	|	65	|	42	|	21/01/2019
-**BotFlow**	|	2	|	9	|	03/06/2019
-**BotFlow API**	|	1	|	3	|	21/05/2019
-**Promova Cultura**	|	0	|	5	|	21/03/2018
-**Salic-ML**	|	0	|	4	|	21/03/2018
-**Sailc ML FrontEnd**	|	0	|	0	|	27/08/2018
-**Salic API**	|	4	|	2	|	10/01/2018
 
 # Metas alcançadas
 
+Nas próximas seções apresentaremos os principais resultados relacionado a cada meta específica do plano de trabalho. Os resultados são complementares aos relatórios de entregas parciais entregues trimestralmente.
 
 ## Pacote de Trabalho: Estratégia/modelo de transformação de softwares legados em comunidades de software aberto
 
@@ -207,8 +124,8 @@ Os resultados desse pacote de trabalho, e as entregas foram documentadas nos seg
 
 Além dos relatórios, foi escrito um artigo no Medium sobre o projeto SALIC-ML (), foi apresentado o trabalho do SALIC-ML na comunidade Pydata Brasília  (25/06/2019), com o título "Como construir uma aplicação com features baseadas em data science". Mais detalhes sobre os eventos serão apresentados no pacote de trabalho "Estudos sobre práticas de gestão colaborativa em comunidades de software aberto".
 
-![Alt text](figs/pydatamoura.jpg)
-![Alt text](figs/pydatamoura2.jpg)
+![Apresentação no pyData.](figs/pydatamoura.jpg)
+![Apresentação no pyData.](figs/pydatamoura2.jpg)
 
 
 ### Metas Específicas
@@ -217,29 +134,35 @@ Quanto as metas específicas dessa frente de trabalho definidas plano de trabalh
 
 1. __Estudos e documentação do processo de conteinerização, testes automatizados, refatoração de sistemas legados em uma estrutura de DevOps para viabilizar trabalhos futuros__
 
-**Concluído**. No início do projeto, fizemos um checklist com as principais boas práticas, documentações, automações de comunidades de software livre. Esse checklist foi aplicado em uma lista de projetos evoluidos e mantidos pelo Ministério da Cultura. Para cada projeto, colocamos a solução em containers, documentamos  o básico (README), instrumentamos com serviços de análise estática de qualidade de código, e integração contínua. A importância desse trabalho é que, além de fazer com que os projetos mantidos pelo ministério façam adesão as  práticas modernas de engenharia de software, permite que outras equipes de desenvolvimento possam executar, testar e evoluir os projetos mais facilmente. Adicionalmente, tais ferramentas aceleram a curva de aprendizado de novos membros no time, além de incentivar boas práticas de desenvolvimento por meio de monitoramento das métricas.
+**Concluído** - No início do projeto, fizemos um checklist com as principais boas práticas, documentações, automações de comunidades de software livre. Esse checklist foi aplicado em uma lista de projetos evoluidos e mantidos pelo Ministério da Cultura. Para cada projeto, colocamos a solução em containers, documentamos  o básico (README), instrumentamos com serviços de análise estática de qualidade de código, e integração contínua. A importância desse trabalho é que, além de fazer com que os projetos mantidos pelo ministério façam adesão as  práticas modernas de engenharia de software, permite que outras equipes de desenvolvimento possam executar, testar e evoluir os projetos mais facilmente. Adicionalmente, tais ferramentas aceleram a curva de aprendizado de novos membros no time, além de incentivar boas práticas de desenvolvimento por meio de monitoramento das métricas.
 
 Essa estratégia, chamada *legacy in the box*, é sugerida na literatura do estado da prática como primeira ação a ser feita em direção ao DevOps em sistemas legados. Conteinerizar e instrumentar um software legado permite que esse seja configurado em um pipeline de deploy contínuo. A falta de testes cria a vulnerabilidade de se colocar em ambiente de produção/homologação features defeituosos. Porém esse risco está presente naturalmente em softwares legados sem testes. Logo, a estrégia *legacy in the box* agiliza a entrega de novas features, possibilitando entrega contínua, criação de comunidade, e incentivo as boas práticas de engenharia de software.
 
-**Documentação comprobatória**
+**Documentação comprobatória** - A lista de projetos que foram refatorado utilizando a estratégia *legacy in the box* está disponibilizado no [Relatório Etapa 1](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R1/RELATÓRIO%20ETAPA%201.pdf). O principal benefício dessa estratégia é visto no projeto do [Salic](https://github.com/culturagovbr/salic-minc), o principal software desenvolvido e mantido pelo ministério. Com a estratégia *legacy in the box* foi possível realizar pipeline de deploy/entrega contínua e agilizar o processo de deploy.  A figura abaixo mostra o histórico de releases do salic. Pode-se notar que o processo de release, e logo de deploy/entrega contínua foi adotada somente após a aplicação da técnica  *legacy in the box*. Na imagem, nota-se que tal técnica possibilitou a realização de até 24 realises em um mês.
 
-A lista de projetos que foram refatorado utilizando a estratégia *legacy in the box* está disponibilizado no [Relatório Etapa 1](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R1/RELATÓRIO%20ETAPA%201.pdf). O principal benefício dessa estratégia é visto no projeto do [Salic](https://github.com/culturagovbr/salic-minc), o principal software desenvolvido e mantido pelo ministério. Com a estratégia *legacy in the box* foi possível realizar pipeline de deploy/entrega contínua e agilizar o processo de deploy.  A figura abaixo mostra o histórico de releases do salic. Pode-se notar que o processo de release, e logo de deploy/entrega contínua foi adotada somente após a aplicação da técnica  *legacy in the box*. Na imagem, nota-se que tal técnica possibilitou a realização de até 24 realises em um mês.
+![Releases do Projeto Salic.](figs/salic-devops.jpg)
 
-![Fig DevopsSalic](figs/salic-devops.jpg)
+
+Parte da documentação de DevOps foi disponibilizada no repositório do laboratório em https://gitlab.com/lappis-unb/docs, disponibilizada também como anexo no final deste documento. Os documentos cobrem tanto a presente meta quanto a meta de documentação de software livre (e será reapresentado no relatório).
+
+Foi elaborado documentação/relatório descrevendo todo o pipeline usado para deploy contínuo no laboratório com os seguintes tutoriais, que podem ser aplicados em diversos contextos:
+
+- GitLab CI/CD: Guia relacionado ao uso da Integração Contínua e Deploy contínuo no Gitlab;
+- Overview e exemplo básico(pt-br): Um guia que ensina como usar o gitlab CI/CD para gerar integração contínua e deploy contínuo em um projeto básico;
+- Usando Docker Compose (pt-br): Um guia que ensina como usar o GitLab CI/CD para gerar integração contínua com o Docker Compose em um projeto ágil;
+- Integrando GitLab CI/CD com projeto GitHub(pt-br): Um procedimento que possibilita o uso do GitLab CI/CD no projeto GitHub.
 
 
 
 2.  __Pesquisa em metodologias de refatoração de sistemas legados__
 
-**Concluído**. O principal problema tratado foi a pesquisa de estratégias de fazer inovação em plataformas compostas por software legado. Utilizamos o SALIC, principal software mantido pelo antigo Ministério da Cultura, que além de ser  o maior software ainda é o software que executa a Lei de Incentivo a Cultura. Nesse contexto, refatorar e/ou reescrever o Salic é uma tarefa inviável com custos proibitivos. Uma particularidade do Salic é a quantidade de bancos de dados (cerca de 10 bancos), e o fato de que várias regras de negócios estão do próprio banco. A documentação técnica no início do projeto era mínima, quase inexistente. 
+**Concluído** - O principal problema tratado foi a pesquisa de estratégias de fazer inovação em plataformas compostas por software legado. Utilizamos o SALIC, principal software mantido pelo antigo Ministério da Cultura, que além de ser  o maior software ainda é o software que executa a Lei de Incentivo a Cultura. Nesse contexto, refatorar e/ou reescrever o Salic é uma tarefa inviável com custos proibitivos. Uma particularidade do Salic é a quantidade de bancos de dados (cerca de 10 bancos), e o fato de que várias regras de negócios estão do próprio banco. A documentação técnica no início do projeto era mínima, quase inexistente. 
 
 Dado o contexto, além da estratégia *legacy in the box*, descrita na seção acima, pesquisamos e aplicamos outras duas técnicas de refatoração de sistemas legados. Identificamos o *SalicAPI*, projeto que disponibiliza os dados sobre a execução de projetos da Lei de incentivo, como sendo o software com o maior pontencial de se ter comunidade, uma vez que os dados acessados via o *SalicAPI* são de interesse tanto da sociedade civil quanto de jornalistas. Para o o *SalicAPI* aplicamos a técnica tradicional de refatoração orientados a métricas. Para isso, atualizamos a versão do *Python*, automatizamos a execução de testes automatizados, dockerizamos, fizemos toda a documentação técnica e dos *endpoints*. Essa técnica de refatoração (reescrita de código, melhoria das práticas, execução de testes unitários) modernizou o *SalicAPI* e permitiu um pipeline de entrega/deploy continuo seguro.
 
 A terceira técnica de refatoração de sistemas legados foi no contexto de inserir novas *features*. Mais especificamente, novas  *features* com inovação em funcionalidades que fazem o processamento de dados com algoritmos de *machine learning*. Como o código do SALIC é PHP, e maioria dos frameworks e bibliotecas de aprendizagem de máquina são desenvolvidos na linguagem *python*. Por isso, escolhemos a técnica de adotar uma arquitetura microsserviços, no qual novas funcionalidade são adicionadas a plataforma como novos microsserviços que compartilham o banco de dados com o software legado. Essa técnica foi colocada em prática com o serviço *"SalicML"*. Nele, construimos uma API no qual adicionamos várias métricas de complexidade de análise de projetos culturais.
 
-**Documentação comprobatória**
-
-Quanto a estratégia refatoração, foi aplicado ao [SALIC API](https://github.com/lappis-unb/salic-api). A figura abaixo mostra a evolução das métricas relacionadas ao código.
+**Documentação comprobatória** - Quanto a estratégia refatoração, foi aplicado ao [SALIC API](https://github.com/lappis-unb/salic-api). A figura abaixo mostra a evolução das métricas relacionadas ao código.
 
 ![Fig DevopsSalic](figs/SALICAPI.png)
 
@@ -258,9 +181,7 @@ Finalmente, a estratégia de arquitetura microsserviços foi aplicado em no [Sal
 
 3.  __Utilizar como estudo de casos alguns sistemas legados do Ministério da Cultura, tais como o projeto SIMEC (Sistema Integrado de Monitoramento Execução e Controle) e o projeto Salic (Sistema de Apoio as Leis de Incentivo à Cultura), Sistel__
 
-**Concluído.**
-
-Dos três projetos citados, trabalhamos com o *SALIC* e o *Sistel*. No *Sistel* aplicamos a técnica de *legacy in a box*. Já no *SALIC*, aplicamos as três técnicas pesquisadas: *legacy in a box*, *refatoração de código orientado a métricas* e *arquitetura microsserviços*. Toda a documentação técnica, assim como os resultados técnicos obtidos, e decisões colaborativas com o Ministério estão disponibilizadas na wiki do respectivo repositório. Vamos detalhar aqui o trabalho arquitetural utilizado na estratégia *arquitetura microsserviços*.
+**Concluído.** - Dos três projetos citados, trabalhamos com o *SALIC* e o *Sistel*. No *Sistel* aplicamos a técnica de *legacy in a box*. Já no *SALIC*, aplicamos as três técnicas pesquisadas: *legacy in a box*, *refatoração de código orientado a métricas* e *arquitetura microsserviços*. Toda a documentação técnica, assim como os resultados técnicos obtidos, e decisões colaborativas com o Ministério estão disponibilizadas na wiki do respectivo repositório. Vamos detalhar aqui o trabalho arquitetural utilizado na estratégia *arquitetura microsserviços*.
 
 Implementar sistemas com modelos de aprendizado de máquina é sempre um desafio, o trabalho com os dados é o coração da aplicação e deve ter cuidados especiais. Cada situação tem suas peculiaridades e, no projeto Salic-ML, não foi diferente. Com o escopo definido ao redor do mundo da lei de Incentivo a Cultura, o Salic-ML tem como objetivo agilizar processos pelos quais um projeto cultural deveria passar caso se candidatasse ao incentivo fiscal.
 
@@ -273,9 +194,7 @@ O projeto completo está sendo desenvolvido como software livre, e pode ser aces
 
 
 
-**Documentação comprobatória**
-
-Grande parte do tempo de projeto foi dedicado aos estudos sobre os dados disponíveis. Entretanto, toda a análise tinha, como objetivo final, um produto que pudesse auxiliar os técnicos do Ministério a realizarem o seu trabalho de uma forma mais otimizada. Para isso, iniciou-se o trabalho da equipe de produto.
+**Documentação comprobatória** - Grande parte do tempo de projeto foi dedicado aos estudos sobre os dados disponíveis. Entretanto, toda a análise tinha, como objetivo final, um produto que pudesse auxiliar os técnicos do Ministério a realizarem o seu trabalho de uma forma mais otimizada. Para isso, iniciou-se o trabalho da equipe de produto.
 
 Por conta do tempo e do escopo definido, a arquitetura inicial envolvia apenas uma aplicação, com fundação no framework web Python Django. A chamamos de salic-ml-web. Nela, seria possível navegar entre os diversos projetos disponíveis na base de dados e visualizar uma nota global de cada um deles, calculada a partir dos algoritmos implementados pela equipe de data science.
 
@@ -347,7 +266,7 @@ Do ponto de vista arquitetural, apresentamos uma solução que viabiliza o uso d
 
 De acordo com o plano de trabalho, "O foco dessa etapa é executar o ciclo de projeto de software completo, desde a iniciação. Assim, o projeto já será iniciado como software livre e com as práticas de DevOps,  ferramentas e tecnologias modernas. Será focado o levantamento das tecnologias e  ferramentas usadas pela comunidade de software livre para automatizar o processo de  desenvolvimento e implantação do software, pois há pouca pesquisa focada nesse tema. O principal objetivo nessa etapa é exercitar em todo ciclo de projeto a experimentação e inovação contínua, de forma a subsidiar a pesquisa realizada na Etapa 5. 
 
-Referente à meta “Realizar estudos sobre funcionalidades de catálogo de software” e implemetação de um catálogo de software, foi feito um levantamento, juntamente com a CGTEC, da necessidade de se desenvolver um catálogo de software como previsto no plano de trabalho. Foram levantados como alguns governos lidam com o portifólio de projetos software livre, tais como as iniciativas do governo inglês de trabalhar majoritamente com software livre [https://governmenttechnology.blog.gov.uk/2016/12/15/next-steps-for-open-source-in-government/](https://governmenttechnology.blog.gov.uk/2016/12/15/next-steps-for-open-source-in-government/), e manter seu catálogo de software na própria organização github [http://gds-operations.github.io/](http://gds-operations.github.io/). Observamos também uma tendência mundial do uso de software livre no governo (egovernment - [http://www.egov4dev.org/success/definitions.shtml](http://www.egov4dev.org/success/definitions.shtml)), com uma quantidade crescente de adesão [https://government.github.com/community/](https://government.github.com/community/), [https://github.com/g0v](https://github.com/g0v). Observamos que o próprio repositório, organização, gitpages e wiki do repositório são utilizados para compor o catálogo de software. Como o principal objetivo dessa etapa é executar um ciclo completo de projeto, de comum acordo com a CGTEC, decidimos não desenvolver o catálogo de software, como previsto no calendário. Tal decisão está documentada e aprovada pelo Ministério no [Relatório de entrega da Etapa 3](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELATÓRIO%20ETAPA%203.md).
+Referente à meta “Realizar estudos sobre funcionalidades de catálogo de software” e implemetação de um catálogo de software, foi feito um levantamento, juntamente com a CGTEC, da necessidade de se desenvolver um catálogo de software como previsto no plano de trabalho. Foram levantados como alguns governos lidam com o portifólio de projetos software livre, tais como as iniciativas do governo inglês de trabalhar majoritamente com software livre [https://governmenttechnology.blog.gov.uk/2016/12/15/next-steps-for-open-source-in-government/](https://governmenttechnology.blog.gov.uk/2016/12/15/next-steps-for-open-source-in-government/), e manter seu catálogo de software na própria organização github [http://gds-operations.github.io/](http://gds-operations.github.io/). Observamos também uma tendência mundial do uso de software livre no governo (egovernment - [http://www.egov4dev.org/success/definitions.shtml](http://www.egov4dev.org/success/definitions.shtml)), com uma quantidade crescente de adesão [https://government.github.com/community/](https://government.github.com/community/), [https://github.com/g0v](https://github.com/g0v). Observamos que o próprio repositório, organização, gitpages e wiki do repositório são utilizados para compor o catálogo de software. Como o principal objetivo dessa etapa é executar um ciclo completo de projeto, de comum acordo com a CGTEC, decidimos não desenvolver o catálogo de software, como previsto no calendário. Tal decisão está documentada e aprovada pelo Ministério no [Relatório de entrega da Etapa 2](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELATÓRIO%20ETAPA%203.md).
 
 Vamos detalhar as demais tarefas realizas nesse pacote de trabalho. As entregas parciais estão disponíveis nos seguintes relatório de entrega aprovadas pelo ministério:
 
@@ -355,32 +274,21 @@ Vamos detalhar as demais tarefas realizas nesse pacote de trabalho. As entregas 
 
 - [Relatório Etapa 2](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R2/RELATÓRIO%20ETAPA%202.pdf)
 
-- [Relatório Etapa 3](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELATÓRIO%20ETAPA%203.md)
-
-- [Relatório Etapa 4](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R4/RELATÓRIO%20ETAPA%204.pdf)
-
-- [Relatório Etapa 5](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R5/RELATÓRIO%20ETAPA%205.pdf)
-
-- [Relatório Etapa 6](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R6/RELATÓRIO%20ETAPA%206.pdf)
-
-- [Relatório Etapa 7](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R7/RELATÓRIO%20ETAPA%207.pdf)
-
-
-
 
 ### Metas Específicas
 
 1. __Aplicação de práticas de experimentação e inovação contínua no desenvolvimento do projeto de Catálogo de Software Culturais__
 
-**Cancelado.** Durante a execução do projeto, percebemos que os objetivos desse pacote de trabalho estavam sendo realizados no desenvolvimento da TAIS e do SalicML. Adicionalmente, catálogo de softwares são apresentados atualmente como gitpages dentro das próprias organizações, otimizando a manutenção e evolução. Dessa forma, em conjunto acordo com o Ministério, essa frente foi extinta. Tal decisão foi documentada no relatório de entrega 2 (2 de maio de 2018), página 04, que foi devidamente aprovada pela equipe da gestão do projeto tanto na Unb quanto no Ministério.
+**Cancelado** - Durante a execução do projeto, percebemos que os objetivos desse pacote de trabalho estavam sendo realizados no desenvolvimento da TAIS e do SalicML. Adicionalmente, catálogo de softwares são apresentados atualmente como gitpages dentro das próprias organizações, otimizando a manutenção e evolução. Dessa forma, em conjunto acordo com o Ministério, essa frente foi extinta. Tal decisão foi documentada no relatório de entrega 2 (2 de maio de 2018), página 04, que foi devidamente aprovada pela equipe da gestão do projeto tanto na Unb quanto no Ministério.
+
+**Documento Comprobatório** - Relatório de Entrega 02 - [https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R2/RELATÓRIO%20ETAPA%202.pdf](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R2/RELATÓRIO%20ETAPA%202.pdf)
 
 2. __Realizar estudos e documentação do processo de desenvolvimento e das boas práticas e automações realizadas__
 
-**Concluído.**
-Quanto em relação as boas práticas de documentação técnica,  além de encontros técnicos para apresentação das práticas experimentadas no laboratório, alguns documentos técnicos foram elaborados para tal fim. Grande parte do time ficou focado em amadurecer o pipeline devops, atualizar o pipeline dos softwares do Ministério trabalhados no laboratório (Salic API, Salic, Mapas culturais), além de gerar a documentação técnica do conhecimento adquirido. Experimentamos várias formas de documentação técnica foram realizados durante o projeto. No projeto Tais, experimentamos realizar documentos técnicos de estudos precedentes a tomada de decisão. Tais estudos foram todos disponibilizados na wiki do projeto. Já o SalicML, experimentados a documentação técnica dos experimentos de data science disponíveis nos notebooks, nos quais o código está junto com a documentação técnica. No SalicAPI, utilizamos documentação técnica *readthedocs* para registrar tando as funcionalidades implementadas, quanto o roadmap do projeto. Finalmente, testamos os benefícios na realização de webinários como forma de documentação e compartilhamento de conhecimento, forma de treinamento. Todas essas formas de documentação são amplamente utilizadas pela comunidade opensource, e percebemos que cada contexto sugere um modelo próprio. A partir da nossa experiência, vimos que o formato de documentação técnica mais adequada para um projeto opensource é o formato adotado pela comunidade. Por exemplo, em comunidade de software livre que tratam de problemas de machine learning, ciência de dados, e processamento de sinais, o uso de notebooks para documentação técnica é o padrão adotado. 
+**Concluído** - Quanto em relação as boas práticas de documentação técnica,  além de encontros técnicos para apresentação das práticas experimentadas no laboratório, alguns documentos técnicos foram elaborados para tal fim. Grande parte do time ficou focado em amadurecer o pipeline devops, atualizar o pipeline dos softwares do Ministério trabalhados no laboratório (Salic API, Salic, Mapas culturais), além de gerar a documentação técnica do conhecimento adquirido. Experimentamos várias formas de documentação técnica foram realizados durante o projeto. No projeto Tais, experimentamos realizar documentos técnicos de estudos precedentes a tomada de decisão. Esses estudos foram todos disponibilizados na wiki do projeto. Já o SalicML, experimentados a documentação técnica dos experimentos de data science disponíveis nos jupyter notebooks, no qual o código está junto com a documentação técnica. No SalicAPI, utilizamos documentação técnica *readthedocs* para registrar tando as funcionalidades implementadas, quanto o roadmap do projeto. Finalmente, testamos os benefícios na realização de webinários como forma de documentação e compartilhamento de conhecimento, forma de treinamento. Todas essas formas de documentação são amplamente utilizadas pela comunidade opensource, e percebemos que cada contexto sugere um modelo próprio. A partir da nossa experiência, vimos que o formato de documentação técnica mais adequada para um projeto opensource é o formato adotado pela comunidade. Por exemplo, em comunidade de software livre que tratam de problemas de machine learning, ciência de dados, e processamento de sinais, o uso de notebooks para documentação técnica é o padrão adotado. 
 
 **Documentação comprobatória** - 
-Parte da documentação de DevOpsfoi disponibilizada no repositório do laboratório em https://gitlab.com/lappis-unb/docs, disponibilizada também como anexo no final deste documento, os documentos cobrem tanto a primeira quanto a terceira meta do período.
+Parte da documentação de DevOps foi disponibilizada no repositório do laboratório em https://gitlab.com/lappis-unb/docs, disponibilizada também como anexo no final deste documento, os documentos cobrem tanto a primeira quanto a terceira meta do período.
 
 Foi elaborado documentação/relatório descrevendo todo o pipeline usado para deploy contínuo no laboratório com os seguintes tutoriais, que podem ser aplicados em diversos contextos:
 
@@ -399,6 +307,8 @@ Toda a documentação foi realizada em português e disponibilizada para acesso.
 
 Um exemplo da documentação técnica de estudos da Tais está apresentado abaixo (os demais estarão disponíveis como anexo e disponíveis no repositório do projeto):
 
+----
+----
 ### Estudo de Métricas para Bots
 
 Este documento contém um estudo sobre métricas relevantes para o contexto de um(a) assistente virtual.
@@ -485,6 +395,8 @@ Um fluxograma que mostra o "caminho" percorrido pelos usuários em cada sessão 
 - [https://blog.growthbot.org/the-practical-guide-to-chatbot-metrics-and-analytics](https://blog.growthbot.org/the-practical-guide-to-chatbot-metrics-and-analytics)
 - [https://chatbotsmagazine.com/chatbot-analytics-101-e73ba7013f00](https://chatbotsmagazine.com/chatbot-analytics-101-e73ba7013f00)
 
+----
+----
 
 
 3. __Relatório com os  modelos de desenvolvimento e comunidade para serem aplicados aos projetos de software do Minc__
@@ -496,7 +408,7 @@ Em relação as automações realizadas, elas foram tomas mapeadas nas _issues_ 
 Como o desenvolvimento do catálogo de software foi cancelado, tanto as práticas quanto métodos e automações, além da documentação foi usada nos outros projetos desenvolvidos, como o projeto da Tais e SalicML.
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 O processo de construção colaborativa do planejamento e execução contínua foi feito em colaboração com o Ministério. Abaixo colocamos um exemplo do resultado de um planejamento estratégico da Etapa I.
 
 ### Planejamento Estratégico Etapa 1 - E1
@@ -545,30 +457,30 @@ Os planejamentos estratégicos foram sempre agendados via email e as decisões r
 
 ![Reuniao estrategica 1](figs/estrategico1.png)
 
-Além dos relatórios de entregas trimestrais que são aprovadas pelo Ministério, a documentação completa dos planejamentos estratégicos e execução desses ciclos estão disponíveis na wiki do projeto [https://github.com/lappis-unb/EcossistemasSWLivre/wiki](https://github.com/lappis-unb/EcossistemasSWLivre/wiki) e em apresentações que serão disponibilizada  nos anexos. Após o planejamento estratégico, cada time trabalhou de forma auto organizada para o planejamento das sprints, priorização das issues, e alocação de recursos. Para título de exemplo, o projeto Tais tem ao total de 30 sprints (milestones) e um total de 387 issues fechadas. Um resumo de como os principais repositórios se organizaram em issues está apresentado na próxima imagem.
+Além dos relatórios de entregas trimestrais que são aprovadas pelo Ministério, a documentação completa dos planejamentos estratégicos e execução desses ciclos estão disponíveis na wiki do projeto [https://github.com/lappis-unb/EcossistemasSWLivre/wiki](https://github.com/lappis-unb/EcossistemasSWLivre/wiki) e em apresentações que serão disponibilizada  nos anexos. Após o planejamento estratégico, cada time trabalha de forma auto-organizada para o planejamento das sprints, priorização das issues, e alocação de recursos. Para título de exemplo, o projeto Tais tem ao total de 30 sprints (milestones) e um total de 387 issues fechadas. Um resumo de como os principais repositórios se organizaram em issues está apresentado na próxima imagem.
 
 ![resumo dos repositorios](figs/total.png)
 
 
 4. __Transferência de conhecimento e capacitar a equipe de servidores e técnicos do MinC em práticas de gestão e desenvolvimento de software aberto, colaborativo e contínuo__
 
-**Concluído** - Durante toda a execução do projeto, tivemos a preocupação em manter a documentação técnica atualizada para deixar a comunidade dos projetos desenvolvidas receptivas. Além disso, realizamos ao longo do projeto diversos workshops de Devops, chatbots, ML, boas práticas, com a equipe técnica do ministério
-treinamentos. Ao amadurecer tecnicamente conhecimento sobre chatbots e a arquitetura da Tais, realizamos diversos webinares que estão disponibilizados no youtube, que abordam diversos aspectos técnicos importantes para a manutenção e evolução da Tais. Participamos também de 2 edições do pydata gravadas no qual apresentamos a visão geral da Tais e do SalicML. Tais materiais estão organizados e disponibilizados de forma que pessoas interessadas em manter e evoluir os projetos desenvolvidos no projeto terão todo o apoio técnico necessário.
+**Concluído** - Durante toda a execução do projeto, tivemos a preocupação em manter a documentação técnica atualizada para deixar a comunidade dos projetos desenvolvidas receptivas para novos contribuidores. Além disso, realizamos ao longo do projeto diversos workshops de Devops, chatbots, ML, boas práticas, com a equipe técnica do ministério
+treinamentos. Ao amadurecer tecnicamente conhecimento sobre chatbots e a arquitetura da Tais, realizamos diversos webinares que estão disponibilizados no youtube, que abordam diversos aspectos técnicos importantes para a manutenção e evolução da Tais. Participamos também de 2 edições do pydata gravadas no qual apresentamos a visão geral da Tais e do SalicML. Esses materiais estão organizados e disponibilizados de forma que pessoas interessadas em manter e evoluir os projetos desenvolvidos no projeto terão todo o apoio técnico necessário.
 
 
-**Documentação comprobatória** - A transferência e capacitação da equipe técnica do ministério foi realizada de forma contínua. Diversos workshops foram realizadas no laboratório. Parte da capacitação é possível por meio de documentação técnica e webinar, seguindo padrões de comunidades opensource. Em anexo ao  presente relatório serão apresentados todos os eventos de capacitação realizados ao longo do projeto. 
+**Documentação comprobatória** -  Em anexo ao  presente relatório serão apresentados todos os eventos de capacitação realizados ao longo do projeto. 
 
 Alguns exemplos de capacitações realizadas:
 
 
 *  Entrega Técnica Ciclo trimestral (15/08/2018) e workshop devops - A equipe Técnica do Ministério reuniu com a equipe projeto Ecossistemas para apresentação das entregas realizadas no ciclo trimestral de desenvolvimento e um workhop mão na massa devops.
 
-![Alt text](figs/entrega1.jpg)
+![Workshops técnicos no LAPPIS.](figs/entrega1.jpg)
 
 * LabConf (31/08/2018) - LabConf, ou Conferência dos laboratórios de inovação da cultura, foi o evento organizado pelo LAPPIS no Ministério da Cultura para que o arranjo de TED entre Universidade e o Ministério da Cultura pudesse ser discutido. Nesse dia, os demais laboratório (UFG, UFABC, UnB) puderam apresentar os avanços alcançados em seus respectivos projetos, diversos workshops práticos relacionados a DevOps foram ministrados pelos bolsistas do LAPPIS, e mesas rendondas foram realizadas para discutir modelos de contratação.
 
-![Alt text](figs/labconf.png)
-![Alt text](figs/labconf2.jpg)
+![Divulgação](figs/labconf.png)
+![Divulgação](figs/labconf2.jpg)
 
 * Webinar - Métricas importantes para chatbots - Autor(es): Guilherme Lacerda e Bruna Pinos
 [https://www.youtube.com/watch?v=yqzxZsOa3gg](https://www.youtube.com/watch?v=yqzxZsOa3gg)
@@ -596,7 +508,7 @@ De acordo com o plano de trabalho, "O principal resultado dessa pesquisa será s
 
 1. __Estudos de caso sobre comunidades de software livre onde o Estado participa por adesão, com prioridade para os softwares utilizados para a gestão cultural__
 
-**Concluído**
+**Concluído** - 
 
 
 **Documentação comprobatória** - 
@@ -697,7 +609,7 @@ Os dados gerais sobre o projeto da Tais são detalhados
 **Concluído** -
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** -
 
 - [Relatório Etapa 2](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R2/RELATÓRIO%20ETAPA%202.pdf)
 
@@ -705,7 +617,7 @@ Os dados gerais sobre o projeto da Tais são detalhados
 
 4. __Realizar estudos e compartilhar resultados sobre inovação DevOps e melhores práticas no contexto de integração e deploy contínuos__
 
-**Concluído**: Em algumas frentes, buscou-se cultuar a cultura DevOps para otimizar a entrega de valor no produto de software. Como fator comum na maioria dos casos, temos o uso de gerência de configuração utilizando:
+**Concluído** - Em algumas frentes, buscou-se cultuar a cultura DevOps para otimizar a entrega de valor no produto de software. Como fator comum na maioria dos casos, temos o uso de gerência de configuração utilizando:
 - Docker
 - Docker-Compose
 - Makefiles
@@ -741,7 +653,7 @@ Também houve a experimentação do Jenkins integrado ao Rancher 2.0. Todas as c
 
 Alguns resultados e lições aprendidas foram apresentados e discutidos pelos alunos de graduação nos Workshops organizados pelo laboratório e em eventos abertos a comunidade.
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 - [Configuração GitLabCI SALIC-ML](https://github.com/lappis-unb/salic-ml/blob/master/.gitlab-ci.yml)
 - [Configuração GitLabCI Tais (com reaproveitamento de _build_ entre _stages_)](https://github.com/lappis-unb/tais/blob/master/.gitlab-ci.yml)
 - [Apresentação sobre otimização de _pipeline_ no Workshop realizado na ENAP em 27/09/2019](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Workshop/Apresentacao/DevOps/PipelineTais_TrilhaDevOps.pdf)
@@ -775,7 +687,7 @@ Isso foi comunicado aos gestores do projeto e, no final de dezembro 2018, acordo
 Todos os resultados desta segunda empreitada, foram documentados no Relatório de acompanhamento 05 e aprovados pela equipe gestora de transição para o Ministério da Cidadania. Nesta mesma oportunidade, foi acordado que o custo de avançar com a adaptação do Portal Comparar seria muito grande para o projeto. Sendo assim, por decisão da CGTI, essa iniciativa foi dada como finalizada e concluída, ainda no Relatório de acompanhamento 05. A equipe “Promova Cultura”, em seguida, foi realocada para outras frentes, a saber: SALIC-ML, dashboard de BI da Tais e BotFlow.
 
 
-**Documentação comprobatória** 
+**Documentação comprobatória** - 
 
 - [Repositório do “Promova Cultura”](https://github.com/lappis-unb/PromovaCultura/)
 - [Técnica de Design Sprint - Ideias de “Panorama da cultura”](https://github.com/lappis-unb/PromovaCultura/wiki/Design-Sprints-Panorama)
@@ -831,7 +743,7 @@ Cabe frisar que os estudos computacionais de caráter exploratório foram 100% d
 O material produzido, todos os estudos e esboços de visualização, foram apresentados como parte do Relatório de Acompanhamento 6 e aprovado pelos gestores.
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** - 
 
 - [Repositório do “SALIC-ML”](https://github.com/lappis-unb/salic-ml/)
 - Exemplos de estudos de grafos:
@@ -907,7 +819,7 @@ diversas linguagens de programação, sendo possível realizar experimentos em
 produtos escritos em Python, PHP, Ruby, Javascript, entre outras.
 
 
-**Documentação comprobatória**
+**Documentação comprobatória** -
 
 - [Relatório Etapa 3](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELATÓRIO%20ETAPA%203.md)
 
@@ -915,12 +827,101 @@ produtos escritos em Python, PHP, Ruby, Javascript, entre outras.
 
 - [MeasureSoftGram: A Future Vision of Software Product Quality](anexos/ESEM%202018%20-%20PAPER%20229%20-%20camera_ready%20-%20final.pdf)
 
-2. __a mineração em repositórios de software e a análise científica de dados do software__
+2. __A mineração em repositórios de software e a análise científica de dados do software__
 
- **Concluído** - Análise que o Renato está fazendo
+ **Concluído** - O principal objetivo dessa meta é identificar métricas de repositórios de projetos de software que auxilie a compreender a qualidade do produto de software. O que se procurar com essas métricas 
 
 
 **Documentação comprobatória** -
+Iniciamos a análise dos repositórios apontando três métricas gerais, sendo elas:
+
+* **Número de linhas de código (LOC):** quantidade total de linhas de código  do projeto indicando, em parte, sua complexidade.
+* **Número de contribuidores:** quantidade de pessoas que contribuiram diretamente com o código do projeto.
+* **Esforço em meses:** quantidade de tempo pela qual a equipe trabalhou no projeto.
+
+A tabela abaixo apresenta estas métricas juntamente com as linguagens de programação predominantes utilizadas em cada uma das soluções para ajudar a contextualizar as tecnologias de cada projeto.
+
+Repositório	|	Linhas de Código	|	Número de Contribuidores	|	Esforço em Meses	|	Linguagem predomintante
+-	|	:-:	|	:-:	|	:-:	|	:-:
+**Tais**	|	15085	|	34	|	19	|	Python/Markdown/Jupyter Notebook
+**Rasa-ptbr-Boilerplate**	|	5397	|	17	|	8	|	Markdown
+**BotFlow**	|	4117	|	10	|	3	|	JavaScript
+**BotFlow API**	|	2062	|	11	|	4	|	Python
+**Promova Cultura**	|	103368	|	11	|	18	|	JavaScript
+**Salic-ML**	|	80268	|	14	|	18	|	Python/Jupyter Notebook / Markdown
+**Sailc ML FrontEnd**	|	20675	|	6	|	13	|	Vue / JavaScript
+**Salic API**	|	9786	|	15	|	-	|	Python
+
+Neste caso, destacam-se os projetos *Promova Cultura*, *Salic-ML*, *Sailc ML FrontEnd* e *Tais* como os de maior complexidade, o que é apontado pelo número de linhas de código e, consequentemente, os que tiveram maior tempo de dedicação da equipe. Considerando que todos as soluções são aplicações para serem executadas em servidor *web* com acesso via browser ou via API,  observa ainda o caráter inovador dos projeto que adotam de maneira predominante as linguagens de programação que estão hoje (Ano base 2019) com o maior crescimento de adoção no mercado (https://www.sciencealert.com/master-website-programming-with-these-ten-amazing-deals, https://www.geeksforgeeks.org/top-10-programming-languages-of-the-world-2019-to-begin-with/).
+
+## Métricas de volume de trabalho
+
+Em seguida, consideramos outras 4 métricas que apontam o volume de trabalho e fornecem uma noção da complexidade do projeto:
+
+* **Número de Commits:** indicam o número de grupos de alterações no código fonte, sendo um indicador do volume de atividades realizadas ao longo do projeto.
+* **Número de Arquivos:** quantidade total de arquivos do projeto indicando, em parte, sua complexidade.
+* **Número de linhas adicionadas / removidas:** quantidade de linhas de código adicionadas e removidas durante o período do projeto, indicando a quantidade de trabalho realizada incluindo melhorias à partir de refatoração do código.
+* **Média de Linhas modificadas por commit:** esta métrica indica a quantidade média de modificações realizadas à cada nova versão do sistema. Este é um importante indicador de boas práticas de desenvolvimeto, uma vez que novas submissões devem passar por revisão e, se forem muito extensas, dificultam sua avaliação e extendem o tempo necessários para as mesmas serem integradas à base de código e estarem disponíveis para os demais desenvolvedores. 
+
+Neste caso, se observa na tabela à seguir o grande volume de *commits* e alterações de código realizadas ao longo do desenvolvimetno de cada um dos projetos.
+
+Repositório	|	Número de Arquivos	|	Número de Commits	|	Número de Linhas Adicionadas / Linhas Removidas	|	Média de Linhas modificadas por commit
+-	|	:-:	|	:-:	|	:-:	|	:-:
+**Tais**	|	224	|	1441	|	167750 / 166147	|	232
+**Rasa-ptbr-Boilerplate**	|	62	|	297	|	30689 / 23840	|	184
+**BotFlow**	|	82	|	291	|	41078 / 35942	|	265
+**BotFlow API**	|	50	|	152	|	5947 / 3414	|	62
+**Promova Cultura**	|	133	|	229	|	800202 / 669861	|	6419
+**Salic-ML**	|	203	|	638	|	3150841 / 3076296	|	9760
+**Sailc ML FrontEnd**	|	38	|	113	|	43966 / 23038	|	593
+**Salic API**	|	156	|	399	|	69973 / 57328	|	319
+
+Considerando que a *Média de Linhas modificadas por commit* ainda representa um valor considerado alto de modificações cuja qualidade possa ser mais facilmente analisada e rastreada, levantou-se um histograma, mostrando, de maneira mais granular, a frequência de commits com a respectiva quantidade de modificações conforme pode ser observado na figura abaixo.
+
+![Histograma de commits](figs/histograma_commits.png)
+
+Neste caso, é possível observar que 40% dos commits não passa de 50 linhas modificadas. Na prática 63% dos commits altera até 150 linhas. Se observa ainda que em torno de 20% dos commits realizam alterações acima de 500 linhas por commit e, em análise pontual, foi possível observar que em sua maioria representam inclusões de bibliotecas externas ou mesmo arquivos de dados para treinamento de modelos de Machine Learning que podem chegar a até 20 mil linhas, cada um. Conclui-se então que, em sua maioria, os commits realizados estão seguindo as boas práticas de fazerem alterações pequenas de mais fácil compreensão e rastreamento.
+
+## Métricas de boas práticas de Engenharia de Software
+
+Para avaliar boas práticas no desenvolvimento das soluções de software, são consideradas 3 métricas gerais conforme à seguir:
+
+* **Quantidade de *Pull Requests*:** indicam a quantidade de submissões de alterações no código fonte. Associada ao número de commits, esta métrica demonstra o volume de atividades realizadas e também indica a boa prática de revisão de códigos submetidos antes das modificações serem aceitas.
+* **Quantidade de issues abertas/fechadas:** a *issues* de um repositório documentam tanto os requisitos do projeto em sua fase de desenvolvimento quanto necesisdades de evolução e necessidades de correções (*bugs*) observados em seu funcionamento. Seu propósito é socializar estas tarefas a serem realizadas, designar responsáveis, bem como deixar transparendo o que está sendo desenvolvido através da documentação do processo de construção do software.
+* **Pipeline de CI/CD:** configuração das técnicas de integração contínua (CI) e deploy contúnuo (CD) mostrando a maturidade do processo de desenvolvimento e manutenção da solução de software.
+
+Neste caso, a tabela à seguir aponta estas métricas em cada um dos repositórios onde é possível observar que praticamente todos eles adotaram as boas práticas de documentar *issues* nos repositórios e distribuí-las entre os membros da equipe, socializando o conhecimento e documentando a evolução do software. Os dois repositórios que não contém *issues* cadastradas (*BotFlowAPI* e *Sailc ML FrontEnd*) tiveram suas *issues* gerenciadas  nos repositórios equivalentes em suas frentes de trabalho. Uma outra boa prática observada é o uso do mecanismo de *Pull Request* onde as submissões de alterações no código são feitas para o repositório e tem que ser aprovadas por outros membros do projeto, incentivando a revisão do código, bem como ampliando o conhecimento de toda a equipe sobre a base se código que está sendo desenvolvida. Por fim, a configuração do pipeline de CI/CD em praticamente todos os repositórios demonstra a maturidade da solução de software com testes automatizados e métricas de análise estática de código. Este pipeline aumenta a confiança da equipe em reavaliar modificações em uma grande base de código uma vez que os testes podem apontar falhas antes que submissões novas possam ser aceitas.
+
+Repositório	|	Quantidade de Pull Requests (Abertos/Fechados)	|	Número de Issues (Abertas / Fechadas)	|	Pipeline CI/CD
+-	|	:-:	|	:-:	|	:-:
+**Tais**	|	0 / 158	|	39 / 387	|	GitlabCI / CD
+**Rasa-ptbr-Boilerplate**	|	1 / 55	|	15 / 44	|	GitlabCI 
+**BotFlow**	|	1 / 54	|	34 / 50	|	TravisCI
+**BotFlow API**	|	0 / 24	|	0 / 0	|	-
+**Promova Cultura**	|	1 / 78	|	19 / 157	|	-
+**Salic-ML**	|	0 / 89	|	38 / 292	|	GitlabCI
+**Sailc ML FrontEnd**	|	1 / 17	|	0 / 0	|	GitlabCI / TravisCI
+**Salic API**	|	2/31	|	17/53	|	GitlabCI
+
+## Métricas de adoção pela comunidade
+
+Duas métricas importantes para avaliar a adoção do software livre pela comunidade são o número de *Estrelas* e o número de *Forks* nos reposirótios conforme explicados à seguir:
+
+* **Estrelas:** O número de estrelas em um repositório demonstra como a comunidade classifica cada um dos projetos. Quanto maior é o número, mais visível é o projeto da comunidade. (Ref. https://medium.appbase.io/analyzing-20k-github-repositories-af76de21c3fc)
+* **Forks:** Os *Forks* representam as cópias do repositório feita por membros da comunidade. Um *fork* pode ser feito por membros da comunidade tanto para que contribuam para o projeto original (atrávés de *Pull Requests* / *Merge Requests*) quanto para a realização de derivações do projeto original em outras soluções. (Ref. https://medium.appbase.io/analyzing-20k-github-repositories-af76de21c3fc)
+
+A tabela à seguir apresenta estas duas métricas para cada um dos repositórios juntamente com a data de criação de cada um dos projetos. Pela tabela, é possível observar que projetos com caráter mais interno como os do Salic tem menos adoção da comunidade, enquanto projetos cuja base de código pode ser aproveitada por outros órgãos como a *Tais* e o *Rasa-ptbr-Boilerplate* apresentam um índice de adoção da comunidade bem mais alto. O destaque aqui fica com o projeto *Rasa-ptbr-Boilerplate* que foi baseado na experiência da *Tais* e, mesmo tendo sido desenvolvido só em 2019, já possui 65 *Forks* mostrando uma ótima adoção da comunidade. Além disso, pode ser observado que os projetos do *BotFlow* / *BotFlowAPI* que foram iniciados em meados de 2019 e só tiveram sua primeira versão estável em set/2019 também já contam com *Forks* da comunidade.
+
+Repositório	|	Forks	|	Número de Estrelas	|	Data de Criação
+-	|	:-:	|	:-:	|	:-:
+**Tais**	|	26	|	28	|	21/03/2018
+**Rasa-ptbr-Boilerplate**	|	65	|	42	|	21/01/2019
+**BotFlow**	|	2	|	9	|	03/06/2019
+**BotFlow API**	|	1	|	3	|	21/05/2019
+**Promova Cultura**	|	0	|	5	|	21/03/2018
+**Salic-ML**	|	0	|	4	|	21/03/2018
+**Sailc ML FrontEnd**	|	0	|	0	|	27/08/2018
+**Salic API**	|	4	|	2	|	10/01/2018
 
 
  3. __prospectar uma sistemática, baseada em evidência científica, que auxilie  a homologação de produtos de software, em obediência ao normativo estabelecido__
