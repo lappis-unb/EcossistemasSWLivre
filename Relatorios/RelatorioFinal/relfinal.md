@@ -108,6 +108,9 @@ Os resultados desse pacote de trabalho, e as entregas foram documentadas nos seg
 Além dos relatórios, foi escrito um artigo no Medium sobre o projeto SALIC-ML (), foi apresentado o trabalho do SALIC-ML na comunidade Pydata Brasília  (25/06/2019), com o título "Como construir uma aplicação com features baseadas em data science". Mais detalhes sobre os eventos serão apresentados no pacote de trabalho "Estudos sobre práticas de gestão colaborativa em comunidades de software aberto".
 
 ![Apresentação no pyData.](figs/pydatamoura.jpg)
+
+
+
 ![Apresentação no pyData.](figs/pydatamoura2.jpg)
 
 
@@ -123,7 +126,7 @@ Essa estratégia, chamada *legacy in the box*, é sugerida na literatura do esta
 
 **Documentação comprobatória** - A lista de projetos que foram refatorado utilizando a estratégia *legacy in the box* está disponibilizado no [Relatório Etapa 1](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R1/RELATÓRIO%20ETAPA%201.pdf). O principal benefício dessa estratégia é visto no projeto do [Salic](https://github.com/culturagovbr/salic-minc), o principal software desenvolvido e mantido pelo ministério. Com a estratégia *legacy in the box* foi possível realizar pipeline de deploy/entrega contínua e agilizar o processo de deploy.  A figura abaixo mostra o histórico de releases do salic. Pode-se notar que o processo de release, e logo de deploy/entrega contínua foi adotada somente após a aplicação da técnica  *legacy in the box*. Na imagem, nota-se que tal técnica possibilitou a realização de até 24 realises em um mês.
 
-![Releases do Projeto Salic.](figs/salic-devops.jpg)
+![Releases do Projeto SalicMinc.](figs/salic-devops.jpg)
 
 
 Parte da documentação de DevOps foi disponibilizada no repositório do laboratório em https://gitlab.com/lappis-unb/docs, disponibilizada também como anexo no final deste documento. Os documentos cobrem tanto a presente meta quanto a meta de documentação de software livre (e será reapresentado no relatório).
@@ -147,13 +150,13 @@ A terceira técnica de refatoração de sistemas legados foi no contexto de inse
 
 **Documentação comprobatória** - Quanto a estratégia refatoração, foi aplicado ao [SALIC API](https://github.com/lappis-unb/salic-api). A figura abaixo mostra a evolução das métricas relacionadas ao código.
 
-![Fig DevopsSalic](figs/SALICAPI.png)
+![Salic API - qualidade de código estática antes e depois da refatoração.](figs/SALICAPI.png)
 
  Além de instrumentar a API com automações como conteiner, integração contínua (testes automatizados, build, teste de folha de estilo), foi realizados testes (cobertura atual de 87%). Foi adicionada também o graphQL para facilitar a consulta na API. Três docker composers foram implementados com o ambiente de desenvolvimento, ambiente de homologação e ambiente de produção. Foi também feito a documentação técnica para agilizar a manutenção e evolução da API utilizando *readthedocs*, disponibilizado no gitpage [https://salic-api.readthedocs.io/pt/latest/index.html](https://salic-api.readthedocs.io/pt/latest/index.html). Com essa estratégia, temos o projeto SALIC-API respeitando todas as recomendações de comunidades *open source*. Com isso, esse projeto, dentre os mantidos pelo ministério com  licenças abertas, é o mais receptivo para contribuições externas, da comunidade de software.
 
-![Fig DevopsSalic](figs/salicapi2.png)
+![Salic API - documentação e padrões de projetos de acordo com comunidades de software livre.](figs/salicapi2.png)
 
-![Fig DevopsSalic](figs/salicapi1.png)
+![Salic API - cobertura de testes.](figs/salicapi1.png)
 
 
 Finalmente, a estratégia de arquitetura microsserviços foi aplicado em no [SalicML](https://github.com/lappis-unb/salic-ml).
@@ -192,7 +195,7 @@ Como resultado desta divisão interna, foi planejado o seguinte fluxo de trabalh
 1. Atualizar, no salic-ml-web, a versão utilizada do salic-ml para permitir o uso da nova feature implementada.
 3. Mostrar os resultados da métrica em um front-end acessível pelos técnicos do MinC.
 
-![Salicml1](figs/salicml1.jpg)
+![Arquitetura inicial do saliml](figs/salicml1.jpg)
 
 As vantagens deste modelo foram:
 
@@ -208,13 +211,13 @@ Para tentar amenizar estes problemas, técnicas de DevOps foram utilizadas para 
 
 Além dos pontos mencionados, havia uma preocupação em relação à integração com o SALIC, já implementado no Ministério. Para isso, em um determinado momento, trocou-se o conceito e a arquitetura interna do salic-ml-web para que ele se tornasse uma API baseada no Django Rest Framework e que o frontend fosse apenas um protótipo de homologação das informações, feito em VueJS (salic-ml-frontend). Esperava-se que, em algum momento, as informações resultantes dos algoritmos fossem repassadas para o SALIC e que o frontend fosse, no máximo, reutilizado na integração.
 
-![arquitetura após primeira modificação, com frontend separado e o pacote acoplado no salic-ml-web](figs/salicml2.jpg)
+![Arquitetura após primeira modificação, com frontend separado e o pacote acoplado no salic-ml-web](figs/salicml2.jpg)
 
 
 Dada a implementação do pacote salic-ml, que espelhava o que foi feito nos Python Notebooks, era necessário alimentar os algoritmos com os mesmos tipos de input utilizados na fase de data science. Para isso, foi necessário mapear um Docker Volume, por meio do Docker Compose, para a pasta na qual o pacote era instalado dentro do contâiner. Nesta pasta, seriam inseridos os arquivos (.csv) contendo os dados exigidos pelos algoritmos.
 
 
-![tecnologias envolvidas na aplicação salic-ml-web](figs/salicml3.png)
+![Tecnologias envolvidas na aplicação salic-ml-web](figs/salicml3.png)
 
 Observou-se os seguintes problemas:
 
@@ -223,7 +226,7 @@ Observou-se os seguintes problemas:
 
 Para tentar amenizar o segundo problema, além de serializar o objeto em um Pickle File, houve uma mudança arquitetural que removeria a necessidade do salic-ml-web instanciar o objeto que calculava os algoritmos. Mantendo a ideia do serviço único por equipe, criou-se o lappis-learning, uma aplicação Python Flask que implementava os algoritmos resultantes da análise dos dados e disponibilizava os resultados, em formato de JSON, por meio de uma API. Desta maneira, o objeto que leva mais tempo para ser instanciado fica completamente desacoplado da aplicação que exige uma maior cadência de modificações, facilitando o desenvolvimento.
 
-![arquitetura resultante após a criação do lappis-learning](figs/salicml4.jpg)
+![Arquitetura resultante após a criação do lappis-learning](figs/salicml4.jpg)
 
 Aproveitando a modificação arquitetural, optou-se por eliminar o uso dos .csv's. A aplicação lappis-learning obtém os dados diretamente do banco de dados, eliminando a necessidade de se manter os arquivos que os continham.
 
@@ -436,13 +439,13 @@ Planejamento referente a Etapa I do projeto (Novembro 2017 a Fevereiro 2018)
 
 Os planejamentos estratégicos foram sempre agendados via email e as decisões registradas nos emails, e registradas em issues/apresentações e wiki do projeto. Abaixo estão os tipos de emails trocados para esse fim. Em anexo vamos colocar alguns das apresentações realizadas tanto para o planejmanento estratégico quanto para oficialização das entregas.
 
-![Reuniao estrategica](figs/estrategico.png)
+![Reuniões estratégicas: comunicação via email.](figs/estrategico.png)
 
-![Reuniao estrategica 1](figs/estrategico1.png)
+![Reuniões estratégicas: comunicação via email.](figs/estrategico1.png)
 
 Além dos relatórios de entregas trimestrais que são aprovadas pelo Ministério, a documentação completa dos planejamentos estratégicos e execução desses ciclos estão disponíveis na wiki do projeto [https://github.com/lappis-unb/EcossistemasSWLivre/wiki](https://github.com/lappis-unb/EcossistemasSWLivre/wiki) e em apresentações que serão disponibilizada  nos anexos. Após o planejamento estratégico, cada time trabalha de forma auto-organizada para o planejamento das sprints, priorização das issues, e alocação de recursos. Para título de exemplo, o projeto Tais tem ao total de 30 sprints (milestones) e um total de 387 issues fechadas. Um resumo de como os principais repositórios se organizaram em issues está apresentado na próxima imagem.
 
-![resumo dos repositorios](figs/total.png)
+![Resumo dos repositórios desenvolvidos durante o projeto "Ecossistemas de Software Livre".](figs/total.png)
 
 
 4. __Transferência de conhecimento e capacitar a equipe de servidores e técnicos do MinC em práticas de gestão e desenvolvimento de software aberto, colaborativo e contínuo__
@@ -469,9 +472,9 @@ Alguns exemplos de capacitações realizadas:
 * Webinar - Métricas importantes para chatbots - Autor(es): Guilherme Lacerda e Bruna Pinos
 [https://www.youtube.com/watch?v=yqzxZsOa3gg](https://www.youtube.com/watch?v=yqzxZsOa3gg)
 
-![Webinar metricas](figs/webinar_metricas_importantes.png)
+![Webinar metricas de chatbot.](figs/webinar_metricas_importantes.png)
 
-![Alt text](figs/webinar24-04.jpg)
+![Exemplo de convites de webinar organizados pelo Lappis.](figs/webinar24-04.jpg)
 
 A lista completa de atividades de capacitação realizadas ao longo do projeto estão em anexo. Algumas dessas iniciativas/eventos foram aprovados nos relatórios de entregas parciais:
 
@@ -577,27 +580,113 @@ Os dados gerais sobre o projeto da Tais são detalhados
 
 
 2. __Realizar estudos e propor técnicas de aprendizado supervisionado e detecção de anomalias para automatizar as trilhas de auditoria na fase de aprovação e prestação de contas__
-
-**Concluído** -
-
-
-**Documentação comprobatória**
-
-- [Relatório Etapa 3](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELATÓRIO%20ETAPA%203.md)
-
-- [Relatório Etapa 4](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R4/RELATÓRIO%20ETAPA%204.pdf)
-
 3. __Realizar estudos e propor técnicas de reconhecimento de padrão e Inteligência de Negócio para análise dos projetos submetidos via Lei Rouanet__
 
+**Concluídos** - As metas 2 e 3 foram concluídas no âmbito do projeto Salic-ml. O salic-ml é um projeto aberto que utiliza data science e inteligência artificial para apoiar o acompanhamento e prestação de contas de projetos culturais viabilizados pela Lei Rouanet (Lei Brasileira de fomento e incentivo à cultura) e acompanhados pelo sistema Salic.
 
-**Concluído** -
+O projeto se iniciou em março de 2018, em uma parceria entre o LAPPIS e o Ministério da Cidadania (MinC). A primeira fase do projeto teve foco no levantamento do ciclo de vida de projetos culturais e em seus principais pontos de melhoria. Em julho de 2018 foi iniciada a Fase 2 do projeto, quando foram definidas as primeiras metas e entregas de curto e médio prazo. A principal motivação desse projeto é auxiliar o ministério a lidar com 17 mil projetos que já foram executados mas ainda aguardam avaliação (passivos), como mostrado na figura abaixo.
+
+![Quantidade de projetos executados e avaliados pela Lei de Incentivo a cultura](figs/passivo.png)
+
+Serão apresentados detalhes de pesquisa, planejamento e guias de contribuição. Discussões e principais ideias podem ser encontradas na seção Issues; e detalhes sobre os resultados e datasets utilizados estão no github do projeto.
+
+Foram desenvolvidos duas grandes funcionalidades para o Salic-ml:
+
+- Sistema de informações de projetos na etapa de análise de resultados: criação de indicadores de complexidade e qualidade de projetos culturais, relação de projetos mais similares e relação de comprovantes mais críticos e suspeitos;
+
+- Sistema de recomendações de projetos durante as fases de admissão e execução: sugestões de modificação da planilha orçamentária e sugestões de acompanhamento do projeto.
 
 
-**Documentação comprobatória** -
+
+**Documentação comprobatória** - As entregas foram divididas em sprints de duas semanas e a frente se organizou em três equipes:
+
+- Time de pesquisa e geração: responsável pelo estudo dos dados do Salic e geração de métricas e indicadores que possam ajudar os técnicos da Sefic (Secretaria de Fomento e Incentivo à Cultura) a analisar projetos culturais, por exemplo: métricas de nível de complexidade de projetos culturais, semelhança entre projetos culturais, entre outras. Repositório da equipe: salic-ml
+- Time de disponibilização de dados: responsável por disponibilizar as métricas e indicadores gerados pelo time de pesquisa e extração para que os mesmos possam ser utilizados de alguma forma na plataforma Salic ou em algum outro sistema de interesse. Repositório da equipe: salic-ml-web
+- Time de DataViz: responsável pela integração das métricas e indicadores gerados na plataforma Salic. Repositório da equipe: salic-ml-web
+
+Essa configuração de equipe foi baseada em projetos de data science e machine learning de referência.
+
+Todas as sprints contam com uma reunião inicial de planejamento com duração de aproximadamente 3 horas, reuniões não formais ao longo do período de desenvolvimento (conforme a necessidade) e, ao final, uma reunião de revisão e retrospectiva. As reuniões inicial e final são realizadas, idealmente, com todos os membros dos três times da frente.
+
+Como todo o produto será software livre e disponibilizado na plataforma GitHub, o grupo decidiu por utilizar o GitHub com a extensão ZenHub para gerenciar o backlog de tarefas.
+
+Ao início de cada entrega, as tarefas de todas as equipes são cadastradas no repositório salic-ml do GitHub como issues e adicionadas à milestone referente àquela entrega. À cada entrega é dado o nome de uma ponte famosa (Golden Bridge, JK Bridge, entre outras) para facilitar a associação da mesma às suas tarefas.
+
+Todas as issues são adicionadas também ao board "Backlog" do ZenHub. Durante a reunião de planejamento, as tarefas da sprint são priorizadas, atribuídas aos membros do time e movidas para a aba "Sprint Backlog". Durante a sprint, as issues em andamento são movidas para a aba "Doing". Após finalizadas, é aberto um pull request e, assim que ele é revisado e aprovado, a issue é movida para a aba "Done". Durante a reunião de revisão e retrospectiva, as issues finalizadas são movidas para a aba "Closed", o que encerra o ciclo de vida de uma tarefa.
+
+Todas as tarefas devem ter critérios de aceitação bem definidos em sua descrição. É comum para todas as tarefas que a documentação e a criação de testes automatizados sejam escritos como critério de aceitação.
+
+Por fim, aqui na Wiki são documentadas todas as reuniões da frente e eventuais estudos sobre temas relacionados ao projeto.
+
+A primeira etapa do projeto tiveram os seguintes objetivos:
+-  Entender o ciclo de vida de projetos culturais
+- Entender o ciclo de trabalho da Sefic
+- Identificar gargalos no processo
+- Apresentar oportunidades de melhorias para o Salic
+- Definir roadmap para o projeto
+
+A segunda etapa do projeto tiveram os seguintes objetivos:
+
+- Indicadores de complexidade e qualidade de projetos culturais
+- Relação de similaridade entre projetos
+- Sistema de recomendações de projetos na etapa de Análise de Resultados
+- Sistema de recomendações de projetos nas etapas de Admissão e Execução
+
+Quanto à complexidade de projetos culturais, foram levantados junto à equipe técnica da SEFIC como eles identificam o um projeto simples e um projeto complexo a ser analisado. O objetivo é ranquear os projetos de acordo com a métrica de complexidade, a fim de orientar a equipe técnica na priorização da análise dos projetos, assim como em como delegar os projetos. Nas Figuras abaixos apresentamos a evolução do projeto, desde as primeiras métricas, validadas e evoluidas a partir do feedback da equipe técnica do ministério. 
+
+![Dashboard de complexidade de projetos culturais.](figs/salicml.png)
+
+![Exemplo de métricas calculadas.](figs/salicml1.png)
+
+Além de evoluir questões relacionadas a área de negócio, também criamos um sistema de recomendação para etapa de admissibilidade. No qual, a partir do segmento do proponente e da planilha orçamentária submetida, recomendamos a inserção/retirada de itens orçamentários a partir da análise dos dados das planilhas orçamentárias de projetos já executados. A figura abaixo ilustra o exemplo de recomendação.
+
+![Recomendação de itens para etapa de admissão.](figs/salicml2.png)
+
+
+Para chegar as métricas mostradas, detecção de outliers, e sistemas de recomendação, definimos o seguinte processo. A partir das hipóteses levantandas a partir de reuniões com a equipe técnica do ministério e análise do banco de dados dos projetos submetidos via salic, a equipe de pesquisa formulava a hipótese de melhoria. Um exemplo de hipótese é 
+
+*Realizar estudo comparativo entre diversos modelos de detecção de outlier no contexto da métrica "Razão entre o número de itens com comprovante e o número de itens por projeto".*
+
+**Tarefas**
+
+- [x] Estudo de técnicas de detecção de outlier, verificando a viabilidade de cada técnica para o contexto
+- [x] Detalhar resultados encontrados
+- [x] Comparar resultados dos diversos modelos
+
+**Critérios de aceitação**
+
+- [x] Notebook disponível da `master` comparando diversos modelos de detecção de outlier
+- [x] Conclusão de qual método é melhor
+
+
+Essas hipóteses eram desenvolvidas em  jupyter notebooks. Mais de 40 notebooks (entre versões e hipoteses) foram desenvolvidos ao longo do projeto. Nessa etapa, os dados eram extraídos do banco de dados, realizados pré processamentos para condicionar esses dados, o processamento, e análise dos resultados. A imagem abaixo mostra um trecho de como esses notebooks eram desenvolvidos/documentados. 
+
+![Jupiter Notebook com o desenvolvimento de hipóteses do projeto salic-ml](figs/salicmljupyter.png)
+
+Os resultados eram compartilhados com o time completo. Sendo válidos os resultados e a hipótese, passavamos para etapa de implementar na API do salic ML a funcionalidade. Uma vez implementada, construimos uma visualização para validar as hipóteses com a equipe técnica do ministério. 
+
+A entrega dessas meta é então uma API que calcula as seguintes métricas de complexidade de projetos Culturais:
+
+- Valor comprovado
+- Comprovantes com extrapolação de 50%
+- Projetos do mesmo proponente
+- Novos fornecedores
+- Itens orçamentários
+- Comprovantes de pagamentos
+- Recomendação de itens orçamentários
+- Ranking dos projetos de 
+
+O acompanhamento dessas entregas estão disponíveis nos reguintes relatórios de acompanhamento: 
 
 - [Relatório Etapa 2](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R2/RELATÓRIO%20ETAPA%202.pdf)
 
+
+- [Relatório Etapa 3](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELATÓRIO%20ETAPA%203.md)
+
+
 - [Relatório Etapa 4](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R4/RELATÓRIO%20ETAPA%204.pdf)
+
+
 
 4. __Realizar estudos e compartilhar resultados sobre inovação DevOps e melhores práticas no contexto de integração e deploy contínuos__
 
@@ -732,14 +821,14 @@ O material produzido, todos os estudos e esboços de visualização, foram apres
 - [Repositório do “SALIC-ML”](https://github.com/lappis-unb/salic-ml/)
 - Exemplos de estudos de grafos:
 
-![Ex. 1](https://user-images.githubusercontent.com/38992510/55029111-07993980-4fe8-11e9-8be0-54c0abb829c5.png)
-![Ex. 2](https://user-images.githubusercontent.com/38992510/55029348-a32aaa00-4fe8-11e9-8dc9-abf585f80618.png)
-![Ex. 3](https://user-images.githubusercontent.com/38992510/55029567-24823c80-4fe9-11e9-920a-545b249fdb20.png)
-![Ex. 4](https://user-images.githubusercontent.com/38992510/55029711-85117980-4fe9-11e9-87ac-676af291d7ac.png)
-![Ex. 5](https://user-images.githubusercontent.com/38992510/55029866-e9ccd400-4fe9-11e9-9d00-bf29971c8971.png)
-![Ex. 6](https://user-images.githubusercontent.com/38992510/55030330-eede5300-4fea-11e9-8eee-58a3ef8ffb82.png)
-![Ex. 7](https://user-images.githubusercontent.com/38992510/55030556-68764100-4feb-11e9-8dc5-a8c69815d69e.png)
-![Ex. 8](https://user-images.githubusercontent.com/38992510/55031159-ba6b9680-4fec-11e9-9a0b-614b20f3afd3.png)   
+![Exemplo de grafo.](https://user-images.githubusercontent.com/38992510/55029111-07993980-4fe8-11e9-8be0-54c0abb829c5.png)
+![Exemplo de grafo.](https://user-images.githubusercontent.com/38992510/55029348-a32aaa00-4fe8-11e9-8dc9-abf585f80618.png)
+![Exemplo de grafo.](https://user-images.githubusercontent.com/38992510/55029567-24823c80-4fe9-11e9-920a-545b249fdb20.png)
+![Exemplo de grafo.](https://user-images.githubusercontent.com/38992510/55029711-85117980-4fe9-11e9-87ac-676af291d7ac.png)
+![Exemplo de grafo.](https://user-images.githubusercontent.com/38992510/55029866-e9ccd400-4fe9-11e9-9d00-bf29971c8971.png)
+![Exemplo de grafo.](https://user-images.githubusercontent.com/38992510/55030330-eede5300-4fea-11e9-8eee-58a3ef8ffb82.png)
+![Exemplo de grafo.](https://user-images.githubusercontent.com/38992510/55030556-68764100-4feb-11e9-8dc5-a8c69815d69e.png)
+![Exemplo de grafo.](https://user-images.githubusercontent.com/38992510/55031159-ba6b9680-4fec-11e9-9a0b-614b20f3afd3.png)   
 - [Issue 312](https://github.com/lappis-unb/salic-ml/issues/312)
 - [Issue 326](https://github.com/lappis-unb/salic-ml/issues/326)
 - [Relatório de Acompanhamento 6](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R6/)
@@ -885,7 +974,7 @@ Repositório	|	Número de Arquivos	|	Número de Commits	|	Número de Linhas Adic
 
 Considerando que a *Média de Linhas modificadas por commit* ainda representa um valor considerado alto de modificações cuja qualidade possa ser mais facilmente analisada e rastreada, levantou-se um histograma, mostrando, de maneira mais granular, a frequência de commits com a respectiva quantidade de modificações conforme pode ser observado na figura abaixo.
 
-![Histograma de commits](figs/histograma_commits.png)
+![Histograma de número de linhas modificadas por commits](figs/histograma_commits.png)
 
 Neste caso, é possível observar que 40% dos commits não passa de 50 linhas modificadas. Na prática 63% dos commits altera até 150 linhas. Se observa ainda que em torno de 20% dos commits realizam alterações acima de 500 linhas por commit e, em análise pontual, foi possível observar que em sua maioria representam inclusões de bibliotecas externas ou mesmo arquivos de dados para treinamento de modelos de Machine Learning que podem chegar a até 20 mil linhas, cada um. Conclui-se então que, em sua maioria, os commits realizados estão seguindo as boas práticas de fazerem alterações pequenas de mais fácil compreensão e rastreamento.
 
