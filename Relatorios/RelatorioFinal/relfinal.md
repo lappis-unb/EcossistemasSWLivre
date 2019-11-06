@@ -83,23 +83,6 @@ Nota-se ainda que o projeto abrange atividades de pesquisa, formação de alunos
 
 Finalmente, além do desenvolvimento de uma solução para o Ministério da Cidadania, o projeto parte de uma lógica de parceria com a universidade e pressupõe a criação de insumos de pesquisa e produção acadêmica. A maior parte dos membros da equipe é formada por alunos do curso de Engenharia de Software, sendo que a participação no projeto contribuiu diretamente para a formação dos mesmos. Alguns destes alunos adotaram temas relacionados ao projeto como tema em seus trabalhos de conclusão de curso ainda em andamento. Foram publicados dois artigos científicos, um deles, com o título "FLOSS FAQ chatbot project reuse - how to allow nonexperts to develop a chatbot" que contém a experienca no desenvolvimento da Tais, este trabalho foi apresentado no OpenSym, um dos maiores simposios de pesquisa acadêmica em software livre. O segundo, com o título "A Survey of DevOps Concepts and Challenges" foi aceito  na revista **Computing Surveys** da ACM, de alto impacto acadêmico (A1 no critério de Qualis da Capes) e mostra o resultado acadêmico dos estudos em DevOps. Foi publicado também um capítulo do livro "Software e Cultura no Brasil - Produção, gestão e políticas publicas",  no qual discutimos os modelos de contratação nas equipes de TI do governo federal, no capítulo "Colaboração aberta e sua relação com a contratação de software na administração pública".
 
-# Análise das métricas dos repositórios
-
-Com o intuito de compreender a dinâmica de desenvolvimento e a qualidade de cada uma das soluções de software desenvolvidas durante o período do projeto, foi realizada uma análise das métricas dos repositórios onde estão hospedados os códigos fonte e as respectivas documentações.
-
-É importante ressaltar o fato de todos os softwares terem sido desenvolvidos como softwares livres sob a licença recíproca total *GNU General Public License* versão *3*, o que permite acesso público à todo o código bem como todos os direitos intrínsicos ao software livre.
-
-Estão contemplados nesta análise 8 repositórios, sendo eles:
-
-1. **Tais:** A Tais (Tecnologia de Aprendizado Interativo do Salic) é um chatbot desenvolvido para o projeto da Lei Rouanet com o objetivo de ajudar os proponentes nos momentos de dúvida. A Tais é baseada no framework Rasa. Disponível em: https://github.com/lappis-unb/tais. 
-2. **Rasa-ptbr-Boilerplate:**  Projeto feito com a tecnologia  Rasa incluindo as configurações iniciais necessárias para a construção de um projeto chatbot. Disponível em: https://github.com/lappis-unb/rasa-ptbr-boilerplate.
-3. **BotFlow:** O BotFlow é uma plataforma criada para facilitar a criação e edição de conteúdos para o desenvolvimento de ChatBots que utilizam o framework Rasa. Neste repositório estão os códigos referentes à camada de visualização (*Front-end*). Disponível em: https://github.com/lappis-unb/BotFlow.
-4. **BotFlowAPI:** O BotFlowAPI é a API baseada no protocolo REST para permitir o funcionamento do BotFlow. Disponível em: https://github.com/lappis-unb/BotFlowAPI.
-5. **Promova Cultura:** O PromovaCultura tem como objetivo principal desenvolver visualizações de dados sobre a Lei Federal de Incentivo à Cultura. Disponível em: https://github.com/lappis-unb/PromovaCultura.
-6. **SalicML:** Módulo para análise dos dados do Salic por meio de algoritmos de aprendizagem de máquina . Disponível em: https://github.com/lappis-unb/salic-ml.
-7. **SalicAPI:** API aberta para o sistema SALIC. Tem por objetivo expor os dados de projetos da lei Rouanet. Disponível em: https://github.com/lappis-unb/salic-api.
-8. **SailcMLFrontEnd:** Protótipo de front-end para o módulo SalicML. Disponível em: https://github.com/lappis-unb/salic-ml-frontend.
-
 
 # Metas alcançadas
 
@@ -479,8 +462,9 @@ Alguns exemplos de capacitações realizadas:
 
 * LabConf (31/08/2018) - LabConf, ou Conferência dos laboratórios de inovação da cultura, foi o evento organizado pelo LAPPIS no Ministério da Cultura para que o arranjo de TED entre Universidade e o Ministério da Cultura pudesse ser discutido. Nesse dia, os demais laboratório (UFG, UFABC, UnB) puderam apresentar os avanços alcançados em seus respectivos projetos, diversos workshops práticos relacionados a DevOps foram ministrados pelos bolsistas do LAPPIS, e mesas rendondas foram realizadas para discutir modelos de contratação.
 
-![Divulgação](figs/labconf.png)
-![Divulgação](figs/labconf2.jpg)
+![Programação da Conferência dos Laboratórios de inovação da Cultura, organizada pelo LAPPIS.](figs/labconf.png)
+
+![Conferência dos Laboratórios de inovação da Cultura.](figs/labconf2.jpg)
 
 * Webinar - Métricas importantes para chatbots - Autor(es): Guilherme Lacerda e Bruna Pinos
 [https://www.youtube.com/watch?v=yqzxZsOa3gg](https://www.youtube.com/watch?v=yqzxZsOa3gg)
@@ -829,7 +813,28 @@ produtos escritos em Python, PHP, Ruby, Javascript, entre outras.
 
 2. __A mineração em repositórios de software e a análise científica de dados do software__
 
- **Concluído** - O principal objetivo dessa meta é identificar métricas de repositórios de projetos de software que auxilie a compreender a qualidade do produto de software. O que se procurar com essas métricas 
+ **Concluído** - O principal objetivo dessa meta é identificar métricas de repositórios de projetos de software que auxilie a compreender a qualidade do produto de software. O que se procurar com essas métricas de produtividade da equipe, volume de trabalho entregue, boas práticas de engenharia de software. 
+
+Com o intuito de compreender a dinâmica de desenvolvimento e a qualidade de cada uma das soluções de software desenvolvidas durante o período do projeto, foi realizada uma análise das métricas dos repositórios onde estão hospedados os códigos fonte e as respectivas documentações.
+
+É importante ressaltar o fato de todos os softwares terem sido desenvolvidos como softwares livres sob a licença recíproca total *GNU General Public License* versão *3*, o que permite acesso público à todo o código bem como todos os direitos intrínsicos ao software livre.  Porém, as análises feitas podem ser replicadas e reaproveitadas em outros contextos e outros projetos que possuem essas informações disponibilizadas. Vale ressaltar que algumas métricas podem ser diferentes ao longo do relatório uma vez que para cada análise, os dados foram minerados em instantes diferentes do projeto.
+
+Estão contemplados nesta análise 8 repositórios, sendo eles:
+
+1. **Tais:** A Tais (Tecnologia de Aprendizado Interativo do Salic) é um chatbot desenvolvido para o projeto da Lei Rouanet com o objetivo de ajudar os proponentes nos momentos de dúvida. A Tais é baseada no framework Rasa. Disponível em: https://github.com/lappis-unb/tais. 
+2. **Rasa-ptbr-Boilerplate:**  Projeto feito com a tecnologia  Rasa incluindo as configurações iniciais necessárias para a construção de um projeto chatbot. Disponível em: https://github.com/lappis-unb/rasa-ptbr-boilerplate.
+3. **BotFlow:** O BotFlow é uma plataforma criada para facilitar a criação e edição de conteúdos para o desenvolvimento de ChatBots que utilizam o framework Rasa. Neste repositório estão os códigos referentes à camada de visualização (*Front-end*). Disponível em: https://github.com/lappis-unb/BotFlow.
+4. **BotFlowAPI:** O BotFlowAPI é a API baseada no protocolo REST para permitir o funcionamento do BotFlow. Disponível em: https://github.com/lappis-unb/BotFlowAPI.
+5. **Promova Cultura:** O PromovaCultura tem como objetivo principal desenvolver visualizações de dados sobre a Lei Federal de Incentivo à Cultura. Disponível em: https://github.com/lappis-unb/PromovaCultura.
+6. **SalicML:** Módulo para análise dos dados do Salic por meio de algoritmos de aprendizagem de máquina . Disponível em: https://github.com/lappis-unb/salic-ml.
+7. **SalicAPI:** API aberta para o sistema SALIC. Tem por objetivo expor os dados de projetos da lei Rouanet. Disponível em: https://github.com/lappis-unb/salic-api.
+8. **SailcMLFrontEnd:** Protótipo de front-end para o módulo SalicML. Disponível em: https://github.com/lappis-unb/salic-ml-frontend.
+
+
+ 
+![Overview das contribuições ao longo do tempo no projeto "Ecossistemas de Software Livre".](figs/organizacao_dash.png)
+
+
 
 
 **Documentação comprobatória** -
@@ -838,6 +843,8 @@ Iniciamos a análise dos repositórios apontando três métricas gerais, sendo e
 * **Número de linhas de código (LOC):** quantidade total de linhas de código  do projeto indicando, em parte, sua complexidade.
 * **Número de contribuidores:** quantidade de pessoas que contribuiram diretamente com o código do projeto.
 * **Esforço em meses:** quantidade de tempo pela qual a equipe trabalhou no projeto.
+
+Os dados das tabelas foram extraídos em Outubro de 2019, na finalização do projeto. Porém, as imagens referentes a evolução temporal das métricas, foi extraída em Agosto de 2019, podendo haver diferenças entre esses números.
 
 A tabela abaixo apresenta estas métricas juntamente com as linguagens de programação predominantes utilizadas em cada uma das soluções para ajudar a contextualizar as tecnologias de cada projeto.
 
@@ -882,6 +889,8 @@ Considerando que a *Média de Linhas modificadas por commit* ainda representa um
 
 Neste caso, é possível observar que 40% dos commits não passa de 50 linhas modificadas. Na prática 63% dos commits altera até 150 linhas. Se observa ainda que em torno de 20% dos commits realizam alterações acima de 500 linhas por commit e, em análise pontual, foi possível observar que em sua maioria representam inclusões de bibliotecas externas ou mesmo arquivos de dados para treinamento de modelos de Machine Learning que podem chegar a até 20 mil linhas, cada um. Conclui-se então que, em sua maioria, os commits realizados estão seguindo as boas práticas de fazerem alterações pequenas de mais fácil compreensão e rastreamento.
 
+![Overview das issues, Pull Requests e quantidade de autores ao longo do tempo no projeto "Ecossistemas de Software Livre".](figs/organizacao_dash2.png)
+
 ## Métricas de boas práticas de Engenharia de Software
 
 Para avaliar boas práticas no desenvolvimento das soluções de software, são consideradas 3 métricas gerais conforme à seguir:
@@ -902,6 +911,11 @@ Repositório	|	Quantidade de Pull Requests (Abertos/Fechados)	|	Número de Issue
 **Salic-ML**	|	0 / 89	|	38 / 292	|	GitlabCI
 **Sailc ML FrontEnd**	|	1 / 17	|	0 / 0	|	GitlabCI / TravisCI
 **Salic API**	|	2/31	|	17/53	|	GitlabCI
+
+A figura baixo ilustra uma nuvem de palavras com os conteúdos das labels das issues dos projetos, além da extração dos números dos repositórios extraidos em agosto de 2019.
+
+![Overview das issues de alguns projetos ao longo do tempo no projeto "Ecossistemas de Software Livre".](figs/organizacao_dash3.png)
+
 
 ## Métricas de adoção pela comunidade
 
@@ -957,6 +971,8 @@ Data:/2019
 Artigos acadêmicos e comunicação
 
 # Capacitação e Participação em Eventos
+
+# Relatórios de Entrega Parciais e Parecer do Ministério
 
 # Documentação Técnica dos projetos
 
