@@ -1,110 +1,147 @@
-* Faria no botsbrasil
-* Moura pydata
-* Pythoncerrado Miranda e temporim
-* fabio e bruna moreira - python cerrado
-* campus party - carla e guilherme 2019
-* seman geek miranda e guilherme furada joenio feira geek
-* maia caixa cultural
-* Dorgam proxy reverso hacklab/rocketchat
-* varios jenipapos * 13/06
-* Workshops técnicos do mInc
-* UFG e UFABC PHp meio merda
-  
+
+
+# Anexo III
+No presente anexo vamos apresentar as evidências dos eventos que os membros do laboratório participaram e/ou organizaram no âmbito do projeto. As atividades fazem parte tanto do pacote de trabalho "Estudos sobre práticas de gestão colaborativa em comunidades de software aberto" da meta "Transferência de tecnologia". Aqui será apresentado somente uma amostragem dessas participações, uma vez que parte delas foram encontros, treinamentos e reuniões informais. As evidências desses eventos foram registrados somente em emails e canais informais, como grupos de discussão no Telegram.
 
 
 
-# 30/01/2018
+# Workshop Ux/Design - Rodrigo Maia e Peter (30/01/2018) - 
+Workshop de UX/Design introdutório apresentado pelos designers seniores do projeto, Rodrigo Maia e Peter
 
-* Workshop Ux/Design - Rodrigo Maia e Peter - https://gitlab.com/lappis-unb/internal/docs/wikis/events/workshops/usability/UX,-UI,-uai,-WTF
+**Documento Comprobatório**
 
-# GNPapo - Mesa redonda sobre software livre e bolhas de opinião (13/06/2018)
+[https://gitlab.com/lappis-unb/internal/docs/wikis/events/workshops/usability/UX,-UI,-uai,-WTF](https://gitlab.com/lappis-unb/internal/docs/wikis/events/workshops/usability/UX,-UI,-uai,-WTF)
 
-* Link para o vídeo do evento [aqui](https://www.youtube.com/watch?v=CBM0Cy8ERug&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=7)
-![Alt text](2yearscrapping/figs/gnpapo1.jpg)
-![Alt text](2yearscrapping/figs/gnpapo2.jpg)
-![Alt text](2yearscrapping/figs/gnpapo3.jpg)
+# GNPapo - Mesa redonda sobre software livre e bolhas de opinião
 
-# Serenata de amor - workshop técnico (15/06/2018)
+- **Local** - ENAP
+- **Data** - 13/06/2018
+- **Participantes**: coordenadores do projeto "Ecossistemas de Software Livre" e os seniores do projeto
 
-* visita técnica do fundador do software Livre "Projeto Serenata de Amor"([https://serenata.ai](https://serenata.ai)), Irio Irineu Musskopf Junior. Tema: "Workshop técnico focado nos desafios de aprendizado de máquina do projeto serenata de amor" . 
+* Link para o vídeo do evento - 
+[https://www.youtube.com/watch?v=CBM0Cy8ERug&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=7](https://www.youtube.com/watch?v=CBM0Cy8ERug&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=7)
+
+![Mesa redonda do GNPapo](figs/gnpapo1.jpg)
+
+![Mesa redonda do GNPapo - Apresentação do laboratório](figs/gnpapo2.jpg)
+
+![Mesa redonda do GNPapo](figs/gnpapo3.jpg)
+
+# Serenata de amor - workshop técnico de uso de machine learning em projetos de software lire
+
+- **Local** - LAPPIS
+- **Data** - 15/06/2018
+- **Participantes** - Equipe lappis, equipe técnica do ministério, convidados externos.
+- **Convidado** - Irio Irineu Musskopf Junior
+
+* Visita técnica do fundador do software Livre "Projeto Serenata de Amor"([https://serenata.ai](https://serenata.ai)), Irio Irineu Musskopf Junior. Tema: "Workshop técnico focado nos desafios de aprendizado de máquina do projeto serenata de amor" . 
+
+![Workshop Projeto Serenata de Amor](figs/serenata1.png)
+
+![Workshop Projeto Serenata de Amor](figs/serenata2.png)
+
+# Hackaton Saude
+
+- **Data** - 30/06/2018
+- **Participantes** - Alunos participantes do projeto Arthur Diniz, Victor Moura.
+
+Participação de hackathon no qual desenvolveram um chatbot no contexto da saúde. Iniciativa importante para apresentar os resultados e capacitação da equipe e também entrar em contato com as inovações realizadas e propostas no contexto local.
 
 
-https://photos.app.goo.gl/yNHXQ4mhWvMmQ2DW7
 
+![Participação de hackathon e desenvolvimento de chatbots](figs/hackatonsaude.jpg)
 
-# 30/06/2018
+# Workshop devops com MDH
 
-* Hackaton Saude - Moura e Diniz
-![Alt text](2yearscrapping/figs/hackatonsaude.jpg)
+- **Data** - 04/07/2018
+- **Participantes** - Equipe Técnica do MDH e workshop técnico sobre principios de DevOps organizados pelos alunos bolsistas do lappis.
 
-# 04/07/2018
+![Workshop devops.](figs/devopsmdh.jpg)
 
-* Workshop devops com MDH
+# Lappis conf - softwares livres pra controle social, eleições
 
-![Alt text](2yearscrapping/figs/devopsmdh.jpg)
+- **Data** - 30/07/2018
+- **Participantes**  - equipe do Lappis e convidados dos seguintes laboratórios
 
-# 30/07/2018
+![LAPPIS Conf - Softwares livres pra controle social, eleições](figs/lappisconf1.jpg)
 
-* Lappis conf - softwares livres pra controle social, eleições.
+![LAPPIS Conf - Softwares livres pra controle social, eleições](figs/lappisconf2.jpg)
 
-![Alt text](2yearscrapping/figs/lappisconf1.jpg)
-![Alt text](2yearscrapping/figs/lappisconf2.jpg)
+# Lappis conf - Atos (Vida após lappis)
+- **Data** - 13/08/2018
+- **Participantes**  - equipe do LAPPIS e o ex aluno Athos.
 
-# 13/08/2018
+Apresentação da perspectiva do mercado de trabalho em software livre: perspectiva tanto brasileira quanto internacional.
 
-* Lappis conf - Atos (Vida após lappis)
+![Mercado de Trabalho em Software Livvre](figs/lappisconfatos.jpg)
 
-![Alt text](2yearscrapping/figs/lappisconfatos.jpg)
-
-# Entrega Técnica Ciclo trimestral (15/08/2018)
+# Entrega Técnica Ciclo trimestral 
+- **Data** - 15/08/2018
+- **Participantes**  - equipe do LAPPIS e equipe técnica do Ministério.
 
 *  A equipe Técnica do Ministério reuniu com a equipe projeto Ecossistemas para apresentação das entregas realizadas no ciclo trimestral de desenvolvimento.
 
-![Alt text](2yearscrapping/figs/entrega1.jpg)
+![Entregas técnicas e workshop devops.](figs/entrega1.jpg)
 
-# Entrega Técnica Ciclo trimestral (16/08/2018)
+# Entrega Técnica Ciclo trimestral 
+- **Data** - 16/08/2018
+- **Participantes**  - equipe do LAPPIS e equipe de negócio da SEFIC.
 
 * A equipe negocial do Ministério reuniu com a equipe projeto Ecossistemas para apresentação das entregas realizadas no ciclo trimestral de desenvolvimento.
 
-![Alt text](2yearscrapping/figs/entrega2.jpg)
+![Entrega dos técnica para equipe da SEFIC](figs/entrega2.jpg)
 
-# Participação de alunos no evendo Indie Warehouse (17/08/2018)
+# Participação de alunos no evendo Indie Warehouse 
 
-* Lappis na indie warehouse
+- **Data** - 17/08/2018
+- **Participantes**  - equipe do LAPPIS.
 
-![Alt text](2yearscrapping/figs/indie1.jpg)
-![Alt text](2yearscrapping/figs/indie2.jpg)
+ Lappis na indie warehouse. Participação da comunidade local de inovação.
+
+![Participação da Indie Warehouse.](figs/indie1.jpg)
+
+![Participação da Indie Warehouse.](figs/indie2.jpg)
 
 
-# Lappis Conf Chatbot (20/08/2018)
+# Lappis Conf Chatbot
 
-* Para fomentar a disseminação do conhecimento internamenta na Universidade de Brasília, foram organizados Lappis conf especiais para apresentar os avanços realizados no projeto da TAIS e nas demais frentes do projeto "Ecossistemas de Software Livre".
+- **Data** - 20/08/2018
+- **Participantes**  - organizado pela equipe do LAPPIS e aberto para a comunidade.
 
-![Alt text](2yearscrapping/figs/lappisconf20-08.jpg)
-![Alt text](2yearscrapping/figs/lappisconf20-08-2.jpg)
+Para fomentar a disseminação do conhecimento internamenta na Universidade de Brasília, foram organizados Lappis conf especiais para apresentar os avanços realizados no projeto da TAIS e nas demais frentes do projeto "Ecossistemas de Software Livre".
 
-# Lappis Conf (20/08/2018)
+![Exemplo de convites de eventos organizados pelo laboratório.](figs/lappisconf20-08.jpg)
 
-* Para fomentar a disseminação do conhecimento internamenta na Universidade de Brasília, foram organizados Lappis conf especiais para apresentar os avanços realizados no projeto da TAIS e nas demais frentes do projeto "Ecossistemas de Software Livre".
+![Lappis conf de chatbot](figs/lappisconf20-08-2.jpg)
 
-![Alt text](2yearscrapping/figs/lappisconf27-08.jpg)
+# Lappis Conf - Software Legado
 
-# LabConf (31/08/2018)
+- **Data** - 27/08/2018
+- **Participantes**  - organizado pela equipe do LAPPIS e aberto para a comunidade.
 
-* LabConf, ou Conferência dos laboratórios de inovação da cultura, foi o evento organizado pelo LAPPIS no Ministério da Cultura para que o arranjo de TED entre Universidade e o Ministério da Cultura pudesse ser discutido. Nesse dia, os demais laboratório (UFG, UFABC, UnB) puderam apresentar os avanços alcançados em seus respectivos projetos, diversos workshops práticos relacionados a DevOps foram ministrados pelos bolsistas do LAPPIS, e mesas rendondas foram realizadas para discutir modelos de contratação.
 
-![Alt text](2yearscrapping/figs/labconf.png)
-![Alt text](2yearscrapping/figs/labconf2.jpg)
+ Para fomentar a disseminação do conhecimento internamenta na Universidade de Brasília, foram organizados Lappis conf especiais para apresentar os avanços realizados no projeto da TAIS, software legado  do projeto "Ecossistemas de Software Livre".
 
-https://photos.app.goo.gl/NSqRum7rmYYRxNy28
+![Exemplo de convites de eventos orga
 
-parei setembro 12
 
-# MiniLappisConf (17/09/2018)
+nizados pelo laboratório.](figs/lappisconf27-08.jpg)
 
-* Foram organizados MiniLappisConf - Moldura
+# LabConf - Conferência dos Laboratórios de inovação da cultura
 
-![Alt text](2yearscrapping/figs/lappisconf17-09.jpg)
+- **Data** - 31/08/2018
+- **Local** - Ministério da Cultura
+- **Participantes**  - organizado pela equipe do LAPPIS. Participaram a equipe técnica do ministério, e os laboratórios da UFG e UFABC que possuem também parceria com o minitério.
+
+ LabConf, ou Conferência dos laboratórios de inovação da cultura, foi o evento organizado pelo LAPPIS no Ministério da Cultura para que o arranjo de TED entre Universidade e o Ministério da Cultura pudesse ser discutido. Nesse dia, os demais laboratório (UFG, UFABC, UnB) puderam apresentar os avanços alcançados em seus respectivos projetos, diversos workshops práticos relacionados a DevOps foram ministrados pelos bolsistas do LAPPIS, e mesas rendondas foram realizadas para discutir modelos de contratação.
+
+![Programação da LabConf](figs/labconf.png)
+
+![Alt text](figs/labconf.jpg)
+
+Mais fotos do evento podem ser acessados em [https://photos.app.goo.gl/NSqRum7rmYYRxNy28](https://photos.app.goo.gl/NSqRum7rmYYRxNy28)
+
+
 
 # 20/09/2018
 
@@ -113,13 +150,14 @@ parei setembro 12
 Autor(es): Arthur Temporim e Bruna Pinos
 
 https://www.youtube.com/watch?v=wpi5xDhofW4 </br>
-![Webinar personalidade](2yearscrapping/figs/labhacker.png)
+
+![Webinar personalidade](figs/labhacker.png)
 
 # 01/10/2018
 
 * MiniLappisConf - Promova Cultura
 
-![Alt text](2yearscrapping/figs/lappisconf01-10.jpg)
+![Alt text](figs/lappisconf01-10.jpg)
 
 # 22/11/2018
 
@@ -127,8 +165,8 @@ https://www.youtube.com/watch?v=wpi5xDhofW4 </br>
 
 Autor(es): Carla Rocha
 
-![Alt text](2yearscrapping/figs/pydatameetup.jpg)
-![Alt text](2yearscrapping/figs/pydatameetup2.jpg)
+![Alt text](figs/pydatameetup.jpg)
+![Alt text](figs/pydatameetup2.jpg)
 
 # 02/12/2018
 
@@ -136,7 +174,7 @@ Autor(es): Carla Rocha
 
 Autor(es): Heloise Cullen, Bruna Moreira
 
-![Alt text](2yearscrapping/figs/iv.jpg)
+![Alt text](figs/iv.jpg)
 
 # 13/12/2018
 
@@ -145,7 +183,8 @@ Autor(es): Heloise Cullen, Bruna Moreira
 Autor(es): Arthur Temporim, Bruna Pinos, Carla Rocha, Gabriela Guedes, Matheus de Sousa Faria e Paloma C. Mamede
 
 https://www.youtube.com/watch?v=5fbdIwsGrQ4 </br>
-![Webinar customizando chatbot](2yearscrapping/figs/webinar_chatbot_rasa_rocketchat.png)
+
+![Webinar customizando chatbot](figs/webinar_chatbot_rasa_rocketchat.png)
 
 
 # 23/01/2019
@@ -155,14 +194,15 @@ https://www.youtube.com/watch?v=5fbdIwsGrQ4 </br>
 Autor(es): Arthur Temporim e Bruna Moreira
 
 https://www.youtube.com/watch?v=tW4x-R82hNc </br>
-![Webinar customizando chatbot](2yearscrapping/figs/webinar_faq_ptbr_rasa.png)
+![Webinar customizando chatbot](figs/webinar_faq_ptbr_rasa.png)
 
 # Tais no prefeitos do Futuro (14/03/2019)
 
 * Apresentação TAIS no evetno Prefeitos Do Futuro [https://www.youtube.com/watch?v=CKM4ieBsMLw&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=6](https://www.youtube.com/watch?v=CKM4ieBsMLw&list=PLo2mbJ5niURZE9U8XI8xw4sV_hh1HVWLg&index=6)
 
-![Alt text](2yearscrapping/figs/prefeitos.jpg)
-![Alt text](2yearscrapping/figs/prefeitosproof.png)
+![Alt text](figs/prefeitos.jpg)
+
+![Alt text](figs/prefeitosproof.png)
 
 
 # 27/03/2019
@@ -172,20 +212,23 @@ https://www.youtube.com/watch?v=tW4x-R82hNc </br>
 Autor(es): Arthur Temporim e Bruna Moreira
 
 https://www.youtube.com/watch?v=zL8zCbmfLwM </br>
-![Webinar chat api google](2yearscrapping/figs/webinar_rasa_google_api.png)
-![Alt text](2yearscrapping/figs/webinar.jpg)
+
+![Webinar chat api google](figs/webinar_rasa_google_api.png)
+
+
+![Alt text](figs/webinar.jpg)
 
 # 01/04/2019
 
 * MiniLappisConf 
 
-![Alt text](2yearscrapping/figs/lappisconf01-04.jpg)
+![Alt text](figs/lappisconf01-04.jpg)
 
 # 02/04/2019
 
 * MiniLappisConf - Projection Mapping
 
-![Alt text](2yearscrapping/figs/lappisconf02-04.jpg)
+![Alt text](figs/lappisconf02-04.jpg)
 
 
 # 10/04/2019
@@ -195,22 +238,23 @@ https://www.youtube.com/watch?v=zL8zCbmfLwM </br>
 Autor(es): Arthur Temporim e Gabriela Guedes
 
 https://www.youtube.com/watch?v=ZPUtt2AFhjM </br>
-![Webinar relampago rasa](2yearscrapping/figs/webinar_rasa_bot_telegram.png)
+
+![Webinar relampago rasa](figs/webinar_rasa_bot_telegram.png)
 
 
-![Alt text](2yearscrapping/figs/webinar10-04.jpg)
+![Alt text](figs/webinar10-04.jpg)
 
 # 11/04/2019
 
 * GNPapo 
 
-![Alt text](2yearscrapping/figs/gnpapo11-04.jpg)
+![Alt text](figs/gnpapo11-04.jpg)
 
 # 15/04/2019
 
 * MiniLappisConf - E-Democracia
 
-![Alt text](2yearscrapping/figs/lappisconf15-04.jpg)
+![Alt text](figs/lappisconf15-04.jpg)
 
 
 
@@ -221,7 +265,8 @@ https://www.youtube.com/watch?v=ZPUtt2AFhjM </br>
 Autor(a): Arthur Temporim
 
 https://www.youtube.com/watch?v=5kXLmnWJe5g </br>
-![Webinar relampago rasa](2yearscrapping/figs/webinar_relampago_rasa.png)
+
+![Webinar relampago rasa](figs/webinar_relampago_rasa.png)
 
 
 # 24/04/2019
@@ -230,9 +275,10 @@ https://www.youtube.com/watch?v=5kXLmnWJe5g </br>
 Autor(es): Guilherme Lacerda e Bruna Pinos
 
 https://www.youtube.com/watch?v=yqzxZsOa3gg </br>
-![Webinar metricas](2yearscrapping/figs/webinar_metricas_importantes.png)
 
-![Alt text](2yearscrapping/figs/webinar24-04.jpg)
+![Webinar metricas](figs/webinar_metricas_importantes.png)
+
+![Alt text](figs/webinar24-04.jpg)
 
 # 29/04/2019
 
@@ -245,7 +291,7 @@ https://www.youtube.com/watch?v=yqzxZsOa3gg </br>
 6h - Ações culturais do Sesc no Brasil - 
 6:30 - Comunidade de Rpg - fabricando novos jogos
 
-![Alt text](2yearscrapping/figs/lappisconfgeek.jpg)
+![Alt text](figs/lappisconfgeek.jpg)
 
 
 # 30/04/2019
@@ -254,7 +300,8 @@ https://www.youtube.com/watch?v=yqzxZsOa3gg </br>
 Autor(a): Matheus de Sousa Faria
 
 https://www.youtube.com/watch?v=uR0W-fDUr9g </br>
-![Apresentacao Tais](2yearscrapping/figs/apresentacao_tais_matheus_faria.png)
+
+![Apresentacao Tais](figs/apresentacao_tais_matheus_faria.png)
 
 
 # 14/05/2019
@@ -264,7 +311,7 @@ https://www.youtube.com/watch?v=uR0W-fDUr9g </br>
 Autor(es): Carla Rocha
 
 
-![Alt text](2yearscrapping/figs/talkshow.jpg)
+![Alt text](figs/talkshow.jpg)
 
 
 
@@ -274,7 +321,8 @@ Autor(es): Carla Rocha
 Autor(es): Pablo Diego e Arthur Temporim
 
 https://www.youtube.com/watch?v=f35j9yydcEU </br>
-![Webinar arquitetura](2yearscrapping/figs/webinar_arquitetura_desaplocada.png)
+
+![Webinar arquitetura](figs/webinar_arquitetura_desaplocada.png)
 
 # 01/06/2019
 
@@ -283,27 +331,35 @@ https://www.youtube.com/watch?v=f35j9yydcEU </br>
 Autor(es): Guilherme Lacerda, Mateus Miranda, Joenio Costa
 
 
-![Alt text](2yearscrapping/figs/feirageek.jpg)
-![Alt text](2yearscrapping/figs/feirageek2.jpg)
+![Alt text](figs/feirageek.jpg)
+
+![Alt text](figs/feirageek2.jpg)
 
 # 20/06/2019
 
 * Campus Party
 
-![Alt text](2yearscrapping/figs/campusparty.jpg)
-![Alt text](2yearscrapping/figs/campusparty2.jpg)
-![Alt text](2yearscrapping/figs/campusparty3.jpg)
-![Alt text](2yearscrapping/figs/campusparty4.jpg)
-![Alt text](2yearscrapping/figs/campusparty5.jpg)
-![Alt text](2yearscrapping/figs/campusparty6.jpg)
-![Alt text](2yearscrapping/figs/campusparty7.jpg)
+![Alt text](figs/campusparty.jpg)
+
+![Alt text](figs/campusparty2.jpg)
+
+![Alt text](figs/campusparty3.jpg)
+
+![Alt text](figs/campusparty4.jpg)
+
+![Alt text](figs/campusparty5.jpg)
+
+![Alt text](figs/campusparty6.jpg)
+
+![Alt text](figs/campusparty7.jpg)
 
 # 25/06/2019
 
 * 17º Pydata - Como construir uma aplicaçã ocom features baseadas em data science
 
-![Alt text](2yearscrapping/figs/pydatamoura.jpg)
-![Alt text](2yearscrapping/figs/pydatamoura2.jpg)
+![Alt text](figs/pydatamoura.jpg)
+
+![Alt text](figs/pydatamoura2.jpg)
 
 # 12/07/2019
 
@@ -317,17 +373,23 @@ https://www.youtube.com/watch?v=Vx3U6tmQBhY&feature=youtu.be
 Autor(a): Leonardo Gomes
 
 https://www.youtube.com/watch?v=6YlFhpj6JSs </br>
-![Webinar teste chatbot](2yearscrapping/figs/webinar_teste_chatbot.png)
+
+![Webinar teste chatbot](figs/webinar_teste_chatbot.png)
 
 # 05/09/2019
 
 * Python Cerrado
 
-![Alt text](2yearscrapping/figs/pythoncerrado.jpg)
-![Alt text](2yearscrapping/figs/pythoncerrado3.jpg)
-![Alt text](2yearscrapping/figs/pythoncerrado4.jpg)
-![Alt text](2yearscrapping/figs/pythoncerrado5.jpg)
-![Alt text](2yearscrapping/figs/pythoncerrado2.jpg)
+![Alt text](figs/pythoncerrado.jpg)
+
+![Alt text](figs/pythoncerrado3.jpg)
+
+
+![Alt text](figs/pythoncerrado4.jpg)
+
+![Alt text](figs/pythoncerrado5.jpg)
+
+![Alt text](figs/pythoncerrado2.jpg)
 
 
 # 18/09/2019
@@ -336,11 +398,15 @@ https://www.youtube.com/watch?v=6YlFhpj6JSs </br>
 Autor(a): Paloma C. Mamede
 
 https://www.youtube.com/watch?v=hmFoxEYTK0Y </br>
-![Webinar personalidade](2yearscrapping/figs/webinar_personalidade.png)
+
+![Webinar personalidade](figs/webinar_personalidade.png)
 
 # 27/09/2019
 
 * Projetando chatbots inteligentes
 
-![Alt text](2yearscrapping/figs/projetando.jpg)
+![Cronograma do workshop técnico de chatbots.](figs/projetando.jpg)
 
+![Organização do Evento - 60 pessoas de diversos ministérios presentes.](figs/sympla.png)
+
+![Roda de conversa Chatbots](figs/bots.jpg)

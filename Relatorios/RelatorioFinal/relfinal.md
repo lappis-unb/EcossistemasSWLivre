@@ -1,5 +1,5 @@
 ---
-title: RELATÓRIO FINAL - Ecossistemas de Software Livre - Setembro 2019
+title: RELATÓRIO FINAL - Ecossistemas de Software Livre - Outubro 2019
 author: Carla Silva Rocha Aguiar (Coordenadora do Projeto)
 date: 15 de Setembro de 2019
 geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
@@ -52,7 +52,7 @@ O planejamento de execução das metas foi inicialmente dividido em 5 etapas e 5
 
 ## Inovação tecnológica em Software
 
-Os pacotes de trabalho da presente parceria acarretou em X projetos, distribuidos em X repositórios. Ao todo, foram X arquivos distintos, X commits com contribuições de X desenvolvedores distintos, X deles vinculados como bolsistas do projeto, correspondendo a X% dos commits realizados no projeto. Além disto, o projeto ainda contempla estudos acadêmicos,  estudos de identidade visual, dinâmicas de capacitação e outros insumos fora do produto de software propriamente dito.
+Os pacotes de trabalho da presente parceria acarretou em 8 projetos, distribuidos em 12 repositórios. Ao todo, foram  mais de 3000 commits com contribuições de 62 commiters nos projetos. Além disto, o projeto ainda contempla estudos acadêmicos,  estudos de identidade visual, dinâmicas de capacitação e outros insumos fora do produto de software propriamente dito.
 
 Obviamente é impraticável anexar toda esta produção a este documento, portanto este documento apresenta um resumo com estatísticas e os resultados mais importantes obtidos e direções sobre como obter o código para fazer uma análise detalhada. Todo software desenvolvido no projeto está disponível publicamente sob licenças livres na plataforma Github (principal plataforma de disponibilização de código no mundo). Os repositórios e seus respectivos endereços estão listados abaixo e podem ser acessados publicamente por qualquer pessoa:
 
@@ -69,19 +69,12 @@ Obviamente é impraticável anexar toda esta produção a este documento, portan
 
 - _Salic-API_ ([https://github.com/lappis-unb/salic-api](https://github.com/lappis-unb/salic-api)) - refatoramos, criamos testes unitários, pipelinde de integração contínua, documentação técnica. Ou seja, adequamos a API do Salic, que é o projeto do ministério de maior interesse externo, para os padrões, boas práticas e documentação de comunidades de software livre.
 
-Existem metodologias na área de Engenharia de Software para estimar o esforço de desenvolvimento de um produto. É importante notar que estes modelos são apenas aproximados, mas ajudam a estabelecer uma ordem de grandeza do esforço de desenvolvimento de um software em comparação com projetos semelhantes encontrados na indústria. 
+![Análise temporal das contribuições nos repositórios do projeto "Ecossistemas de Software Livre."](figs/organizacao_dash2.png)
 
- Analisamos o projeto da ótica do modelo COCOMO (Constructive Cost Model) desenvolvido por Berry W. Boehm a partir da análise empírica da produtividade de equipes de desenvolvimento em vários projetos de software reais. Os dados foram extraídos utilizando as ferramenta sloccount (para código Python) e cloc (para as linguagens. A tabela abaixo resume os principais resultados:
+## Análise de custo benefício e impacto da inovação
 
-
-XX
-
- Podemos estimar o custo de desenvolvimento a partir do número de horas necessários para desenvolver o projeto, o custo médio da hora trabalhada de cada desenvolvedor e o parâmetro de sobrecarga (do inglês overhead), que estima o esforço adicional devido a reescrita de código e realização de outras atividades como reuniões, planejamento, documentação, estudo, etc que não estão diretamente relacionadas a produção de código. 
-A ferramenta sloccount considera como valores padrão um parâmetro de overhead de 2,4 e um salário anualizado de U$56.286,00. Utilizando-se estes valores, obtemos uma estimativa de U$X ou cerca de X milhões de reais. Obviamente a realidade brasileira é diferente. Se tomarmos o salário médio de um desenvolvedor como sendo R$6.400,00, este custo cairia para R$X (sem custos trabalhistas), o que ainda assim demonstra uma grande eficiência econômica na execução do projeto.
-
-Nota-se ainda que o projeto abrange atividades de pesquisa, formação de alunos treinamento e desenvolvimento de identidade visual que estão fora do escopo da programação que em um acordo comercial aumentariam ainda mais o custo do projeto. 
-
-Finalmente, além do desenvolvimento de uma solução para o Ministério da Cidadania, o projeto parte de uma lógica de parceria com a universidade e pressupõe a criação de insumos de pesquisa e produção acadêmica. A maior parte dos membros da equipe é formada por alunos do curso de Engenharia de Software, sendo que a participação no projeto contribuiu diretamente para a formação dos mesmos. Alguns destes alunos adotaram temas relacionados ao projeto como tema em seus trabalhos de conclusão de curso ainda em andamento. Foram publicados dois artigos científicos, um deles, com o título "FLOSS FAQ chatbot project reuse - how to allow nonexperts to develop a chatbot" que contém a experienca no desenvolvimento da Tais, este trabalho foi apresentado no OpenSym, um dos maiores simposios de pesquisa acadêmica em software livre. O segundo, com o título "A Survey of DevOps Concepts and Challenges" foi aceito  na revista **Computing Surveys** da ACM, de alto impacto acadêmico (A1 no critério de Qualis da Capes) e mostra o resultado acadêmico dos estudos em DevOps. Foi publicado também um capítulo do livro "Software e Cultura no Brasil - Produção, gestão e políticas publicas",  no qual discutimos os modelos de contratação nas equipes de TI do governo federal, no capítulo "Colaboração aberta e sua relação com a contratação de software na administração pública".
+ 
+Além do desenvolvimento de soluções de software para o Ministério da Cidadania, o projeto parte de uma lógica de parceria com a universidade e pressupõe a criação de insumos de pesquisa e produção acadêmica. A maior parte dos membros da equipe é formada por alunos do curso de Engenharia de Software, sendo que a participação no projeto contribuiu diretamente para a formação dos mesmos. Alguns destes alunos adotaram temas relacionados ao projeto como tema em seus trabalhos de conclusão de curso ainda em andamento. Foram publicados dois artigos científicos. O primeiro, com o título *"FLOSS FAQ chatbot project reuse - how to allow nonexperts to develop a chatbot"*, contém a experienca no desenvolvimento da Tais e foi apresentado no OpenSym, um dos maiores simposios de pesquisa acadêmica em software livre. O segundo, com o título *"A Survey of DevOps Concepts and Challenges"* foi aceito  na revista **Computing Surveys** da ACM, de alto impacto acadêmico (A1 no critério de Qualis da Capes) e mostra o resultado acadêmico dos estudos em DevOps. Foi publicado também um capítulo do livro "Software e Cultura no Brasil - Produção, gestão e políticas publicas",  no qual discutimos os modelos de contratação nas equipes de TI do governo federal, no capítulo "Colaboração aberta e sua relação com a contratação de software na administração pública".
 
 
 # Metas alcançadas
@@ -674,7 +667,7 @@ A entrega dessas meta é então uma API que calcula as seguintes métricas de co
 - Itens orçamentários
 - Comprovantes de pagamentos
 - Recomendação de itens orçamentários
-- Ranking dos projetos de 
+- Ranking dos projetos de acordo com a complexidade
 
 O acompanhamento dessas entregas estão disponíveis nos reguintes relatórios de acompanhamento: 
 
