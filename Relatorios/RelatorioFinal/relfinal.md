@@ -1,7 +1,7 @@
 ---
 title: RELATÓRIO FINAL - Ecossistemas de Software Livre - Outubro 2019
 author: Carla Silva Rocha Aguiar (Coordenadora do Projeto)
-date: 15 de Setembro de 2019
+date: 11 de Novembro de 2019
 geometry: "left=3cm,right=3cm,top=2cm,bottom=2cm"
 colorlinks: true
 ---
@@ -1023,9 +1023,88 @@ Repositório	|	Forks	|	Número de Estrelas	|	Data de Criação
  3. __prospectar uma sistemática, baseada em evidência científica, que auxilie  a homologação de produtos de software, em obediência ao normativo estabelecido__
 
   **Concluído parcialmente** -
+Nessa meta específica adaptamos para a análise do custo benefício e impacto da inovação no desenvolvimento de Software. Ao invés de focar no normativo estabelecido, levantamos diversas métricas de precificação. A avaliação de esforço de desenvolvimento e precificação de Software ainda é uma área com grandes incertezas. Existem metodologias na área de Engenharia de Software para estimar o esforço de desenvolvimento de um produto baseadas em padrões históricos médios e na observação de vários projetos desenvolvidos comercialmente. É importante notar que estes modelos são apenas aproximados,mas ajudam a estabelecer uma ordem de grandeza do esforço de desenvolvimento de um software em comparação com projetos semelhantes encontrados na indústria.
+
+**Documentação comprobatória** 
+
+## Análise de custo benefício e impacto da inovação
+
+O "Ecossistemas de Software livre" é um projeto de pesquisa e inovação e deve ser avaliado  segundo estas duas perspectivas. As metas de pesquisa serão analisadas detalhadamente nas seções posteriores (#FIX ou foram analisadas nas seções anteriores) enquanto aqui, destacamos o caráter da inovação tanto em termos da qualidade dos produtos desenvolvidos quanto com relação à eficiência econômica do mesmo.
+
+O Termo de Execução Descentralizada (TED) pressupõe que a unidade descentralizada, no caso a UnB na figura do laboratório LAPPIS, executará atividades de interesse da unidade descentralizadora, o Ministério da Cidadania. Deste modo, as etapas relativas ao desenvolvimento de software e linhas de atuação de pesquisa foram definidas explicitamente na etapa inicial do TED e revisadas continuamente durante cada um dos sete ciclos de entrega executados. Deste modo, entendemos que o planejamento da execução de tarefas esteve continuamente alinhado com as estratégias e interesses do Ministério.  
+
+Uma vez estabelecido os interesses e objetivos do ciclo de desenvolvimento, é importante também determinar se a produtividade da equipe é compatível com os padrões de desenvolvimento típicos de projetos com a industra e academia. Assim, podemos mostrar que o desenvolvimento não só cumpriu os objetivos do Ministério, como o fez de maneira vantajosa do ponto de vista econômico.
+
+Vale lembrar que além da entrega de produtos de software, o presente TED também realizou várias tarefas de pesquisa e extensão, treinamento e cumpriu um papel importante na formação de alunos. Algumas das tecnologias adotadas também possuem um forte caráter experimental e que não apresentam alternativas maduras na indústria para substituí-las. Deste modo, a Universidade cumpre um papel desbravador de trazer tecnologias da ponta para absorção na área de TI do Ministério da Cidadania e em outros órgãos do Governo. Como toda tecnologia experimental, existem maiores riscos e maior tempo de capacitação e treinamento antes da entrega de produtos maduros. Veremos que estes fatores refletem em algumas métricas colhidas sobre os produtos desenvolvidos.
+
+### Estimativa de esforço
+
+A avaliação de esforço de desenvolvimento e precificação de Software ainda é uma área com grandes incertezas. Existem metodologias na área de Engenharia de Software para estimar o esforço de desenvolvimento de um produto baseadas em padrões históricos médios e na observação de vários projetos desenvolvidos comercialmente. É importante notar que estes modelos são apenas aproximados,mas ajudam a estabelecer uma ordem de grandeza do esforço de desenvolvimento de um software em comparação com projetos semelhantes encontrados na indústria. 
+
+Estimamos o esforço a partir do número de horas-desenvolvedor necessários para produzir um projeto com a mesma ordem de grandeza dos aqui desenvolvidos. Para isto, utilizaremos primeiramente o modelo COCOMO (*Constructive Cost Model*) desenvolvido por Berry W. Boehm que estima o esforço de desenvolvimento a partir do número de linhas físicas e código de um determinado projeto. Os parâmetros do modelo de Boehm partiram de uma análise empírica da produtividade de equipes em projetos  reais e tendem a ter uma correspondência razoável com projetos de desenvolvimento reais. O próprio Boehm estima que cerca de 70% dos projetos apresentam estimativas dentro de uma faixa de 20% em torno do valor real, com o resto apresentando divergências mais significativas.
+
+Os dados sobre a contagem de linhas de código foram extraídos utilizando a ferramenta *SCC* (https://github.com/boyter/scc) e recalculados com parâmetros adequados para cada repositório. O custo total para desenvolver o projeto é estimado a partir do esforço fornecido pelo modelo COCOMO e do custo médio mensal de cada desenvolvedor e o parâmetro de sobrecarga (do inglês *overhead*), que estima os custo adicionais de atividades necessárias, mas não relacionadas ao código como custos operacionais e de infra-estrutura,gestão e planejamento, treinamento, etc. A tabela abaixo mostra os projetos desenvolvidos seguidos das linguagens principais (py=Python, rasa=Bases de treinamento do RASA, js=Javascript e tecnologias Web associadas como Vue e SASS), o esforço estimado pelo modelo COCOMO em homens-mês e o valor estimado de desenvolvimento.
+
+|      Projeto      | Linguagens | Esforço | Valor (R$) |
+| :---------------: | ---------- | ------- | ---------- |
+|       Taís*       | py,rasa    | 23,52   | 521.495    |
+| Rasa-Boilerplate* | py,rasa    | 8,25    | 182.893    |
+|      Bottis       | py,rasa    | 5,48    | 121.577    |
+|      BotFlow      | js,css     | 9,60    | 212.861    |
+|    BotFlowAPI     | py,json    | 4,64    | 102.911    |
+|  PromovaCultura   | js         | 19,33   | 428.579    |
+|     Salic ML*     | py,SQL     | 74,05   | 1.642.237  |
+|   Salic ML Web    | py         | 4,13    | 91.677     |
+| Salic ML Frontend | js         | 6,23    | 138.182    |
+|     Salic API     | py         | 20,81   | 461.524    |
+|     Flaskapi      | py,SQL     | 0,51    | 11.313     |
+|  Lappis Learning  | py         | 2,19    | 48.638     |
+|     **Total**     |            | 178,75  | 3.963.890  |
+
+Em todos os projetos, exceto a Taís, Rasa-Boilerplate e Salic ML, utilizamos o modelo COCOMO simples calibrado para a categoria de projetos "orgânicos". Esta categoria descreve projetos relativamente previsíveis, desenvolvidos por times pequenos e bem integrados e utilizando tecnologias familiares. É possível argumentar que vários destes projetos possuem desafios técnicos que os colocariam em uma categoria de complexidade mais alta, mas adotamos esta categoria como uma estimativa conservadora.
+
+O *SCC* considera um salário médio anualizado de U$56.286,00 e um parâmetro de *overhead* para o modelo orgânico simples equivalente à 2,4\footnote{O SCC utiliza uma parametrização diferente de outras ferramentas mais estabelecidas como, por exemplo o SLOCCOUNT do David Wheeler. Seu fator de *overhead* é de 1,8, mas ao mesmo tempo ele superestima o esforço de desenvolvimento com relação COCOMO simplificado de desenvolvimento *orgânico* por um fator fixo de 1,33. Esta diferença vem de diferentes escolhas de parâmetros, mas quando multiplicamos os dois fatores, obtemos os mesmos resultados de custo financeiro utilizando as duas ferramentas}. Utilizando-se estes valores, obtemos uma estimativa de U$2.012.000,00 ou cerca de 8 milhões de reais. Obviamente, a realidade brasileira é diferente e o principal fator de custo, o salário médio de um desenvolvedor, é consideravelmente mais baixo. Tomamos como referência o valor de R$9.200,00 mensais (R$ 110.400,00 anuais), compilado em um relatório recente do TCU sobre os a eficiência econômica dos contratos com o Serpro e Dataprev (https://pesquisa.apps.tcu.gov.br/#/documento/acordao-completo/*/KEY%253AACORDAO-COMPLETO-2298670/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/0/%2520). Este é o valor de mercado para um cargo de *analista*, a menor categoria de desenvolvedor de mercado considerada no relatório. Fazendo estes ajustes, o custo estimado para o desenvolvimento dos produtos de software seria R$3.963.890,00. Lembrando que o valor total do TED foi de R$2.078.600,00 e envolve outras atividades além do desenvolvimento de Software, vemos que este resultado demonstra uma grande eficiência econômica na execução do projeto.
+
+O modelo COCOMO é muito utilizado para avaliar e comparar esforço de desenvolvimento de projetos já finalizados ou em andamento. A análise utiliza a contagem de linhas de código produzidas e portanto não pode ser realiza nas fases de contratação e planejamento. Outro tipo de análise de esforço comum,que visa contornar esta limitação, utiliza a técnica de contagem de pontos de função, introduzida na IBM no fim dos anos 1970 para avaliar os custos de seus próprios projetos. Um ponto de função contabiliza o esforço relacionado à implementação de uma funcionalidade a partir de uma soma ponderada do número de entradas, saídas, arquivos e requisições que o software deve fazer. A análise de pontos de função estima o esforço de desenvolvimento de um software a partir das funcionalidades planejadas, antes mesmo do início do desenvolvimento do mesmo. Assim como o modelo COCOMO, trata-se de uma abordagem aproximada, já que é difícil antecipar o esforço de desenvolvimento precisamente somente com este tipo de informação genérica. Por ser aplicável antes da criação do produto, pode ser utilizada para guiar a definição de preços para produtos de software na fase de contratação. 
+
+Existe uma correlação bastante alta entre número de pontos de função e números de linhas de código de um projeto, dada uma linguagem de programação. Ainda que não existam estudos muito aprofundados sobre a produtividade do Python sob esta métrica, é um consenso na comunidade que ela deva se situar próxima a da do Perl, já que ambas são consideradas linguagens de programação de alto nível e muito produtivas, com várias funcionalidades semelhantes. Assim, assumimos o valor de 24 linhas por ponto de função para Python/Perl e 47 para Javascript, segundo a tabela da QSM (https://www.qsm.com/resources/function-point-languages-table). Somando a contribuição destas duas linguagens ficamos com 1403 pontos de função para todas as contribuções do projeto. Este número exclui algumas linguagens com participação menor (SQL) e mais notadamente as bases de treinamento da Taís desenvolvidas em Markdown e YAML, já que não existe nenhuma métrica que avalia a produtividade destas linguagens.
+
+Mesmo se consideramos apenas estes dois valores, a produção apresentada é bastante competitiva. Podemos avaliar de duas maneiras: na primeira consideramos o tamanho médio da equipe (23,8 pessoas) e assumimos que todos membros contribuíram com 20h semanais de desenvolvimento, para chegar no valor de 45,696 horas empregadas. Isto fornece uma taxa de 32,5 horas por ponto de função. Trata-se de um limite superior, já que na realidade existem membros alocados para outras funções (pesquisa, design, coordenação) e membros com atribuições variáveis. 
+
+Uma auditoria recente do TCU no desempenho do SERPRO e do DATAPREV avaliou valores típicos de produtividade de mercado e destas duas instituições e estimou um valor médio é de 16,15 horas por ponto de função para o mercado e 33,5 e 40,3 horas por ponto de função respectivamente para o SERPRO e Dataprev. É importante ressaltar que contabilizamos a produtividade assumindo que todos membros estariam alocados em tarefas de desenvolvimento e que deixamos de computar vários pontos de função relacionados principalmente à base de treinamento da Taís, devido à inexistência de parâmetros confiáveis para comparação. Além disto, e talvez de forma mais decisiva, a maior parte dos integrantes da equipe são alunos e recebem uma remuneração muito inferior a um profissional de mercado de forma que não seria razoável esperar a mesma produtividade das duas categorias.
+
+Uma outra maneira de calcular a vantagem econômica seria medir quantas horas de desenvolvimento de mercado seria possível contratar com o orçamento fornecido e utilizar este número para avaliar os resultados obtidos. É importante ressaltar que o custo para uma empresa não se limita aos valores dos salários, mas existe uma série de outros gastos (direitos trabalhistas, infra-estrutura, gestão, manutenção, margem de lucro, etc) que encarece o custo total. Usamos novamente o valor de *overhead* de 2,4, ainda que reconheçamos o caráter arbitrário da escolha. Assim, dividindo o valor do projeto por 2,4 e depois pelo salário médio de analista utilizado no relatório do TCU (R$ 9.200,00) chegamos no valor de 90,6 meses de contratação, ou 14.492 horas. Estes valores resultariam numa taxa de 10,3 horas por função, o que seria extremamente competitiva no mercado.
+
+A análise a partir do modelo COCOMO também mostra uma situação bastante favorável: a soma da estimativa de esforço de de todos projetos demandaria 178 meses-homem de desenvolvimento, mas foi executada a um custo de mercado para apenas 90,6 meses-desenvolvedor, que é aproximadamente metade do esforço estimado.
 
 
-**Documentação comprobatória** -
+### Esforço nos projetos da Taís, Rasa Boilerplate e Salic ML
+
+As duas maiores discrepâncias entre o esforço empregado e o estimado pelas técnicas de Engenharia de Software estão justamente nas duas maiores contribuições deste TED: o Salic ML e a Taís. Enquanto o esforço do primeiro o esforço do segundo parece um pouco superestimado em comparação com a equipe efetivamente empregrada é amplamente sub-dimensionado pelo modelo COCOMO. Não surpreendentemente, os dois possuem características peculiares de desenvolvimento comparados a projetos de Sotware típicos, o que provavelmente está na origem desta discrepância.
+
+A primeira diferença entre estes dois projetos e os outros projetos elaborados está na complexidade maior e o uso de tecnologias inovadoras. Para isto, decidimos avaliar os dois projetos utilizando uma categoria diferente com relação ao modelo básico. Primeiramente, incluímos a avaliação detalhada dos fatores de custo. Nos dois projetos, consideramos que a complexidade do produto é alta e que a confiabilidade poderia ser classificada como baixa, já que erros na fase de treinamento produzem efeitos relativamente fáceis de se recuperar. Além disto, enquadramos os dois projetos na categoria "semi-destacado", já que utiliza tecnologias que pressupõe o uso de arquiteturas e algoritmos inovadoras, impondo especificações mais restritas que o modelo "orgânico".
+
+Além disto, não modificamos os valores de referência relativos à experiência da equipe e ao uso de ferramentas de engenharia de software já que o objetivo é fazer uma avaliação do tempo que seria necessário em um desenvolvimento típico de mercado e não estimar o valor para a equipe que foi de fato empregada. O modelo estima, por exemplo, que o emprego adequado de técnicas de Engenharia de Software pode deixar a velocidade de desenvolvimento entre 32% mais rápido até 53% mais lento que os valores de referência. Já a qualificação da equipe pode reduzir o tempo de desenvolvimento para desde 1/3 do esforço de referência até 3,68 vezes maior.
+
+O repositório do Salic ML consiste basicamente em código Python, cerca de 3800 linhas físicas, e Notebooks do Jupyter. Estes também estão escritos em Python e possuem 66.000 linhas que, após a conversão do formato .ipynb para Python, resultam em 10,696 linhas de código Python. Nós utilizamos o segundo valor já que o execedente consiste majoritariamente em dados de saída gerados automaticamente e portanto não refletem em esforço de desenvolvimento. 
+
+Ainda assim, talvez seja necessário considerar um fator de ponderação no esforço de produzir código em módulos estruturados e em ferramentas de desenvolvimento usuais em contraposição a um ambiente dinâmico e interativo como o de um Notebook. É difícil ponderar qual seria este fator, em especial porque os Notebooks lidam com algoritmos complexos de aprendizado de máquina e código de natureza bastante experimental. Se assumirmos, ainda que de forma um tanto arbitrária, que a produtividade em um ambiente de Notebook dobra a eficiência de desenvolvimento usual, reduziríamos a estimativa de esforço total de 71 meses-homem para 48, o que corresponde uma redução de 32%.
+
+Já o chatbot da Taís possui particularidades de outro gênero. A Taís foi desenvolvida utilizando a tecnologia RASA, que por estar no estado da arte em Chatbots, possui um custo adicional de absorção e treinamento. Além disto, boa parte do esforço do desenvolvimento do Chatbot se encontra na configuração e manutenção dos bancos de treinamento. Estes bancos não são escritos em linguagem de programação, mas sim desenvolvidos declarativamente em arquivos do tipo Markdown e YAML. Esta diferença torna a análise e comparação usando metodologias desenvolvidas para código pouco confiável. 
+
+O repositório consiste em cerca de 5000 linhas de código em Markdown, 1000 linhas YAML e 1800 linhas de Python. Ainda que o Markdown seja uma linguagem de edição de textos simples, ela é utilizada neste projeto para definir os fluxos de conversa e a inteligência do Bot, de forma que a dificuldade principal consiste na organização destes fluxos de informação e não na criação do documento propriamente dito. O desenvolvimento destes arquivos também requer um nível alto de testes manuais para verificar se os fluxos desenhados estão corretos e se o bot reconhece as interações planejadas. Assim, é razoável supor que o esforço de criação destes arquivos supera muito o esforço de criação de código tradicional.
+
+Podemos analisar esta base de treinamento olhando pela ótica de pontos de função já que esta análise não depende da linguagem de programação e usa apenas a contagem de funcionalidades básicas como o número de diferentes entradas, saídas, arquivos e requisições que um software utiliza. Vamos nos limitar esta análise à apenas a base de treinamento da Taís, pois é simples estimar o número de entradas e saídas programadas a partir da estrutura dos arquivos de treinamento. 
+
+Deste modo, consideramos que cada tipo de resposta do Bot (ou "utter", na nomeclatura do arquivo de configuração) da Taís é uma saída do tipo simples e cada história, que corresponde a um pequeno fluxo de conversa, corresponde a uma entrada de complexidade padrão. Utilizando os valores usuais de 4 pontos de função para cada uma destas funcionalidades e usando o fato que temos 210 saídas diferentes e 185 histórias,ficaríamos com um total 1580 pontos de função. Note que este valor é maior que todos os outros projetos somados, e muito provavelmente é bastante superestimado. 
+
+Vemos portanto, que as peculiaridades das tecnologias utilizadas pela Taís tornam a estimativa de esforço extremamente *não-confiável* já que metodologias que tipicamente apresentam um grau de concordância razoável geraram previsões totalmente destoantes. Enquanto o modelo COCOMO sugere um esforço de desenvolvimento da ordem de 23 meses-homem, a análise por pontos de função faz uma estimativa 6 vezes maior considerando apenas uma parte do projeto (145 meses-homem).
+
+Além destas particularidades tecnológicas, a Taís apresentou dificuldades na sua trajetória de desenvolvimento que não apareceram em outros projetos. A primeira versão da Taís, utilizava outra tecnologia de treinamento (Hubot Natural) e linguagem de programação (CoffeScript). Uma vez que as limitações desta abordagem ficaram aparentes, decidiu-se mudar o projeto para utilizar Python com a biblioteca RASA, que até então era um projeto jovem com um pouco mais de um ano de duração. A primeira versão também apresentou problemas arquiteturais e foi então reescrita no formato atual. Estas duas versões do projeto demandaram, na estimativa do COCOMO, um esforço de 13 meses-homem. Assim como no caso anterior, acreditamos que este valor também esteja subestimado.
+
+### Conclusão
+
+Finalmente, além do desenvolvimento de soluções de software para o Ministério da Cidadania, o projeto parte de uma lógica de parceria com a universidade e pressupõe a criação de insumos de pesquisa e produção acadêmica. A maior parte dos membros da equipe é formada por alunos do curso de Engenharia de Software, sendo que a participação no projeto contribuiu diretamente para a formação dos mesmos. Alguns destes alunos adotaram temas relacionados ao projeto como tema em seus trabalhos de conclusão de curso ainda em andamento. Foram publicados dois artigos científicos. O primeiro, com o título *"FLOSS FAQ chatbot project reuse - how to allow nonexperts to develop a chatbot"*, contém a experienca no desenvolvimento da Tais e foi apresentado no OpenSym, um dos maiores simposios de pesquisa acadêmica em software livre. O segundo, com o título *"A Survey of DevOps Concepts and Challenges"* foi aceito  na revista **Computing Surveys** da ACM, de alto impacto acadêmico (A1 no critério de Qualis da Capes) e mostra o resultado acadêmico dos estudos em DevOps. Foi publicado também um capítulo do livro "Software e Cultura no Brasil - Produção, gestão e políticas publicas",  no qual discutimos os modelos de contratação nas equipes de TI do governo federal, no capítulo "Colaboração aberta e sua relação com a contratação de software na administração pública".
 
 
 # Acompanhamento Financeiro
@@ -1048,15 +1127,29 @@ Data:/2019
 
 # Anexos
 
-# Artigos 
+Nos anexos serão apresentadas alguns documentos comprobatórios. Vale ressaltar que será colocado em anexo os documentos técnicos de cada projeto. E esses estão disponibilizados no próprio repositório, E podem ser mais facilmente acessado nos links disponibilizados.
 
-Artigos acadêmicos e comunicação
+## Anexo I
 
-# Capacitação e Participação em Eventos
+No Anexo I são apresentados os artigos acadêmicos, capítulos de livros e comunicação em geral realizadas no âmbito do projeto "Ecossistemas de Software Livre".
 
-# Relatórios de Entrega Parciais e Parecer do Ministério
+## Anexo II
 
-# Documentação Técnica dos projetos
+No anexo II serão apresentadas evidências das iniciativas relacionadas a capacitação, transferência de conhecimento e Governança do projeto. Os eventos organizados e participados por integrantes do laboratório no contexto do projeto são apresentados nesse anexo.
+
+## Anexo III
+Uma das atividades de pesquisa realizadas pela equipe no projeto SalicML foi a análise de grafos a partir da análise proponente, fornecedor, incentivador. Para fazer essa análise, utilizamos tanto os CNPJs e CPFs declarados no Salic quanto a base societária disponibilizadas pela receita federal. Como esses dados são sensíveis, os repositórios dos estudos foram mantidos privados. Nesse anexo, apresentamos esses notebooks privados.
+
+## Anexo IV
+
+Serão disponibiliados no anexo IV toda a documentação técnica realizada nos projetos. Vale ressaltar que essa documentação também está disponível nos repositórios de cada respectivo projeto.
+
+
+## Relatórios de Entrega Parciais e Parecer do Ministério
+
+O último anexo estão os relatórios de entrega parciais e os pareceres do Ministério. De acordo com  o plano de trabalho, os repasses financeiros foram previstos de ocorrer trimestralmente condicionados a aprovação do relatório de entrega parcial. 
+
+Nesses relatórios de entrega parcial são apresentados o trabalho e as entregas realizadas no período, assim como as suas respectivas evidências. É apresentado também o acompanhamento financeiro, no qual é detalhado os empenhos realizados no trimestre. A aprovação de cada relatório é realizada por meio de um parecer técnico. Além do relatório, a cada trimestre houve uma reunião de entrega no qual apresentamos e homologamos os avanços junto a equipe técnica e de negócio do ministério.
 
 
 
