@@ -47,11 +47,11 @@ evidência__: Esse objetivo foi alncançado com o projeto Salic-ML no qual  esti
 
 # Metodologia, metas e etapas do projeto
 
-O planejamento de execução das metas foi inicialmente dividido em 5 etapas e 5 pacotes de trabalho. Descrevemos os avanços a seguir e ressaltamos alguns itens que foram executados de forma diferente do cronograma. Vale ressaltar que todas as alterações ao longo da execução do projeto que divergem do planejado foi previamente acordada com o Ministério, e registrado nos relatórios de acompanhamento entregues trimestralmente.
+O planejamento de execução das metas foi inicialmente dividido em 5 etapas e 5 pacotes de trabalho. Descrevemos os avanços a seguir e ressaltamos alguns itens que foram executados de forma diferente do cronograma. Vale ressaltar que todas as alterações ao longo da execução do projeto que divergem do planejado foram previamente acordadas com o Ministério e registradas nos relatórios de acompanhamento entregues trimestralmente.
 
 ## Inovação tecnológica em Software
 
-Os pacotes de trabalho da presente parceria acarretou em 8 projetos, distribuidos em 12 repositórios. Ao todo, foram  mais de 3000 commits com contribuições de 62 commiters nos projetos. Além disto, o projeto ainda contempla estudos acadêmicos,  estudos de identidade visual, dinâmicas de capacitação e outros insumos fora do produto de software propriamente dito.
+Os pacotes de trabalho da presente parceria produziram 8 projetos de software distribuidos em 12 repositórios. Ao todo, foram mais de 3000 commits com contribuições de 62 commiters individuais. Além disto, o projeto ainda contempla estudos acadêmicos, estudos de identidade visual, dinâmicas de capacitação e outros insumos fora do produto de software propriamente dito.
 
 Obviamente é impraticável anexar toda esta produção a este documento, portanto este documento apresenta um resumo com estatísticas e os resultados mais importantes obtidos e direções sobre como obter o código para fazer uma análise detalhada. Todo software desenvolvido no projeto está disponível publicamente sob licenças livres na plataforma Github (principal plataforma de disponibilização de código no mundo). Os repositórios e seus respectivos endereços estão listados abaixo e podem ser acessados publicamente por qualquer pessoa:
 
@@ -70,6 +70,7 @@ Obviamente é impraticável anexar toda esta produção a este documento, portan
 
 ![Análise temporal das contribuições nos repositórios do projeto "Ecossistemas de Software Livre."](figs/organizacao_dash2.png)
 
+
 ## Análise de custo benefício e impacto da inovação
 
  
@@ -83,7 +84,7 @@ Nas próximas seções apresentaremos os principais resultados relacionado a cad
 ## Pacote de Trabalho: Estratégia/modelo de transformação de softwares legados em comunidades de software aberto
 
 
-Evoluir e manter um software legado é uma experiência desgastante para  desenvolvedores e desestimulantes no contexto de fomento a comunidades. Por outro lado, a reescrita desses softwares é impraticável e, em se tratando de software implantado, a necessidade de adicionar novas funcionalidades e dar manutenção persiste.
+Evoluir e manter um software legado é uma experiência desgastante para desenvolvedores e desestimulantes no contexto de fomento a comunidades. Por outro lado, a reescrita desses softwares é impraticável e, em se tratando de software implantado, a necessidade de adicionar novas funcionalidades e dar manutenção persiste.
 
 Os resultados desse pacote de trabalho, e as entregas foram documentadas nos seguintes relatórios:
 
@@ -97,11 +98,9 @@ Os resultados desse pacote de trabalho, e as entregas foram documentadas nos seg
 
 - [Relatório Etapa 7](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R7/RELATÓRIO%20ETAPA%207.pdf)
 
-Além dos relatórios, foi escrito um artigo no Medium sobre o projeto SALIC-ML (), foi apresentado o trabalho do SALIC-ML na comunidade Pydata Brasília  (25/06/2019), com o título "Como construir uma aplicação com features baseadas em data science". Mais detalhes sobre os eventos serão apresentados no pacote de trabalho "Estudos sobre práticas de gestão colaborativa em comunidades de software aberto".
+Além dos relatórios, esc um artigo no Medium sobre o projeto SALIC-ML (), apresentamos o trabalho do SALIC-ML na comunidade Pydata Brasília  (25/06/2019), com o título "Como construir uma aplicação com features baseadas em data science". Mais detalhes sobre os eventos serão apresentados no pacote de trabalho "Estudos sobre práticas de gestão colaborativa em comunidades de software aberto".
 
 ![Apresentação no pyData.](figs/pydatamoura.jpg)
-
-
 
 ![Apresentação no pyData.](figs/pydatamoura2.jpg)
 
@@ -112,21 +111,21 @@ Quanto as metas específicas dessa frente de trabalho definidas plano de trabalh
 
 1. __Estudos e documentação do processo de conteinerização, testes automatizados, refatoração de sistemas legados em uma estrutura de DevOps para viabilizar trabalhos futuros__
 
-**Concluído** - No início do projeto, fizemos um checklist com as principais boas práticas, documentações, automações de comunidades de software livre. Esse checklist foi aplicado em uma lista de projetos evoluidos e mantidos pelo Ministério da Cultura. Para cada projeto, colocamos a solução em containers, documentamos  o básico (README), instrumentamos com serviços de análise estática de qualidade de código, e integração contínua. A importância desse trabalho é que, além de fazer com que os projetos mantidos pelo ministério façam adesão as  práticas modernas de engenharia de software, permite que outras equipes de desenvolvimento possam executar, testar e evoluir os projetos mais facilmente. Adicionalmente, tais ferramentas aceleram a curva de aprendizado de novos membros no time, além de incentivar boas práticas de desenvolvimento por meio de monitoramento das métricas.
+**Concluído** - No início do projeto, fizemos um *checklist* com as principais boas práticas, documentações, automações de comunidades de software livre. Esse *checklist* foi aplicado em uma lista de projetos evoluidos e mantidos pelo Ministério da Cultura. Para cada projeto, colocamos a solução em containers, documentamos  o básico (README), instrumentamos com serviços de análise estática de qualidade de código, e integração contínua. A importância desse trabalho é que, além de fazer com que os projetos mantidos pelo Ministério façam adesão as  práticas modernas de engenharia de software, permite que outras equipes de desenvolvimento possam executar, testar e evoluir os projetos mais facilmente. Adicionalmente, tais ferramentas aceleram a curva de aprendizado de novos membros no time, além de incentivar boas práticas de desenvolvimento por meio de monitoramento das métricas.
 
-Essa estratégia, chamada *legacy in the box*, é sugerida na literatura do estado da prática como primeira ação a ser feita em direção ao DevOps em sistemas legados. Conteinerizar e instrumentar um software legado permite que esse seja configurado em um pipeline de deploy contínuo. A falta de testes cria a vulnerabilidade de se colocar em ambiente de produção/homologação features defeituosos. Porém esse risco está presente naturalmente em softwares legados sem testes. Logo, a estrégia *legacy in the box* agiliza a entrega de novas features, possibilitando entrega contínua, criação de comunidade, e incentivo as boas práticas de engenharia de software.
+Essa estratégia, chamada *legacy in the box*, é sugerida na literatura do estado da prática como primeira ação a ser feita em direção ao DevOps em sistemas legados. Conteinerizar e instrumentar um software legado permite que esse seja configurado em um pipeline de deploy contínuo. A falta de testes cria a vulnerabilidade de se colocar em ambiente de produção/homologação features defeituosos. Porém, esse risco está presente naturalmente em softwares legados sem testes. Logo, a estrégia *legacy in the box* agiliza a entrega de novas funcionalidades, possibilitando entrega contínua, criação de comunidade e incentivo as boas práticas de engenharia de software.
 
-**Documentação comprobatória** - A lista de projetos que foram refatorado utilizando a estratégia *legacy in the box* está disponibilizado no [Relatório Etapa 1](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R1/RELATÓRIO%20ETAPA%201.pdf). O principal benefício dessa estratégia é visto no projeto do [Salic](https://github.com/culturagovbr/salic-minc), o principal software desenvolvido e mantido pelo ministério. Com a estratégia *legacy in the box* foi possível realizar pipeline de deploy/entrega contínua e agilizar o processo de deploy.  A figura abaixo mostra o histórico de releases do salic. Pode-se notar que o processo de release, e logo de deploy/entrega contínua foi adotada somente após a aplicação da técnica  *legacy in the box*. Na imagem, nota-se que tal técnica possibilitou a realização de até 24 realises em um mês.
+**Documentação comprobatória** - A lista de projetos que foram refatorado utilizando a estratégia *legacy in the box* está disponibilizada no [Relatório Etapa 1](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R1/RELATÓRIO%20ETAPA%201.pdf). O principal benefício dessa estratégia é visto no projeto do [Salic](https://github.com/culturagovbr/salic-minc), o principal software desenvolvido e mantido pelo Ministério. Com a estratégia *legacy in the box*, foi possível realizar pipeline de deploy/entrega contínua e agilizar o processo de entrega.  A figura abaixo mostra o histórico de releases do SALIC. Pode-se notar que o processo de *release*, e logo de deploy/entrega contínua foi adotada somente após a aplicação da técnica  *legacy in the box*. Na imagem, nota-se que tal técnica possibilitou a realização de até 24 *realises* em um mês.
 
 ![Releases do Projeto SalicMinc.](figs/salic-devops.jpg)
 
 
 Parte da documentação de DevOps foi disponibilizada no repositório do laboratório em https://gitlab.com/lappis-unb/docs, disponibilizada também como anexo no final deste documento. Os documentos cobrem tanto a presente meta quanto a meta de documentação de software livre (e será reapresentado no relatório).
 
-Foi elaborado documentação/relatório descrevendo todo o pipeline usado para deploy contínuo no laboratório com os seguintes tutoriais, que podem ser aplicados em diversos contextos:
+Elaborou-se uma documentação/relatório descrevendo todo o pipeline usado para deploy contínuo no laboratório com os seguintes tutoriais, que podem ser aplicados em diversos contextos:
 
 - GitLab CI/CD: Guia relacionado ao uso da Integração Contínua e Deploy contínuo no Gitlab;
-- Overview e exemplo básico(pt-br): Um guia que ensina como usar o gitlab CI/CD para gerar integração contínua e deploy contínuo em um projeto básico;
+- Overview e exemplo básico (pt-br): Um guia que ensina como usar o gitlab CI/CD para gerar integração contínua e deploy contínuo em um projeto básico;
 - Usando Docker Compose (pt-br): Um guia que ensina como usar o GitLab CI/CD para gerar integração contínua com o Docker Compose em um projeto ágil;
 - Integrando GitLab CI/CD com projeto GitHub(pt-br): Um procedimento que possibilita o uso do GitLab CI/CD no projeto GitHub.
 
@@ -134,30 +133,28 @@ Foi elaborado documentação/relatório descrevendo todo o pipeline usado para d
 
 2.  __Pesquisa em metodologias de refatoração de sistemas legados__
 
-**Concluído** - O principal problema tratado foi a pesquisa de estratégias de fazer inovação em plataformas compostas por software legado. Utilizamos o SALIC, principal software mantido pelo antigo Ministério da Cultura, que além de ser  o maior software ainda é o software que executa a Lei de Incentivo a Cultura. Nesse contexto, refatorar e/ou reescrever o Salic é uma tarefa inviável com custos proibitivos. Uma particularidade do Salic é a quantidade de bancos de dados (cerca de 10 bancos), e o fato de que várias regras de negócios estão do próprio banco. A documentação técnica no início do projeto era mínima, quase inexistente. 
+**Concluído** - O principal problema tratado foi a pesquisa de estratégias para fazer inovação em plataformas compostas por software legado. Utilizamos o SALIC, principal software mantido pelo antigo Ministério da Cultura, que além de ser o maior software desenvolvido pelo Ministério ainda é o software responsável pelo acompanhamento da execução da Lei de Incentivo a Cultura. Nesse contexto, refatorar e/ou reescrever o Salic é uma tarefa inviável com custos proibitivos e riscos elevados. Uma particularidade do Salic é a utilização de vários bancos de dados (cerca de 10 bancos), e o fato de que várias regras de negócios serem implementadas como procedimentos no próprio banco. A documentação técnica no início do projeto era mínima, quase inexistente. 
 
-Dado o contexto, além da estratégia *legacy in the box*, descrita na seção acima, pesquisamos e aplicamos outras duas técnicas de refatoração de sistemas legados. Identificamos o *SalicAPI*, projeto que disponibiliza os dados sobre a execução de projetos da Lei de incentivo, como sendo o software com o maior pontencial de se ter comunidade, uma vez que os dados acessados via o *SalicAPI* são de interesse tanto da sociedade civil quanto de jornalistas. Para o o *SalicAPI* aplicamos a técnica tradicional de refatoração orientados a métricas. Para isso, atualizamos a versão do *Python*, automatizamos a execução de testes automatizados, dockerizamos, fizemos toda a documentação técnica e dos *endpoints*. Essa técnica de refatoração (reescrita de código, melhoria das práticas, execução de testes unitários) modernizou o *SalicAPI* e permitiu um pipeline de entrega/deploy continuo seguro.
+Dado o contexto, além da estratégia *legacy in the box*, descrita na seção acima, pesquisamos e aplicamos outras duas técnicas de refatoração de sistemas legados. Identificamos o *SalicAPI*, projeto que disponibiliza os dados sobre a execução de projetos da Lei de incentivo, como sendo o software com o maior pontencial de se ter comunidade, uma vez que os dados acessados via o *SalicAPI* são de interesse tanto do governo quanto da sociedade civil e jornalistas. Para o o *SalicAPI*, aplicamos a técnica tradicional de refatoração orientados a métricas. Para isso, atualizamos a versão do *Python*, automatizamos a execução de testes automatizados, criamos containers Docker, fizemos toda a documentação técnica e dos *endpoints*. Essa técnica de refatoração (reescrita de código, melhoria das práticas, execução de testes unitários) modernizou o *SalicAPI* e permitiu um pipeline de entrega/deploy continuo seguro.
 
-A terceira técnica de refatoração de sistemas legados foi no contexto de inserir novas *features*. Mais especificamente, novas  *features* com inovação em funcionalidades que fazem o processamento de dados com algoritmos de *machine learning*. Como o código do SALIC é PHP, e maioria dos frameworks e bibliotecas de aprendizagem de máquina são desenvolvidos na linguagem *python*. Por isso, escolhemos a técnica de adotar uma arquitetura microsserviços, no qual novas funcionalidade são adicionadas a plataforma como novos microsserviços que compartilham o banco de dados com o software legado. Essa técnica foi colocada em prática com o serviço *"SalicML"*. Nele, construimos uma API no qual adicionamos várias métricas de complexidade de análise de projetos culturais.
+A terceira técnica de refatoração de sistemas legados foi no contexto de inserir novas funcionalidades baseadas no uso de algoritmos de *machine learning*. O código do SALIC é escrito em PHP, mas a maioria dos frameworks e bibliotecas de aprendizagem de máquina são desenvolvidos na linguagem *python*. Por isso, escolhemos a técnica de adotar uma arquitetura microsserviços, no qual novas funcionalidade são adicionadas a plataforma como novos microsserviços que compartilham o banco de dados com o software legado. Essa técnica foi colocada em prática com o serviço *"SalicML"*. Nele, construimos uma API na qual adicionamos várias métricas de complexidade de análise de projetos culturais.
 
 **Documentação comprobatória** - Quanto a estratégia refatoração, foi aplicado ao [SALIC API](https://github.com/lappis-unb/salic-api). A figura abaixo mostra a evolução das métricas relacionadas ao código.
 
 ![Salic API - qualidade de código estática antes e depois da refatoração.](figs/SALICAPI.png)
 
- Além de instrumentar a API com automações como conteiner, integração contínua (testes automatizados, build, teste de folha de estilo), foi realizados testes (cobertura atual de 87%). Foi adicionada também o graphQL para facilitar a consulta na API. Três docker composers foram implementados com o ambiente de desenvolvimento, ambiente de homologação e ambiente de produção. Foi também feito a documentação técnica para agilizar a manutenção e evolução da API utilizando *readthedocs*, disponibilizado no gitpage [https://salic-api.readthedocs.io/pt/latest/index.html](https://salic-api.readthedocs.io/pt/latest/index.html). Com essa estratégia, temos o projeto SALIC-API respeitando todas as recomendações de comunidades *open source*. Com isso, esse projeto, dentre os mantidos pelo ministério com  licenças abertas, é o mais receptivo para contribuições externas, da comunidade de software.
+ Além de instrumentar a API com automações como conteiner, integração contínua (testes automatizados, build, teste de folha de estilo), foi realizados testes (cobertura atual de 87%). Foi adicionada também o graphQL para facilitar a consulta à dados. Três Docker Composers foram implementados com o ambiente de desenvolvimento, ambiente de homologação e ambiente de produção. Realizou-se, também, a documentação técnica para agilizar a manutenção e evolução da API utilizando *readthedocs*, disponibilizado no gitpage [https://salic-api.readthedocs.io/pt/latest/index.html](https://salic-api.readthedocs.io/pt/latest/index.html). Com essa estratégia, temos o projeto SALIC-API respeitando todas as recomendações de comunidades *open source*. Com isso, esse projeto, dentre os mantidos pelo ministério com  licenças abertas, é o mais receptivo para contribuições externas, da comunidade de software.
 
 ![Salic API - documentação e padrões de projetos de acordo com comunidades de software livre.](figs/salicapi2.png)
 
 ![Salic API - cobertura de testes.](figs/salicapi1.png)
 
 
-Finalmente, a estratégia de arquitetura microsserviços foi aplicado em no [SalicML](https://github.com/lappis-unb/salic-ml).
+Finalmente, a estratégia de arquitetura microsserviços foi aplicada no [SalicML](https://github.com/lappis-unb/salic-ml).
 
 
 
-
-
-3.  __Utilizar como estudo de casos alguns sistemas legados do Ministério da Cultura, tais como o projeto SIMEC (Sistema Integrado de Monitoramento Execução e Controle) e o projeto Salic (Sistema de Apoio as Leis de Incentivo à Cultura), Sistel__
+1.  __Utilizar como estudo de casos alguns sistemas legados do Ministério da Cultura, tais como o projeto SIMEC (Sistema Integrado de Monitoramento Execução e Controle) e o projeto Salic (Sistema de Apoio as Leis de Incentivo à Cultura), Sistel__
 
 **Concluído.** - Dos três projetos citados, trabalhamos com o *SALIC* e o *Sistel*. No *Sistel* aplicamos a técnica de *legacy in a box*. Já no *SALIC*, aplicamos as três técnicas pesquisadas: *legacy in a box*, *refatoração de código orientado a métricas* e *arquitetura microsserviços*. Toda a documentação técnica, assim como os resultados técnicos obtidos, e decisões colaborativas com o Ministério estão disponibilizadas na wiki do respectivo repositório. Vamos detalhar aqui o trabalho arquitetural utilizado na estratégia *arquitetura microsserviços*.
 
