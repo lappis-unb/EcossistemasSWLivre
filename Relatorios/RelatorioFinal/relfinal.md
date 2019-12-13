@@ -73,7 +73,7 @@ Obviamente é impraticável anexar toda esta produção a este documento, portan
 
 ## Análise de custo benefício e impacto da inovação
 
- 
+
 Além do desenvolvimento de soluções de software para o Ministério da Cidadania, o projeto parte de uma lógica de parceria com a universidade e pressupõe a criação de insumos de pesquisa e produção acadêmica. A maior parte dos membros da equipe é formada por alunos do curso de Engenharia de Software, sendo que a participação no projeto contribuiu diretamente para a formação dos mesmos. Alguns destes alunos adotaram temas relacionados ao projeto como tema em seus trabalhos de conclusão de curso ainda em andamento. Foram publicados dois artigos científicos. O primeiro, com o título *"FLOSS FAQ chatbot project reuse - how to allow nonexperts to develop a chatbot"*, contém a experienca no desenvolvimento da Tais e foi apresentado no OpenSym, um dos maiores simposios de pesquisa acadêmica em software livre. O segundo, com o título *"A Survey of DevOps Concepts and Challenges"* foi aceito  na revista **Computing Surveys** da ACM, de alto impacto acadêmico (A1 no critério de Qualis da Capes) e mostra o resultado acadêmico dos estudos em DevOps. Foi publicado também um capítulo do livro "Software e Cultura no Brasil - Produção, gestão e políticas publicas",  no qual discutimos os modelos de contratação nas equipes de TI do governo federal, no capítulo "Colaboração aberta e sua relação com a contratação de software na administração pública".
 
 
@@ -92,9 +92,13 @@ Os resultados desse pacote de trabalho, e as entregas foram documentadas nos seg
 
 - [Relatório Etapa 2](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R2/RELATÓRIO%20ETAPA%202.pdf)
 
-- [Relatório Etapa 3](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELATÓRIO%20ETAPA%203.md)
+- [Relatório Etapa 3](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELAT%C3%93RIO%20ETAPA%203-1.pdf)
 
 - [Relatório Etapa 4](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R4/RELATÓRIO%20ETAPA%204.pdf)
+
+- [Relatório Etapa 5](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R5/RELAT%C3%93RIO%20ETAPA%205.pdf)
+
+- [Relatório Etapa 6](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R6/RELAT%C3%93RIO%20ETAPA%206.pdf)
 
 - [Relatório Etapa 7](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R7/RELATÓRIO%20ETAPA%207.pdf)
 
@@ -133,7 +137,7 @@ Elaborou-se uma documentação/relatório descrevendo todo o pipeline usado para
 
 2.  __Pesquisa em metodologias de refatoração de sistemas legados__
 
-**Concluído** - O principal problema tratado foi a pesquisa de estratégias para fazer inovação em plataformas compostas por software legado. Utilizamos o SALIC, principal software mantido pelo antigo Ministério da Cultura, que além de ser o maior software desenvolvido pelo Ministério ainda é o software responsável pelo acompanhamento da execução da Lei de Incentivo a Cultura. Nesse contexto, refatorar e/ou reescrever o Salic é uma tarefa inviável com custos proibitivos e riscos elevados. Uma particularidade do Salic é a utilização de vários bancos de dados (cerca de 10 bancos), e o fato de que várias regras de negócios serem implementadas como procedimentos no próprio banco. A documentação técnica no início do projeto era mínima, quase inexistente. 
+**Concluído** - O principal problema tratado foi a pesquisa de estratégias para fazer inovação em plataformas compostas por software legado. Utilizamos o SALIC, principal software mantido pelo antigo Ministério da Cultura, que além de ser o maior software desenvolvido pelo Ministério ainda é o software responsável pelo acompanhamento da execução da Lei de Incentivo a Cultura. Nesse contexto, refatorar e/ou reescrever o Salic é uma tarefa inviável com custos proibitivos e riscos elevados. Uma particularidade do Salic é a utilização de vários bancos de dados (cerca de 10 bancos), e o fato de que várias regras de negócios serem implementadas como procedimentos no próprio banco. A documentação técnica no início do projeto era mínima, quase inexistente.
 
 Dado o contexto, além da estratégia *legacy in the box*, descrita na seção acima, pesquisamos e aplicamos outras duas técnicas de refatoração de sistemas legados. Identificamos o *SalicAPI*, projeto que disponibiliza os dados sobre a execução de projetos da Lei de incentivo, como sendo o software com o maior pontencial de se ter comunidade, uma vez que os dados acessados via o *SalicAPI* são de interesse tanto do governo quanto da sociedade civil e jornalistas. Para o o *SalicAPI*, aplicamos a técnica tradicional de refatoração orientados a métricas. Para isso, atualizamos a versão do *Python*, automatizamos a execução de testes automatizados, criamos containers Docker, fizemos toda a documentação técnica e dos *endpoints*. Essa técnica de refatoração (reescrita de código, melhoria das práticas, execução de testes unitários) modernizou o *SalicAPI* e permitiu um pipeline de entrega/deploy continuo seguro.
 
@@ -239,7 +243,7 @@ Do ponto de vista arquitetural, apresentamos uma solução que viabiliza o uso d
 
 ## Pacote de Trabalho: Estudo sobre catálogos de Software Culturais
 
-De acordo com o plano de trabalho, "O foco dessa etapa é executar o ciclo de projeto de software completo, desde a iniciação. Assim, o projeto já será iniciado como software livre e com as práticas de DevOps,  ferramentas e tecnologias modernas. Será focado o levantamento das tecnologias e  ferramentas usadas pela comunidade de software livre para automatizar o processo de  desenvolvimento e implantação do software, pois há pouca pesquisa focada nesse tema. O principal objetivo nessa etapa é exercitar em todo ciclo de projeto a experimentação e inovação contínua, de forma a subsidiar a pesquisa realizada na Etapa 5. 
+De acordo com o plano de trabalho, "O foco dessa etapa é executar o ciclo de projeto de software completo, desde a iniciação. Assim, o projeto já será iniciado como software livre e com as práticas de DevOps,  ferramentas e tecnologias modernas. Será focado o levantamento das tecnologias e  ferramentas usadas pela comunidade de software livre para automatizar o processo de  desenvolvimento e implantação do software, pois há pouca pesquisa focada nesse tema. O principal objetivo nessa etapa é exercitar em todo ciclo de projeto a experimentação e inovação contínua, de forma a subsidiar a pesquisa realizada na Etapa 5.
 
 Referente à meta “Realizar estudos sobre funcionalidades de catálogo de software” e implemetação de um catálogo de software, foi feito um levantamento, juntamente com a CGTEC, da necessidade de se desenvolver um catálogo de software como previsto no plano de trabalho. Foram levantados como alguns governos lidam com o portifólio de projetos software livre, tais como as iniciativas do governo inglês de trabalhar majoritamente com software livre [https://governmenttechnology.blog.gov.uk/2016/12/15/next-steps-for-open-source-in-government/](https://governmenttechnology.blog.gov.uk/2016/12/15/next-steps-for-open-source-in-government/), e manter seu catálogo de software na própria organização github [http://gds-operations.github.io/](http://gds-operations.github.io/). Observamos também uma tendência mundial do uso de software livre no governo (egovernment - [http://www.egov4dev.org/success/definitions.shtml](http://www.egov4dev.org/success/definitions.shtml)), com uma quantidade crescente de adesão [https://government.github.com/community/](https://government.github.com/community/), [https://github.com/g0v](https://github.com/g0v). Observamos que o próprio repositório, organização, gitpages e wiki do repositório são utilizados para compor o catálogo de software. Como o principal objetivo dessa etapa é executar um ciclo completo de projeto, de comum acordo com a CGTEC, decidimos não desenvolver o catálogo de software, como previsto no calendário. Tal decisão está documentada e aprovada pelo Ministério no [Relatório de entrega da Etapa 2](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R3/RELATÓRIO%20ETAPA%203.md).
 
@@ -260,9 +264,9 @@ Vamos detalhar as demais tarefas realizas nesse pacote de trabalho. As entregas 
 
 2. __Realizar estudos e documentação do processo de desenvolvimento e das boas práticas e automações realizadas__
 
-**Concluído** - Quanto em relação as boas práticas de documentação técnica,  além de encontros técnicos para apresentação das práticas experimentadas no laboratório, alguns documentos técnicos foram elaborados para tal fim. Grande parte do time ficou focado em amadurecer o pipeline devops, atualizar o pipeline dos softwares do Ministério trabalhados no laboratório (Salic API, Salic, Mapas culturais), além de gerar a documentação técnica do conhecimento adquirido. Experimentamos várias formas de documentação técnica foram realizados durante o projeto. No projeto Tais, experimentamos realizar documentos técnicos de estudos precedentes a tomada de decisão. Esses estudos foram todos disponibilizados na wiki do projeto. Já o SalicML, experimentados a documentação técnica dos experimentos de data science disponíveis nos jupyter notebooks, no qual o código está junto com a documentação técnica. No SalicAPI, utilizamos documentação técnica *readthedocs* para registrar tando as funcionalidades implementadas, quanto o roadmap do projeto. Finalmente, testamos os benefícios na realização de webinários como forma de documentação e compartilhamento de conhecimento, forma de treinamento. Todas essas formas de documentação são amplamente utilizadas pela comunidade opensource, e percebemos que cada contexto sugere um modelo próprio. A partir da nossa experiência, vimos que o formato de documentação técnica mais adequada para um projeto opensource é o formato adotado pela comunidade. Por exemplo, em comunidade de software livre que tratam de problemas de machine learning, ciência de dados, e processamento de sinais, o uso de notebooks para documentação técnica é o padrão adotado. 
+**Concluído** - Quanto em relação as boas práticas de documentação técnica,  além de encontros técnicos para apresentação das práticas experimentadas no laboratório, alguns documentos técnicos foram elaborados para tal fim. Grande parte do time ficou focado em amadurecer o pipeline devops, atualizar o pipeline dos softwares do Ministério trabalhados no laboratório (Salic API, Salic, Mapas culturais), além de gerar a documentação técnica do conhecimento adquirido. Experimentamos várias formas de documentação técnica foram realizados durante o projeto. No projeto Tais, experimentamos realizar documentos técnicos de estudos precedentes a tomada de decisão. Esses estudos foram todos disponibilizados na wiki do projeto. Já o SalicML, experimentados a documentação técnica dos experimentos de data science disponíveis nos jupyter notebooks, no qual o código está junto com a documentação técnica. No SalicAPI, utilizamos documentação técnica *readthedocs* para registrar tando as funcionalidades implementadas, quanto o roadmap do projeto. Finalmente, testamos os benefícios na realização de webinários como forma de documentação e compartilhamento de conhecimento, forma de treinamento. Todas essas formas de documentação são amplamente utilizadas pela comunidade opensource, e percebemos que cada contexto sugere um modelo próprio. A partir da nossa experiência, vimos que o formato de documentação técnica mais adequada para um projeto opensource é o formato adotado pela comunidade. Por exemplo, em comunidade de software livre que tratam de problemas de machine learning, ciência de dados, e processamento de sinais, o uso de notebooks para documentação técnica é o padrão adotado.
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 Parte da documentação de DevOps foi disponibilizada no repositório do laboratório em https://gitlab.com/lappis-unb/docs, disponibilizada também como anexo no final deste documento, os documentos cobrem tanto a primeira quanto a terceira meta do período.
 
 Foi elaborado documentação/relatório descrevendo todo o pipeline usado para deploy contínuo no laboratório com os seguintes tutoriais, que podem ser aplicados em diversos contextos:
@@ -274,7 +278,7 @@ Foi elaborado documentação/relatório descrevendo todo o pipeline usado para d
 
 Toda a documentação foi realizada em português e disponibilizada para acesso.
 
-- Documentação técnica da Tais - Wiki do projeto [https://github.com/lappis-unb/tais/wiki/](https://github.com/lappis-unb/tais/wiki/) 
+- Documentação técnica da Tais - Wiki do projeto [https://github.com/lappis-unb/tais/wiki/](https://github.com/lappis-unb/tais/wiki/)
 - Documentação Técnica do SalicML - Notebooks do projeto [https://github.com/lappis-unb/salic-ml/tree/master/notebooks](https://github.com/lappis-unb/salic-ml/tree/master/notebooks)
 - Documentação técnica do Salic API - readthedocs [https://salic-api.readthedocs.io/pt/latest/](https://salic-api.readthedocs.io/pt/latest/) e swagger [http://api.salic.cultura.gov.br/doc/](http://api.salic.cultura.gov.br/doc/)
 - Documentação Promova Cultura - wiki do projeto [https://github.com/lappis-unb/PromovaCultura/wiki](https://github.com/lappis-unb/PromovaCultura/wiki)
@@ -376,14 +380,14 @@ Um fluxograma que mostra o "caminho" percorrido pelos usuários em cada sessão 
 
 3. __Relatório com os  modelos de desenvolvimento e comunidade para serem aplicados aos projetos de software do Minc__
 
-**Concluído** -  O projeto foi dividido em ciclos de 3 meses, no qual a cada ciclo era realizado um planejamento estratético com a equipe estratégica do Ministério da Cidadania (tanto a equipe de coordenação quanto de negócio). Nessa reunião de planejamento estratégico, amadurecido ao longo do projeto, era definido as metas estratéficas para o próximo ciclo, além das épicas priorizadas. Essas reuniões foram documentadas na wiki do repositório ou em apresentações com o alinhamento. Então, a equipe se reunia para criar as issues, histórias de usuário e tarefas a serem desenvolvidas. Tais tarefas estão todas documentadas em forma de issue, no repositório de cada repositório. Utilizamos _sprints_ de duas semanas para planejar e revisar o desenvolvimento. A cada mês, a equipe técnica/gestão da TI do ministério era convidado para visitar o laboratório e acompanhar a evolução das frentes. 
+**Concluído** -  O projeto foi dividido em ciclos de 3 meses, no qual a cada ciclo era realizado um planejamento estratético com a equipe estratégica do Ministério da Cidadania (tanto a equipe de coordenação quanto de negócio). Nessa reunião de planejamento estratégico, amadurecido ao longo do projeto, era definido as metas estratéficas para o próximo ciclo, além das épicas priorizadas. Essas reuniões foram documentadas na wiki do repositório ou em apresentações com o alinhamento. Então, a equipe se reunia para criar as issues, histórias de usuário e tarefas a serem desenvolvidas. Tais tarefas estão todas documentadas em forma de issue, no repositório de cada repositório. Utilizamos _sprints_ de duas semanas para planejar e revisar o desenvolvimento. A cada mês, a equipe técnica/gestão da TI do ministério era convidado para visitar o laboratório e acompanhar a evolução das frentes.
 
 Em relação as automações realizadas, elas foram tomas mapeadas nas _issues_ e toda documentação técnica necessária para evoluir e manter as soluções.
 
 Como o desenvolvimento do catálogo de software foi cancelado, tanto as práticas quanto métodos e automações, além da documentação foi usada nos outros projetos desenvolvidos, como o projeto da Tais e SalicML.
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 O processo de construção colaborativa do planejamento e execução contínua foi feito em colaboração com o Ministério. Abaixo colocamos um exemplo do resultado de um planejamento estratégico da Etapa I.
 
 ### Planejamento Estratégico Etapa 1 - E1
@@ -443,7 +447,7 @@ Além dos relatórios de entregas trimestrais que são aprovadas pelo Ministéri
 treinamentos. Ao amadurecer tecnicamente conhecimento sobre chatbots e a arquitetura da Tais, realizamos diversos webinares que estão disponibilizados no youtube, que abordam diversos aspectos técnicos importantes para a manutenção e evolução da Tais. Participamos também de 2 edições do pydata gravadas no qual apresentamos a visão geral da Tais e do SalicML. Esses materiais estão organizados e disponibilizados de forma que pessoas interessadas em manter e evoluir os projetos desenvolvidos no projeto terão todo o apoio técnico necessário.
 
 
-**Documentação comprobatória** -  Em anexo ao  presente relatório serão apresentados todos os eventos de capacitação realizados ao longo do projeto. 
+**Documentação comprobatória** -  Em anexo ao  presente relatório serão apresentados todos os eventos de capacitação realizados ao longo do projeto.
 
 Alguns exemplos de capacitações realizadas:
 
@@ -484,62 +488,62 @@ De acordo com o plano de trabalho, "O principal resultado dessa pesquisa será s
 
 1. __Estudos de caso sobre comunidades de software livre onde o Estado participa por adesão, com prioridade para os softwares utilizados para a gestão cultural__
 
-**Concluído** - 
+**Concluído** -
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 
 2. __Estudos sobre boas práticas para planejamento conjunto de milestones e releases entre as organizações que fazem parte das comunidades__
-**Concluído** - 
+**Concluído** -
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 
-  
+
 3. __Estudos sobre boas práticas de comunicação e mobilização no contexto das comunidades onde o Estado participa__
-  
-  **Concluído** - 
+
+  **Concluído** -
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 
 4. __Participação em eventos e encontros das comunidades de software livre que contribuem para o portifólio mantido pelo MinC__
 
-**Concluído** - 
+**Concluído** -
 
 
-**Documentação comprobatória** - 
-  
+**Documentação comprobatória** -
+
 5. __Estudos sobre arranjos econômicos utilizados pelas comunidades com fins de sustentabilidade de seus comuns de software__
 
-**Concluído** - 
+**Concluído** -
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 
 6. __Estudos sobre metodologias e suportes tecnológicos para a gestão colaborativa em comunidades de software livre nas quais o Estado participa por adesão__
 
-**Concluído** - 
+**Concluído** -
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 
 
 ## Pacote de Trabalho: Estudo de técnicas de Aprendizado de Máquina para apoiar a fiscalização da Lei Rouanet
 
-De acordo com o plano de trabalho, "O principal objetivo é o estudo de técnicas de Aprendizado de Máquina que possam apoiar o sistema de recomendação e fiscalização da lei Rouanet. Nessa etapa será realizada  uma pesquisa exploratória em técnicas de aprendizado de máquina e processamento de linguagem natural. Tais técnicas e algoritmos serão aplicados para melhorar a experiência de usuário (UX) por meio da proposta de chatbots como interface entre os proponentes na lei Rouanet e o Ministério da Cultura". 
+De acordo com o plano de trabalho, "O principal objetivo é o estudo de técnicas de Aprendizado de Máquina que possam apoiar o sistema de recomendação e fiscalização da lei Rouanet. Nessa etapa será realizada  uma pesquisa exploratória em técnicas de aprendizado de máquina e processamento de linguagem natural. Tais técnicas e algoritmos serão aplicados para melhorar a experiência de usuário (UX) por meio da proposta de chatbots como interface entre os proponentes na lei Rouanet e o Ministério da Cultura".
 
 ###  Metas específicas
 
 1. __Realizar estudos e propor técnicas de processamento de linguagem natural, aprendizado supervisionado e o desenvolvimento de chatbots para interagir com proponentes da Lei Rouanet__
 
-**Concluído** -  Principal pesquisa do projeto TAIS. Durante o projeto foram testados diversos frameworks de chatbots, dentre eles o *hubot natural*, *botpress*, e *rasa*. O objetivo era pesquisar os algoritmos, dados de treinamento e performance de algoritmos de processamento de linguagem natural em português. Pela novidade da tecnologia, e das ferramentas, existia poucos ou nenhum experimento executado em português. 
+**Concluído** -  Principal pesquisa do projeto TAIS. Durante o projeto foram testados diversos frameworks de chatbots, dentre eles o *hubot natural*, *botpress*, e *rasa*. O objetivo era pesquisar os algoritmos, dados de treinamento e performance de algoritmos de processamento de linguagem natural em português. Pela novidade da tecnologia, e das ferramentas, existia poucos ou nenhum experimento executado em português.
 
 Após diversos experimentos, testes (a primeira versão da Tais utilizamos o *hubot natural* com o classificador Support Vector Machine), escolhemos o Rasa, pois além de crescente comunidade, possuia a vantagem de trazer a possibilidade de customizar o pipeline de processamento e algoritmos. Além disso, já estava implementado algoritmos modernos de processmanto de linguagem natural, tais como *Embeddings*, *LSTM*, entre outros.
 
 Testamos diversas técnicas de  classificadores de intenção do usuário: Support Vector Machine (SVM), Embeddings. Após diversos experimentos observamos que o embeddings classificava melhor com poucos dados de treinamento, que é o caso do chatbot em português que tem poucos ddos para treinamento. Além de testes de algoritmos de *Natural Language Processing* (NLU), um chatbot tem que prever a ação mais adequadava a partir da intenção do usuário e o contexto da conversa. Com isso, tem-se uma segunda etapa de processamento de chatbots que é a gestão de conversa. Nessa etapa, testamos duas formas de fazer a gestão de conversa: a partir de um fluxo de conversa (árvore de decisão), ou utilizando redes neurais preditivas (LSTMs). O primeiro caso se mostrou muito limitado, pois impões a estrutura burocrática do órgão para o usuário, e obriga o chatbot a controlar a conversa para garantir a boa experiência do usuáio. Mas testes em uso mostraram que esse tipo de diálogo é não natural e, mesmo o chatbot tendo o contexto e sabendo responder a  determinadas perguntas, deixa a experiência para o usuário de muitos erros na interação. Já a abordagem utilizando redes neurais demanda mais conhecimento técnico do time de projeto, mais dados de treinamento, mas traz o benefício de permitir o usuário conduzir a conversa com o chatbot e tivemos mais feedbacks positivos dos nossos testes em uso.
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 Todos os experimentos conduzidos foram documentados e os resultados disponibilizaos na wiki do repositório do projeto Tais.
 
 Após a etapa de experimento, implementamos a chatbot TAIS. Até o final do projeto, todo o conteúdo demandado pela SEFIC foi inserido no bot, e também foi feito uma curadoria orientado a dados. Como parte da arquitetura da Tais é um BI com os dados, métricas e indicadores sobre o comportamento dos usuários, utilizamos esses dados para melhorar de forma contínua novos conteúdos.
@@ -621,7 +625,7 @@ A segunda etapa do projeto tiveram os seguintes objetivos:
 - Sistema de recomendações de projetos na etapa de Análise de Resultados
 - Sistema de recomendações de projetos nas etapas de Admissão e Execução
 
-Quanto à complexidade de projetos culturais, foram levantados junto à equipe técnica da SEFIC como eles identificam o um projeto simples e um projeto complexo a ser analisado. O objetivo é ranquear os projetos de acordo com a métrica de complexidade, a fim de orientar a equipe técnica na priorização da análise dos projetos, assim como em como delegar os projetos. Nas Figuras abaixos apresentamos a evolução do projeto, desde as primeiras métricas, validadas e evoluidas a partir do feedback da equipe técnica do ministério. 
+Quanto à complexidade de projetos culturais, foram levantados junto à equipe técnica da SEFIC como eles identificam o um projeto simples e um projeto complexo a ser analisado. O objetivo é ranquear os projetos de acordo com a métrica de complexidade, a fim de orientar a equipe técnica na priorização da análise dos projetos, assim como em como delegar os projetos. Nas Figuras abaixos apresentamos a evolução do projeto, desde as primeiras métricas, validadas e evoluidas a partir do feedback da equipe técnica do ministério.
 
 ![Dashboard de complexidade de projetos culturais.](figs/salicml.png)
 
@@ -632,7 +636,7 @@ Além de evoluir questões relacionadas a área de negócio, também criamos um 
 ![Recomendação de itens para etapa de admissão.](figs/salicml2.png)
 
 
-Para chegar as métricas mostradas, detecção de outliers, e sistemas de recomendação, definimos o seguinte processo. A partir das hipóteses levantandas a partir de reuniões com a equipe técnica do ministério e análise do banco de dados dos projetos submetidos via salic, a equipe de pesquisa formulava a hipótese de melhoria. Um exemplo de hipótese é 
+Para chegar as métricas mostradas, detecção de outliers, e sistemas de recomendação, definimos o seguinte processo. A partir das hipóteses levantandas a partir de reuniões com a equipe técnica do ministério e análise do banco de dados dos projetos submetidos via salic, a equipe de pesquisa formulava a hipótese de melhoria. Um exemplo de hipótese é
 
 *Realizar estudo comparativo entre diversos modelos de detecção de outlier no contexto da métrica "Razão entre o número de itens com comprovante e o número de itens por projeto".*
 
@@ -648,11 +652,11 @@ Para chegar as métricas mostradas, detecção de outliers, e sistemas de recome
 - [x] Conclusão de qual método é melhor
 
 
-Essas hipóteses eram desenvolvidas em  jupyter notebooks. Mais de 40 notebooks (entre versões e hipoteses) foram desenvolvidos ao longo do projeto. Nessa etapa, os dados eram extraídos do banco de dados, realizados pré processamentos para condicionar esses dados, o processamento, e análise dos resultados. A imagem abaixo mostra um trecho de como esses notebooks eram desenvolvidos/documentados. 
+Essas hipóteses eram desenvolvidas em  jupyter notebooks. Mais de 40 notebooks (entre versões e hipoteses) foram desenvolvidos ao longo do projeto. Nessa etapa, os dados eram extraídos do banco de dados, realizados pré processamentos para condicionar esses dados, o processamento, e análise dos resultados. A imagem abaixo mostra um trecho de como esses notebooks eram desenvolvidos/documentados.
 
 ![Jupiter Notebook com o desenvolvimento de hipóteses do projeto salic-ml](figs/salicmljupyter.png)
 
-Os resultados eram compartilhados com o time completo. Sendo válidos os resultados e a hipótese, passavamos para etapa de implementar na API do salic ML a funcionalidade. Uma vez implementada, construimos uma visualização para validar as hipóteses com a equipe técnica do ministério. 
+Os resultados eram compartilhados com o time completo. Sendo válidos os resultados e a hipótese, passavamos para etapa de implementar na API do salic ML a funcionalidade. Uma vez implementada, construimos uma visualização para validar as hipóteses com a equipe técnica do ministério.
 
 A entrega dessas meta é então uma API que calcula as seguintes métricas de complexidade de projetos Culturais:
 
@@ -665,7 +669,7 @@ A entrega dessas meta é então uma API que calcula as seguintes métricas de co
 - Recomendação de itens orçamentários
 - Ranking dos projetos de acordo com a complexidade
 
-O acompanhamento dessas entregas estão disponíveis nos reguintes relatórios de acompanhamento: 
+O acompanhamento dessas entregas estão disponíveis nos reguintes relatórios de acompanhamento:
 
 - [Relatório Etapa 2](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R2/RELATÓRIO%20ETAPA%202.pdf)
 
@@ -715,7 +719,7 @@ Também houve a experimentação do Jenkins integrado ao Rancher 2.0. Todas as c
 
 Alguns resultados e lições aprendidas foram apresentados e discutidos pelos alunos de graduação nos Workshops organizados pelo laboratório e em eventos abertos a comunidade.
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 - [Configuração GitLabCI SALIC-ML](https://github.com/lappis-unb/salic-ml/blob/master/.gitlab-ci.yml)
 - [Configuração GitLabCI Tais (com reaproveitamento de _build_ entre _stages_)](https://github.com/lappis-unb/tais/blob/master/.gitlab-ci.yml)
 - [Apresentação sobre otimização de _pipeline_ no Workshop realizado na ENAP em 27/09/2019](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Workshop/Apresentacao/DevOps/PipelineTais_TrilhaDevOps.pdf)
@@ -736,20 +740,20 @@ processados nas etapas anteriores. Os gráficos produzidos servem de embasamento
 
 **Concluído** - Inicialmente, o objetivo desta meta era gerar visualizações com base nos dados disponíveis no portal VerSalic. A equipe fez uma análise extensa tanto desse portal quanto de todo o processo da Lei de Incentivo. Em seguida, aplicou-se uma versão modificada da técnica de Design Sprint para geração de ideias de visualização. A dedicação dos bolsistas e apreço pelo tema, foi tamanha que resolveram batizar o grupo de trabalho de “Promova Cultura”.
 
-Foram geradas 18 ideias, possibilidades de visualização divididas em dois grupos chamados de “Panorama da cultura” e “Visualização de projetos”. Destas 18, foram escolhidas 5 considerando tanto o potencial de benefício quanto viabilidade técnica. Estas 5 ideias foram prototipadas sob a forma de painéis interativos on-line. Para isso, foi adotada a tecnologia VueJS para o front-end, tecnologia essa usada pela equipe do SALIC. Além disso, a maioria dos painéis acessava dados reais via a versão refatorada da Salic-API. 
+Foram geradas 18 ideias, possibilidades de visualização divididas em dois grupos chamados de “Panorama da cultura” e “Visualização de projetos”. Destas 18, foram escolhidas 5 considerando tanto o potencial de benefício quanto viabilidade técnica. Estas 5 ideias foram prototipadas sob a forma de painéis interativos on-line. Para isso, foi adotada a tecnologia VueJS para o front-end, tecnologia essa usada pela equipe do SALIC. Além disso, a maioria dos painéis acessava dados reais via a versão refatorada da Salic-API.
 
 Dentre os painéis prototipados, ressalta-se o de “Mapa de Calor”, que demonstra a distribuição de projetos de incentivo, incentivadores e valores incentivados pelo território nacional. O painel confirmou suspeitas conhecidas, como a concentração de incentivadores no eixo Rio-São Paulo, mas também surpreendeu ao revelar projetos no Acre sendo fortemente incentivados pela região Nordeste. O painel de “Deslocamentos" é bastante relevante pois mostra claramente o deslocamento de projetos pelo país e também trás algumas interpretações inusitadas. Por exemplo, pouquíssimos projetos circula entre o RS e SC, mesmo com a proximidade geográfica entre os estados. Cabe indicar que as visualizações prototipadas são todas responsivas, funcionando tanto em versão desktop quanto mobile.
 
 Os painéis foram combinados em uma biblioteca de visualizações e o resultado amplamente documento no Relatório de Acompanhamento 04. Sendo este apresentado e aprovado para os gestores do projeto. Aliás, foi durante a reunião de apresentação deste relatório, em 21/09/2018, que a equipe gestora de uma das áreas finalísticas do então Ministério da Cultura, solicitou a coordenação do projeto que o desenvolvimento dos painéis não fossem avançado e que a equipe fosse alocada para a refatoração completa do Portal Comparar, um portal de dados mais antigo do Ministério.
 
-O pedido foi acatado pela coordenação do projeto, na medida que não ferisse o escopo e as metas dos projeto. Procedeu-se uma análise aprofundada de compatibilidade tecnológica e disponibilidade dos dados. O resultado dessa análise indicou que a refatoração completa seria inviável, já que dos 105 relatórios disponíveis no Portal Comparar, apenas 4 tinham dados compatíveis com o que era disponibilizado na SALIC-API. Além disso, uma refatoração completa necessitaria de uma mudança de base tecnológica que fugiria tanto das competências disponíveis na equipe, quanto da essência deste projeto. 
+O pedido foi acatado pela coordenação do projeto, na medida que não ferisse o escopo e as metas dos projeto. Procedeu-se uma análise aprofundada de compatibilidade tecnológica e disponibilidade dos dados. O resultado dessa análise indicou que a refatoração completa seria inviável, já que dos 105 relatórios disponíveis no Portal Comparar, apenas 4 tinham dados compatíveis com o que era disponibilizado na SALIC-API. Além disso, uma refatoração completa necessitaria de uma mudança de base tecnológica que fugiria tanto das competências disponíveis na equipe, quanto da essência deste projeto.
 
-Isso foi comunicado aos gestores do projeto e, no final de dezembro 2018, acordou-se uma tentativa de converter o relatório “Captação de recurso por UF - desde 1992” em uma visualização baseada no “Mapa de Calor”. A equipe então realizou essa adaptação e conversão, adicionando aí a exportação dos dados em formato tabular. O resultado foi uma visualização com o mesmo nome do relatório original, disponível também na biblioteca de visualizações, junto com os outros painéis. 
+Isso foi comunicado aos gestores do projeto e, no final de dezembro 2018, acordou-se uma tentativa de converter o relatório “Captação de recurso por UF - desde 1992” em uma visualização baseada no “Mapa de Calor”. A equipe então realizou essa adaptação e conversão, adicionando aí a exportação dos dados em formato tabular. O resultado foi uma visualização com o mesmo nome do relatório original, disponível também na biblioteca de visualizações, junto com os outros painéis.
 
 Todos os resultados desta segunda empreitada, foram documentados no Relatório de acompanhamento 05 e aprovados pela equipe gestora de transição para o Ministério da Cidadania. Nesta mesma oportunidade, foi acordado que o custo de avançar com a adaptação do Portal Comparar seria muito grande para o projeto. Sendo assim, por decisão da CGTI, essa iniciativa foi dada como finalizada e concluída, ainda no Relatório de acompanhamento 05. A equipe “Promova Cultura”, em seguida, foi realocada para outras frentes, a saber: SALIC-ML, dashboard de BI da Tais e BotFlow.
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 
 - [Repositório do “Promova Cultura”](https://github.com/lappis-unb/PromovaCultura/)
 - [Técnica de Design Sprint - Ideias de “Panorama da cultura”](https://github.com/lappis-unb/PromovaCultura/wiki/Design-Sprints-Panorama)
@@ -805,7 +809,7 @@ Cabe frisar que os estudos computacionais de caráter exploratório foram 100% d
 O material produzido, todos os estudos e esboços de visualização, foram apresentados como parte do Relatório de Acompanhamento 6 e aprovado pelos gestores.
 
 
-**Documentação comprobatória** - 
+**Documentação comprobatória** -
 
 - [Repositório do “SALIC-ML”](https://github.com/lappis-unb/salic-ml/)
 - Exemplos de estudos de grafos:
@@ -891,7 +895,7 @@ produtos escritos em Python, PHP, Ruby, Javascript, entre outras.
 
 2. __A mineração em repositórios de software e a análise científica de dados do software__
 
- **Concluído** - O principal objetivo dessa meta é identificar métricas de repositórios de projetos de software que auxilie a compreender a qualidade do produto de software. O que se procurar com essas métricas de produtividade da equipe, volume de trabalho entregue, boas práticas de engenharia de software. 
+ **Concluído** - O principal objetivo dessa meta é identificar métricas de repositórios de projetos de software que auxilie a compreender a qualidade do produto de software. O que se procurar com essas métricas de produtividade da equipe, volume de trabalho entregue, boas práticas de engenharia de software.
 
 Com o intuito de compreender a dinâmica de desenvolvimento e a qualidade de cada uma das soluções de software desenvolvidas durante o período do projeto, foi realizada uma análise das métricas dos repositórios onde estão hospedados os códigos fonte e as respectivas documentações.
 
@@ -899,7 +903,7 @@ Com o intuito de compreender a dinâmica de desenvolvimento e a qualidade de cad
 
 Estão contemplados nesta análise 8 repositórios, sendo eles:
 
-1. **Tais:** A Tais (Tecnologia de Aprendizado Interativo do Salic) é um chatbot desenvolvido para o projeto da Lei Rouanet com o objetivo de ajudar os proponentes nos momentos de dúvida. A Tais é baseada no framework Rasa. Disponível em: https://github.com/lappis-unb/tais. 
+1. **Tais:** A Tais (Tecnologia de Aprendizado Interativo do Salic) é um chatbot desenvolvido para o projeto da Lei Rouanet com o objetivo de ajudar os proponentes nos momentos de dúvida. A Tais é baseada no framework Rasa. Disponível em: https://github.com/lappis-unb/tais.
 2. **Rasa-ptbr-Boilerplate:**  Projeto feito com a tecnologia  Rasa incluindo as configurações iniciais necessárias para a construção de um projeto chatbot. Disponível em: https://github.com/lappis-unb/rasa-ptbr-boilerplate.
 3. **BotFlow:** O BotFlow é uma plataforma criada para facilitar a criação e edição de conteúdos para o desenvolvimento de ChatBots que utilizam o framework Rasa. Neste repositório estão os códigos referentes à camada de visualização (*Front-end*). Disponível em: https://github.com/lappis-unb/BotFlow.
 4. **BotFlowAPI:** O BotFlowAPI é a API baseada no protocolo REST para permitir o funcionamento do BotFlow. Disponível em: https://github.com/lappis-unb/BotFlowAPI.
@@ -909,7 +913,7 @@ Estão contemplados nesta análise 8 repositórios, sendo eles:
 8. **SailcMLFrontEnd:** Protótipo de front-end para o módulo SalicML. Disponível em: https://github.com/lappis-unb/salic-ml-frontend.
 
 
- 
+
 ![Overview das contribuições ao longo do tempo no projeto "Ecossistemas de Software Livre".](figs/organizacao_dash.png)
 
 
@@ -946,7 +950,7 @@ Em seguida, consideramos outras 4 métricas que apontam o volume de trabalho e f
 * **Número de Commits:** indicam o número de grupos de alterações no código fonte, sendo um indicador do volume de atividades realizadas ao longo do projeto.
 * **Número de Arquivos:** quantidade total de arquivos do projeto indicando, em parte, sua complexidade.
 * **Número de linhas adicionadas / removidas:** quantidade de linhas de código adicionadas e removidas durante o período do projeto, indicando a quantidade de trabalho realizada incluindo melhorias à partir de refatoração do código.
-* **Média de Linhas modificadas por commit:** esta métrica indica a quantidade média de modificações realizadas à cada nova versão do sistema. Este é um importante indicador de boas práticas de desenvolvimeto, uma vez que novas submissões devem passar por revisão e, se forem muito extensas, dificultam sua avaliação e extendem o tempo necessários para as mesmas serem integradas à base de código e estarem disponíveis para os demais desenvolvedores. 
+* **Média de Linhas modificadas por commit:** esta métrica indica a quantidade média de modificações realizadas à cada nova versão do sistema. Este é um importante indicador de boas práticas de desenvolvimeto, uma vez que novas submissões devem passar por revisão e, se forem muito extensas, dificultam sua avaliação e extendem o tempo necessários para as mesmas serem integradas à base de código e estarem disponíveis para os demais desenvolvedores.
 
 Neste caso, se observa na tabela à seguir o grande volume de *commits* e alterações de código realizadas ao longo do desenvolvimetno de cada um dos projetos.
 
@@ -982,7 +986,7 @@ Neste caso, a tabela à seguir aponta estas métricas em cada um dos repositóri
 Repositório	|	Quantidade de Pull Requests (Abertos/Fechados)	|	Número de Issues (Abertas / Fechadas)	|	Pipeline CI/CD
 -	|	:-:	|	:-:	|	:-:
 **Tais**	|	0 / 158	|	39 / 387	|	GitlabCI / CD
-**Rasa-ptbr-Boilerplate**	|	1 / 55	|	15 / 44	|	GitlabCI 
+**Rasa-ptbr-Boilerplate**	|	1 / 55	|	15 / 44	|	GitlabCI
 **BotFlow**	|	1 / 54	|	34 / 50	|	TravisCI
 **BotFlow API**	|	0 / 24	|	0 / 0	|	-
 **Promova Cultura**	|	1 / 78	|	19 / 157	|	-
@@ -1021,7 +1025,7 @@ Repositório	|	Forks	|	Número de Estrelas	|	Data de Criação
   **Concluído parcialmente** -
 Nessa meta específica adaptamos para a análise do custo benefício e impacto da inovação no desenvolvimento de Software. Ao invés de focar no normativo estabelecido, levantamos diversas métricas de precificação. A avaliação de esforço de desenvolvimento e precificação de Software ainda é uma área com grandes incertezas. Existem metodologias na área de Engenharia de Software para estimar o esforço de desenvolvimento de um produto baseadas em padrões históricos médios e na observação de vários projetos desenvolvidos comercialmente. É importante notar que estes modelos são apenas aproximados,mas ajudam a estabelecer uma ordem de grandeza do esforço de desenvolvimento de um software em comparação com projetos semelhantes encontrados na indústria.
 
-**Documentação comprobatória** 
+**Documentação comprobatória**
 
 ## Análise de custo benefício e impacto da inovação
 
@@ -1035,7 +1039,7 @@ Vale lembrar que além da entrega de produtos de software, o presente TED també
 
 ### Estimativa de esforço
 
-A avaliação de esforço de desenvolvimento e precificação de Software ainda é uma área com grandes incertezas. Existem metodologias na área de Engenharia de Software para estimar o esforço de desenvolvimento de um produto baseadas em padrões históricos médios e na observação de vários projetos desenvolvidos comercialmente. É importante notar que estes modelos são apenas aproximados,mas ajudam a estabelecer uma ordem de grandeza do esforço de desenvolvimento de um software em comparação com projetos semelhantes encontrados na indústria. 
+A avaliação de esforço de desenvolvimento e precificação de Software ainda é uma área com grandes incertezas. Existem metodologias na área de Engenharia de Software para estimar o esforço de desenvolvimento de um produto baseadas em padrões históricos médios e na observação de vários projetos desenvolvidos comercialmente. É importante notar que estes modelos são apenas aproximados,mas ajudam a estabelecer uma ordem de grandeza do esforço de desenvolvimento de um software em comparação com projetos semelhantes encontrados na indústria.
 
 Estimamos o esforço a partir do número de horas-desenvolvedor necessários para produzir um projeto com a mesma ordem de grandeza dos aqui desenvolvidos. Para isto, utilizaremos primeiramente o modelo COCOMO (*Constructive Cost Model*) desenvolvido por Berry W. Boehm que estima o esforço de desenvolvimento a partir do número de linhas físicas e código de um determinado projeto. Os parâmetros do modelo de Boehm partiram de uma análise empírica da produtividade de equipes em projetos  reais e tendem a ter uma correspondência razoável com projetos de desenvolvimento reais. O próprio Boehm estima que cerca de 70% dos projetos apresentam estimativas dentro de uma faixa de 20% em torno do valor real, com o resto apresentando divergências mais significativas.
 
@@ -1061,11 +1065,11 @@ Em todos os projetos, exceto a Taís, Rasa-Boilerplate e Salic ML, utilizamos o 
 
 O *SCC* considera um salário médio anualizado de U$56.286,00 e um parâmetro de *overhead* para o modelo orgânico simples equivalente à 2,4\footnote{O SCC utiliza uma parametrização diferente de outras ferramentas mais estabelecidas como, por exemplo o SLOCCOUNT do David Wheeler. Seu fator de *overhead* é de 1,8, mas ao mesmo tempo ele superestima o esforço de desenvolvimento com relação COCOMO simplificado de desenvolvimento *orgânico* por um fator fixo de 1,33. Esta diferença vem de diferentes escolhas de parâmetros, mas quando multiplicamos os dois fatores, obtemos os mesmos resultados de custo financeiro utilizando as duas ferramentas}. Utilizando-se estes valores, obtemos uma estimativa de U$2.012.000,00 ou cerca de 8 milhões de reais. Obviamente, a realidade brasileira é diferente e o principal fator de custo, o salário médio de um desenvolvedor, é consideravelmente mais baixo. Tomamos como referência o valor de R$9.200,00 mensais (R$ 110.400,00 anuais), compilado em um relatório recente do TCU sobre os a eficiência econômica dos contratos com o Serpro e Dataprev (https://pesquisa.apps.tcu.gov.br/#/documento/acordao-completo/*/KEY%253AACORDAO-COMPLETO-2298670/DTRELEVANCIA%2520desc%252C%2520NUMACORDAOINT%2520desc/0/%2520). Este é o valor de mercado para um cargo de *analista*, a menor categoria de desenvolvedor de mercado considerada no relatório. Fazendo estes ajustes, o custo estimado para o desenvolvimento dos produtos de software seria R$3.963.890,00. Lembrando que o valor total do TED foi de R$2.078.600,00 e envolve outras atividades além do desenvolvimento de Software, vemos que este resultado demonstra uma grande eficiência econômica na execução do projeto.
 
-O modelo COCOMO é muito utilizado para avaliar e comparar esforço de desenvolvimento de projetos já finalizados ou em andamento. A análise utiliza a contagem de linhas de código produzidas e portanto não pode ser realiza nas fases de contratação e planejamento. Outro tipo de análise de esforço comum,que visa contornar esta limitação, utiliza a técnica de contagem de pontos de função, introduzida na IBM no fim dos anos 1970 para avaliar os custos de seus próprios projetos. Um ponto de função contabiliza o esforço relacionado à implementação de uma funcionalidade a partir de uma soma ponderada do número de entradas, saídas, arquivos e requisições que o software deve fazer. A análise de pontos de função estima o esforço de desenvolvimento de um software a partir das funcionalidades planejadas, antes mesmo do início do desenvolvimento do mesmo. Assim como o modelo COCOMO, trata-se de uma abordagem aproximada, já que é difícil antecipar o esforço de desenvolvimento precisamente somente com este tipo de informação genérica. Por ser aplicável antes da criação do produto, pode ser utilizada para guiar a definição de preços para produtos de software na fase de contratação. 
+O modelo COCOMO é muito utilizado para avaliar e comparar esforço de desenvolvimento de projetos já finalizados ou em andamento. A análise utiliza a contagem de linhas de código produzidas e portanto não pode ser realiza nas fases de contratação e planejamento. Outro tipo de análise de esforço comum,que visa contornar esta limitação, utiliza a técnica de contagem de pontos de função, introduzida na IBM no fim dos anos 1970 para avaliar os custos de seus próprios projetos. Um ponto de função contabiliza o esforço relacionado à implementação de uma funcionalidade a partir de uma soma ponderada do número de entradas, saídas, arquivos e requisições que o software deve fazer. A análise de pontos de função estima o esforço de desenvolvimento de um software a partir das funcionalidades planejadas, antes mesmo do início do desenvolvimento do mesmo. Assim como o modelo COCOMO, trata-se de uma abordagem aproximada, já que é difícil antecipar o esforço de desenvolvimento precisamente somente com este tipo de informação genérica. Por ser aplicável antes da criação do produto, pode ser utilizada para guiar a definição de preços para produtos de software na fase de contratação.
 
 Existe uma correlação bastante alta entre número de pontos de função e números de linhas de código de um projeto, dada uma linguagem de programação. Ainda que não existam estudos muito aprofundados sobre a produtividade do Python sob esta métrica, é um consenso na comunidade que ela deva se situar próxima a da do Perl, já que ambas são consideradas linguagens de programação de alto nível e muito produtivas, com várias funcionalidades semelhantes. Assim, assumimos o valor de 24 linhas por ponto de função para Python/Perl e 47 para Javascript, segundo a tabela da QSM (https://www.qsm.com/resources/function-point-languages-table). Somando a contribuição destas duas linguagens ficamos com 1403 pontos de função para todas as contribuções do projeto. Este número exclui algumas linguagens com participação menor (SQL) e mais notadamente as bases de treinamento da Taís desenvolvidas em Markdown e YAML, já que não existe nenhuma métrica que avalia a produtividade destas linguagens.
 
-Mesmo se consideramos apenas estes dois valores, a produção apresentada é bastante competitiva. Podemos avaliar de duas maneiras: na primeira consideramos o tamanho médio da equipe (23,8 pessoas) e assumimos que todos membros contribuíram com 20h semanais de desenvolvimento, para chegar no valor de 45,696 horas empregadas. Isto fornece uma taxa de 32,5 horas por ponto de função. Trata-se de um limite superior, já que na realidade existem membros alocados para outras funções (pesquisa, design, coordenação) e membros com atribuições variáveis. 
+Mesmo se consideramos apenas estes dois valores, a produção apresentada é bastante competitiva. Podemos avaliar de duas maneiras: na primeira consideramos o tamanho médio da equipe (23,8 pessoas) e assumimos que todos membros contribuíram com 20h semanais de desenvolvimento, para chegar no valor de 45,696 horas empregadas. Isto fornece uma taxa de 32,5 horas por ponto de função. Trata-se de um limite superior, já que na realidade existem membros alocados para outras funções (pesquisa, design, coordenação) e membros com atribuições variáveis.
 
 Uma auditoria recente do TCU no desempenho do SERPRO e do DATAPREV avaliou valores típicos de produtividade de mercado e destas duas instituições e estimou um valor médio é de 16,15 horas por ponto de função para o mercado e 33,5 e 40,3 horas por ponto de função respectivamente para o SERPRO e Dataprev. É importante ressaltar que contabilizamos a produtividade assumindo que todos membros estariam alocados em tarefas de desenvolvimento e que deixamos de computar vários pontos de função relacionados principalmente à base de treinamento da Taís, devido à inexistência de parâmetros confiáveis para comparação. Além disto, e talvez de forma mais decisiva, a maior parte dos integrantes da equipe são alunos e recebem uma remuneração muito inferior a um profissional de mercado de forma que não seria razoável esperar a mesma produtividade das duas categorias.
 
@@ -1082,17 +1086,17 @@ A primeira diferença entre estes dois projetos e os outros projetos elaborados 
 
 Além disto, não modificamos os valores de referência relativos à experiência da equipe e ao uso de ferramentas de engenharia de software já que o objetivo é fazer uma avaliação do tempo que seria necessário em um desenvolvimento típico de mercado e não estimar o valor para a equipe que foi de fato empregada. O modelo estima, por exemplo, que o emprego adequado de técnicas de Engenharia de Software pode deixar a velocidade de desenvolvimento entre 32% mais rápido até 53% mais lento que os valores de referência. Já a qualificação da equipe pode reduzir o tempo de desenvolvimento para desde 1/3 do esforço de referência até 3,68 vezes maior.
 
-O repositório do Salic ML consiste basicamente em código Python, cerca de 3800 linhas físicas, e Notebooks do Jupyter. Estes também estão escritos em Python e possuem 66.000 linhas que, após a conversão do formato .ipynb para Python, resultam em 10,696 linhas de código Python. Nós utilizamos o segundo valor já que o execedente consiste majoritariamente em dados de saída gerados automaticamente e portanto não refletem em esforço de desenvolvimento. 
+O repositório do Salic ML consiste basicamente em código Python, cerca de 3800 linhas físicas, e Notebooks do Jupyter. Estes também estão escritos em Python e possuem 66.000 linhas que, após a conversão do formato .ipynb para Python, resultam em 10,696 linhas de código Python. Nós utilizamos o segundo valor já que o execedente consiste majoritariamente em dados de saída gerados automaticamente e portanto não refletem em esforço de desenvolvimento.
 
 Ainda assim, talvez seja necessário considerar um fator de ponderação no esforço de produzir código em módulos estruturados e em ferramentas de desenvolvimento usuais em contraposição a um ambiente dinâmico e interativo como o de um Notebook. É difícil ponderar qual seria este fator, em especial porque os Notebooks lidam com algoritmos complexos de aprendizado de máquina e código de natureza bastante experimental. Se assumirmos, ainda que de forma um tanto arbitrária, que a produtividade em um ambiente de Notebook dobra a eficiência de desenvolvimento usual, reduziríamos a estimativa de esforço total de 71 meses-homem para 48, o que corresponde uma redução de 32%.
 
-Já o chatbot da Taís possui particularidades de outro gênero. A Taís foi desenvolvida utilizando a tecnologia RASA, que por estar no estado da arte em Chatbots, possui um custo adicional de absorção e treinamento. Além disto, boa parte do esforço do desenvolvimento do Chatbot se encontra na configuração e manutenção dos bancos de treinamento. Estes bancos não são escritos em linguagem de programação, mas sim desenvolvidos declarativamente em arquivos do tipo Markdown e YAML. Esta diferença torna a análise e comparação usando metodologias desenvolvidas para código pouco confiável. 
+Já o chatbot da Taís possui particularidades de outro gênero. A Taís foi desenvolvida utilizando a tecnologia RASA, que por estar no estado da arte em Chatbots, possui um custo adicional de absorção e treinamento. Além disto, boa parte do esforço do desenvolvimento do Chatbot se encontra na configuração e manutenção dos bancos de treinamento. Estes bancos não são escritos em linguagem de programação, mas sim desenvolvidos declarativamente em arquivos do tipo Markdown e YAML. Esta diferença torna a análise e comparação usando metodologias desenvolvidas para código pouco confiável.
 
 O repositório consiste em cerca de 5000 linhas de código em Markdown, 1000 linhas YAML e 1800 linhas de Python. Ainda que o Markdown seja uma linguagem de edição de textos simples, ela é utilizada neste projeto para definir os fluxos de conversa e a inteligência do Bot, de forma que a dificuldade principal consiste na organização destes fluxos de informação e não na criação do documento propriamente dito. O desenvolvimento destes arquivos também requer um nível alto de testes manuais para verificar se os fluxos desenhados estão corretos e se o bot reconhece as interações planejadas. Assim, é razoável supor que o esforço de criação destes arquivos supera muito o esforço de criação de código tradicional.
 
-Podemos analisar esta base de treinamento olhando pela ótica de pontos de função já que esta análise não depende da linguagem de programação e usa apenas a contagem de funcionalidades básicas como o número de diferentes entradas, saídas, arquivos e requisições que um software utiliza. Vamos nos limitar esta análise à apenas a base de treinamento da Taís, pois é simples estimar o número de entradas e saídas programadas a partir da estrutura dos arquivos de treinamento. 
+Podemos analisar esta base de treinamento olhando pela ótica de pontos de função já que esta análise não depende da linguagem de programação e usa apenas a contagem de funcionalidades básicas como o número de diferentes entradas, saídas, arquivos e requisições que um software utiliza. Vamos nos limitar esta análise à apenas a base de treinamento da Taís, pois é simples estimar o número de entradas e saídas programadas a partir da estrutura dos arquivos de treinamento.
 
-Deste modo, consideramos que cada tipo de resposta do Bot (ou "utter", na nomeclatura do arquivo de configuração) da Taís é uma saída do tipo simples e cada história, que corresponde a um pequeno fluxo de conversa, corresponde a uma entrada de complexidade padrão. Utilizando os valores usuais de 4 pontos de função para cada uma destas funcionalidades e usando o fato que temos 210 saídas diferentes e 185 histórias,ficaríamos com um total 1580 pontos de função. Note que este valor é maior que todos os outros projetos somados, e muito provavelmente é bastante superestimado. 
+Deste modo, consideramos que cada tipo de resposta do Bot (ou "utter", na nomeclatura do arquivo de configuração) da Taís é uma saída do tipo simples e cada história, que corresponde a um pequeno fluxo de conversa, corresponde a uma entrada de complexidade padrão. Utilizando os valores usuais de 4 pontos de função para cada uma destas funcionalidades e usando o fato que temos 210 saídas diferentes e 185 histórias,ficaríamos com um total 1580 pontos de função. Note que este valor é maior que todos os outros projetos somados, e muito provavelmente é bastante superestimado.
 
 Vemos portanto, que as peculiaridades das tecnologias utilizadas pela Taís tornam a estimativa de esforço extremamente *não-confiável* já que metodologias que tipicamente apresentam um grau de concordância razoável geraram previsões totalmente destoantes. Enquanto o modelo COCOMO sugere um esforço de desenvolvimento da ordem de 23 meses-homem, a análise por pontos de função faz uma estimativa 6 vezes maior considerando apenas uma parte do projeto (145 meses-homem).
 
@@ -1143,12 +1147,6 @@ Serão disponibiliados no anexo IV toda a documentação técnica realizada nos 
 
 ## Relatórios de Entrega Parciais e Parecer do Ministério
 
-O último anexo estão os relatórios de entrega parciais e os pareceres do Ministério. De acordo com  o plano de trabalho, os repasses financeiros foram previstos de ocorrer trimestralmente condicionados a aprovação do relatório de entrega parcial. 
+O último anexo estão os relatórios de entrega parciais e os pareceres do Ministério. De acordo com  o plano de trabalho, os repasses financeiros foram previstos de ocorrer trimestralmente condicionados a aprovação do relatório de entrega parcial.
 
 Nesses relatórios de entrega parcial são apresentados o trabalho e as entregas realizadas no período, assim como as suas respectivas evidências. É apresentado também o acompanhamento financeiro, no qual é detalhado os empenhos realizados no trimestre. A aprovação de cada relatório é realizada por meio de um parecer técnico. Além do relatório, a cada trimestre houve uma reunião de entrega no qual apresentamos e homologamos os avanços junto a equipe técnica e de negócio do ministério.
-
-
-
-
-
-
