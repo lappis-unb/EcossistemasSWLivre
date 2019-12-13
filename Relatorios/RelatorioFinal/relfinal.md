@@ -102,7 +102,7 @@ Os resultados desse pacote de trabalho, e as entregas foram documentadas nos seg
 
 - [Relatório Etapa 7](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R7/RELATÓRIO%20ETAPA%207.pdf)
 
-Além dos relatórios, esc um artigo no Medium sobre o projeto SALIC-ML (), apresentamos o trabalho do SALIC-ML na comunidade Pydata Brasília  (25/06/2019), com o título "Como construir uma aplicação com features baseadas em data science". Mais detalhes sobre os eventos serão apresentados no pacote de trabalho "Estudos sobre práticas de gestão colaborativa em comunidades de software aberto".
+Além dos relatórios, esc um artigo no Medium sobre o projeto SALIC-ML [Algoritmos de aprendizagem de máquina com software em produção— análise de projetos da Lei Rouanet](https://medium.com/@lappisunbfga/o-uso-de-algoritmos-de-aprendizagem-de-m%C3%A1quina-em-produ%C3%A7%C3%A3o-estudo-de-caso-na-an%C3%A1lise-de-projetos-ed43ab86e5f6), apresentamos o trabalho do SALIC-ML na comunidade Pydata Brasília  (25/06/2019), com o título "Como construir uma aplicação com features baseadas em data science". Mais detalhes sobre os eventos serão apresentados no pacote de trabalho "Estudos sobre práticas de gestão colaborativa em comunidades de software aberto".
 
 ![Apresentação no pyData.](figs/pydatamoura.jpg)
 
