@@ -488,45 +488,47 @@ De acordo com o plano de trabalho, "O principal resultado dessa pesquisa será s
 
 1. __Estudos de caso sobre comunidades de software livre onde o Estado participa por adesão, com prioridade para os softwares utilizados para a gestão cultural__
 
-**Concluído** -
+**Concluído** - Foram identificadas as principais características dos softwares culturais, bem como a atividade de suas comunidades
 
 
-**Documentação comprobatória** -
+**Documentação comprobatória**
+
+- [Relatório Etapa 1](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R1/RELATÓRIO%20ETAPA%201.pdf)
+
+- [Relatório Etapa 2](https://github.com/lappis-unb/EcossistemasSWLivre/blob/master/Relatorios/R2/RELATÓRIO%20ETAPA%202.pdf)
 
 2. __Estudos sobre boas práticas para planejamento conjunto de milestones e releases entre as organizações que fazem parte das comunidades__
-**Concluído** -
+**Concluído** - O trabalho de desenvolvimento de software em comunidades FLOSS parte do princípio de que o trabalho é distribuído e as informações sobre metas e releases devem estar evidentes para que tanto os principais desenvolvedores quanto os contribuidores externos possam contribuir de maneira fluída. O conjunto de boas práticas de planejamento e execução dos projetos seguindo os preceitos da metodologia ágil foram evidenciados no planejamento das sprints ao longo do projeto.
 
 
-**Documentação comprobatória** -
+**Documentação comprobatória** - https://github.com/lappis-unb/EcossistemasSWLivre/wiki
 
 
 3. __Estudos sobre boas práticas de comunicação e mobilização no contexto das comunidades onde o Estado participa__
 
-  **Concluído** -
+  **Concluído** - O estudo se concentrou na realização de atividades de articulação com comunidades FLOSS e orgãos da administração pública federal. O detalhamento está no anexo II deste relatório
 
 
-**Documentação comprobatória** -
+**Documentação comprobatória** - Anexo II
 
 4. __Participação em eventos e encontros das comunidades de software livre que contribuem para o portifólio mantido pelo MinC__
 
-**Concluído** -
+**Concluído** - Eventos como os promovidos com o projeto Serenata de Amor e as diversas participações no PyData, Campus Party e workshops promovidos pelo próprio laboratório foram importantes para o compartilhamento das soluções desenvolvidas com outras comunidades e orgãos da administração pública federal.
 
-
-**Documentação comprobatória** -
+**Documentação comprobatória** - Anexo II
 
 5. __Estudos sobre arranjos econômicos utilizados pelas comunidades com fins de sustentabilidade de seus comuns de software__
 
-**Concluído** -
+**Concluído** - Como resultado final desse estudo, que envolveu realização de entrevistas e pesquisa bibliográfica está o capítulo do livro "Software e Cultura no Brasil: Produção, Gestão e Políticas Públicas" incluído no Anexo I deste relatório
 
-
-**Documentação comprobatória** -
+**Documentação comprobatória** - Anexo I
 
 6. __Estudos sobre metodologias e suportes tecnológicos para a gestão colaborativa em comunidades de software livre nas quais o Estado participa por adesão__
 
-**Concluído** -
+**Concluído** - A realização desse estudo foi concentrada na tradução do guia internacional "Public Money, Public Code" localizada no anexo I deste relatório
 
 
-**Documentação comprobatória** -
+**Documentação comprobatória** - Anexo I
 
 
 ## Pacote de Trabalho: Estudo de técnicas de Aprendizado de Máquina para apoiar a fiscalização da Lei Rouanet
