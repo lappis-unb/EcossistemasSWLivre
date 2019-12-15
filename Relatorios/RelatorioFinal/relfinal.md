@@ -1149,6 +1149,6 @@ Serão disponibiliados no anexo IV toda a documentação técnica realizada nos 
 
 ## Relatórios de Entrega Parciais e Parecer do Ministério
 
-O último anexo estão os relatórios de entrega parciais e os pareceres do Ministério. De acordo com  o plano de trabalho, os repasses financeiros foram previstos de ocorrer trimestralmente condicionados a aprovação do relatório de entrega parcial.
+O último anexo (Anexo V) estão os relatórios de entrega parciais e os pareceres do Ministério. De acordo com  o plano de trabalho, os repasses financeiros foram previstos de ocorrer trimestralmente condicionados a aprovação do relatório de entrega parcial.
 
 Nesses relatórios de entrega parcial são apresentados o trabalho e as entregas realizadas no período, assim como as suas respectivas evidências. É apresentado também o acompanhamento financeiro, no qual é detalhado os empenhos realizados no trimestre. A aprovação de cada relatório é realizada por meio de um parecer técnico. Além do relatório, a cada trimestre houve uma reunião de entrega no qual apresentamos e homologamos os avanços junto a equipe técnica e de negócio do ministério.
